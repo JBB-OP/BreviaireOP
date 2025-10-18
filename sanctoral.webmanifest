@@ -1,7 +1,7 @@
 {
     "name": "Bréviaire franciscain",
-    "short_name": "Bréviaire franciscain",  
-    "description": "Bréviaire et liturgie de la famille franciscaine",
+    "short_name": "Bréviaire dominicain",  
+    "description": "Bréviaire et missel dominicain",
     "icons": [
       {
         "src": "img/app-icon.png",
