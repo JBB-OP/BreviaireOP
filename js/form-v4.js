@@ -385,11 +385,11 @@ function update_office_credits(){
   sommaire = sommaire.concat("<li><a href='#credits'>Crédits</a></li>");
 
   texte_final = texte_final.concat("<h2> Crédits </h2>");
-  texte_final = texte_final.concat("Application développée par Matthias Pasquier et Thibaut Chourré.<br><br>");
-  texte_final = texte_final.concat("Textes Liturgiques issus de <a href='http://aelf.org'>AELF</a> pour les offices romains et francais. <br>Textes liturgiques issus du Sanctoral Franciscain (© Éditions dominicaines 2016) pour les offices dominicains.<br><br>");
-  texte_final = texte_final.concat("Remerciements à Alexandre, Benoît, Clara, Clémence, Hugo et Matthieu pour leur aide dans la retranscription du sanctoral dominicain.  <br><br>");
-  texte_final = texte_final.concat("Remerciements à Fr. Jean-François Marie Auclair et Françoise Costa pour leur aide dans les choix liturgique et dans la compréhension du bréviaire. <br><br>");
-  texte_final = texte_final.concat("<br>À Dieu toute la gloire. <br>");
+  texte_final = texte_final.concat("Application dérivée de l'application franciscaine développée par Matthias Pasquier et Thibaut Chourré.<br><br>");
+  texte_final = texte_final.concat("Si vous avez une remarque, une suggestion ou une erreur à faire remonter, vous pouvez envoyer un message à outils.apostoliques.op&gmail.com. <br><br>");
+  texte_final = texte_final.concat("Textes Liturgiques issus de <a href='http://aelf.org'>AELF</a> pour les offices romains et francais. <br>Textes liturgiques issus du Sanctoral dominicain (© Propium Officiorum Ordinis Prædicatorum, 1982) pour les offices dominicains.<br><br>");
+  texte_final = texte_final.concat("Remerciements à xxx pour leur aide dans la retranscription du sanctoral dominicain.  <br><br>");
+  texte_final = texte_final.concat("Remerciements à Fr. xxx pour son aide dans les choix liturgiques. <br><br>");
 
   texte_final = texte_final.concat("</div>");
 
