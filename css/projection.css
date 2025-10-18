@@ -21,7 +21,7 @@
   --liturgical-green: rgb(0, 126, 48);
   --liturgical-red: rgb(171, 44, 44);
   --liturgical-purple: rgb(97, 44, 102);
-  --liturgical-pink: rgb(204, 53, 166);
+  --liturgical-pink: rgb(97, 44, 102); /* désactivation de la couleur rose : rgb(204, 53, 166); on recopie la couleur violette*/
   --liturgical-default: rgb(0, 0, 0);
   --color-scheme: light;
 }
@@ -40,7 +40,7 @@
   --liturgical-green: rgb(11, 193, 99);
   --liturgical-red: rgb(225, 69, 69);
   --liturgical-purple: rgb(192, 45, 192);
-  --liturgical-pink: rgb(255, 75, 255);
+  --liturgical-pink: rgb(192, 45, 192);/* idem theme light : rgb(255, 75, 255);*/
   --liturgical-default: rgb(217, 217, 217);
   --color-scheme: dark;
 }
@@ -67,7 +67,8 @@
 }
 
 .color_liturgy_pink{
-  --liturgical-color: rgb(204, 53, 166);
+  --liturgical-color: rgb(97, 44, 102);
+/*  --liturgical-color: rgb(204, 53, 166);*/
   --liturgical-color-alt: var(--liturgical-pink);
 }
 
@@ -351,7 +352,9 @@ p {
 }
 
 .color_liturgy_pink .office_sommaire a.anchor_selected::before {
-  background-image: url("../img/polygon_pink.svg");
+/*  background-image: url("../img/polygon_pink.svg");*/
+  background-image: url("../img/polygon_purple.svg");
+
 }
 
 .color_liturgy_default .office_sommaire a.anchor_selected::before {
