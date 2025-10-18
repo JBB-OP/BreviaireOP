@@ -253,13 +253,13 @@ var complies_base = {
 
 var tab_mois=new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
 
-function create_office_html(office, date, zone, hymne, invitatoire, contenu_aelf, contenu_franciscain=null, hymne_selected){
+function create_office_html(office, date, zone, hymne, invitatoire, contenu_aelf, contenu_dominicain=null, hymne_selected){
   var date_obj = new Date(date)
 
   var sous_titre = ""
-  if (contenu_franciscain != null) {
-    sous_titre =  "<h2>" + toTitleCase(contenu_franciscain["informations"]["titre"]) + "</h2>";
-    contenu_aelf["informations"]["franciscain"] = true;
+  if (contenu_dominicain != null) {
+    sous_titre =  "<h2>" + toTitleCase(contenu_dominicain["informations"]["titre"]) + "</h2>";
+    contenu_aelf["informations"]["dominicain"] = true;
   }else {
     if (contenu_aelf["informations"]["jour_liturgique_nom"] != "de la férie") {
       sous_titre = "<h2>" + contenu_aelf["informations"]['jour_liturgique_nom'] + "</h2>"
@@ -334,13 +334,13 @@ function create_office_html(office, date, zone, hymne, invitatoire, contenu_aelf
 
   switch (office) {
     case "lectures":
-    return create_lectures_html(combine_lectures(contenu_aelf["lectures"], contenu_franciscain), contenu_aelf["informations"], date_obj, hymne_unique, selection, hymne_selected);
+    return create_lectures_html(combine_lectures(contenu_aelf["lectures"], contenu_dominicain), contenu_aelf["informations"], date_obj, hymne_unique, selection, hymne_selected);
       break;
     case "laudes":
-      return create_laudes_html(combine_laudes(contenu_aelf["laudes"], contenu_franciscain), contenu_aelf["informations"], date_obj, hymne_unique, invitatoire, selection, hymne_selected);
+      return create_laudes_html(combine_laudes(contenu_aelf["laudes"], contenu_dominicain), contenu_aelf["informations"], date_obj, hymne_unique, invitatoire, selection, hymne_selected);
       break;
     case "vepres":
-      return create_vepres_html(combine_vepres(contenu_aelf["vepres"], contenu_franciscain), contenu_aelf["informations"], date_obj, hymne_unique, selection, hymne_selected);
+      return create_vepres_html(combine_vepres(contenu_aelf["vepres"], contenu_dominicain), contenu_aelf["informations"], date_obj, hymne_unique, selection, hymne_selected);
       break;
     case "complies": //no need to combine with another office, as complies are always the same
       return create_complies_html(contenu_aelf["complies"], contenu_aelf["informations"], date_obj, true)
@@ -355,8 +355,8 @@ function create_office_html(office, date, zone, hymne, invitatoire, contenu_aelf
       return create_none_html(combine_petite_heure(contenu_aelf["none"]), contenu_aelf["informations"], date_obj, true)
       break;
     case "messes":
-      if (contenu_franciscain != null) {
-        return create_messe_html(contenu_franciscain, contenu_aelf["informations"], date_obj);
+      if (contenu_dominicain != null) {
+        return create_messe_html(contenu_dominicain, contenu_aelf["informations"], date_obj);
       } else {
         return create_messe_html(contenu_aelf["messes"][zone.split(";")[1]], contenu_aelf["informations"], date_obj);
       }
@@ -365,183 +365,183 @@ function create_office_html(office, date, zone, hymne, invitatoire, contenu_aelf
   }
 }
 
-function combine_lectures(contenu_aelf, contenu_franciscain){
+function combine_lectures(contenu_aelf, contenu_dominicain){
   var contenu_final = JSON.parse(JSON.stringify(lectures_base));
-  if (contenu_franciscain == null){
-    contenu_franciscain = JSON.parse(JSON.stringify(lectures_base));
+  if (contenu_dominicain == null){
+    contenu_dominicain = JSON.parse(JSON.stringify(lectures_base));
   }
 
-  contenu_final["hymne"]["titre"] = (contenu_franciscain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_franciscain["hymne"]["titre"];
-  contenu_final["hymne"]["texte"] = (contenu_franciscain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_franciscain["hymne"]["texte"];
+  contenu_final["hymne"]["titre"] = (contenu_dominicain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_dominicain["hymne"]["titre"];
+  contenu_final["hymne"]["texte"] = (contenu_dominicain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_dominicain["hymne"]["texte"];
 
-  contenu_final["antienne_1"]["additionel"] = contenu_franciscain["antienne_1"]["additionel"];
-  contenu_final["antienne_1"]["antienne_B"] = contenu_franciscain["antienne_1"]["antienne_B"];
-  contenu_final["antienne_1"]["antienne_A"] = (contenu_franciscain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_franciscain["antienne_1"]["antienne_A"];
-  contenu_final["psaume_1"]["reference"] = (contenu_franciscain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_franciscain["psaume_1"]["reference"];
-  contenu_final["psaume_1"]["texte"] = (contenu_franciscain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_franciscain["psaume_1"]["texte"];
+  contenu_final["antienne_1"]["additionel"] = contenu_dominicain["antienne_1"]["additionel"];
+  contenu_final["antienne_1"]["antienne_B"] = contenu_dominicain["antienne_1"]["antienne_B"];
+  contenu_final["antienne_1"]["antienne_A"] = (contenu_dominicain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_dominicain["antienne_1"]["antienne_A"];
+  contenu_final["psaume_1"]["reference"] = (contenu_dominicain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_dominicain["psaume_1"]["reference"];
+  contenu_final["psaume_1"]["texte"] = (contenu_dominicain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_dominicain["psaume_1"]["texte"];
 
-  contenu_final["antienne_2"]["additionel"] = contenu_franciscain["antienne_2"]["additionel"];
-  contenu_final["antienne_2"]["antienne_B"] = contenu_franciscain["antienne_2"]["antienne_B"];
-  contenu_final["antienne_2"]["antienne_A"] = (contenu_franciscain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_franciscain["antienne_2"]["antienne_A"];
-  contenu_final["psaume_2"]["reference"] = (contenu_franciscain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_franciscain["psaume_2"]["reference"];
-  contenu_final["psaume_2"]["texte"] = (contenu_franciscain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_franciscain["psaume_2"]["texte"];
+  contenu_final["antienne_2"]["additionel"] = contenu_dominicain["antienne_2"]["additionel"];
+  contenu_final["antienne_2"]["antienne_B"] = contenu_dominicain["antienne_2"]["antienne_B"];
+  contenu_final["antienne_2"]["antienne_A"] = (contenu_dominicain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_dominicain["antienne_2"]["antienne_A"];
+  contenu_final["psaume_2"]["reference"] = (contenu_dominicain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_dominicain["psaume_2"]["reference"];
+  contenu_final["psaume_2"]["texte"] = (contenu_dominicain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_dominicain["psaume_2"]["texte"];
 
-  contenu_final["antienne_3"]["additionel"] = contenu_franciscain["antienne_3"]["additionel"];
-  contenu_final["antienne_3"]["antienne_B"] = contenu_franciscain["antienne_3"]["antienne_B"];
-  contenu_final["antienne_3"]["antienne_A"] = (contenu_franciscain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_franciscain["antienne_3"]["antienne_A"];
-  contenu_final["psaume_3"]["reference"] = (contenu_franciscain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_franciscain["psaume_3"]["reference"];
-  contenu_final["psaume_3"]["texte"] = (contenu_franciscain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_franciscain["psaume_3"]["texte"];
+  contenu_final["antienne_3"]["additionel"] = contenu_dominicain["antienne_3"]["additionel"];
+  contenu_final["antienne_3"]["antienne_B"] = contenu_dominicain["antienne_3"]["antienne_B"];
+  contenu_final["antienne_3"]["antienne_A"] = (contenu_dominicain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_dominicain["antienne_3"]["antienne_A"];
+  contenu_final["psaume_3"]["reference"] = (contenu_dominicain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_dominicain["psaume_3"]["reference"];
+  contenu_final["psaume_3"]["texte"] = (contenu_dominicain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_dominicain["psaume_3"]["texte"];
 
-  contenu_final["verset_psaume"] = (contenu_franciscain["verset"] == "") ? contenu_aelf["verset_psaume"] : contenu_franciscain["verset"];
+  contenu_final["verset_psaume"] = (contenu_dominicain["verset"] == "") ? contenu_aelf["verset_psaume"] : contenu_dominicain["verset"];
 
-  contenu_final["lecture_biblique"]["titre"] = (contenu_franciscain["lecture_biblique"]["titre"] == "") ? contenu_aelf["lecture"]["titre"] : contenu_franciscain["lecture_biblique"]["titre"];
+  contenu_final["lecture_biblique"]["titre"] = (contenu_dominicain["lecture_biblique"]["titre"] == "") ? contenu_aelf["lecture"]["titre"] : contenu_dominicain["lecture_biblique"]["titre"];
   contenu_final["lecture_biblique"]["reference"] = contenu_aelf["lecture"]["reference"];
-  contenu_final["lecture_biblique"]["texte"] = (contenu_franciscain["lecture_biblique"]["texte"] == "") ? contenu_aelf["lecture"]["texte"] : contenu_franciscain["lecture_biblique"]["texte"];
-  contenu_final["repons_bible"] = (contenu_franciscain["repons_bible"] == "") ? contenu_aelf["repons_lecture"] : contenu_franciscain["repons_bible"];
+  contenu_final["lecture_biblique"]["texte"] = (contenu_dominicain["lecture_biblique"]["texte"] == "") ? contenu_aelf["lecture"]["texte"] : contenu_dominicain["lecture_biblique"]["texte"];
+  contenu_final["repons_bible"] = (contenu_dominicain["repons_bible"] == "") ? contenu_aelf["repons_lecture"] : contenu_dominicain["repons_bible"];
 
-  contenu_final["lecture_patristique"]["titre"] = (contenu_franciscain["lecture_patristique"]["titre"] == "") ? contenu_aelf["titre_patristique"] : contenu_franciscain["lecture_patristique"]["titre"];
-  contenu_final["lecture_patristique"]["sous_titre"] = contenu_franciscain["lecture_patristique"]["sous_titre"];
-  contenu_final["lecture_patristique"]["texte"] = (contenu_franciscain["lecture_patristique"]["texte"] == "") ? contenu_aelf["texte_patristique"] : contenu_franciscain["lecture_patristique"]["texte"];
-  contenu_final["repons_patristique"] = (contenu_franciscain["repons_patristique"] == "") ? contenu_aelf["repons_patristique"] : contenu_franciscain["repons_patristique"];
+  contenu_final["lecture_patristique"]["titre"] = (contenu_dominicain["lecture_patristique"]["titre"] == "") ? contenu_aelf["titre_patristique"] : contenu_dominicain["lecture_patristique"]["titre"];
+  contenu_final["lecture_patristique"]["sous_titre"] = contenu_dominicain["lecture_patristique"]["sous_titre"];
+  contenu_final["lecture_patristique"]["texte"] = (contenu_dominicain["lecture_patristique"]["texte"] == "") ? contenu_aelf["texte_patristique"] : contenu_dominicain["lecture_patristique"]["texte"];
+  contenu_final["repons_patristique"] = (contenu_dominicain["repons_patristique"] == "") ? contenu_aelf["repons_patristique"] : contenu_dominicain["repons_patristique"];
 
-  if (!Array.isArray(contenu_aelf["te_deum"]) || (contenu_franciscain["te_deum"] == true)) { // to update with franciscan office
+  if (!Array.isArray(contenu_aelf["te_deum"]) || (contenu_dominicain["te_deum"] == true)) { // to update with franciscan office
     contenu_final["te_deum"]["display"] = true;
   }
 
 
-  contenu_final["oraison"] = (contenu_franciscain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_franciscain["oraison"];
+  contenu_final["oraison"] = (contenu_dominicain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_dominicain["oraison"];
 
   return contenu_final;
 }
 
-function combine_laudes(contenu_aelf, contenu_franciscain){
+function combine_laudes(contenu_aelf, contenu_dominicain){
   var contenu_final = JSON.parse(JSON.stringify(laudes_base));
-  if (contenu_franciscain == null){
-    contenu_franciscain = JSON.parse(JSON.stringify(laudes_base));
+  if (contenu_dominicain == null){
+    contenu_dominicain = JSON.parse(JSON.stringify(laudes_base));
   }
-  contenu_final["antienne_invitatoire"]["antienne_B"] = contenu_franciscain["antienne_invitatoire"]["antienne_B"];
-  contenu_final["antienne_invitatoire"]["antienne_A"] = (contenu_franciscain["antienne_invitatoire"]["antienne_A"] == "") ? (contenu_aelf["antienne_invitatoire"] == undefined ? "" : contenu_aelf["antienne_invitatoire"]) : contenu_franciscain["antienne_invitatoire"]["antienne_A"];
+  contenu_final["antienne_invitatoire"]["antienne_B"] = contenu_dominicain["antienne_invitatoire"]["antienne_B"];
+  contenu_final["antienne_invitatoire"]["antienne_A"] = (contenu_dominicain["antienne_invitatoire"]["antienne_A"] == "") ? (contenu_aelf["antienne_invitatoire"] == undefined ? "" : contenu_aelf["antienne_invitatoire"]) : contenu_dominicain["antienne_invitatoire"]["antienne_A"];
 
-  contenu_final["hymne"]["titre"] = (contenu_franciscain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_franciscain["hymne"]["titre"];
-  contenu_final["hymne"]["texte"] = (contenu_franciscain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_franciscain["hymne"]["texte"];
+  contenu_final["hymne"]["titre"] = (contenu_dominicain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_dominicain["hymne"]["titre"];
+  contenu_final["hymne"]["texte"] = (contenu_dominicain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_dominicain["hymne"]["texte"];
 
-  contenu_final["antienne_1"]["additionel"] = contenu_franciscain["antienne_1"]["additionel"];
-  contenu_final["antienne_1"]["antienne_B"] = contenu_franciscain["antienne_1"]["antienne_B"];
-  contenu_final["antienne_1"]["antienne_A"] = (contenu_franciscain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_franciscain["antienne_1"]["antienne_A"];
-  contenu_final["psaume_1"]["reference"] = (contenu_franciscain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_franciscain["psaume_1"]["reference"];
-  contenu_final["psaume_1"]["texte"] = (contenu_franciscain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_franciscain["psaume_1"]["texte"];
+  contenu_final["antienne_1"]["additionel"] = contenu_dominicain["antienne_1"]["additionel"];
+  contenu_final["antienne_1"]["antienne_B"] = contenu_dominicain["antienne_1"]["antienne_B"];
+  contenu_final["antienne_1"]["antienne_A"] = (contenu_dominicain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_dominicain["antienne_1"]["antienne_A"];
+  contenu_final["psaume_1"]["reference"] = (contenu_dominicain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_dominicain["psaume_1"]["reference"];
+  contenu_final["psaume_1"]["texte"] = (contenu_dominicain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_dominicain["psaume_1"]["texte"];
 
-  contenu_final["antienne_2"]["additionel"] = contenu_franciscain["antienne_2"]["additionel"];
-  contenu_final["antienne_2"]["antienne_B"] = contenu_franciscain["antienne_2"]["antienne_B"];
-  contenu_final["antienne_2"]["antienne_A"] = (contenu_franciscain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_franciscain["antienne_2"]["antienne_A"];
-  contenu_final["psaume_2"]["reference"] = (contenu_franciscain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_franciscain["psaume_2"]["reference"];
-  contenu_final["psaume_2"]["texte"] = (contenu_franciscain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_franciscain["psaume_2"]["texte"];
+  contenu_final["antienne_2"]["additionel"] = contenu_dominicain["antienne_2"]["additionel"];
+  contenu_final["antienne_2"]["antienne_B"] = contenu_dominicain["antienne_2"]["antienne_B"];
+  contenu_final["antienne_2"]["antienne_A"] = (contenu_dominicain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_dominicain["antienne_2"]["antienne_A"];
+  contenu_final["psaume_2"]["reference"] = (contenu_dominicain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_dominicain["psaume_2"]["reference"];
+  contenu_final["psaume_2"]["texte"] = (contenu_dominicain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_dominicain["psaume_2"]["texte"];
 
-  contenu_final["antienne_3"]["additionel"] = contenu_franciscain["antienne_3"]["additionel"];
-  contenu_final["antienne_3"]["antienne_B"] = contenu_franciscain["antienne_3"]["antienne_B"];
-  contenu_final["antienne_3"]["antienne_A"] = (contenu_franciscain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_franciscain["antienne_3"]["antienne_A"];
-  contenu_final["psaume_3"]["reference"] = (contenu_franciscain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_franciscain["psaume_3"]["reference"];
-  contenu_final["psaume_3"]["texte"] = (contenu_franciscain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_franciscain["psaume_3"]["texte"];
+  contenu_final["antienne_3"]["additionel"] = contenu_dominicain["antienne_3"]["additionel"];
+  contenu_final["antienne_3"]["antienne_B"] = contenu_dominicain["antienne_3"]["antienne_B"];
+  contenu_final["antienne_3"]["antienne_A"] = (contenu_dominicain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_dominicain["antienne_3"]["antienne_A"];
+  contenu_final["psaume_3"]["reference"] = (contenu_dominicain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_dominicain["psaume_3"]["reference"];
+  contenu_final["psaume_3"]["texte"] = (contenu_dominicain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_dominicain["psaume_3"]["texte"];
 
-  contenu_final["pericope"]["reference"] = (contenu_franciscain["pericope"]["reference"] == "") ? contenu_aelf["pericope"]["reference"] : contenu_franciscain["pericope"]["reference"];
-  contenu_final["pericope"]["texte"] = (contenu_franciscain["pericope"]["texte"] == "") ? contenu_aelf["pericope"]["texte"] : contenu_franciscain["pericope"]["texte"];
+  contenu_final["pericope"]["reference"] = (contenu_dominicain["pericope"]["reference"] == "") ? contenu_aelf["pericope"]["reference"] : contenu_dominicain["pericope"]["reference"];
+  contenu_final["pericope"]["texte"] = (contenu_dominicain["pericope"]["texte"] == "") ? contenu_aelf["pericope"]["texte"] : contenu_dominicain["pericope"]["texte"];
 
-  contenu_final["repons"] = (contenu_franciscain["repons"] == "") ? contenu_aelf["repons"] : contenu_franciscain["repons"];
+  contenu_final["repons"] = (contenu_dominicain["repons"] == "") ? contenu_aelf["repons"] : contenu_dominicain["repons"];
 
-  contenu_final["antienne_zacharie"]["antienne_A"] = (contenu_franciscain["antienne_zacharie"]["antienne_A"] == "") ? contenu_aelf["antienne_zacharie"] : contenu_franciscain["antienne_zacharie"]["antienne_A"];
-  contenu_final["antienne_zacharie"]["antienne_B"] = contenu_franciscain["antienne_zacharie"]["antienne_B"];
+  contenu_final["antienne_zacharie"]["antienne_A"] = (contenu_dominicain["antienne_zacharie"]["antienne_A"] == "") ? contenu_aelf["antienne_zacharie"] : contenu_dominicain["antienne_zacharie"]["antienne_A"];
+  contenu_final["antienne_zacharie"]["antienne_B"] = contenu_dominicain["antienne_zacharie"]["antienne_B"];
 
-  contenu_final["intercession"] = (contenu_franciscain["intercession"] == "") ? contenu_aelf["intercession"] : contenu_franciscain["intercession"];
+  contenu_final["intercession"] = (contenu_dominicain["intercession"] == "") ? contenu_aelf["intercession"] : contenu_dominicain["intercession"];
 
-  contenu_final["oraison"] = (contenu_franciscain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_franciscain["oraison"];
+  contenu_final["oraison"] = (contenu_dominicain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_dominicain["oraison"];
 
   return contenu_final;
 }
 
 
-function combine_vepres(contenu_aelf, contenu_franciscain=null){
+function combine_vepres(contenu_aelf, contenu_dominicain=null){
   var contenu_final = JSON.parse(JSON.stringify(vepres_base));
-  if (contenu_franciscain == null){
-    contenu_franciscain = JSON.parse(JSON.stringify(vepres_base));
+  if (contenu_dominicain == null){
+    contenu_dominicain = JSON.parse(JSON.stringify(vepres_base));
   }
-  //contenu_final["hymne"]["titre"] = (contenu_franciscain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_franciscain["hymne"]["titre"];
-  //contenu_final["hymne"]["texte"] = (contenu_franciscain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_franciscain["hymne"]["texte"];
+  //contenu_final["hymne"]["titre"] = (contenu_dominicain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_dominicain["hymne"]["titre"];
+  //contenu_final["hymne"]["texte"] = (contenu_dominicain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_dominicain["hymne"]["texte"];
 
-  contenu_final["hymne"]["titre"] = (contenu_franciscain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_franciscain["hymne"]["titre"];
-  contenu_final["hymne"]["texte"] = (contenu_franciscain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_franciscain["hymne"]["texte"];
+  contenu_final["hymne"]["titre"] = (contenu_dominicain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_dominicain["hymne"]["titre"];
+  contenu_final["hymne"]["texte"] = (contenu_dominicain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_dominicain["hymne"]["texte"];
 
-  contenu_final["antienne_1"]["additionel"] = contenu_franciscain["antienne_1"]["additionel"];
-  contenu_final["antienne_1"]["antienne_B"] = contenu_franciscain["antienne_1"]["antienne_B"];
-  contenu_final["antienne_1"]["antienne_A"] = (contenu_franciscain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_franciscain["antienne_1"]["antienne_A"];
-  contenu_final["psaume_1"]["reference"] = (contenu_franciscain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_franciscain["psaume_1"]["reference"];
-  contenu_final["psaume_1"]["texte"] = (contenu_franciscain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_franciscain["psaume_1"]["texte"];
+  contenu_final["antienne_1"]["additionel"] = contenu_dominicain["antienne_1"]["additionel"];
+  contenu_final["antienne_1"]["antienne_B"] = contenu_dominicain["antienne_1"]["antienne_B"];
+  contenu_final["antienne_1"]["antienne_A"] = (contenu_dominicain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_dominicain["antienne_1"]["antienne_A"];
+  contenu_final["psaume_1"]["reference"] = (contenu_dominicain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_dominicain["psaume_1"]["reference"];
+  contenu_final["psaume_1"]["texte"] = (contenu_dominicain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_dominicain["psaume_1"]["texte"];
 
-  contenu_final["antienne_2"]["additionel"] = contenu_franciscain["antienne_2"]["additionel"];
-  contenu_final["antienne_2"]["antienne_B"] = contenu_franciscain["antienne_2"]["antienne_B"];
-  contenu_final["antienne_2"]["antienne_A"] = (contenu_franciscain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_franciscain["antienne_2"]["antienne_A"];
-  contenu_final["psaume_2"]["reference"] = (contenu_franciscain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_franciscain["psaume_2"]["reference"];
-  contenu_final["psaume_2"]["texte"] = (contenu_franciscain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_franciscain["psaume_2"]["texte"];
+  contenu_final["antienne_2"]["additionel"] = contenu_dominicain["antienne_2"]["additionel"];
+  contenu_final["antienne_2"]["antienne_B"] = contenu_dominicain["antienne_2"]["antienne_B"];
+  contenu_final["antienne_2"]["antienne_A"] = (contenu_dominicain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_dominicain["antienne_2"]["antienne_A"];
+  contenu_final["psaume_2"]["reference"] = (contenu_dominicain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_dominicain["psaume_2"]["reference"];
+  contenu_final["psaume_2"]["texte"] = (contenu_dominicain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_dominicain["psaume_2"]["texte"];
 
-  contenu_final["antienne_3"]["additionel"] = contenu_franciscain["antienne_3"]["additionel"];
-  contenu_final["antienne_3"]["antienne_B"] = contenu_franciscain["antienne_3"]["antienne_B"];
-  contenu_final["antienne_3"]["antienne_A"] = (contenu_franciscain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_franciscain["antienne_3"]["antienne_A"];
-  contenu_final["psaume_3"]["reference"] = (contenu_franciscain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_franciscain["psaume_3"]["reference"];
-  contenu_final["psaume_3"]["texte"] = (contenu_franciscain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_franciscain["psaume_3"]["texte"];
+  contenu_final["antienne_3"]["additionel"] = contenu_dominicain["antienne_3"]["additionel"];
+  contenu_final["antienne_3"]["antienne_B"] = contenu_dominicain["antienne_3"]["antienne_B"];
+  contenu_final["antienne_3"]["antienne_A"] = (contenu_dominicain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_dominicain["antienne_3"]["antienne_A"];
+  contenu_final["psaume_3"]["reference"] = (contenu_dominicain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_dominicain["psaume_3"]["reference"];
+  contenu_final["psaume_3"]["texte"] = (contenu_dominicain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_dominicain["psaume_3"]["texte"];
 
-  contenu_final["pericope"]["reference"] = (contenu_franciscain["pericope"]["reference"] == "") ? contenu_aelf["pericope"]["reference"] : contenu_franciscain["pericope"]["reference"];
-  contenu_final["pericope"]["texte"] = (contenu_franciscain["pericope"]["texte"] == "") ? contenu_aelf["pericope"]["texte"] : contenu_franciscain["pericope"]["texte"];
+  contenu_final["pericope"]["reference"] = (contenu_dominicain["pericope"]["reference"] == "") ? contenu_aelf["pericope"]["reference"] : contenu_dominicain["pericope"]["reference"];
+  contenu_final["pericope"]["texte"] = (contenu_dominicain["pericope"]["texte"] == "") ? contenu_aelf["pericope"]["texte"] : contenu_dominicain["pericope"]["texte"];
 
-  contenu_final["repons"] = (contenu_franciscain["repons"] == "") ? contenu_aelf["repons"] : contenu_franciscain["repons"];
+  contenu_final["repons"] = (contenu_dominicain["repons"] == "") ? contenu_aelf["repons"] : contenu_dominicain["repons"];
 
-  contenu_final["antienne_marie"]["antienne_A"] = (contenu_franciscain["antienne_marie"]["antienne_A"] == "") ? contenu_aelf["antienne_magnificat"] : contenu_franciscain["antienne_marie"]["antienne_A"];
-  contenu_final["antienne_marie"]["antienne_B"] = contenu_franciscain["antienne_marie"]["antienne_B"];
+  contenu_final["antienne_marie"]["antienne_A"] = (contenu_dominicain["antienne_marie"]["antienne_A"] == "") ? contenu_aelf["antienne_magnificat"] : contenu_dominicain["antienne_marie"]["antienne_A"];
+  contenu_final["antienne_marie"]["antienne_B"] = contenu_dominicain["antienne_marie"]["antienne_B"];
 
-  contenu_final["intercession"] = (contenu_franciscain["intercession"] == "") ? contenu_aelf["intercession"] : contenu_franciscain["intercession"];
+  contenu_final["intercession"] = (contenu_dominicain["intercession"] == "") ? contenu_aelf["intercession"] : contenu_dominicain["intercession"];
 
-  contenu_final["oraison"] = (contenu_franciscain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_franciscain["oraison"];
+  contenu_final["oraison"] = (contenu_dominicain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_dominicain["oraison"];
 
-  //contenu_final["benediction"] = (contenu_franciscain["benediction"] == "") ? (contenu_aelf["benediction"] == undefined ? "" : contenu_aelf["benediction"]) : contenu_franciscain["benediction"];
+  //contenu_final["benediction"] = (contenu_dominicain["benediction"] == "") ? (contenu_aelf["benediction"] == undefined ? "" : contenu_aelf["benediction"]) : contenu_dominicain["benediction"];
 
   return contenu_final;
 }
 
-function combine_petite_heure(contenu_aelf, contenu_franciscain=null){
+function combine_petite_heure(contenu_aelf, contenu_dominicain=null){
   var contenu_final = JSON.parse(JSON.stringify(petite_heures_base));
-  if (contenu_franciscain == null){
-    contenu_franciscain = JSON.parse(JSON.stringify(petite_heures_base));
+  if (contenu_dominicain == null){
+    contenu_dominicain = JSON.parse(JSON.stringify(petite_heures_base));
   }
-  //contenu_final["hymne"]["titre"] = (contenu_franciscain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_franciscain["hymne"]["titre"];
-  //contenu_final["hymne"]["texte"] = (contenu_franciscain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_franciscain["hymne"]["texte"];
+  //contenu_final["hymne"]["titre"] = (contenu_dominicain["hymne"]["titre"] == "") ? contenu_aelf["hymne"]["titre"] : contenu_dominicain["hymne"]["titre"];
+  //contenu_final["hymne"]["texte"] = (contenu_dominicain["hymne"]["texte"] == "") ? contenu_aelf["hymne"]["texte"] : contenu_dominicain["hymne"]["texte"];
 
   contenu_final["hymne"]["titre"] = contenu_aelf["hymne"]["titre"];
   contenu_final["hymne"]["texte"] = contenu_aelf["hymne"]["texte"];
 
-  contenu_final["antienne_1"]["additionel"] = contenu_franciscain["antienne_1"]["additionel"];
-  contenu_final["antienne_1"]["antienne_B"] = contenu_franciscain["antienne_1"]["antienne_B"];
-  contenu_final["antienne_1"]["antienne_A"] = (contenu_franciscain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_franciscain["antienne_1"]["antienne_A"];
-  contenu_final["psaume_1"]["reference"] = (contenu_franciscain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_franciscain["psaume_1"]["reference"];
-  contenu_final["psaume_1"]["texte"] = (contenu_franciscain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_franciscain["psaume_1"]["texte"];
+  contenu_final["antienne_1"]["additionel"] = contenu_dominicain["antienne_1"]["additionel"];
+  contenu_final["antienne_1"]["antienne_B"] = contenu_dominicain["antienne_1"]["antienne_B"];
+  contenu_final["antienne_1"]["antienne_A"] = (contenu_dominicain["antienne_1"]["antienne_A"] == "") ? (contenu_aelf["antienne_1"] == undefined ? "" : contenu_aelf["antienne_1"]) : contenu_dominicain["antienne_1"]["antienne_A"];
+  contenu_final["psaume_1"]["reference"] = (contenu_dominicain["psaume_1"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_1"]["reference"]) : contenu_dominicain["psaume_1"]["reference"];
+  contenu_final["psaume_1"]["texte"] = (contenu_dominicain["psaume_1"]["texte"] == "") ? contenu_aelf["psaume_1"]["texte"] : contenu_dominicain["psaume_1"]["texte"];
 
-  contenu_final["antienne_2"]["additionel"] = contenu_franciscain["antienne_2"]["additionel"];
-  contenu_final["antienne_2"]["antienne_B"] = contenu_franciscain["antienne_2"]["antienne_B"];
-  contenu_final["antienne_2"]["antienne_A"] = (contenu_franciscain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_franciscain["antienne_2"]["antienne_A"];
-  contenu_final["psaume_2"]["reference"] = (contenu_franciscain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_franciscain["psaume_2"]["reference"];
-  contenu_final["psaume_2"]["texte"] = (contenu_franciscain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_franciscain["psaume_2"]["texte"];
+  contenu_final["antienne_2"]["additionel"] = contenu_dominicain["antienne_2"]["additionel"];
+  contenu_final["antienne_2"]["antienne_B"] = contenu_dominicain["antienne_2"]["antienne_B"];
+  contenu_final["antienne_2"]["antienne_A"] = (contenu_dominicain["antienne_2"]["antienne_A"] == "") ? (contenu_aelf["antienne_2"] == undefined ? "" : contenu_aelf["antienne_2"]) : contenu_dominicain["antienne_2"]["antienne_A"];
+  contenu_final["psaume_2"]["reference"] = (contenu_dominicain["psaume_2"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_2"]["reference"]) : contenu_dominicain["psaume_2"]["reference"];
+  contenu_final["psaume_2"]["texte"] = (contenu_dominicain["psaume_2"]["texte"] == "") ? contenu_aelf["psaume_2"]["texte"] : contenu_dominicain["psaume_2"]["texte"];
 
-  contenu_final["antienne_3"]["additionel"] = contenu_franciscain["antienne_3"]["additionel"];
-  contenu_final["antienne_3"]["antienne_B"] = contenu_franciscain["antienne_3"]["antienne_B"];
-  contenu_final["antienne_3"]["antienne_A"] = (contenu_franciscain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_franciscain["antienne_3"]["antienne_A"];
-  contenu_final["psaume_3"]["reference"] = (contenu_franciscain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_franciscain["psaume_3"]["reference"];
-  contenu_final["psaume_3"]["texte"] = (contenu_franciscain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_franciscain["psaume_3"]["texte"];
+  contenu_final["antienne_3"]["additionel"] = contenu_dominicain["antienne_3"]["additionel"];
+  contenu_final["antienne_3"]["antienne_B"] = contenu_dominicain["antienne_3"]["antienne_B"];
+  contenu_final["antienne_3"]["antienne_A"] = (contenu_dominicain["antienne_3"]["antienne_A"] == "") ? (contenu_aelf["antienne_3"] == undefined ? "" : contenu_aelf["antienne_3"]) : contenu_dominicain["antienne_3"]["antienne_A"];
+  contenu_final["psaume_3"]["reference"] = (contenu_dominicain["psaume_3"]["reference"] == "") ? titre_psaume(contenu_aelf["psaume_3"]["reference"]) : contenu_dominicain["psaume_3"]["reference"];
+  contenu_final["psaume_3"]["texte"] = (contenu_dominicain["psaume_3"]["texte"] == "") ? contenu_aelf["psaume_3"]["texte"] : contenu_dominicain["psaume_3"]["texte"];
 
-  contenu_final["pericope"]["reference"] = (contenu_franciscain["pericope"]["reference"] == "") ? contenu_aelf["pericope"]["reference"] : contenu_franciscain["pericope"]["reference"];
-  contenu_final["pericope"]["texte"] = (contenu_franciscain["pericope"]["texte"] == "") ? contenu_aelf["pericope"]["texte"] : contenu_franciscain["pericope"]["texte"];
+  contenu_final["pericope"]["reference"] = (contenu_dominicain["pericope"]["reference"] == "") ? contenu_aelf["pericope"]["reference"] : contenu_dominicain["pericope"]["reference"];
+  contenu_final["pericope"]["texte"] = (contenu_dominicain["pericope"]["texte"] == "") ? contenu_aelf["pericope"]["texte"] : contenu_dominicain["pericope"]["texte"];
 
-  contenu_final["repons"] = (contenu_franciscain["repons"] == "") ? contenu_aelf["repons"] : contenu_franciscain["repons"];
+  contenu_final["repons"] = (contenu_dominicain["repons"] == "") ? contenu_aelf["repons"] : contenu_dominicain["repons"];
 
-  contenu_final["oraison"] = (contenu_franciscain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_franciscain["oraison"];
+  contenu_final["oraison"] = (contenu_dominicain["oraison"] == "") ? contenu_aelf["oraison"] : contenu_dominicain["oraison"];
 
-  //contenu_final["benediction"] = (contenu_franciscain["benediction"] == "") ? (contenu_aelf["benediction"] == undefined ? "" : contenu_aelf["benediction"]) : contenu_franciscain["benediction"];
+  //contenu_final["benediction"] = (contenu_dominicain["benediction"] == "") ? (contenu_aelf["benediction"] == undefined ? "" : contenu_aelf["benediction"]) : contenu_dominicain["benediction"];
 
   return contenu_final;
 }
@@ -556,7 +556,7 @@ function create_lectures_html(contenu, infos, date_obj, hymne, selection, hymne_
 
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
 
-  if (infos["franciscain"]) {
+  if (infos["dominicain"]) {
     sommaire = sommaire.concat("<li><a id='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
   }
 
@@ -631,7 +631,7 @@ function create_laudes_html(contenu, infos, date_obj, hymne, invitatoire, select
 
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
 
-  if (infos["franciscain"]) {
+  if (infos["dominicain"]) {
     sommaire = sommaire.concat("<li><a id='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
   }
 
@@ -715,7 +715,7 @@ function create_vepres_html(contenu, infos, date_obj, hymne, selection, hymne_se
 
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
 
-  if (infos["franciscain"]) {
+  if (infos["dominicain"]) {
     sommaire = sommaire.concat("<li><a id='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
   }
 
@@ -819,7 +819,7 @@ function create_petite_heure_html(contenu, infos, date_obj, hymne){
 
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
 
-  if (infos["franciscain"]) {
+  if (infos["dominicain"]) {
     sommaire = sommaire.concat("<li><a id='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
   }
 
@@ -869,7 +869,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
 
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
 
-  if (infos["franciscain"]) {
+  if (infos["dominicain"]) {
     sommaire = sommaire.concat("<li><a class='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
   }
 
@@ -1135,7 +1135,7 @@ function titre_psaume(aelf_reference){
 
 var vepres_aelf = {"introduction":"\u003Cp\u003EV\/ Dieu, viens \u00e0 mon aide,\n        \u003Cbr \/\u003ER\/ Seigneur, \u00e0 notre secours.\u003C\/p\u003E\n        \u003Cp\u003EGloire au P\u00e8re, et au Fils et au Saint-Esprit,\n        \u003Cbr\/\u003Eau Dieu qui est, qui \u00e9tait et qui vient,\n        \u003Cbr\/\u003Epour les si\u00e8cles des si\u00e8cles.\n        \u003Cbr\/\u003EAmen. (All\u00e9luia.)\u003C\/p\u003E","hymne":{"auteur":"CFC","editeur":"CNPL","titre":"Pleine de gr\u00e2ce, r\u00e9jouis-toi\u00a0!","texte":"Pleine de gr\u00e2ce, r\u00e9jouis-toi\u00a0!\u003Cbr\u003EL\u2019Emmanuel a trouv\u00e9 place\u003Cbr\u003EDans ta demeure illumin\u00e9e.\u003Cbr\u003EPar toi, la gloire a rayonn\u00e9\u003Cbr\u003EPour le salut de notre race. \u003Cbr\u003E\u003Cbr\u003EArche d\u2019alliance, r\u00e9jouis-toi\u00a0!\u003Cbr\u003ESur toi repose la pr\u00e9sence\u003Cbr\u003EDu Dieu cach\u00e9 dans la nu\u00e9e.\u003Cbr\u003EPar toi, la route est \u00e9clair\u00e9e\u003Cbr\u003EDans le d\u00e9sert o\u00f9 l\u2019homme avance. \u003Cbr\u003E\u003Cbr\u003EVierge fid\u00e8le, r\u00e9jouis-toi\u00a0!\u003Cbr\u003EDans la t\u00e9n\u00e8bre o\u00f9 Dieu t\u2019appelle,\u003Cbr\u003ETu fais briller si haut ta foi\u003Cbr\u003EQue tu refl\u00e8tes sur nos croix\u003Cbr\u003ELa paix du Christ et sa lumi\u00e8re. \u003Cbr\u003E\u003Cbr\u003EReine des anges, r\u00e9jouis-toi\u00a0!\u003Cbr\u003ED\u00e9j\u00e0 l\u2019\u00c9glise en toi contemple\u003Cbr\u003ELa cr\u00e9ation transfigur\u00e9e\u003Cbr\u003EFais-nous la joie de partager\u003Cbr\u003EL\u2019exultation de ta louange.\u003Cbr\u003E"},"antienne_1":"\u003Cp\u003ELa Vierge Marie est \u00e9lev\u00e9e au ciel ; tous les anges b\u00e9nissent le Seigneur.\u003C\/p\u003E","psaume_1":{"reference":"121","texte":"\u003Cp\u003E\u003Cspan class=\u0022verse_number\u0022\u003E1\u003C\/span\u003E Quelle j\u003Cu\u003Eo\u003C\/u\u003Eie quand on m\u2019a dit\u00a0:\u003Cbr \/\u003E\n\u00ab\u00a0Nous irons \u00e0 la mais\u003Cu\u003Eo\u003C\/u\u003En du Seigneur\u00a0!\u00a0\u00bb\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E2\u003C\/span\u003E Maintenant notre m\u003Cu\u003Ea\u003C\/u\u003Erche prend fin\u003Cbr \/\u003E\ndevant tes p\u003Cu\u003Eo\u003C\/u\u003Ertes, J\u00e9rusalem\u00a0!\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E3\u003C\/span\u003E J\u00e9rusalem, te voic\u003Cu\u003Ei\u003C\/u\u003E dans tes murs\u00a0:\u003Cbr \/\u003E\nville o\u00f9 tout ens\u003Cu\u003Ee\u003C\/u\u003Emble ne fait qu\u2019un\u00a0!\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E4\u003C\/span\u003E C\u2019est l\u00e0 que montent les tribus,\u003Cbr \/\u003E\n\u00a0\u00a0 les trib\u003Cu\u003Eu\u003C\/u\u003Es du Seigneur, *\u003Cbr \/\u003E\nl\u00e0 qu\u2019Isra\u00ebl doit rendre gr\u00e2ce\u003Cbr \/\u003E\n\u00a0\u00a0 au n\u003Cu\u003Eo\u003C\/u\u003Em du Seigneur.\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E5\u003C\/span\u003E C\u2019est l\u00e0 le si\u003Cu\u003E\u00e8\u003C\/u\u003Ege du droit, *\u003Cbr \/\u003E\nle si\u00e8ge de la mais\u003Cu\u003Eo\u003C\/u\u003En de David.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E6\u003C\/span\u003E Appelez le bonhe\u003Cu\u003Eu\u003C\/u\u003Er sur J\u00e9rusalem\u00a0:\u003Cbr \/\u003E\n\u00ab\u00a0P\u003Cu\u003Ea\u003C\/u\u003Eix \u00e0 ceux qui t\u2019aiment\u00a0!\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E7\u003C\/span\u003E Que la paix r\u003Cu\u003E\u00e8\u003C\/u\u003Egne dans tes murs,\u003Cbr \/\u003E\nle bonhe\u003Cu\u003Eu\u003C\/u\u003Er dans tes palais\u00a0!\u00a0\u00bb\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E8\u003C\/span\u003E \u00c0 cause de mes fr\u003Cu\u003E\u00e8\u003C\/u\u003Eres et de mes proches,\u003Cbr \/\u003E\nje dirai\u00a0:\u00a0\u00ab\u00a0P\u003Cu\u003Ea\u003C\/u\u003Eix sur toi\u00a0!\u00a0\u00bb\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E9\u003C\/span\u003E \u00c0 cause de la maison du Seigne\u003Cu\u003Eu\u003C\/u\u003Er notre Dieu,\u003Cbr \/\u003E\nje d\u00e9s\u003Cu\u003Ei\u003C\/u\u003Ere ton bien.\u003C\/p\u003E"},"antienne_2":"\u003Cp\u003EElle resplendit de la gloire de Dieu, elle a l\u0027\u00e9clat d\u0027une pierre pr\u00e9cieuse.\u003C\/p\u003E","psaume_2":{"reference":"126","texte":"\u003Cspan class=\u0022verse_number\u0022\u003E1\u003C\/span\u003E Si le Seigneur ne b\u00e2t\u003Cu\u003Ei\u003C\/u\u003Et la maison,\u003Cbr\u003Eles b\u00e2tisseurs trav\u003Cu\u003Ea\u003C\/u\u003Eillent en vain\u00a0; *\u003Cbr\u003Esi le Seigneur ne g\u003Cu\u003Ea\u003C\/u\u003Erde la ville,\u003Cbr\u003Ec\u2019est en vain que v\u003Cu\u003Ee\u003C\/u\u003Eillent les gardes.\u003Cbr\u003E\u003Cbr\u003E\u003Cspan class=\u0022verse_number\u0022\u003E2\u003C\/span\u003E En vain tu dev\u003Cu\u003Ea\u003C\/u\u003Ences le jour,\u003Cbr\u003Etu retardes le mom\u003Cu\u003Ee\u003C\/u\u003Ent de ton repos, +\u003Cbr\u003Etu manges un p\u003Cu\u003Ea\u003C\/u\u003Ein de douleur\u00a0: *\u003Cbr\u003EDieu comble son bien-aim\u003Cu\u003E\u00e9\u003C\/u\u003E quand il dort.\u003Cbr\u003E\u003Cbr\u003E\u003Cspan class=\u0022verse_number\u0022\u003E3\u003C\/span\u003E Des fils, voil\u00e0 ce que d\u003Cu\u003Eo\u003C\/u\u003Enne le Seigneur,\u003Cbr\u003Edes enfants, la r\u00e9comp\u003Cu\u003Ee\u003C\/u\u003Ense qu\u2019il accorde\u00a0; *\u003Cbr\u003E\u003Cspan class=\u0022verse_number\u0022\u003E4\u003C\/span\u003E comme des fl\u00e8ches aux m\u003Cu\u003Ea\u003C\/u\u003Eins d\u2019un guerrier,\u003Cbr\u003Eainsi les f\u003Cu\u003Ei\u003C\/u\u003Els de la jeunesse.\u003Cbr\u003E\u003Cbr\u003E\u003Cspan class=\u0022verse_number\u0022\u003E5\u003C\/span\u003E Heureux l\u2019h\u003Cu\u003Eo\u003C\/u\u003Emme vaillant\u003Cbr\u003Equi a garni son carqu\u003Cu\u003Eo\u003C\/u\u003Eis de telles armes\u00a0! *\u003Cbr\u003ES\u2019ils affrontent leurs ennem\u003Cu\u003Ei\u003C\/u\u003Es sur la place,\u003Cbr\u003Eils ne seront p\u003Cu\u003Ea\u003C\/u\u003Es humili\u00e9s.\u003Cbr\u003E"},"antienne_3":"\u003Cp\u003ETu es b\u00e9nie du Seigneur, toi qui nous as donn\u00e9 le fruit de la vie.\u003C\/p\u003E","psaume_3":{"reference":"CANTIQUE (Ep 1).","texte":"\u003Cp\u003E\u003Cspan class=\u0022verse_number\u0022\u003E3\u003C\/span\u003E Qu\u0027il soit b\u00e9ni, le Die\u003Cu\u003Eu\u003C\/u\u003E et P\u00e8re\u003Cbr \/\u003E\nde notre Seigneur, J\u00e9s\u003Cu\u003Eu\u003C\/u\u003Es, le Christ !\u003Cbr \/\u003E\u003Cbr \/\u003E\nIl nous a b\u00e9nis et combl\u00e9s\u003Cbr \/\u003E\n\u00a0\u00a0 des b\u00e9n\u00e9dicti\u003Cu\u003Eo\u003C\/u\u003Ens de l\u0027Esprit, *\u003Cbr \/\u003E\nau ci\u003Cu\u003Ee\u003C\/u\u003El, dans le Christ.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E4\u003C\/span\u003E Il nous a choisis, dans le Christ,\u003Cbr \/\u003E\n\u00a0\u00a0 avant que le m\u003Cu\u003Eo\u003C\/u\u003Ende f\u00fbt cr\u00e9\u00e9, *\u003Cbr \/\u003E\npour \u00eatre saints et sans p\u00e9ch\u00e9s devant sa face\u003Cbr \/\u003E\n\u00a0\u00a0 gr\u003Cu\u003E\u00e2\u003C\/u\u003Ece \u00e0 son amour.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E5\u003C\/span\u003E Il nous a pr\u00e9destin\u00e9s\u003Cbr \/\u003E\n\u00a0\u00a0 \u00e0 \u00eatre, pour lui, des f\u003Cu\u003Ei\u003C\/u\u003Els adoptifs *\u003Cbr \/\u003E\npar J\u00e9s\u003Cu\u003Eu\u003C\/u\u003Es, le Christ.\u003Cbr \/\u003E\u003Cbr \/\u003E\nAinsi l\u0027a voulu sa bont\u00e9,\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E6\u003C\/span\u003E\u00a0 \u00e0 la louange de gl\u003Cu\u003Eo\u003C\/u\u003Eire de sa gr\u00e2ce, *\u003Cbr \/\u003E\nla gr\u00e2ce qu\u0027il nous a faite\u003Cbr \/\u003E\n\u00a0\u00a0 dans le F\u003Cu\u003Ei\u003C\/u\u003Els bien-aim\u00e9.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E7\u003C\/span\u003E En lu\u003Cu\u003Ei\u003C\/u\u003E, par son sang, *\u003Cbr \/\u003E\nnous avons le rachat,\u003Cbr \/\u003E\n\u00a0\u00a0 le pard\u003Cu\u003Eo\u003C\/u\u003En des p\u00e9ch\u00e9s.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E8\u003C\/span\u003E C\u0027est la richesse de sa gr\u00e2ce\u003Cbr \/\u003E\n\u00a0\u00a0 dont il d\u00e9b\u003Cu\u003Eo\u003C\/u\u003Erde jusqu\u0027\u00e0 nous *\u003Cbr \/\u003E\nen toute intellig\u003Cu\u003Ee\u003C\/u\u003Ence et sagesse.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E9\u003C\/span\u003E Il nous d\u00e9voile ainsi le myst\u003Cu\u003E\u00e8\u003C\/u\u003Ere de sa volont\u00e9, *\u003Cbr \/\u003E\nselon que sa bont\u00e9 l\u0027avait pr\u00e9v\u003Cu\u003Eu\u003C\/u\u003E dans le Christ :\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E10\u003C\/span\u003E pour mener les temps \u00e0 leur pl\u00e9nitude, +\u003Cbr \/\u003E\nr\u00e9capituler toutes ch\u003Cu\u003Eo\u003C\/u\u003Eses dans le Christ, *\u003Cbr \/\u003E\ncelles du ciel et c\u003Cu\u003Ee\u003C\/u\u003Elles de la terre.\u003C\/p\u003E"},"pericope":{"reference":"1 Co 15, 22-23","texte":"C\u2019est en Adam que meurent tous les hommes\u00a0; c\u2019est dans le Christ que tous revivront, mais chacun \u00e0 son rang\u00a0: en premier, le Christ\u00a0; et ensuite ceux qui seront au Christ."},"repons":"\u003Cp\u003ER\/ R\u00e9jouis-toi, Vierge Marie,\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003E* Dans la gloire du ciel.\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EV\/ Heureuse es-tu, M\u00e8re de Dieu :\u003Cbr \/\u003E\nen toi le Tout-Puissant a fait des merveilles.\u00a0*\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EV\/ Heureuse es-tu, M\u00e8re de l\u0027\u00c9glise :\u003Cbr \/\u003E\ntu brilles comme un signe d\u0027esp\u00e9rance.\u00a0*\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EV\/ Heureuse es-tu, M\u00e8re des hommes :\u003Cbr \/\u003E\ntu leur annonces le Royaume \u00e0 venir. * R\/\u003C\/p\u003E","antienne_magnificat":"\u003Cp\u003EAujourd\u0027hui, la Vierge Marie est mont\u00e9e au ciel. Soyez dans l\u0027all\u00e9gresse : avec le Christ elle r\u00e8gne \u00e0 jamais.\u003C\/p\u003E","cantique_mariale":{"reference":"Lc 1","titre":"Cantique de Marie","texte":"\u003Cp\u003E\u003Cspan class=\u0022verse_number\u0022\u003E47\u003C\/span\u003E Mon \u00e2me ex\u003Cu\u003Ea\u003C\/u\u003Elte le Seigneur,\u003Cbr \/\u003E\nexulte mon esprit en Die\u003Cu\u003Eu\u003C\/u\u003E, mon Sauveur !\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E48\u003C\/span\u003E Il s\u0027est pench\u00e9 sur son h\u003Cu\u003Eu\u003C\/u\u003Emble servante ;\u003Cbr \/\u003E\nd\u00e9sormais, tous les \u00e2ges me dir\u003Cu\u003Eo\u003C\/u\u003Ent bienheureuse.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E49\u003C\/span\u003E Le Puissant fit pour m\u003Cu\u003Eo\u003C\/u\u003Ei des merveilles ;\u003Cbr \/\u003E\nS\u003Cu\u003Ea\u003C\/u\u003Eint est son nom !\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E50\u003C\/span\u003E Son amour s\u0027\u00e9t\u003Cu\u003Ee\u003C\/u\u003End d\u0027\u00e2ge en \u00e2ge\u003Cbr \/\u003E\nsur ce\u003Cu\u003Eu\u003C\/u\u003Ex qui le craignent ;\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E51\u003C\/span\u003E D\u00e9ployant la f\u003Cu\u003Eo\u003C\/u\u003Erce de son bras,\u003Cbr \/\u003E\nil disp\u003Cu\u003Ee\u003C\/u\u003Erse les superbes.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E52\u003C\/span\u003E Il renverse les puiss\u003Cu\u003Ea\u003C\/u\u003Ents de leurs tr\u00f4nes,\u003Cbr \/\u003E\nil \u00e9l\u003Cu\u003E\u00e8\u003C\/u\u003Eve les humbles.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E53\u003C\/span\u003E Il comble de bi\u003Cu\u003Ee\u003C\/u\u003Ens les affam\u00e9s,\u003Cbr \/\u003E\nrenvoie les r\u003Cu\u003Ei\u003C\/u\u003Eches les mains vides.\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E54\u003C\/span\u003E Il rel\u00e8ve Isra\u003Cu\u003E\u00eb\u003C\/u\u003El, son serviteur,\u003Cbr \/\u003E\nil se souvi\u003Cu\u003Ee\u003C\/u\u003Ent de son amour,\u003Cbr \/\u003E\u003Cbr \/\u003E\u003Cspan class=\u0022verse_number\u0022\u003E55\u003C\/span\u003E de la promesse f\u003Cu\u003Ea\u003C\/u\u003Eite \u00e0 nos p\u00e8res,\u003Cbr \/\u003E\nen faveur d\u0027Abraham et de sa r\u003Cu\u003Ea\u003C\/u\u003Ece, \u00e0 jamais.\u003C\/p\u003E"},"intercession":"\u003Cp\u003EB\u00e9nissons notre Dieu : il a voulu que toutes les g\u00e9n\u00e9rations proclament bienheureuse la M\u00e8re de son Fils.\u003C\/p\u003E\u003Cbr \/\u003ER\/ \u003Cp\u003EB\u00e9ni sois-tu Seigneur !\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EPour ton humble servante, attentive \u00e0 ta parole,\u003Cbr \/\u003E\nmod\u00e8le du c\u0153ur qui \u00e9coute,\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EPour celle qui a mis ton Fils au monde,\u003Cbr \/\u003E\nla m\u00e8re de l\u0027Homme nouveau,\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EPour celle qui a veill\u00e9 sur la croissance de J\u00e9sus,\u003Cbr \/\u003E\npr\u00e9sence maternelle dans l\u0027\u00c9glise,\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EPour celle qui s\u0027est tenue debout au pied de la croix,\u003Cbr \/\u003E\nforce des accabl\u00e9s,\u003C\/p\u003E\u003Cbr \/\u003E\u003Cp\u003EPour celle que tu as remplie de joie au matin de P\u00e2ques,\u003Cbr \/\u003E\nesp\u00e9rance des vivants,\u003Cbr \/\u003E\u003Cbr \/\u003E\nPour celle que tu as fait monter au ciel, pr\u00e8s de ton Fils,\u003Cbr \/\u003E\nsecours des mourants,\u003C\/p\u003E","notre_pere":"Notre P\u00e8re","oraison":"\u003Cp\u003EDieu \u00e9ternel et tout-puissant, tu as fait monter jusqu\u0027\u00e0 la gloire du ciel, avec son \u00e2me et son corps, Marie, la Vierge immacul\u00e9e, m\u00e8re de ton Fils : fais que nous demeurions attentifs aux choses d\u0027en haut pour obtenir de partager sa gloire.\u003C\/p\u003E"};
 
-var vepres_franciscaines = {"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_1":{"reference":"","titre":"","texte":""},"antienne_2":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_2":{"reference":"","titre":"","texte":""},"antienne_3":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_3":{"reference":"","titre":"","texte":""},"pericope":{"reference":"","texte":""},"repons":"","antienne_marie":{"antienne_A":"Je considère tout comme une perte à cause de ce bien qui dépasse tout : la connaissance du Christ Jésus, mon Seigneur.","antienne_B":""},"intercession":{"introduction":"","refrain":"","texte":""},"oraison":"Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.","benediction":""};
+var vepres_dominicaines = {"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_1":{"reference":"","titre":"","texte":""},"antienne_2":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_2":{"reference":"","titre":"","texte":""},"antienne_3":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_3":{"reference":"","titre":"","texte":""},"pericope":{"reference":"","texte":""},"repons":"","antienne_marie":{"antienne_A":"Je considère tout comme une perte à cause de ce bien qui dépasse tout : la connaissance du Christ Jésus, mon Seigneur.","antienne_B":""},"intercession":{"introduction":"","refrain":"","texte":""},"oraison":"Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.","benediction":""};
 
 var messeTest = {
   "nom": "Messe du jour",
