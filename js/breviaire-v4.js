@@ -1,6 +1,6 @@
 
 var lectures_base = {
-  "introduction": "<i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n <p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
+  "introduction": "<p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
   "hymne": {
     "titre": "",
     "texte": "",
@@ -61,7 +61,7 @@ var laudes_base = {
     "antienne_A": "",
     "antienne_B": "",
   },
-  "introduction": "<i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n <p>V/ Seigneur, ouvre mes lèvres,\n <br />R/ et ma bouche publiera ta louange.</p>",
+  "introduction": "<p>V/ Seigneur, ouvre mes lèvres,\n <br />R/ et ma bouche publiera ta louange.</p>",
   "hymne": {
     "titre": "",
     "texte": "",
@@ -115,7 +115,7 @@ var laudes_base = {
 };
 
 var petite_heures_base = {
-  "introduction": "<i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n <p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
+  "introduction": "<p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
   "hymne": {
     "titre": "",
     "texte": "",
@@ -161,7 +161,7 @@ var petite_heures_base = {
 
 
 var vepres_base = {
-  "introduction": "<i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n <p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
+  "introduction": "<p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
   "hymne": {
     "titre": "",
     "texte": "",
@@ -215,7 +215,7 @@ var vepres_base = {
 };
 
 var complies_base = {
-  "introduction": "<i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n <p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
+  "introduction": "<p>V/ Dieu, viens à mon aide,\n        <br />R/ Seigneur, à notre secours.</p>\n        <p>Gloire au Père, et au Fils et au Saint-Esprit,\n        au Dieu qui est, qui était et qui vient,\n        pour les siècles des siècles.\n        Amen. (Alléluia.)</p>",
   "hymne": {
     "titre": "",
     "texte": "",
