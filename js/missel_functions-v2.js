@@ -86,7 +86,7 @@ var missel = {
         var new_date = date_string;
         var index = 1;
 
-        offices.push({"ligne1": missel[new_date]["titre"], "ligne2": (missel[new_date]["sous_titre"] != "" ? missel[new_date]["sous_titre"] + " - " : "") + missel[new_date]["rang"], "ligne3": "Office Franciscain",  "zone": "franciscain;0", "rang": "haut"});
+        offices.push({"ligne1": missel[new_date]["titre"], "ligne2": (missel[new_date]["sous_titre"] != "" ? missel[new_date]["sous_titre"] + " - " : "") + missel[new_date]["rang"], "ligne3": "Office dominicain",  "zone": "dominicain;0", "rang": "haut"});
 
         return offices;
       }
