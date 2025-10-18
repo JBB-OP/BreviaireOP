@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
   var date = new Date();
-  $('#date').val(date.toDateInputValue());
+  $('#date').val(date.toDateInputValue());//en fonction de l'heure, l'office s'affiche.
   $('#dateMob').val(date.toDateInputValue());
   if (date.getHours() < 10){
     $('#office').val("laudes");
