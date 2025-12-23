@@ -888,8 +888,9 @@ function create_complies_html(contenu, infos, date_obj, hymne){
 
 
 
-  texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Antienne: </h2>");
-  texte_final = texte_final.concat("<i>" + contenu["antienne_1"] + "</i>");
+  // Antiennes des psaumes commentées pour les complies
+  // texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Antienne: </h2>");
+  // texte_final = texte_final.concat("<i>" + contenu["antienne_1"] + "</i>");
 
   texte_final = texte_final.concat("<h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
   texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
@@ -898,10 +899,11 @@ function create_complies_html(contenu, infos, date_obj, hymne){
 
   if (contenu["psaume_2"].length != 0) {
 
-    if (contenu["antienne_2"] != "") {
-      texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2>Antienne: </h2>");
-      texte_final = texte_final.concat("<i>" + contenu["antienne_2"] + "</i>");
-    }
+    // Antienne du deuxième psaume commentée
+    // if (contenu["antienne_2"] != "") {
+    //   texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2>Antienne: </h2>");
+    //   texte_final = texte_final.concat("<i>" + contenu["antienne_2"] + "</i>");
+    // }
 
     texte_final = texte_final.concat("<h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
     texte_final = texte_final.concat(contenu["psaume_2"]['texte'] + "</div>");
