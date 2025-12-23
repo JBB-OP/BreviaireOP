@@ -936,6 +936,11 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   texte_final = texte_final.concat(contenu["hymne_mariale"]["texte"] + "</div><br/>");
   sommaire = sommaire.concat("<li><a href='#hymne_mariale'>" + contenu["hymne_mariale"]["titre"] + "</a></li>");
 
+  // Antienne à saint Dominique
+  texte_final = texte_final.concat("<div class='text_part' id='antienne_dominique'><h2>Antienne à saint Dominique</h2>");
+  texte_final = texte_final.concat("<p>O lumen Ecclesiae, Doctor veritatis,<br />Rosa patientiae, Ebur castitatis.<br />Aquam sapientiae propinasti gratis.<br />Praedicator gratiae, nos iunge beatis.<br />Amen. (Alléluia).</p></div>");
+  sommaire = sommaire.concat("<li><a href='#antienne_dominique'>Antienne à saint Dominique</a></li>");
+
   sommaire = sommaire.concat("</ul></div>");
   texte_final = add_symbol_span(texte_final);
 
