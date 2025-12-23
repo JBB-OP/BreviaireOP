@@ -916,8 +916,9 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   texte_final = texte_final.concat("<div class='text_part' id='pericope'><h2>Parole de Dieu (" + contenu['pericope']['reference'] + ")</h2>");
   texte_final = texte_final.concat(contenu['pericope']['texte']);
 
-  texte_final = texte_final.concat("<h2>Répons: </h2>");
-  texte_final = texte_final.concat(contenu['repons']+ "</div>");
+  texte_final = texte_final.concat("<h2>Répons </h2>");
+    // Répons fixe pour les complies
+  texte_final = texte_final.concat("<p>R/ En tes mains, Seigneur, je remets mon esprit.<br />V/ C'est toi qui nous rachète, Seigneur, Dieu de Vérité. R/<br />Gloire au Père et au Fils et au Saint-Esprit. R/</p>");
   sommaire = sommaire.concat("<li><a href='#pericope'>Péricope</a></li>");
 
   texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2>Antienne: </h2>");
