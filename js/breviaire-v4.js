@@ -926,19 +926,21 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   sommaire = sommaire.concat("<li><a href='#cantique_symeon'>Cantique de Syméon</a></li>");
 
 
-  texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison: </h2>");
-  texte_final = texte_final.concat(contenu['oraison']);
+  // Oraison fixe pour les complies
+  texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison </h2>");
+  texte_final = texte_final.concat("<p><i>Prions.</i> Visite cette maison, Seigneur, et repousse loin delle toutes les embûches de l’ennemi ; que tes saints anges viennent l’habiter pour nous garder dans la paix et que ta bénédiction demeure sur nous à jamais. Par le Christ, notre Seigneur.<br /> R/ Amen.</p>");
   texte_final = texte_final.concat("<h2>Benediction: </h2>");
   texte_final = texte_final.concat(contenu['benediction'] + "</div>");
   sommaire = sommaire.concat("<li><a href='#oraison'>Oraison</a></li>");
 
-  texte_final = texte_final.concat("<div class='text_part' id='hymne_mariale'><h2>Hymne mariale: " + contenu["hymne_mariale"]["titre"] + " </h2>");
-  texte_final = texte_final.concat(contenu["hymne_mariale"]["texte"] + "</div><br/>");
-  sommaire = sommaire.concat("<li><a href='#hymne_mariale'>" + contenu["hymne_mariale"]["titre"] + "</a></li>");
+  // Hymne mariale - toujours Salve Regina pour les complies
+  texte_final = texte_final.concat("<div class='text_part' id='hymne_mariale'><h2>Salve Regina</h2>");
+  texte_final = texte_final.concat("<p>Salve, Regina, Mater misericordiæ,<br />vita, dulcedo, et spes nostra, salve.<br />Ad te clamamus exsules filii Hevæ.<br />Ad te suspiramus, gementes et flentes<br />in hac lacrimarum valle.<br /><br />Eia, ergo, advocata nostra,<br />illos tuos misericordes oculos ad nos converte.<br />Et Iesum, benedictum fructum ventris tui,<br />nobis post hoc exsilium ostende.<br /><br />O clemens, O pia,<br />O dulcis Virgo Maria. (T.P. Alleluia)</p></div><br/>");
+  sommaire = sommaire.concat("<li><a href='#hymne_mariale'>Salve Regina</a></li>");
 
   // Antienne à saint Dominique
   texte_final = texte_final.concat("<div class='text_part' id='antienne_dominique'><h2>Antienne à saint Dominique</h2>");
-  texte_final = texte_final.concat("<p>O lumen Ecclesiae, Doctor veritatis,<br />Rosa patientiae, Ebur castitatis.<br />Aquam sapientiae propinasti gratis.<br />Praedicator gratiae, nos iunge beatis.<br />Amen. (Alléluia).</p></div>");
+  texte_final = texte_final.concat("<p>O lumen Ecclesiae, Doctor veritatis,<br />Rosa patientiae, Ebur castitatis.<br />Aquam sapientiae propinasti gratis.<br />Praedicator gratiae, nos iunge beatis.<br />Amen. (T.P. Alleluia).</p></div>");
   sommaire = sommaire.concat("<li><a href='#antienne_dominique'>Antienne à saint Dominique</a></li>");
 
   sommaire = sommaire.concat("</ul></div>");
