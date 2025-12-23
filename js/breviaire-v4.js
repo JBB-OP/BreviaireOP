@@ -892,7 +892,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   // texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Antienne: </h2>");
   // texte_final = texte_final.concat("<i>" + contenu["antienne_1"] + "</i>");
 
-  texte_final = texte_final.concat("<h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+  texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
   texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
   sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
 
@@ -905,7 +905,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
     //   texte_final = texte_final.concat("<i>" + contenu["antienne_2"] + "</i>");
     // }
 
-    texte_final = texte_final.concat("<h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
+    texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
     texte_final = texte_final.concat(contenu["psaume_2"]['texte'] + "</div>");
     sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
   }
