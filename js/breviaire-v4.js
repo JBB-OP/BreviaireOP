@@ -877,6 +877,11 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   texte_final = texte_final.concat('<div class="text_part" id="introduction"><i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n'+ contenu["introduction"] + "</div>");
   sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
 
+  // Acte pénitentiel
+  texte_final = texte_final.concat("<div class='text_part' id='acte_penitentiel'><h2>Acte pénitentiel</h2>");
+  texte_final = texte_final.concat("<p><i>Bref examen de conscience à genoux.</i><br /> Je confesse à Dieu tout-puissant,<br /> à la bienheureuse Marie toujours vierge,<br /> à notre Père saint Dominique<br /> à tous les saints et à vous, mes frères,<br /> que j’ai beaucoup péché<br /> par pensée, par parole, par action et par omission.<br /> C’ est ma faute. Je vous demande de prier pour moi.<br /><br /> <i>Le prieur ou l’hebdomadier :</i><br /> Que Dieu tout-puissant nous fasse miséricorde,<br /> qu’il nous pardonne nos péchés, nous délivre de tout mal,<br /> qu’il nous garde et nous affermisse dans le bien<br /> et qu’il nous conduise à la vie éternelle.<br /> R/ Amen.</p></div>");
+  sommaire = sommaire.concat("<li><a href='#acte_penitentiel'>Acte pénitentiel</a></li>");
+
   if (hymne) {
     texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne : " + contenu["hymne"]["titre"] + " </h2>");
     texte_final = texte_final.concat(contenu["hymne"]["texte"] + "</div>");
