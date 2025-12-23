@@ -878,7 +878,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
 
   if (hymne) {
-    texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne: " + contenu["hymne"]["titre"] + " </h2>");
+    texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne : " + contenu["hymne"]["titre"] + " </h2>");
     texte_final = texte_final.concat(contenu["hymne"]["texte"] + "</div>");
 
   } else {
@@ -921,7 +921,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   texte_final = texte_final.concat("<p>R/ En tes mains, Seigneur, je remets mon esprit.<br />V/ C'est toi qui nous rachète, Seigneur, Dieu de Vérité. R/<br />Gloire au Père et au Fils et au Saint-Esprit. R/</p>");
   sommaire = sommaire.concat("<li><a href='#pericope'>Péricope</a></li>");
 
-  texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2>Antienne: </h2>");
+  texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2>Antienne : </h2>");
   texte_final = texte_final.concat("<i>" + contenu["antienne_symeon"] + "</i>");
 
   texte_final = texte_final.concat("<h2> " + contenu["cantique_symeon"]['titre'] + "</h2>");
@@ -932,7 +932,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   // Oraison fixe pour les complies
   texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison </h2>");
   texte_final = texte_final.concat("<p><i>Prions.</i> Visite cette maison, Seigneur, et repousse loin delle toutes les embûches de l’ennemi ; que tes saints anges viennent l’habiter pour nous garder dans la paix et que ta bénédiction demeure sur nous à jamais. Par le Christ, notre Seigneur.<br /> R/ Amen.</p>");
-  texte_final = texte_final.concat("<h2>Benediction: </h2>");
+  texte_final = texte_final.concat("<h2>Benediction </h2>");
   texte_final = texte_final.concat(contenu['benediction'] + "</div>");
   sommaire = sommaire.concat("<li><a href='#oraison'>Oraison</a></li>");
 
