@@ -1026,6 +1026,188 @@ texte_final = texte_final.concat("</div>");
   update_office_class(office);
 }
 
+function update_office_regleaugustin(){
+  var texte_final = '<div class="office_text" id="office_text">';
+  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
+  var titre = '<div class="office_titre" id="office_titre">';
+  titre = titre.concat("<h1>Règle de saint Augustin</h1></div>")
+ 
+  texte_final = texte_final.concat("<div class='text_part' id='augustin1' style='margin-top: 0px;'>");
+  sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
+  sommaire = sommaire.concat("<li><a href='#augustin1'>Chapitre 1</a></li>");
+
+// texte_final = texte_final.concat("<div class='text_part' id='regle_saint_augustin_introduction'>");
+// sommaire = sommaire.concat("<li><a href='#regle_saint_augustin_introduction'>Introduction</a></li>");
+
+texte_final = texte_final.concat("<h2>Règle de saint Augustin</h2>");
+texte_final = texte_final.concat("<i>Commencement de la Règle du bienheureux Augustin, évêque.</i>");
+
+texte_final = texte_final.concat("</div>");
+
+// texte_final = texte_final.concat("<div class='text_part' id='augustin1'>");
+// sommaire = sommaire.concat("<li><a href='#augustin1'>Chapitre 1</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 1</h2>");
+texte_final = texte_final.concat("<p>1. Avant tout, frères très chers, aimons Dieu, aimons le prochain : ce sont les commandements qui nous sont donnés en premier<sup>[2]</sup>. Et voici les prescriptions sur votre manière de vivre dans le monastère.</p>");
+texte_final = texte_final.concat("<p>Tout d’abord, pourquoi êtes-vous réunis<sup>[3]</sup> sinon pour habiter ensemble dans l’unanimité<sup>[4]</sup>, ne faisant <i>qu’un cœur et qu’une âme</i><sup>[5]</sup> en Dieu. Ne dîtes pas « ceci m’appartient » ; mais que, pour vous, tout soit en commun<sup>[6]</sup>. Que votre supérieur distribue à chacun<sup>[7]</sup> <i>le vivre et le couv</i>rt</i><sup>[8]</sup> non pas selon un principe d’égalité – ni vos forces, ni vos santés ne sont égales – mais bien plutôt selon les besoins de chacun<sup>[9]</sup>. Lisez en effet les Actes des Apôtres : <i>Pour eux tout était en commun et l’on distribuait à chacun selon son besoin</i><sup>[10]</sup>.</p>");
+texte_final = texte_final.concat("<p>Ceux qui possédaient quelque chose quand ils sont entrés au monastère doivent accepter volontiers que tout cela soit désormais commun. Ceux qui n’avaient rien n’ont pas à chercher dans le monastère ce qu’au dehors ils n’avaient pu posséder. Qu’on leur donne toutefois ce que requiert leur mauvaise santé, même si auparavant leur pauvreté les empêchait de se procurer le nécessaire. Mais alors qu’ils ne se félicitent pas d’avoir trouvé vivre et couvert<sup>[11]</sup> qu’ils n’auraient pu trouver tels au dehors !</p>");
+texte_final = texte_final.concat("<p>Qu’ils n’aillent pas orgueilleusement, tête haute<sup>[12]</sup>, parce qu’ils ont désormais pour compagnons des gens qu’auparavant ils n’auraient pas osé approcher : que leur cœur plutôt s’élève<sup>[13]</sup>, sans chercher les vanités de la terre<sup>[14]</sup>. Les monastères n’auraient d’utilité que pour les riches et non pour les pauvres, s’ils devenaient lieu d’humble abaissement pour les premiers, d’enflure pour les autres<sup>[15]</sup>.</p>");
+texte_final = texte_final.concat("<p>De leur côté ceux qui étaient antérieurement des gens considérés<sup>[16]</sup> ne seront pas dédaigneux à l’égard de leurs frères venus de la pauvreté dans cette société sainte. S’ils cherchent à se glorifier, que ce ne soit pas de la richesse et du prestige de leur parenté, mais bien plutôt d’habiter en compagnie de frères pauvres. Qu’ils ne se vantent pas d’avoir tant soit peu contribué de leur fortune<sup>[17]</sup> à la vie commune ; avoir distribué leurs richesses dans le monastère ne devrait pas leur causer plus d’orgueil que d’en vivre dans le monde. Tout autre vice se déploie en faisant faire le mal ; mais l’orgueil, lui, s’attaque même au bien que l’on fait, pour le réduire à néant. A quoi sert de distribuer ses biens aux pauvres<sup>[18]</sup>, de se faire pauvre soi-même, si l’âme dans sa misère devient plus orgueilleuse de mépriser les richesses que de les posséder ? Vivez donc tous dans l’unanimité<sup>[19]</sup> et la concorde et honorez mutuellement en vous, Dieu dont vous avez été faits les temples<sup>[20]</sup>.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='augustin2'>");
+sommaire = sommaire.concat("<li><a href='#augustin2'>Chapitre 2</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 2</h2>");
+texte_final = texte_final.concat("<p>2. <i>Soyez assidus aux prières</i><sup>[21]</sup>, aux heures et aux temps fixés. Puisque l’oratoire est par définition un lieu de prière, qu’on n’y fasse pas autre chose. Si l’un ou l’autre, en dehors des heures fixées, veut profiter de son loisir pour y prier, qu’il n’en soit pas empêché par ce que l’on y prétendrait faire. Quand vous priez Dieu avec des psaumes et des hymnes<sup>[22]</sup>, portez dans votre cœur ce que profèrent vos lèvres<sup>[23]</sup>. Ne chantez que ce qui est prescrit ; ce qui n’est pas indiqué pour être chanté ne doit pas être chanté.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='augustin3'>");
+sommaire = sommaire.concat("<li><a href='#augustin3'>Chapitre 3</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 3</h2>");
+texte_final = texte_final.concat("<p>3. Domptez votre chair par le jeûne et l’abstinence dans la nourriture et la boisson, autant que la santé le permet. Celui qui ne peut pas jeûner doit à tout le moins ne pas prendre de nourriture en dehors de l’heure des repas, sauf en cas de maladie. A table, jusqu’à la fin du repas, écoutez la lecture d’usage sans bruit et sans discussions. Que votre bouche ne soit pas seule à prendre nourriture ; que vos oreilles aussi aient faim de la parole de Dieu<sup>[24]</sup>.</p>");
+texte_final = texte_final.concat("<p>Affaiblis par leur ancienne manière de vivre, certains peuvent avoir un régime spécial ; ceux que d’autres habitudes ont rendus plus robustes, ne doivent pas s’en chagriner ni voir là une injustice. Qu’ils n’estiment pas ceux-ci plus heureux de recevoir ce qu’eux-mêmes ne reçoivent pas ; qu’ils se félicitent plutôt d’avoir plus de force physique que les autres. Si ceux qui sont passés d’une vie plus raffinée au monastère reçoivent en fait de nourriture, de vêtements et de couvertures, un peu plus que les autres, plus vigoureux et donc plus heureux, ces derniers doivent songer à la différence de niveau qui sépare la vie mondaine que leurs compagnons ont quittée et celle du monastère, lors même qu’ils n’arrivent pas à la frugalité des plus robustes. Tous ne doivent pas réclamer le supplément accordé à quelques-uns, non comme marque d’honneur mais par condescendance. Ce serait vraiment un lamentable renversement des choses si dans un monastère, où les riches font tous les efforts possibles, les pauvres devenaient des délicats.</p>");
+texte_final = texte_final.concat("<p>On donne moins aux malades pour ne pas les charger. Aussi doivent-ils être spécialement traités ensuite pour se rétablir plus rapidement, fussent-ils originaires de la plus humble condition ; leur récente maladie leur laisse les mêmes besoins qu’aux riches leur genre de vie antérieur. Une fois leurs forces réparées, qu’ils reviennent à leur plus heureuse façon de vivre, celle qui convient d’autant mieux à des serviteurs de Dieu qu’ils ont moins de besoins. Redevenus bien portants qu’ils ne s’attachent pas par mollesse à ce que la maladie avait rendu nécessaire. Qu’ils estiment plus favorisés ceux qui ont été plus vaillants dans le support des privations. Mieux vaut en effet moins de besoins que plus de biens.</p>");
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='augustin4'>");
+sommaire = sommaire.concat("<li><a href='#augustin44'>Chapitre 4</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 4</h2>");
+texte_final = texte_final.concat("<p>4. Pas de singularités dans votre tenue ; ne cherchez pas à plaire par vos vêtements, mais par votre manière de vivre. Si vous sortez, marchez ensemble ; à l’arrivée, restez ensemble. Dans votre démarche, votre maintien, tous vos gestes, n’offensez le regard de personne ; mais que tout s’accorde avec la sainteté de votre état.</p>");
+texte_final = texte_final.concat("<p>Que votre regard ne se fixe sur aucune femme. En vos allées et venues, il ne vous est pas défendu de voir des femmes ; ce qui est coupable, c’est le désir que l’on accepte en soi, ou que l’on voudrait provoquer chez autrui. La convoitise s’éprouve et se provoque non seulement par un sentiment secret, mais aussi par ce que l’on manifeste. Ne dites pas : mon cœur est chaste, si vos yeux ne le sont pas. L’œil impudique dénonce le cœur impudique<sup>[25]</sup>. Quand, même sans paroles, l’échange des regards dénonce l’impureté des cœurs, chacun se complaisant en l’autre selon la concupiscence de la chair<sup>[26]</sup>, les corps ont beau demeurer intacts de toute souillure, la chasteté, quant à elle, est en fuite. Celui qui fixe ses regards sur une femme et se complaît à se savoir regardé par elle ne doit pas s’imaginer qu’on ne le voit pas lorsqu’il agit ainsi : il est parfaitement vu de ceux dont il ne se doute pas.</p>");
+texte_final = texte_final.concat("<p>Mais passerait-il inaperçu et ne serait-il vu de personne, que fait-il de celui qui d’en haut lit dans les cœurs<sup>[27]</sup>, à qui rien ne peut échapper ? Doit-on croire qu’il ne le voit pas, parce que sa patience est aussi grande que sa perspicacité ? Que l’homme consacré craigne donc de Lui déplaire<sup>[28]</sup> et il ne cherchera pas à plaire coupablement à une femme. Qu’il songe que Dieu voit tout et il ne cherchera pas à regarder coupablement une femme. Car c’est précisément en cela que la crainte de Dieu est recommandée par l’Écriture : <i>qui fixe son regard est en abomination au Seigneur</i><sup>[29]</sup>.</p>");
+texte_final = texte_final.concat("<p>Quand donc vous êtes ensemble, à l’église, et partout où il y a des femmes, veillez mutuellement sur votre chasteté ; car Dieu qui habite en vous<sup>[30]</sup>, par ce moyen veillera<sup>[31]</sup> par vous sur vous.</p>");
+texte_final = texte_final.concat("<p>Si vous remarquez chez l’un d’entre vous cette effronterie du regard dont je parle, avertissez-le tout de suite, pour empêcher le progrès du mal et amener un amendement immédiat. Mais si après cet avertissement, ou un autre jour, vous le voyez recommencer, c’est comme un blessé à guérir qu’il convient de le dénoncer. Toutefois, prévenez d’abord un ou deux autres<sup>[32]</sup> pour qu’on puisse le convaincre par le témoignage de deux ou trois<sup>[33]</sup> et le punir ensuite avec la sévérité qui convient.</p>");
+texte_final = texte_final.concat("<p>Ne vous taxez pas vous-mêmes de malveillance, à dénoncer ainsi. Bien au contraire, vous ne seriez pas sans reproches, si vos frères, que votre dénonciation pourrait corriger, se trouvaient par votre silence abandonnés à leur perte. Si, par exemple, ton frère voulait cacher une plaie corporelle par crainte des soins, n’y aurait-il pas cruauté à te taire et miséricorde à parler<sup>[34]</sup> ? Combien plus justement dois-tu le dénoncer, pour que n’empire pas la plaie de son cœur.</p>");
+texte_final = texte_final.concat("<p>Cependant, avant d’en informer d’autres pour le confondre en ses dénégations, c’est d’abord au supérieur qu’il faut le signaler, si malgré l’avertissement déjà reçu, il ne s’est pas soucié de s’amender ; une réprimande plus secrète pourrait éviter en effet que d’autres soient mis au courant. S’il nie, c’est alors qu’il faut lui opposer d’autres témoins ; ainsi, devant tous il ne sera pas seulement inculpé<sup>[35]</sup> par un seul, mais confondu par deux ou trois<sup>[36]</sup>. Une fois confondu, selon la décision du supérieur ou du prêtre auquel en revient le pouvoir, il doit se soumettre à une sanction salutaire. S’il la refuse, ne voudrait-il pas de lui-même se retirer, qu’il soit exclu de votre communauté. Ici encore ce n’est pas cruauté mais miséricorde<sup>[37]</sup>, pour éviter une funeste contagion qui en perdrait un plus grand nombre.</p>");
+texte_final = texte_final.concat("<p>Ce que j’ai dit des regards trop appuyés, doit être de même soigneusement et fidèlement observé pour toute autre faute à découvrir, prévenir, dénoncer, confondre et punir, la haine des vices s’y associant à l’affection pour les personnes. D’autre part, on peut être avancé dans le mal jusqu’à recevoir de quelqu’un lettres ou cadeaux. A celui qui s’en accuse, on pardonnera et on priera pour lui ; celui qui sera pris sur le fait et convaincu, sera plus sévèrement puni selon la décision du prêtre ou du supérieur.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='regle_saint_augustin_chapitre5'>");
+sommaire = sommaire.concat("<li><a href='#regle_saint_augustin_chapitre5'>Chapitre 5</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 5</h2>");
+texte_final = texte_final.concat("<p>5. Laissez vos vêtements sous la garde d’une personne ou deux, ou d’autant qu’il en faudra pour les secouer et les défendre contre les mites. De même qu’une seule nourriture vous nourrit, qu’un seul vestiaire vous habille. Si possible, ne vous préoccupez pas des effets que l’on vous procure selon les exigences des saisons, ni de savoir si vous recevez bien le vêtement que vous aviez déposé ou au contraire celui qu’un autre avait porté, à condition toutefois qu’on ne refuse à aucun ce dont il a besoin<sup>[38]</sup>.</p>");
+texte_final = texte_final.concat("<p>Si cette distribution provoque parmi vous contestations et murmures, si l’on se plaint de recevoir un vêtement moins bon que le précédent, si l’on s’indigne d’être habillé comme un autre frère l’était auparavant, jugez vous-mêmes par là de ce qui vous manque en cette tenue sainte<sup>[39]</sup> qui est celle de l’intime du cœur, vous qui vous chicanez pour la tenue du corps. Si toutefois, l’on condescend à votre faiblesse en vous rendant vos anciens habits, rangez cependant toujours en un seul vestiaire, sous une garde commune, les effets que vous déposez. Que personne ne travaille pour soi ; mais que tous vos travaux se fassent en commun, avec plus d’empressement, de constance et de zèle que si chacun s’occupait exclusivement de ses propres affaires. La charité en effet, comme il est écrit, <i>ne recherche pas ses intérêts</i><sup>[40]</sup> ; cela veut dire qu’elle fait passer ce qui est commun avant ce qui est personnel, et non ce qui est personnel avant ce qui est commun. Plus vous aurez souci du bien commun avant votre bien propre, plus vous découvrirez vos progrès. Dans l’usage de toutes ces choses nécessaires qui passent, que la prééminence<sup>[41]</sup> soit à la charité, qui demeure<sup>[42]</sup>.</p>");
+texte_final = texte_final.concat("<p>C’est pourquoi, lorsque tel ou telle envoie à ses enfants ou à de plus ou moins proches parents vivant au monastère, un vêtement ou tout autre objet d’usage courant, il ne faut pas les recevoir en cachette, mais les mettre à la disposition du supérieur pour que, rangés en commun<sup>[43]</sup>, ils soient attribués à qui en a besoin. Cacher un présent ainsi reçu, c’est un délit à juger comme un vol.</p>");
+texte_final = texte_final.concat("<p>Au supérieur de régler comment les vêtements seront lavés, soit par vous-mêmes soit par les blanchisseurs. Il ne faut pas qu’un souci excessif de propreté dans les habits provoque quelques taches intérieures dans l’âme. Ne pas refuser les bains, si la santé y oblige. Qu’on suive sans murmure l’avis du médecin. Même y répugnerait-on, sur l’ordre du supérieur, on fera ce qui est nécessaire pour la santé. Qu’on ne cède pas au caprice de celui qui réclame un bain, si ce traitement n’est pas opportun. Quand quelque chose fait plaisir en effet, on s’imagine que cela fait du bien, même si c’est en réalité nuisible. Un serviteur de Dieu vient-il se plaindre d’une douleur cachée, on le croira sans hésiter ; mais s’il n’est pas sûr que le remède agréable souhaité doive guérir cette douleur, mieux vaut consulter le médecin.</p>");
+texte_final = texte_final.concat("<p>Pour les bains comme pour tout déplacement nécessaire, on sera au moins deux ou trois. Celui qui doit sortir n’a pas à choisir ses compagnons ; ils seront désignés par le supérieur.</p>");
+texte_final = texte_final.concat("<p>Le soin des malades, des convalescents et de tous ceux qui, même sans fièvre, sont plus ou moins affaiblis, sera confié à l’un d’entre vous, qui aura à demander lui-même à la dépense ce qu’il jugera nécessaire pour eux. Quant aux responsables de la dépense, du vestiaire ou des livres, qu’ils servent leurs frères sans murmurer. Pour les livres, une heure chaque jour, sera fixée pour les demander ; en dehors de cette heure, aucune demande ne sera honorée. Ceux qui s’occupent des vêtements et des chaussures les remettront sans délai à ceux qui, en ayant besoin, viendront les leur demander.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='regle_saint_augustin_chapitre6'>");
+sommaire = sommaire.concat("<li><a href='#regle_saint_augustin_chapitre6'>Chapitre 6</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 6</h2>");
+texte_final = texte_final.concat("<p>6. Pas de litiges entre vous ; ou alors mettez-y fin au plus vite ; que votre colère ne se développe pas en haine, d’un fétu faisant une poutre<sup>[44]</sup> et rendant votre âme homicide. Vous lisez en effet : <i>qui hait son frère est homicide</i><sup>[45]</sup>. Quiconque blesse autrui par injure, mauvais propos, accusation directe, se préoccupera de réparer le plus tôt possible ; et que l’offensé pardonne sans récriminer<sup>[46]</sup>. Si l’offense a été réciproque, que l’on se pardonne réciproquement ses torts<sup>[47]</sup>, à cause de vos prières qui doivent être d’autant plus saintes qu’elles sont plus fréquentes.</p>");
+texte_final = texte_final.concat("<p>Mieux vaut le vif coléreux qui se dépêche de solliciter son pardon auprès de celui qu’il reconnaît avoir offensé, que l’homme plus lent à s’irriter mais plus lent aussi à s’excuser. Qui ne veut jamais demander pardon ou le fait de mauvaise grâce n’a rien à faire dans le monastère, même si l’on ne l’en chasse pas. Épargnez-vous donc des paroles trop dures ; s’il en échappe de votre bouche, que cette bouche prononce sans retard, les mots qui seront un remède aux blessures qu’elle a causées.</p>");
+texte_final = texte_final.concat("<p>Si la nécessité de la régularité à maintenir vous pousse à des paroles sévères, même si vous avez conscience d’avoir dépassé la mesure, on n’exige pas de vous que vous demandiez pardon à vos inférieurs. En effet, vis-à-vis de ceux qui ont à demeurer soumis, un excès d’humilité compromettrait l’autorité que vous avez pour les commander. Mais alors demandez pardon à celui qui est le Seigneur de tous : Il sait bien, Lui, quelle bienveillante affection vous portez à ceux-là mêmes que vous réprimandez peut-être plus qu’il ne convient. Car entre vous l’affection ne doit pas être charnelle, mais spirituelle.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='regle_saint_augustin_chapitre7'>");
+sommaire = sommaire.concat("<li><a href='#regle_saint_augustin_chapitre7'>Chapitre 7</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 7</h2>");
+texte_final = texte_final.concat("<p>7. Obéissez au supérieur<sup>[48]</sup> comme à un père, et plus encore au prêtre qui a la charge de vous tous. Veiller à l’observation de toutes ces prescriptions, ne laisser passer par négligence aucun manquement mais amender et corriger, telle est la charge du supérieur. Pour ce qui dépasserait ses moyens ou ses forces, qu’il en réfère au prêtre dont l’autorité sur vous est plus grande.</p>");
+texte_final = texte_final.concat("<p>Quant à celui qui est à votre tête, qu’il ne s’estime pas heureux de dominer au nom de son autorité mais de servir par amour<sup>[49]</sup>. Que l’honneur, devant vous, lui revienne de la première place ; que la crainte, devant Dieu, le maintienne à vos pieds<sup>[50]</sup>. Qu’il s’offre à tous comme un modèle de bonnes œuvres<sup>[51]</sup>. <i>Qu’il reprenne les turbulents, encourage les pusillanimes, soutienne les faibles ; qu’il soit patient à l’égard de tous</i><sup>[52]</sup>. Empressé lui-même à la vie régulière, qu’en se faisant craindre, il la maintienne. Et bien que l’un et l’autre soient nécessaires, qu’il recherche auprès de vous l’affection plutôt que la crainte, se rappelant sans cesse que c’est à Dieu qu’il aura à rendre compte de vous<sup>[53]</sup>. Quant à vous, par votre obéissance ayez pitié de vous-mêmes sans doute<sup>[54]</sup>, mais plus encore de lui ; car, parmi vous, plus la place est élevée, plus elle est dangereuse.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='regle_saint_augustin_chapitre8'>");
+sommaire = sommaire.concat("<li><a href='#regle_saint_augustin_chapitre8'>Chapitre 8</a></li>");
+
+// texte_final = texte_final.concat("<h2>Chapitre 8</h2>");
+texte_final = texte_final.concat("<p>8. Puisse le Seigneur vous donner d’observer tout cela avec amour, en êtres épris de beauté spirituelle et dont l’excellence de la vie<sup>[55]</sup> exhale l’excellent parfum du Christ<sup>[56]</sup>, non comme des esclaves sous le régime de la loi, mais en hommes libres sous le régime de la grâce<sup>[57]</sup>. Que ce livret vous soit comme un miroir pour vous regarder ; et de peur que l’oubli n’entraîne des négligences, qu’on vous le lise chaque semaine. Si vous vous trouvez fidèles à l’égard de ce qui est écrit, rendez grâce au Seigneur dispensateur de tout bien. Si par contre quelqu’un se découvre en défaut, qu’il regrette le passé, veille à l’avenir, priant notre Père de lui remettre sa dette et de ne pas le soumettre à la tentation<sup>[58]</sup>.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+texte_final = texte_final.concat("<div class='text_part' id='regle_saint_augustin_notes'>");
+sommaire = sommaire.concat("<li><a href='#regle_saint_augustin_notes'>Notes</a></li>");
+
+texte_final = texte_final.concat("<h2>Notes</h2>");
+texte_final = texte_final.concat("<p>1. Textus regulae quem hic damus, est textus receptus ab Ordine, prout exstat in prototypo, in archivo generali Ordinis asservato. Numeri sumpti sunt ex VERHEYEN L, o. praem, <i>La règle de saint-Augustin I. La tradition manuscrite</i>, Paris, 1969, pp. 417-437.</p>");
+texte_final = texte_final.concat("<p>2. Mt 22, 35 – 40.</p>");
+texte_final = texte_final.concat("<p>3. Mt 18, 20 ; Jn 11, 52 ; 17.</p>");
+texte_final = texte_final.concat("<p>4. Ps 67, 7 <i>…Deus qui habitare facit unanimes in domo</i>.</p>");
+texte_final = texte_final.concat("<p>5. Ac 4, 32.</p>");
+texte_final = texte_final.concat("<p>6. Ac 2, 44 ; 4, 32.</p>");
+texte_final = texte_final.concat("<p>7. Ac 4, 35.</p>");
+texte_final = texte_final.concat("<p>8. 1 Tm 6, 8 <i>…habentes autem victum et tegumentum his contenti sumus…</i> Cf. Dt 10,18.</p>");
+texte_final = texte_final.concat("<p>9. Ac 2, 45 ; 4, 35.</p>");
+texte_final = texte_final.concat("<p>10. Ac 2, 44 – 45.</p>");
+texte_final = texte_final.concat("<p>11. cf. supra note 7.</p>");
+texte_final = texte_final.concat("<p>12. <i>erigere cervicem</i>, expression dérivée de l’Ancien Testament et fréquemment employée par saint Augustin pour désigner l’orgueil.</p>");
+texte_final = texte_final.concat("<p>13. Col 3, 1 – 2.</p>");
+texte_final = texte_final.concat("<p>14. Ph 3, 19.</p>");
+texte_final = texte_final.concat("<p>15. 1 Co 5, 2 ; 13, 4.</p>");
+texte_final = texte_final.concat("<p>16. Ga 2, 6.</p>");
+texte_final = texte_final.concat("<p>17. Tb 1, 19 ; Lc 8, 3 ; 1 Co 13, 3.</p>");
+texte_final = texte_final.concat("<p>18. Ps 111, 9 ; Lc 18, 22 ; 1 Co 13, 3.</p>");
+texte_final = texte_final.concat("<p>19. Ac 1, 14 ; 2, 46 ; Rm 15, 6.</p>");
+texte_final = texte_final.concat("<p>20. Co 6, 16 <i>…Nos enim templa Dei vivi sumus…</i> ; cf. 1 Co 3, 16.</p>");
+texte_final = texte_final.concat("<p>21. Col 4, 2 ; Rm 12, 12.</p>");
+texte_final = texte_final.concat("<p>22. Ep 5, 19.</p>");
+texte_final = texte_final.concat("<p>23. Mt 12, 34.</p>");
+texte_final = texte_final.concat("<p>24. Am 8, 11 ; Mt 4, 4.</p>");
+texte_final = texte_final.concat("<p>25. Mt 5, 28.</p>");
+texte_final = texte_final.concat("<p>26. Jn 2, 16.</p>");
+texte_final = texte_final.concat("<p>27. Pr 24, 12.</p>");
+texte_final = texte_final.concat("<p>28. Pr 24, 18.</p>");
+texte_final = texte_final.concat("<p>29. Pr 27, 20 a, selon la Septante.</p>");
+texte_final = texte_final.concat("<p>30. 1 Co 3, 16 ; Rm 8, 9 et 11.</p>");
+texte_final = texte_final.concat("<p>31. <i>Custodiet</i>, cf. psautier <i>passim</i>.</p>");
+texte_final = texte_final.concat("<p>32. Mt 18, 15 – 17.</p>");
+texte_final = texte_final.concat("<p>33. Dt 19, 15 ; 17, 6.</p>");
+texte_final = texte_final.concat("<p>34. Pr 11, 17.</p>");
+texte_final = texte_final.concat("<p>35. 1 Tm 5, 20.</p>");
+texte_final = texte_final.concat("<p>36. Cf. supra note 33.</p>");
+texte_final = texte_final.concat("<p>37. Cf. supra note 34.</p>");
+texte_final = texte_final.concat("<p>38. Ac 4, 35.</p>");
+texte_final = texte_final.concat("<p>39. Tit 2, 3.</p>");
+texte_final = texte_final.concat("<p>40. 1 Co 13, 5.</p>");
+texte_final = texte_final.concat("<p>41. 1 Co 12, 31 <i>…et adhuc supereminentiorem viam vobis demonstro…</i></p>");
+texte_final = texte_final.concat("<p>42. 1 Co 13, 8 – 13.</p>");
+texte_final = texte_final.concat("<p>43. Ac 4, 35.</p>");
+texte_final = texte_final.concat("<p>44. Mt 7, 3 – 5.</p>");
+texte_final = texte_final.concat("<p>45. 1 Jn 3, 15.</p>");
+texte_final = texte_final.concat("<p>46. Mt 6, 12.</p>");
+texte_final = texte_final.concat("<p>47. <i>Debita</i> cf. Mt 6, 12.</p>");
+texte_final = texte_final.concat("<p>48. Hb 13, 17.</p>");
+texte_final = texte_final.concat("<p>49. Lc 22, 25 – 26 ; Ga 5, 13.</p>");
+texte_final = texte_final.concat("<p>50. Eccl 13, 20.</p>");
+texte_final = texte_final.concat("<p>51. Tit 2, 7 <i>…circa omnes te ipsum bonorum operum prebens exemplum…</i></p>");
+texte_final = texte_final.concat("<p>52. 1 Th 5, 14.</p>");
+texte_final = texte_final.concat("<p>53. Hb 13, 17 <i>…quia ipsi vigilant pro animabus vestrius, tamquam rationem reddituri pro vobis…</i></p>");
+texte_final = texte_final.concat("<p>54. Eccl 30, 34.</p>");
+texte_final = texte_final.concat("<p>55. Jc 3, 13 ; 1 P 3, 16 ; 2, 12.</p>");
+texte_final = texte_final.concat("<p>56. 2 Co 2, 15.</p>");
+texte_final = texte_final.concat("<p>57. Rm 6, 14 ; Ga 4, 1 – 7.</p>");
+texte_final = texte_final.concat("<p>58. Mt 6, 13.</p>");
+
+texte_final = texte_final.concat("</div>");
+
+
+
+
+
+  $(".office_biographie").each(function(){$(this).html("")});
+  $(".office_content").each(function(){$(this).html(texte_final)});
+  $(".office_titre").each(function(){$(this).html("")});
+  $(".office_sommaire").each(function(){$(this).html(sommaire)});
+  $("body").removeClass("menu-open");
+  $('body').removeClass("background-open");
+  window.scrollTo(0, 0);
+  update_anchors();
+  update_liturgical_color("vert");
+  update_office_class(office);
+}
 
 function update_office_pglh(){
   var texte_final = '<div class="office_text" id="office_text">';
@@ -1033,15 +1215,12 @@ function update_office_pglh(){
   var titre = '<div class="office_titre" id="office_titre">';
   titre = titre.concat("<h1>PGLH</h1></div>")
  
-  texte_final = texte_final.concat("<div class='text_part' id='commandementscharite' style='margin-top: 0px;'>");
-  sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
-
-  texte_final = texte_final.concat("<div class='text_part' id='liturgie_heures_chapitre1'>");
+  texte_final = texte_final.concat("<div class='text_part' id='liturgie_heures_chapitre1' style='margin-top: 0px;'>");
   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
   sommaire = sommaire.concat("<li><a href='#liturgie_heures_chapitre1'>Chapitre I : Importance de la Liturgie des Heures</a></li>");
 
 texte_final = texte_final.concat("<h2>Chapitre I : Importance de la Liturgie des Heures ou Office Divin dans la vie de l’Église</h2>");
-texte_final = texte_final.concat("<h3>1. La prière publique et commune du peuple de Dieu</h3>");
+// texte_final = texte_final.concat("<h3>1. La prière publique et commune du peuple de Dieu</h3>");
 texte_final = texte_final.concat("La prière publique et commune du peuple de Dieu est considérée à juste titre comme l’une des fonctions principales de l’Église. Dès le commencement, les baptisés « étaient assidus à recevoir l’enseignement des Apôtres, à participer à la vie commune, à la fraction du pain et aux prières » (Ac 2,42). Les Actes des Apôtres attestent à plusieurs reprises que la communauté chrétienne priait d’un seul cœur (Cf. Ac 1,14 ; Ac 4,24 ; Ac 12 ; Ac 5,12 ; cf. Ep 5, 19-21).<br><br>Le témoignage de l’Église primitive nous apprend que les fidèles s’adonnaient à la prière individuelle aussi à des heures fixes. Dans la suite, en diverses contrées, la coutume s’est établie assez rapidement d’affecter à la prière commune des moments déterminés, comme la dernière heure du jour, lorsque tombe le soir et qu’on allume la lampe, ou la première, quand vers l’apparition de l’astre du jour la nuit touche à sa fin.<br><br>Avec le temps, on allait sanctifier par la prière commune d’autres heures encore, comme cela était suggéré aux Pères par la lecture des Actes des Apôtres. Ceux-ci nous montrent en effet les disciples rassemblés (pour la prière) à la troisième heure (cf. Ac 2, 1-15). Et le prince des Apôtres « monta à la chambre haute, pour prier vers la sixième heure » (Ac 10, 9) ; « Pierre et Jean montaient au Temple pour la prière de la neuvième heure » (Ac 3, 1) ; « Au milieu de la nuit, Paul et Silas, en prière, louaient Dieu » (Ac 16, 25).<br><br>Ces prières faites en commun allaient constituer progressivement un cycle d’heures bien défini. Cette Liturgie des heures, ou Office divin, complétée également par des lectures, est avant tout une prière de louange et de supplication ; elle est prière de l’Église avec le Christ et adressée au Christ.");
 
 texte_final = texte_final.concat("<h3>I. La prière du Christ</h3>");
