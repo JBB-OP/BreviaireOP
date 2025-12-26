@@ -454,6 +454,7 @@ function update_office_installation(){
   update_office_class(office);
 }
 
+
 function update_office_consecrations(){
   var texte_final = '<div class="office_text" id="office_text">';
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
@@ -533,6 +534,7 @@ function update_office_consecrations(){
   update_liturgical_color("vert");
   update_office_class(office);
 }
+
 
 function update_office_prierescommunes(){
   var texte_final = '<div class="office_text" id="office_text">';
@@ -790,6 +792,7 @@ texte_final = texte_final.concat("</div>");
   update_office_class(office);
 }
 
+
 function update_office_formulesdoctrinales(){
   var texte_final = '<div class="office_text" id="office_text">';
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
@@ -1026,6 +1029,7 @@ texte_final = texte_final.concat("</div>");
   update_office_class(office);
 }
 
+
 function update_office_regleaugustin(){
   var texte_final = '<div class="office_text" id="office_text">';
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
@@ -1208,6 +1212,7 @@ texte_final = texte_final.concat("</div>");
   update_liturgical_color("vert");
   update_office_class(office);
 }
+
 
 function update_office_pglh(){
   var texte_final = '<div class="office_text" id="office_text">';
