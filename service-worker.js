@@ -16,7 +16,7 @@ const urlsToCache = [
     './js/psaumes_invitatoire-v2.js',
     './js/psaumes-v2.js',
     './js/hymnes-v2.js',
-    './js/sanctoral_functions-v2.js',
+    './js/sanctoral_functions-v3.js',
     './js/scroll.js',
     './img/app-icon.png',
     './img/close.svg',
