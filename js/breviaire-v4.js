@@ -649,7 +649,7 @@ function create_laudes_html(contenu, infos, date_obj, hymne, invitatoire, select
     texte_final = texte_final.concat("<i>" + contenu["antienne_invitatoire"]["antienne_A"] + "</i>");
   }
   //just a little bit of logic to allow for psaume invitatoire change
-  texte_final = texte_final.concat("<h2><select class='psaume_invitatoire_select' onchange='invitatoire_update(this)' name='Psaume Invitatoire'><option value='23'>Psaume 23</option><option value='66'>Psaume 66</option><option value='94'>Psaume 94</option><option value='99'>Psaume 99</option></select></h2>");
+  texte_final = texte_final.concat("<h2><select class='psaume_invitatoire_select' onchange='invitatoire_update(this)' name='Psaume Invitatoire'><option value='23'>Psaume 23</option><option value='66'>Psaume 66</option><option value='94'>Psaume 94</option><option value='94G'>Psaume 94 [Gouzes]</option><option value='94BJ'>Psaume 94 BJ</option><option value='99'>Psaume 99</option></select></h2>");
   texte_final = texte_final.concat(psaume_invitatoire_from_reference(invitatoire) + "</div>");
   sommaire = sommaire.concat("<li><a href='#psaume_invitatoire'>Psaume " + invitatoire + "</a></li>");
 
