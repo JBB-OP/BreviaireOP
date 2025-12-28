@@ -639,14 +639,16 @@ function create_laudes_html(contenu, infos, date_obj, hymne, invitatoire, select
   sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
 
   if (contenu["antienne_invitatoire"]["antienne_B"] != "") {
-    texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Antienne Invitatoire A</h2>");
-    texte_final = texte_final.concat("<i>" + contenu["antienne_invitatoire"]["antienne_A"] + "</i>");
-    texte_final = texte_final.concat("<h2>Antienne Invitatoire B</h2>");
-    texte_final = texte_final.concat("<i>" + contenu["antienne_invitatoire"]["antienne_B"] + "</i>");
+    texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Invitatoire A</h2>");
+    var antienneTextA = contenu["antienne_invitatoire"]["antienne_A"].replace(/<p>/g, '').replace(/<\/p>/g, '');
+    texte_final = texte_final.concat("<p>Ant. <i>" + antienneTextA + "</i></p>");
+    texte_final = texte_final.concat("<h2>Invitatoire B</h2>");
+    var antienneTextB = contenu["antienne_invitatoire"]["antienne_B"].replace(/<p>/g, '').replace(/<\/p>/g, '');
+    texte_final = texte_final.concat("<p>Ant. <i>" + antienneTextB + "</i></p>");
   } else if (contenu["antienne_invitatoire"]["antienne_A"] != "") {
-    texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Antienne Invitatoire </h2>");
-    var antienneText = contenu["antienne_invitatoire"]["antienne_A"].replace(/<p>/g, '').replace(/<\/p>/g, '');
-    texte_final = texte_final.concat("<span style='display: inline-block; white-space: nowrap;'>Ant. <i>" + antienneText + "</i></span>");
+    texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Invitatoire </h2>");
+    var antienneTextA = contenu["antienne_invitatoire"]["antienne_A"].replace(/<p>/g, '').replace(/<\/p>/g, '');
+    texte_final = texte_final.concat("<p>Ant. <i>" + antienneTextA + "</i></p>");
   }
   //just a little bit of logic to allow for psaume invitatoire change
   texte_final = texte_final.concat("<h2><select class='psaume_invitatoire_select' onchange='invitatoire_update(this)' name='Psaume Invitatoire'><option value='23'>Psaume 23</option><option value='66'>Psaume 66</option><option value='94'>Psaume 94</option><option value='94G'>Psaume 94 [Gouzes]</option><option value='94BJ'>Psaume 94 BJ</option><option value='99'>Psaume 99</option></select></h2>");
