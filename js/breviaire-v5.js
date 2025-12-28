@@ -645,7 +645,8 @@ function create_laudes_html(contenu, infos, date_obj, hymne, invitatoire, select
     texte_final = texte_final.concat("<i>" + contenu["antienne_invitatoire"]["antienne_B"] + "</i>");
   } else if (contenu["antienne_invitatoire"]["antienne_A"] != "") {
     texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Antienne Invitatoire </h2>");
-    texte_final = texte_final.concat("<i>" + contenu["antienne_invitatoire"]["antienne_A"] + "</i>");
+    var antienneText = contenu["antienne_invitatoire"]["antienne_A"].replace(/<p>/g, '').replace(/<\/p>/g, '');
+    texte_final = texte_final.concat("<span style='display: inline-block; white-space: nowrap;'>Ant. <i>" + antienneText + "</i></span>");
   }
   //just a little bit of logic to allow for psaume invitatoire change
   texte_final = texte_final.concat("<h2><select class='psaume_invitatoire_select' onchange='invitatoire_update(this)' name='Psaume Invitatoire'><option value='23'>Psaume 23</option><option value='66'>Psaume 66</option><option value='94'>Psaume 94</option><option value='94G'>Psaume 94 [Gouzes]</option><option value='94BJ'>Psaume 94 BJ</option><option value='99'>Psaume 99</option></select></h2>");
@@ -1124,12 +1125,17 @@ function add_symbol_span(texte){
   texte = texte.replaceAll(" :", "&nbsp:");
   texte = texte.replaceAll(" +", "&nbsp+");
   texte = texte.replaceAll(" ;", "&nbsp;");
+    texte = texte.replaceAll(" °", "&nbsp°");
+
 
 
   texte = texte.replaceAll("*", '<span class="liturgical_symbol">*</span>');
   texte = texte.replaceAll("+", '<span class="liturgical_symbol">+</span>');
   texte = texte.replaceAll("R/", '<span class="liturgical_symbol">R/</span>');
   texte = texte.replaceAll("V/", '<span class="liturgical_symbol">V/</span>');
+  texte = texte.replaceAll("Ant.", '<span class="liturgical_symbol">Ant.</span>');
+  texte = texte.replaceAll("°", '<span class="liturgical_symbol">°</span>');
+
 
 
   return texte;
