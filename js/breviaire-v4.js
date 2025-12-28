@@ -874,7 +874,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   }
 
   var texte_final = '<div class="office_text" id="office_text">';
-  texte_final = texte_final.concat('<div class="text_part" id="introduction"><i><p>Nous t’adorons, très saint Seigneur Jésus-Christ, ici et dans toutes les Églises du monde entier, et nous te bénissons d’avoir racheté le monde par ta sainte Croix</p></i><br/> \n'+ contenu["introduction"] + "</div>");
+  texte_final = texte_final.concat('<div class="text_part" id="introduction"> \n'+ contenu["introduction"] + "</div>");
   sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
 
   // Acte pénitentiel
