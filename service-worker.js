@@ -9,7 +9,7 @@ const urlsToCache = [
     './sanctoral.webmanifest',
     './index.html',
     './js/main-v4.js',
-    './js/breviaire-v4.js',
+    './js/breviaire-v5.js',
     './js/form-v4.js',
     './js/jquery-3.6.0.js',
     './js/missel_functions-v2.js',
