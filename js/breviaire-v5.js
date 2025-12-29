@@ -403,7 +403,7 @@ function combine_lectures(contenu_aelf, contenu_dominicain){
   contenu_final["lecture_patristique"]["texte"] = (contenu_dominicain["lecture_patristique"]["texte"] == "") ? contenu_aelf["texte_patristique"] : contenu_dominicain["lecture_patristique"]["texte"];
   contenu_final["repons_patristique"] = (contenu_dominicain["repons_patristique"] == "") ? contenu_aelf["repons_patristique"] : contenu_dominicain["repons_patristique"];
 
-  if (!Array.isArray(contenu_aelf["te_deum"]) || (contenu_dominicain["te_deum"] == true)) { // to update with franciscan office
+  if (!Array.isArray(contenu_aelf["te_deum"]) || (contenu_dominicain["te_deum"] == true)) { // to update with dominican office
     contenu_final["te_deum"]["display"] = true;
   }
 
