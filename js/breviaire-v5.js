@@ -930,11 +930,11 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   sommaire = sommaire.concat("<li><a href='#pericope'>Péricope</a></li>");
 
 
-  texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2>Antienne: </h2>");
-  texte_final = texte_final.concat("<i>" + contenu["antienne_symeon"] + "</i>");
+  texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2> " + contenu["cantique_symeon"]['titre'] + "</h2>");
+  texte_final = texte_final.concat("Ant. <i>" + contenu["antienne_symeon"] + "</i>");
 
-  texte_final = texte_final.concat("<h2> " + contenu["cantique_symeon"]['titre'] + "</h2>");
-  texte_final = texte_final.concat(contenu["cantique_symeon"]['texte'] + "</div>");
+  texte_final = texte_final.concat(contenu["cantique_symeon"]['texte']);
+  texte_final = texte_final.concat("<br/>Ant. <i>" + contenu["antienne_symeon"] + "</i></div>");
   sommaire = sommaire.concat("<li><a href='#cantique_symeon'>Cantique de Syméon</a></li>");
 
 
@@ -944,7 +944,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
   texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison </h2>");
   texte_final = texte_final.concat("<p><i>Prions.</i> Visite cette maison, Seigneur, et repousse loin delle toutes les embûches de l’ennemi ; que tes saints anges viennent l’habiter pour nous garder dans la paix et que ta bénédiction demeure sur nous à jamais. Par le Christ, notre Seigneur.<br /> R/ Amen.</p>");
 
-  texte_final = texte_final.concat("<h2>Benediction: </h2>");
+  texte_final = texte_final.concat("<h2>Benediction </h2>");
   texte_final = texte_final.concat(contenu['benediction'] + "</div>");
   sommaire = sommaire.concat("<li><a href='#oraison'>Oraison</a></li>");
 
