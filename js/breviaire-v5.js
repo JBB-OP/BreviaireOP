@@ -638,6 +638,18 @@ function create_laudes_html(contenu, infos, date_obj, hymne, invitatoire, select
   texte_final = texte_final.concat('<div class="text_part" id="introduction">'+ contenu["introduction"] + "</div>");
   sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
 
+  // // Ajout du psaume 151 avant l'invitatoire
+  // texte_final = texte_final.concat('<div class="text_part" id="psaume_151">');
+  // texte_final = texte_final.concat("<h2>Psaume 151</h2>");
+  // if (typeof window.psaume_from_reference !== 'undefined') {
+  //   texte_final = texte_final.concat("<p>" + psaume_from_reference("Psaume 151") + "</p></div>");
+  // } else if (typeof psaume_from_reference !== 'undefined') {
+  //   texte_final = texte_final.concat("<p>" + psaume_from_reference("Psaume 151") + "</p></div>");
+  // } else {
+  //   texte_final = texte_final.concat("<p>La fonction psaume_from_reference n'est pas définie.</p></div>");
+  // }
+  // sommaire = sommaire.concat("<li><a href='#psaume_151'>Psaume 151</a></li>");
+
   if (contenu["antienne_invitatoire"]["antienne_B"] != "") {
     texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Invitatoire A</h2>");
     var antienneTextA = contenu["antienne_invitatoire"]["antienne_A"].replace(/<p>/g, '').replace(/<\/p>/g, '');
