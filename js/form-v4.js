@@ -526,6 +526,9 @@ function update_settings(){
   update_liturgical_color("vert");
   update_office_class(office);
   
+  // Sauvegarder les paramètres lorsque l'utilisateur accède aux paramètres
+  saveSettings();
+  
   // Gestionnaire d'événement pour la liste déroulante des couvents
   $('#couvents_list').change(function() {
     var couvent = $(this).val();
@@ -597,31 +600,31 @@ function closeWelcomePopup() {
 // Gestionnaire d'événement pour les boutons du popup
 $(document).ready(function() {
   $('#close_popup').click(function() {
+    saveSettings();
     closeWelcomePopup();
   });
   
   $('#settings_popup').click(function() {
+    saveSettings();
     closeWelcomePopup();
     update_settings();
   });
   
-  // Synchronisation de la tickbox du popup avec celle des paramètres
-  $('#disable_warning_popup').change(function() {
-    $('#disable_warning').prop('checked', $(this).is(':checked'));
-    localStorage.setItem('disableWarning', $(this).is(':checked'));
-  });
+
   
-  // Synchronisation de la tickbox des paramètres avec celle du popup
-  $('#disable_warning').change(function() {
-    $('#disable_warning_popup').prop('checked', $(this).is(':checked'));
-    localStorage.setItem('disableWarning', $(this).is(':checked'));
-  });
+  // Charger les paramètres au démarrage
+  loadSettings();
   
-  // Charger l'état de la tickbox depuis le stockage local
-  var disableWarning = localStorage.getItem('disableWarning');
-  if (disableWarning === 'true') {
-    $('#disable_warning').prop('checked', true);
-    $('#disable_warning_popup').prop('checked', true);
+  // Déclencher les changements automatiques après avoir chargé les paramètres
+  var couvent = $('#couvents_list').val();
+  var couventsBJ = ['Toulouse', 'Montpellier', 'Bordeaux', 'Marseille', 'La Sainte-Baume', 'Monaco'];
+  
+  if (couventsBJ.includes(couvent)) {
+    $('#traduction_switch').prop('checked', true);
+  }
+  
+  if (couvent === 'Toulouse') {
+    $('#psaumes_switch').prop('checked', true);
   }
   
   // Afficher le popup à l'ouverture si l'avertissement n'est pas désactivé
@@ -713,6 +716,9 @@ $(document).ready(function() {
   if (couvent === 'Toulouse') {
     $('#psaumes_switch').prop('checked', true);
   }
+  
+  // Sauvegarder les paramètres après les changements automatiques
+  saveSettings();
   
   initSettingsHandlers();
 });
