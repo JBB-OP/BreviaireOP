@@ -453,6 +453,20 @@ function update_settings(){
 
   texte_final = texte_final.concat("<h2>Couvents</h2>");
   // Liste déroulante des couvents de la province de Toulouse
+  texte_final = texte_final.concat("<select id='couvents_list' name='couvents'>");
+  texte_final = texte_final.concat("<option value=''>Sélectionnez un couvent</option>");
+  texte_final = texte_final.concat("<option value='Bordeaux'>Bordeaux</option>");
+  texte_final = texte_final.concat("<option value='Fanjeaux'>Fanjeaux</option>");
+  texte_final = texte_final.concat("<option value='La Réunion'>La Réunion</option>");
+  texte_final = texte_final.concat("<option value='La Sainte-Baume'>La Sainte-Baume</option>");
+  texte_final = texte_final.concat("<option value='Majanga'>Majanga</option>");
+  texte_final = texte_final.concat("<option value='Marseille'>Marseille</option>");
+  texte_final = texte_final.concat("<option value='Monaco'>Monaco</option>");
+  texte_final = texte_final.concat("<option value='Montpellier'>Montpellier</option>");
+  texte_final = texte_final.concat("<option value='Nice'>Nice</option>");
+  texte_final = texte_final.concat("<option value='Port-au-Prince'>Port-au-Prince</option>");
+  texte_final = texte_final.concat("<option value='Toulouse'>Toulouse</option>");
+  texte_final = texte_final.concat("</select>");
 
   texte_final = texte_final.concat("</div>");
 
