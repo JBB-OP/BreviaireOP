@@ -200,10 +200,16 @@ window.addEventListener('load', () => {
 function install_prompt(){
   if(deferredEvent) {
     deferredEvent.prompt();
-    update_office_installation();
-  } else {
-    update_office_installation();
   }
+  
+  // Rediriger vers la section Installation des paramètres
+  update_settings();
+  setTimeout(function() {
+    var installationSection = document.getElementById('installation');
+    if (installationSection) {
+      installationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 100);
 }
 
 
