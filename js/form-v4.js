@@ -541,6 +541,9 @@ function update_settings(){
     if (couvent === 'Toulouse') {
       $('#psaumes_switch').prop('checked', true);
     }
+    
+    // Sauvegarder les paramètres après les changements automatiques
+    saveSettings();
   });
 }
 
@@ -625,6 +628,93 @@ $(document).ready(function() {
   if (!$('#disable_warning').is(':checked')) {
     showWelcomePopup();
   }
+});
+
+// Fonction pour sauvegarder tous les paramètres
+function saveSettings() {
+  var settings = {
+    couvent: $('#couvents_list').val(),
+    traduction: $('#traduction_switch').is(':checked'),
+    psaumes: $('#psaumes_switch').is(':checked'),
+    disableWarning: $('#disable_warning').is(':checked')
+  };
+  localStorage.setItem('breviaireSettings', JSON.stringify(settings));
+}
+
+// Fonction pour charger tous les paramètres
+function loadSettings() {
+  var settings = localStorage.getItem('breviaireSettings');
+  if (settings) {
+    settings = JSON.parse(settings);
+    
+    // Charger le couvent sélectionné
+    if (settings.couvent) {
+      $('#couvents_list').val(settings.couvent);
+    }
+    
+    // Charger la traduction sélectionnée
+    if (settings.traduction !== undefined) {
+      $('#traduction_switch').prop('checked', settings.traduction);
+    }
+    
+    // Charger la répartition des psaumes sélectionnée
+    if (settings.psaumes !== undefined) {
+      $('#psaumes_switch').prop('checked', settings.psaumes);
+    }
+    
+    // Charger l'état de la désactivation de l'avertissement
+    if (settings.disableWarning !== undefined) {
+      $('#disable_warning').prop('checked', settings.disableWarning);
+      $('#disable_warning_popup').prop('checked', settings.disableWarning);
+    }
+  }
+}
+
+// Fonction pour initialiser les gestionnaires d'événements pour la sauvegarde
+function initSettingsHandlers() {
+  // Sauvegarder les paramètres lorsque le couvent change
+  $('#couvents_list').change(function() {
+    saveSettings();
+  });
+  
+  // Sauvegarder les paramètres lorsque la traduction change
+  $('#traduction_switch').change(function() {
+    saveSettings();
+  });
+  
+  // Sauvegarder les paramètres lorsque la répartition des psaumes change
+  $('#psaumes_switch').change(function() {
+    saveSettings();
+  });
+  
+  // Sauvegarder les paramètres lorsque la désactivation de l'avertissement change
+  $('#disable_warning').change(function() {
+    saveSettings();
+  });
+  
+  // Sauvegarder les paramètres lorsque la désactivation de l'avertissement dans le popup change
+  $('#disable_warning_popup').change(function() {
+    saveSettings();
+  });
+}
+
+// Charger les paramètres au démarrage
+$(document).ready(function() {
+  loadSettings();
+  
+  // Déclencher les changements automatiques après avoir chargé les paramètres
+  var couvent = $('#couvents_list').val();
+  var couventsBJ = ['Toulouse', 'Montpellier', 'Bordeaux', 'Marseille', 'La Sainte-Baume', 'Monaco'];
+  
+  if (couventsBJ.includes(couvent)) {
+    $('#traduction_switch').prop('checked', true);
+  }
+  
+  if (couvent === 'Toulouse') {
+    $('#psaumes_switch').prop('checked', true);
+  }
+  
+  initSettingsHandlers();
 });
 
 
