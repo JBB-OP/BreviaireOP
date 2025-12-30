@@ -605,12 +605,21 @@ $(document).ready(function() {
   // Synchronisation de la tickbox du popup avec celle des paramètres
   $('#disable_warning_popup').change(function() {
     $('#disable_warning').prop('checked', $(this).is(':checked'));
+    localStorage.setItem('disableWarning', $(this).is(':checked'));
   });
   
   // Synchronisation de la tickbox des paramètres avec celle du popup
   $('#disable_warning').change(function() {
     $('#disable_warning_popup').prop('checked', $(this).is(':checked'));
+    localStorage.setItem('disableWarning', $(this).is(':checked'));
   });
+  
+  // Charger l'état de la tickbox depuis le stockage local
+  var disableWarning = localStorage.getItem('disableWarning');
+  if (disableWarning === 'true') {
+    $('#disable_warning').prop('checked', true);
+    $('#disable_warning_popup').prop('checked', true);
+  }
   
   // Afficher le popup à l'ouverture si l'avertissement n'est pas désactivé
   if (!$('#disable_warning').is(':checked')) {
