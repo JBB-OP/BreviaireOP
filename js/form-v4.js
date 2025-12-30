@@ -504,6 +504,18 @@ function update_settings(){
   update_anchors();
   update_liturgical_color("vert");
   update_office_class(office);
+  
+  // Gestionnaire d'événement pour la liste déroulante des couvents
+  $('#couvents_list').change(function() {
+    var couvent = $(this).val();
+    var couventsBJ = ['Toulouse', 'Montpellier', 'Bordeaux', 'Marseille', 'La Sainte-Baume', 'Monaco'];
+    
+    if (couventsBJ.includes(couvent)) {
+      $('#traduction_switch').prop('checked', true);
+    } else {
+      $('#traduction_switch').prop('checked', false);
+    }
+  });
 }
 
 function update_office_installation(){
