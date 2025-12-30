@@ -1739,12 +1739,12 @@ function update_office_soutenir(){
  
   texte_final = texte_final.concat("<div class='text_part' id='soutenir'>");
   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
-  sommaire = sommaire.concat("<li><a href='#soutenir'>Soutenir</a></li>");
+  sommaire = sommaire.concat("<li><a href='#soutenir'>Nous soutenir</a></li>");
 
-  texte_final = texte_final.concat("<h2> Soutenir </h2>");
+  texte_final = texte_final.concat("<h2> Nous soutenir </h2>");
   texte_final = texte_final.concat("Pour soutenir la province de Toulouse qui a codéveloppé et maintient cette webapplication, vous pouvez faire un don défiscalisé à l'Amitié dominicaine via la Fondation Nationale pour le Clergé. <br><br>");
   texte_final = texte_final.concat("<div class='button-container'><button id='soutenir_button' class='soutenir-button'>Nous soutenir</button></div> <br><br>");
-  texte_final = texte_final.concat("Si vous avez une remarque, une suggestion ou une erreur à faire remonter, vous pouvez envoyer un message à outils.apostoliques.op[at]gmail.com. <br><br>");
+  texte_final = texte_final.concat("Si vous souhaitez nous écrire, si vous avez une remarque, une suggestion ou une erreur à faire remonter, vous pouvez envoyer un message à outils.apostoliques.op[at]gmail.com. <br><br>");
 
   texte_final = texte_final.concat("</div>");
 
