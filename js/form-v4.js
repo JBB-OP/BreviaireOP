@@ -421,10 +421,10 @@ function update_office_credits(){
   update_liturgical_color("vert");
   update_office_class(office);
   
-  // Gestionnaire d'événement pour le bouton Nous soutenir
-  $('#soutenir_button').click(function() {
-    window.open('https://soutenir.fondationduclerge.com/?reserved_affectations=1258', '_blank');
-  });
+  // // Gestionnaire d'événement pour le bouton Nous soutenir
+  // $('#soutenir_button').click(function() {
+  //   window.open('https://soutenir.fondationduclerge.com/?reserved_affectations=1258', '_blank');
+  // });
 }
 
 
@@ -461,6 +461,33 @@ function update_office_credits(){
 //   update_office_class(office);
 // }
 
+
+function update_settings(){
+  var texte_final = '<div class="office_text" id="office_text">';
+  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
+  var titre = '<div class="office_titre" id="office_titre">';
+  titre = titre.concat("<h1>Paramètres</h1></div>")
+ 
+  texte_final = texte_final.concat("<div class='text_part' id='parametres'>");
+  sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
+  sommaire = sommaire.concat("<li><a href='#parametres'>Paramètres</a></li>");
+
+  texte_final = texte_final.concat("<h2> Traduction </h2>");
+  texte_final = texte_final.concat("Deux traductions des psaumes sont employés dans la province de Toulouse : la traduction liturgique de la Bible de Jérusalem ou la traduction liturgique officiel éditée par AELF.<br><br>");
+
+  texte_final = texte_final.concat("</div>");
+
+  $(".office_biographie").each(function(){$(this).html("")});
+  $(".office_content").each(function(){$(this).html(texte_final)});
+  $(".office_titre").each(function(){$(this).html(titre)});
+  $(".office_sommaire").each(function(){$(this).html(sommaire)});
+  $("body").removeClass("menu-open");
+  $('body').removeClass("background-open");
+  window.scrollTo(0, 0);
+  update_anchors();
+  update_liturgical_color("vert");
+  update_office_class(office);
+}
 
 
 function update_office_consecrations(){
