@@ -575,6 +575,44 @@ function update_office_installation(){
   update_office_class(office);
 }
 
+// Fonction pour afficher le popup d'avertissement à l'ouverture
+function showWelcomePopup() {
+  var popup = document.getElementById('welcome_popup');
+  if (popup) {
+    popup.style.display = 'block';
+  }
+}
+
+// Fonction pour fermer le popup
+function closeWelcomePopup() {
+  var popup = document.getElementById('welcome_popup');
+  if (popup) {
+    popup.style.display = 'none';
+  }
+}
+
+// Gestionnaire d'événement pour le bouton Fermer
+$(document).ready(function() {
+  $('#close_popup').click(function() {
+    closeWelcomePopup();
+  });
+  
+  // Synchronisation de la tickbox du popup avec celle des paramètres
+  $('#disable_warning_popup').change(function() {
+    $('#disable_warning').prop('checked', $(this).is(':checked'));
+  });
+  
+  // Synchronisation de la tickbox des paramètres avec celle du popup
+  $('#disable_warning').change(function() {
+    $('#disable_warning_popup').prop('checked', $(this).is(':checked'));
+  });
+  
+  // Afficher le popup à l'ouverture si l'avertissement n'est pas désactivé
+  if (!$('#disable_warning').is(':checked')) {
+    showWelcomePopup();
+  }
+});
+
 
 function update_office_consecrations(){
   var texte_final = '<div class="office_text" id="office_text">';

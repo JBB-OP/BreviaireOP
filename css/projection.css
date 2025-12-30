@@ -676,3 +676,60 @@ input:checked + .slider:before {
   margin-right: 10px;
   cursor: pointer;
 }
+
+/* Popup styles */
+#welcome_popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#welcome_popup .popup-content {
+  background-color: var(--menu-color);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#welcome_popup h2 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+#welcome_popup p {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popup-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#close_popup {
+  background-color: var(--liturgical-color);
+  color: white;
+}
+
+#settings_popup {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
