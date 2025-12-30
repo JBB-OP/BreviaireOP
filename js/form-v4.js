@@ -423,6 +423,67 @@ function update_office_credits(){
 }
 
 
+function update_settings(){
+  var texte_final = '<div class="office_text" id="office_text">';
+  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
+  var titre = '<div class="office_titre" id="office_titre">';
+  titre = titre.concat("<h1>Paramètres</h1></div>")
+ 
+  texte_final = texte_final.concat("<div class='text_part' id='sombre' style='margin-top: 0px;'>");
+  sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
+  sommaire = sommaire.concat("<li><a href='#sombre'>Mode Clair/Sombre</a></li>");
+
+  texte_final = texte_final.concat("<h2> Mode Clair/Sombre</h2>");
+  // bouton switch mode "Clair" / "Sombre"
+
+  texte_final = texte_final.concat("</div>");
+
+
+  // texte_final = texte_final.concat("<div class='text_part' id='Taille du texte'>");
+  // sommaire = sommaire.concat("<li><a href='#tailletexte'>Taille du texte</a></li>");
+
+  // texte_final = texte_final.concat("<h2> Taille du texte</h2>");
+  // Loupe + et loupe - avec un point de réglage sur le texte.
+
+  // texte_final = texte_final.concat("</div>");
+
+
+  texte_final = texte_final.concat("<div class='text_part' id='couvents'>");
+  sommaire = sommaire.concat("<li><a href='#couvents'>Couvents</a></li>");
+
+  texte_final = texte_final.concat("<h2>Couvents</h2>");
+  // Liste déroulante des couvents de la province de Toulouse
+
+  texte_final = texte_final.concat("</div>");
+
+  texte_final = texte_final.concat("<div class='text_part' id='traduction'>");
+  sommaire = sommaire.concat("<li><a href='#traduction'>Traduction</a></li>");
+
+  texte_final = texte_final.concat("<h2>Traduction</h2>");
+  // bouton switch AELF / BJ
+  texte_final = texte_final.concat("</div>");
+
+
+  texte_final = texte_final.concat("<div class='text_part' id='popuprein'>");
+  sommaire = sommaire.concat("<li><a href='#popuprein'>Avertissement</a></li>");
+
+  texte_final = texte_final.concat("<h2>Avertissement</h2>");
+  // Tickbox Désactivé l'avertissement à l'ouverture.
+
+  texte_final = texte_final.concat("</div>");
+
+  $(".office_biographie").each(function(){$(this).html("")});
+  $(".office_content").each(function(){$(this).html(texte_final)});
+  $(".office_titre").each(function(){$(this).html("")});
+  $(".office_sommaire").each(function(){$(this).html(sommaire)});
+  $("body").removeClass("menu-open");
+  $('body').removeClass("background-open");
+  window.scrollTo(0, 0);
+  update_anchors();
+  update_liturgical_color("vert");
+  update_office_class(office);
+}
+
 function update_office_installation(){
   var texte_final = '<div class="office_text" id="office_text">';
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
