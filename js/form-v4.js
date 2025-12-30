@@ -485,8 +485,8 @@ function update_settings(){
   texte_final = texte_final.concat("</div>");
   texte_final = texte_final.concat("</div>");
 
-  texte_final = texte_final.concat("<div class='text_part' id='repartition_psaumes'>");
-  sommaire = sommaire.concat("<li><a href='#repartition_psaumes'>Répartition des psaumes</a></li>");
+  texte_final = texte_final.concat("<div class='text_part' id='repartitionpsaumes'>");
+  sommaire = sommaire.concat("<li><a href='#repartitionpsaumes'>Répartition des psaumes</a></li>");
 
   texte_final = texte_final.concat("<h2>Répartition des psaumes</h2>");
   // bouton switch Romaine / Toulousaine
@@ -506,6 +506,12 @@ function update_settings(){
 
   texte_final = texte_final.concat("<h2>Avertissement</h2>");
   // Tickbox Désactivé l'avertissement à l'ouverture.
+  texte_final = texte_final.concat("<div class='checkbox-container'>");
+  texte_final = texte_final.concat("<label class='checkbox-label'>");
+  texte_final = texte_final.concat("<input type='checkbox' id='disable_warning' name='disable_warning'>");
+  texte_final = texte_final.concat("Désactiver l'avertissement à l'ouverture");
+  texte_final = texte_final.concat("</label>");
+  texte_final = texte_final.concat("</div>");
 
   texte_final = texte_final.concat("</div>");
 
