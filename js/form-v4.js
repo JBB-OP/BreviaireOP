@@ -476,11 +476,12 @@ function update_settings(){
   texte_final = texte_final.concat("<h2>Traduction</h2>");
   // bouton switch AELF / BJ
   texte_final = texte_final.concat("<div class='switch-container'>");
+  texte_final = texte_final.concat("<span class='switch-label'>AELF</span>");
   texte_final = texte_final.concat("<label class='switch'>");
   texte_final = texte_final.concat("<input type='checkbox' id='traduction_switch' name='traduction'>");
   texte_final = texte_final.concat("<span class='slider round'></span>");
   texte_final = texte_final.concat("</label>");
-  texte_final = texte_final.concat("<span id='traduction_label'>AELF</span>");
+  texte_final = texte_final.concat("<span class='switch-label'>BJ</span>");
   texte_final = texte_final.concat("</div>");
   texte_final = texte_final.concat("</div>");
 
@@ -503,15 +504,6 @@ function update_settings(){
   update_anchors();
   update_liturgical_color("vert");
   update_office_class(office);
-  
-  // Ajout du gestionnaire d'événement pour le switch de traduction
-  $('#traduction_switch').change(function() {
-    if($(this).is(':checked')) {
-      $('#traduction_label').text('BJ');
-    } else {
-      $('#traduction_label').text('AELF');
-    }
-  });
 }
 
 function update_office_installation(){
