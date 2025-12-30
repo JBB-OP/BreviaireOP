@@ -27,6 +27,46 @@ const hymnes = {
     }
 }
 
+const psaumes = {
+    "dimanche":{
+        "Psaume 90":"xxx",
+    }
+    "lundi":{
+        "Psaumes 4 et 133":"xxx",
+    }
+    "mardi":{
+        "Psaume 90":"xxx",
+    }
+    "mercredi":{
+        "Psaumes 4 et 133":"xxx",
+    }
+    "jeudi":{
+        "Psaume 90":"xxx",
+    }
+    "vendredi":{
+        "Psaumes 4 et 133":"xxx",
+    }
+    "samedi":{
+        "Psaumes 4 et 133":"xxx",
+    }
+}
+
+function liste_psaumescomplies(periode){
+  return Object.keys(psaumescomplies[periode]);
+}
+
+function psaumescomplies_from_titre(titre){
+  let titre_clean = hymne_aelf2bref(titre);
+  let texte = "";
+    for (var periode of Object.keys(hymnes)){
+        if (psaumescomplies[periode].hasOwnProperty(titre_clean)){
+            texte = psaumecomplies[periode][titre_clean];
+            break;
+        }
+    }
+    return texte;
+}
+
 function liste_hymnescomplies(periode){
   return Object.keys(hymnescomplies[periode]);
 }
@@ -64,7 +104,8 @@ function hymnecomplies_in_periode(titre, periode){
 function main(){
     console.log(liste_hymnescomplies("avent"));
     console.log(hymnecomplies_from_titre("Esprit qui planes sur les eaux"));
-    
+    console.log(liste_psaumescomplies("dimanche"));
+    console.log(psaumescomplies_from_titre("Psaume 90"))    
 }
 
 //main();
