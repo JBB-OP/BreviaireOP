@@ -485,6 +485,21 @@ function update_settings(){
   texte_final = texte_final.concat("</div>");
   texte_final = texte_final.concat("</div>");
 
+  texte_final = texte_final.concat("<div class='text_part' id='repartition_psaumes'>");
+  sommaire = sommaire.concat("<li><a href='#repartition_psaumes'>Répartition des psaumes</a></li>");
+
+  texte_final = texte_final.concat("<h2>Répartition des psaumes</h2>");
+  // bouton switch Romaine / Toulousaine
+  texte_final = texte_final.concat("<div class='switch-container'>");
+  texte_final = texte_final.concat("<span class='switch-label'>Romaine</span>");
+  texte_final = texte_final.concat("<label class='switch'>");
+  texte_final = texte_final.concat("<input type='checkbox' id='psaumes_switch' name='psaumes'>");
+  texte_final = texte_final.concat("<span class='slider round'></span>");
+  texte_final = texte_final.concat("</label>");
+  texte_final = texte_final.concat("<span class='switch-label'>Toulousaine</span>");
+  texte_final = texte_final.concat("</div>");
+  texte_final = texte_final.concat("</div>");
+
 
   texte_final = texte_final.concat("<div class='text_part' id='popuprein'>");
   sommaire = sommaire.concat("<li><a href='#popuprein'>Avertissement</a></li>");
@@ -514,6 +529,11 @@ function update_settings(){
       $('#traduction_switch').prop('checked', true);
     } else {
       $('#traduction_switch').prop('checked', false);
+    }
+    
+    // Activer automatiquement l'option Toulousaine si Toulouse est sélectionné
+    if (couvent === 'Toulouse') {
+      $('#psaumes_switch').prop('checked', true);
     }
   });
 }
