@@ -420,6 +420,11 @@ function update_office_credits(){
   update_anchors();
   update_liturgical_color("vert");
   update_office_class(office);
+  
+  // Gestionnaire d'événement pour le bouton Nous soutenir
+  $('#soutenir_button').click(function() {
+    window.open('https://soutenir.fondationduclerge.com/?reserved_affectations=1258', '_blank');
+  });
 }
 
 
@@ -1698,6 +1703,36 @@ texte_final = texte_final.concat("</div>");
   $(".office_biographie").each(function(){$(this).html("")});
   $(".office_content").each(function(){$(this).html(texte_final)});
   $(".office_titre").each(function(){$(this).html("")});
+  $(".office_sommaire").each(function(){$(this).html(sommaire)});
+  $("body").removeClass("menu-open");
+  $('body').removeClass("background-open");
+  window.scrollTo(0, 0);
+  update_anchors();
+  update_liturgical_color("vert");
+  update_office_class(office);
+}
+
+
+function update_office_soutenir(){
+  var texte_final = '<div class="office_text" id="office_text">';
+  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
+  var titre = '<div class="office_titre" id="office_titre">';
+  titre = titre.concat("<h1>Nous soutenir</h1></div>")
+ 
+  texte_final = texte_final.concat("<div class='text_part' id='soutenir'>");
+  sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
+  sommaire = sommaire.concat("<li><a href='#soutenir'>Soutenir</a></li>");
+
+  texte_final = texte_final.concat("<h2> Soutenir </h2>");
+  texte_final = texte_final.concat("Pour soutenir la province de Toulouse qui a codéveloppé et maintient cette webapplication, vous pouvez faire un don défiscalisé à l'Amitié dominicaine via la Fondation Nationale pour le Clergé. <br><br>");
+  texte_final = texte_final.concat("<button id='soutenir_button' class='soutenir-button'>Nous soutenir</button> <br><br>");
+  texte_final = texte_final.concat("Si vous avez une remarque, une suggestion ou une erreur à faire remonter, vous pouvez envoyer un message à outils.apostoliques.op[at]gmail.com. <br><br>");
+
+  texte_final = texte_final.concat("</div>");
+
+  $(".office_biographie").each(function(){$(this).html("")});
+  $(".office_content").each(function(){$(this).html(texte_final)});
+  $(".office_titre").each(function(){$(this).html(titre)});
   $(".office_sommaire").each(function(){$(this).html(sommaire)});
   $("body").removeClass("menu-open");
   $('body').removeClass("background-open");

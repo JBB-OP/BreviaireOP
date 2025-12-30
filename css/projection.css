@@ -733,3 +733,20 @@ input:checked + .slider:before {
   background-color: var(--liturgical-color);
   color: white;
 }
+
+/* Bouton Nous soutenir */
+.soutenir-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--liturgical-color);
+  color: white;
+  margin: 10px 0;
+}
+
+.soutenir-button:hover {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
