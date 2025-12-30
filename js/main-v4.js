@@ -247,7 +247,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const savedTraduction = localStorage.getItem('traduction');
   if (savedTraduction) {
     document.documentElement.setAttribute('data-traduction', savedTraduction);
-  } else if (window.matchMedia('(prefers-color-scheme: BJ)').matches) {
+  } else if (window.matchMedia('(prefers-traduction-scheme: BJ)').matches) {
     document.documentElement.setAttribute('data-traduction', 'BJ');
   }
 });
