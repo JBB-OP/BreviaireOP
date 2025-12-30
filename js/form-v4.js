@@ -444,6 +444,9 @@ function update_settings(){
     $('#psaumes_switch').prop('checked', true);
   }
   
+  // Initialiser les gestionnaires d'événements pour la sauvegarde
+  initSettingsHandlers();
+  
   var texte_final = '<div class="office_text" id="office_text">';
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
   var titre = '<div class="office_titre" id="office_titre">';
