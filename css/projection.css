@@ -725,11 +725,11 @@ input:checked + .slider:before {
 }
 
 #close_popup {
-  background-color: var(--liturgical-color);
-  color: white;
+  background-color: var(--hover-color);
+  color: var(--text-color);
 }
 
 #settings_popup {
-  background-color: var(--hover-color);
-  color: var(--text-color);
+  background-color: var(--liturgical-color);
+  color: white;
 }

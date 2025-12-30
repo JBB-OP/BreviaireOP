@@ -591,10 +591,15 @@ function closeWelcomePopup() {
   }
 }
 
-// Gestionnaire d'événement pour le bouton Fermer
+// Gestionnaire d'événement pour les boutons du popup
 $(document).ready(function() {
   $('#close_popup').click(function() {
     closeWelcomePopup();
+  });
+  
+  $('#settings_popup').click(function() {
+    closeWelcomePopup();
+    update_settings();
   });
   
   // Synchronisation de la tickbox du popup avec celle des paramètres
