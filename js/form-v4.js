@@ -564,36 +564,36 @@ function update_settings(){
   });
 }
 
-function update_office_installation(){
-  var texte_final = '<div class="office_text" id="office_text">';
-  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
-   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
+// function update_office_installation(){
+//   var texte_final = '<div class="office_text" id="office_text">';
+//   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
+//    sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
 
-  texte_final = texte_final.concat("<div class='text_part' id='installation'>");
-  sommaire = sommaire.concat("<li><a href='#installation'>Installation</a></li>");
+//   texte_final = texte_final.concat("<div class='text_part' id='installation'>");
+//   sommaire = sommaire.concat("<li><a href='#installation'>Installation</a></li>");
 
-  //texte_final = texte_final.concat("<h2> Installation </h2>");
-  texte_final = texte_final.concat("Pour installer cette application sur votre téléphone. <br><br>");
-  texte_final = texte_final.concat("<h3> iOS </h3>");
-  texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Partage" (<span class="material-symbols-outlined">ios_share</span>)<li>Appuyer sur "Ajouter à l\'écran d\'accueil" (<span class="material-symbols-outlined">add_box</span>)<li>Appuyer sur "Ajouter"</ul>');
+//   //texte_final = texte_final.concat("<h2> Installation </h2>");
+//   texte_final = texte_final.concat("Pour installer cette application sur votre téléphone. <br><br>");
+//   texte_final = texte_final.concat("<h3> iOS </h3>");
+//   texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Partage" (<span class="material-symbols-outlined">ios_share</span>)<li>Appuyer sur "Ajouter à l\'écran d\'accueil" (<span class="material-symbols-outlined">add_box</span>)<li>Appuyer sur "Ajouter"</ul>');
 
-  texte_final = texte_final.concat("<h3> Android </h3>");
-  texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Plus d\'informations" (<span class="material-symbols-outlined">more_vert</span>)<li>Appuyer sur "Installer l\'application" (<span class="material-symbols-outlined">install_mobile</span>)<li>Appuyer sur "Installer"</ul>');
+//   texte_final = texte_final.concat("<h3> Android </h3>");
+//   texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Plus d\'informations" (<span class="material-symbols-outlined">more_vert</span>)<li>Appuyer sur "Installer l\'application" (<span class="material-symbols-outlined">install_mobile</span>)<li>Appuyer sur "Installer"</ul>');
 
-  texte_final = texte_final.concat("</div>");
+//   texte_final = texte_final.concat("</div>");
 
 
-  $(".office_biographie").each(function(){$(this).html("")});
-  $(".office_content").each(function(){$(this).html(texte_final)});
-  $(".office_titre").each(function(){$(this).html("")});
-  $(".office_sommaire").each(function(){$(this).html(sommaire)});
-  $("body").removeClass("menu-open");
-  $('body').removeClass("background-open");
-  window.scrollTo(0, 0);
-  update_anchors();
-  update_liturgical_color("vert");
-  update_office_class(office);
-}
+//   $(".office_biographie").each(function(){$(this).html("")});
+//   $(".office_content").each(function(){$(this).html(texte_final)});
+//   $(".office_titre").each(function(){$(this).html("")});
+//   $(".office_sommaire").each(function(){$(this).html(sommaire)});
+//   $("body").removeClass("menu-open");
+//   $('body').removeClass("background-open");
+//   window.scrollTo(0, 0);
+//   update_anchors();
+//   update_liturgical_color("vert");
+//   update_office_class(office);
+// }
 
 // Fonction pour afficher le popup d'avertissement à l'ouverture
 function showWelcomePopup() {
