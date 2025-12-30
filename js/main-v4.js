@@ -232,3 +232,23 @@ window.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 });
+
+// TRADUCTION
+// Translation switch
+function toggleTraduction(){
+  const currentTraduction = document.documentElement.getAttribute('data-traduction');
+  const newTraduction = currentTraduction === 'BJ' ? 'AELF' : 'BJ';
+  document.documentElement.setAttribute('data-traduction', newTraduction);
+  localStorage.setItem('traduction', newTraduction);
+};
+
+// Load user preference on translation on startup
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTraduction = localStorage.getItem('traduction');
+  if (savedTraduction) {
+    document.documentElement.setAttribute('data-traduction', savedTraduction);
+  } else if (window.matchMedia('(prefers-color-scheme: BJ)').matches) {
+    document.documentElement.setAttribute('data-traduction', 'BJ');
+  }
+});
+
