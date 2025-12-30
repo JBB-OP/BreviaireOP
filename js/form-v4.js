@@ -515,6 +515,20 @@ function update_settings(){
 
   texte_final = texte_final.concat("</div>");
 
+
+  texte_final = texte_final.concat("<div class='text_part' id='installation'>");
+  sommaire = sommaire.concat("<li><a href='#installation'>Installation</a></li>");
+
+  texte_final = texte_final.concat("<h2> Installation </h2>");
+  texte_final = texte_final.concat("Pour installer cette application sur votre téléphone. <br><br>");
+  texte_final = texte_final.concat("<h3> iOS </h3>");
+  texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Partage" (<span class="material-symbols-outlined">ios_share</span>)<li>Appuyer sur "Ajouter à l\'écran d\'accueil" (<span class="material-symbols-outlined">add_box</span>)<li>Appuyer sur "Ajouter"</ul>');
+
+  texte_final = texte_final.concat("<h3> Android </h3>");
+  texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Plus d\'informations" (<span class="material-symbols-outlined">more_vert</span>)<li>Appuyer sur "Installer l\'application" (<span class="material-symbols-outlined">install_mobile</span>)<li>Appuyer sur "Installer"</ul>');
+
+  texte_final = texte_final.concat("</div>");
+
   $(".office_biographie").each(function(){$(this).html("")});
   $(".office_content").each(function(){$(this).html(texte_final)});
   $(".office_titre").each(function(){$(this).html("")});
