@@ -429,6 +429,21 @@ function update_office_credits(){
 
 
 function update_settings(){
+  // Charger les paramètres avant de construire l'interface
+  loadSettings();
+  
+  // Déclencher les changements automatiques après avoir chargé les paramètres
+  var couvent = $('#couvents_list').val();
+  var couventsBJ = ['Toulouse', 'Montpellier', 'Bordeaux', 'Marseille', 'La Sainte-Baume', 'Monaco'];
+  
+  if (couventsBJ.includes(couvent)) {
+    $('#traduction_switch').prop('checked', true);
+  }
+  
+  if (couvent === 'Toulouse') {
+    $('#psaumes_switch').prop('checked', true);
+  }
+  
   var texte_final = '<div class="office_text" id="office_text">';
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
   var titre = '<div class="office_titre" id="office_titre">';
