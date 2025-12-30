@@ -735,6 +735,11 @@ input:checked + .slider:before {
 }
 
 /* Bouton Nous soutenir */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .soutenir-button {
   padding: 10px 20px;
   border: none;

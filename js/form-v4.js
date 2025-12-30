@@ -1725,7 +1725,7 @@ function update_office_soutenir(){
 
   texte_final = texte_final.concat("<h2> Soutenir </h2>");
   texte_final = texte_final.concat("Pour soutenir la province de Toulouse qui a codéveloppé et maintient cette webapplication, vous pouvez faire un don défiscalisé à l'Amitié dominicaine via la Fondation Nationale pour le Clergé. <br><br>");
-  texte_final = texte_final.concat("<button id='soutenir_button' class='soutenir-button'>Nous soutenir</button> <br><br>");
+  texte_final = texte_final.concat("<div class='button-container'><button id='soutenir_button' class='soutenir-button'>Nous soutenir</button></div> <br><br>");
   texte_final = texte_final.concat("Si vous avez une remarque, une suggestion ou une erreur à faire remonter, vous pouvez envoyer un message à outils.apostoliques.op[at]gmail.com. <br><br>");
 
   texte_final = texte_final.concat("</div>");
@@ -1740,4 +1740,9 @@ function update_office_soutenir(){
   update_anchors();
   update_liturgical_color("vert");
   update_office_class(office);
+  
+  // Gestionnaire d'événement pour le bouton Nous soutenir
+  $('#soutenir_button').click(function() {
+    window.open('https://soutenir.fondationduclerge.com/?reserved_affectations=1258', '_blank');
+  });
 }
