@@ -250,5 +250,11 @@ window.addEventListener('DOMContentLoaded', () => {
   } else if (window.matchMedia('(prefers-traduction-scheme: BJ)').matches) {
     document.documentElement.setAttribute('data-traduction', 'BJ');
   }
+
+  // Add event listener for the translation toggle
+  const traductionToggle = document.getElementById('traduction-toggle');
+  if (traductionToggle) {
+    traductionToggle.addEventListener('change', toggleTraduction);
+  }
 });
 

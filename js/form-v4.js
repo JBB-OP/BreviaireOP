@@ -479,7 +479,7 @@ function update_settings(){
   texte_final = texte_final.concat('<div class="traduction-switch">');
   texte_final = texte_final.concat('<span class="label-text">AELF</span>');
   texte_final = texte_final.concat('<label class="switch">');
-  texte_final = texte_final.concat('<input type="checkbox" id="traduction-toggle">');
+  texte_final = texte_final.concat('<input type="checkbox" id="traduction-toggle" onclick="toggleTraduction()">');
   texte_final = texte_final.concat('<span class="slider round"></span>');
   texte_final = texte_final.concat('</label>');
   texte_final = texte_final.concat('<span class="label-text">BJ</span>');
