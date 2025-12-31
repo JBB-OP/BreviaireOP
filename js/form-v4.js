@@ -484,6 +484,7 @@ function update_settings(){
   texte_final = texte_final.concat('</label>');
   texte_final = texte_final.concat('<span class="label-text">BJ</span>');
   texte_final = texte_final.concat('</div>');
+  texte_final = texte_final.concat('<p id="traduction-status">La traduction choisie est : <span id="traduction-value"></span></p>');
 
   texte_final = texte_final.concat("</div>");
 
