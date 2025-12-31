@@ -475,6 +475,16 @@ function update_settings(){
   texte_final = texte_final.concat("<h2> Traduction </h2>");
   texte_final = texte_final.concat("Deux traductions des psaumes sont employés dans la province de Toulouse : la traduction liturgique de la Bible de Jérusalem ou la traduction liturgique officiel éditée par AELF.<br><br>");
 
+  // Ajout du bouton switch pour la traduction
+  texte_final = texte_final.concat('<div class="traduction-switch">');
+  texte_final = texte_final.concat('<span class="label-text">AELF</span>');
+  texte_final = texte_final.concat('<label class="switch">');
+  texte_final = texte_final.concat('<input type="checkbox" id="traduction-toggle">');
+  texte_final = texte_final.concat('<span class="slider round"></span>');
+  texte_final = texte_final.concat('</label>');
+  texte_final = texte_final.concat('<span class="label-text">BJ</span>');
+  texte_final = texte_final.concat('</div>');
+
   texte_final = texte_final.concat("</div>");
 
   $(".office_biographie").each(function(){$(this).html("")});

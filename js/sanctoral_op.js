@@ -131,9 +131,241 @@ var sanctoral = {
                 "intercession":"<p>Invoquons avec confiance le Seigneur Jésus, dont le Nom signifie « Sauveur » :</p><br/> R/ <p>Tu es notre espérance, Seigneur, notre salut !</p><br/><p>Jésus, Pain vivant descendu du ciel, Vois les foules affamées :<br/>– nourris-les de ta Parole et de ton Corps.<br/><br/>Jésus, Prince de la Paix, Vois les conflits qui opposent les hommes et les peuples :<br/>– fais venir ton règne de justice et d’amour.<br/><br/>Jésus, toi le Chemin et la Vérité, Vois les hommes qui s’égarent :<br/>– attire-les à toi pour les conduire au Père.<br/><br/>Jésus, bon Pasteur, Vois ton Église divisée :<br/>– rassemble tes brebis dans l’unique bercail.<br/><br/>Jésus, ton Nom ouvre les cieux,<br/>– introduis dans la maison du Père ceux qui t’ont invoqué avec foi et amour.</p>",
                 "oraison":"<p>Puisque nous vénérons aujourd’hui le saint Nom de Jésus, notre Sauveur, accorde-nous, Dieu notre Père, de connaître dès cette vie la douceur de son amitié, et d’être un jour comblés de sa joie dans le Royaume où il nous attend. Lui qui règne.</p>",
                 "benediction":""}},
-"04/01":{
-    "date":"04/01",
-    "titre":"Ste ANGÈLE DE FOLIGNO",
-    "sous_titre":"religieuse, IIIe Ordre",
+"07/01":{
+    "date":"07/01",
+    "titre":"Saint Raymond de Peñafort",
+    "sous_titre":"prêtre, dominicain",
     "rang":"Mémoire",
-    "biographie":"Née en 1248 d’une noble famille de Foligno, Angèle, mère de famille, mène une vie insouciante et mondaine, faite de luxe et de volupté, jusqu’à ce qu’elle prenne conscience du vide de sa vie. Elle implore saint François et commence un chemin de conversion. Ayant perdu en quelques mois sa mère, son mari et ses enfants, elle vend tous ses biens pour rejoindre le Tiers-Ordre franciscain (1291). D’un tempérament de feu, Angèle se livre tout entière à la pénitence, à la prière et aux extases par lesquelles Dieu illumine son âme. « Dans l’itinéraire spirituel d’Angèle », explique Benoît XVI dans l’une de ses catéchèses, « le passage de la conversion à l’expérience mystique a lieu à travers le Crucifix. C’est le « Dieu homme passionné » qui devient son « maître de perfection ». Un chemin très élevé, dont le secret est la prière constante : « plus tu prieras – affirme-t-elle – plus tu seras illuminé ; plus tu seras illuminé, plus profondément et intensément tu verras l’être suprêmement bon ; plus profondément et intensément tu le verras, plus tu l’aimeras. » L’ouvrage dans lequel elle relate ses expériences spirituelles est un des chefs-d’œuvre de la littérature mystique. Angèle meurt à Foligno, le 4 janvier 1309. Clément XI l’a déclarée bienheureuse le 11 juillet 1701 et elle fut canonisée par le Pape François le 9 octobre 2013.","laudatoSii":"FALSE","vepres_veille":{"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"hymne":{"titre":"","texte":""},"psaume_1":{"reference":"","titre":"","texte":""},"antienne_2":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_2":{"reference":"","titre":"","texte":""},"antienne_3":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_3":{"reference":"","titre":"","texte":""},"pericope":{"reference":"","texte":""},"repons":"","antienne_marie":{"antienne_A":"","antienne_B":""},"intercession":"","oraison":"","benediction":""},"lectures":{"hymne":{"titre":"","texte":""},"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_1":{"reference":"","titre":"","texte":""},"antienne_2":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_2":{"reference":"","titre":"","texte":""},"antienne_3":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_3":{"reference":"","titre":"","texte":""},"verset":"","lecture_biblique":{"titre":"","texte":""},"repons_bible":"","lecture_patristique":{"titre":"<p>EXTRAITS DE LA DERNIÈRE LETTRE DE STE ANGÈLE</p>","sous_titre":"<p>Le Mystère de l’Incarnation est le fondement de notre salut</p>","texte":"Ô mon Dieu, rends-moi digne de connaître l’immensité du mystère, l’œuvre de feu de ta charité ineffable, jaillie de la Trinité elle-même : je veux parler du mystère de ton Incarnation très sainte, principe de notre salut ; c’est cette Incarnation qui nous comble d’une double grâce : d’abord elle nous emplit de ton amour et ensuite elle nous donne la certitude d’être sauvés.<br><br>Ô incompréhensible charité ! On ne peut point imaginer amour plus grand que celui de mon Dieu se faisant homme pour me faire Dieu. Ô tendresse maternelle de Dieu ! En revêtant notre forme humaine, tu t’es dépouillé pour me revêtir, sans que ce dépouillement ait en rien diminué ta divinité ; Toi l’incompréhensible, tu t’offres à ma compréhension ! Toi l’incréé, tu es devenu créature ! Ô inconnaissable, tu es connaissable ! Ô insaisissable, tu te fais saisissable !<br><br>Seigneur, donne-moi de voir la profondeur de cette très haute charité à laquelle nous a fait communier cette très sainte Incarnation. Rends-moi digne, ô Dieu incréé, de connaître la profondeur de ton amour et de comprendre la charité ineffable à laquelle tu nous as fait communier en nous révélant, dans l’Incarnation, ton Fils Jésus et la manière dont ce même Fils nous a manifesté ton nom de Père.<br><br>Rends-moi digne, Seigneur, de connaître et de comprendre ton amour pour nous. Ô incompréhensible, rends39moi capable de connaître et de comprendre le feu de ta charité sans mesure et ta tendresse maternelle : c’est par elle que de toute éternité tu as choisi notre humanité, afin qu’elle te voie face à face comme toi, Très Haut, tu as été jusqu’à désirer nous voir face à face.<br><br>Ô plénitude de l’Être, donne-moi l’intelligence de ce don qui surpasse tous les dons. En effet, la multitude des anges et des saints n’a d’autre joie que de te voir aimé, de t’aimer et de te contempler. Ô don qui es au-dessus de tout don, puisque tu es l’Amour-même ! Bien souverain, tu as daigné te révéler à nous comme l’Amour et tu nous donnes d’aimer un tel Amour.<br><br>Et tous ceux qui viendront en ta présence seront comblés à la mesure de l’amour qu’ils avaient pour toi, et seul l’amour vrai ouvre le regard à la contemplation."},"repons_patristique":"R/ Tout puissant et souverain Dieu,<br/>Père saint et juste, nous te rendons grâce !<br/><br/>Par ta sainte volonté, et par ton Fils unique<br/>dans l’Esprit Saint, tu as créé toutes choses<br/>spirituelles et corporelles.<br/><br/>Par le saint amour dont tu nous as aimés,<br/>tu as voulu faire naître ton Fils,<br/>vrai Dieu et vrai homme.<br/><br/>Par sa croix, son sang et sa mort,<br/>Tu as voulu nous racheter de notre captivité.<br/><br/>Que ton Fils bien-aimé, en qui tu te complais,<br/>Te rende grâce lui-même pour tout.","oraison":"<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>"},"laudes":{"antienne_invitatoire":{"antienne_A":"","antienne_B":""},"hymne":{"titre":"","texte":""},"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_1":{"reference":"","titre":"","texte":""},"antienne_2":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_2":{"reference":"","titre":"","texte":""},"antienne_3":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_3":{"reference":"","titre":"","texte":""},"pericope":{"reference":"","texte":""},"repons":"","antienne_zacharie":{"antienne_A":"<p>Qui fait la volonté de mon Père, dit le Seigneur, sera mon frère, ma sœur et ma mère.</p>","antienne_B":""},"intercession":"","oraison":"<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>","benediction":""},"milieu_du_jour":{"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_1":{"reference":"","titre":"","texte":""},"pericope":{"reference":"","texte":""},"repons":""},"tierce":{"antienne":"","pericope":{"reference":"","texte":""},"verset":""},"none":{"antienne":"","pericope":{"reference":"","texte":""},"verset":""},"vepres":{"hymne":{"titre":"","texte":""},"antienne_1":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_1":{"reference":"","titre":"","texte":""},"antienne_2":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_2":{"reference":"","titre":"","texte":""},"antienne_3":{"additionel":"","antienne_A":"","antienne_B":""},"psaume_3":{"reference":"","titre":"","texte":""},"pericope":{"reference":"","texte":""},"repons":"","antienne_marie":{"antienne_A":"<p>Je considère tout comme une perte à cause de ce bien qui dépasse tout : la connaissance du Christ Jésus, mon Seigneur.</p>","antienne_B":""},"intercession":"","oraison":"<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>","benediction":""}};
+    "biographie": "...",
+        "laudatoSii": "FALSE",
+        "vepres_veille": {
+            "antienne_1": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "hymne": {
+                "titre": "",
+                "texte": ""
+            },
+            "psaume_1": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_2": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_2": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_3": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_3": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "pericope": {
+                "reference": "",
+                "texte": ""
+            },
+            "repons": "",
+            "antienne_marie": {
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "intercession": "",
+            "oraison": "",
+            "benediction": ""
+        },
+        "lectures": {
+            "hymne": {
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_1": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_1": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_2": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_2": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_3": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_3": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "verset": "",
+            "lecture_biblique": {
+                "titre": "",
+                "texte": ""
+            },
+            "repons_bible": "",
+            "lecture_patristique": {
+                "titre": "<p>Extrait des Lettres de saint Raymond de Penyafort</p>",
+                "sous_titre": "<p>Que le Dieu d'amour et de paix pacifie vos cœurs</p>",
+                "texte": "Saint Paul, prédicateur de la vérité, a dit vrai, sans mensonge, lorsqu'il a affirmé : Tous ceux qui veulent vivre avec piété dans le Christ seront persécutés. Je crois donc que personne de cette génération n'en est excepté, sinon ceux qui ont négligé ou ignoré de vivre dans le monde présent en hommes raisonnables, justes et pieux.<br/>Mais vous, il ne faut pas que vous soyez comptés  parmi ceux dont les maisons sont en paix, tranquilles et sûres, et que le bâton du Seigneur ne menace pas ceux dont la vie s'achève dans le b01aheur et qui descendent en paix au séjour des morts.<br/>Votre pureté et votre piété méritent et réclament, parce que vous êtes agréables à Dieu, que votre pureté soit purifiée encore davantage jusqu'à une transparence parfaite, par des meurtrissures répétées. Si un double ou un triple glaive vous frappe, il faut admettre que c'est la joie parfaite, et un signe d'amour. Le glaive à deux tranchants, ce sont combats au-dehors, craintes au-dedans. Et il est doublé ou triplé au-dedans, parce que l'esprit malin trouble profondément le cœur par sa ruse et ses séductions. Et ce genre de combats, vous l'avez suffisamment éprouvé jusqu'ici, autrement vous n'auriez pas pu parvenir à cette paix et tranquillité intérieure si belle.<br/>Au-dehors, le glaive est doublé ou triplé lorsque surgit sans raison une persécution ecclésiastique pour des motifs spirituels ; et là, les blessures les  plus douloureuses Tiennent de nos amis.<br/>Telle est cette croix du Christ, désirable et bonne : saint André, vraiment « viril » selon le sens de son nom, l'a embrassée d'un cœur joyeux ; en elle seule saint Paul, l'instrument de choix, nous dit que nous devons mettre notre orgueil.<br/>..."
+            },
+            "repons_patristique": "...",
+            "oraison": "<p>Dieu qui as donné à saint Raymond de Penyafort un immense amour des pécheurs et des prisonniers daigne, à sa prière, briser les liens de nos fautes pour que nous soyons libres d'agir comme il te plaît. Par Jésus Christ.</p>"
+        },
+        "laudes": {
+            "antienne_invitatoire": {
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "hymne": {
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_1": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_1": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_2": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_2": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_3": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_3": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "pericope": {
+                "reference": "",
+                "texte": ""
+            },
+            "repons": "",
+            "antienne_zacharie": {
+                "antienne_A": "<p>Qui fait la volonté de mon Père, dit le Seigneur, sera mon frère, ma sœur et ma mère.</p>",
+                "antienne_B": ""
+            },
+            "intercession": "",
+            "oraison": "<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>",
+            "benediction": ""
+        },
+        "milieu_du_jour": {
+            "antienne_1": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_1": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "pericope": {
+                "reference": "",
+                "texte": ""
+            },
+            "repons": ""
+        },
+        "tierce": {
+            "antienne": "",
+            "pericope": {
+                "reference": "",
+                "texte": ""
+            },
+            "verset": ""
+        },
+        "none": {
+            "antienne": "",
+            "pericope": {
+                "reference": "",
+                "texte": ""
+            },
+            "verset": ""
+        },
+        "vepres": {
+            "hymne": {
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_1": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_1": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_2": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_2": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "antienne_3": {
+                "additionel": "",
+                "antienne_A": "",
+                "antienne_B": ""
+            },
+            "psaume_3": {
+                "reference": "",
+                "titre": "",
+                "texte": ""
+            },
+            "pericope": {
+                "reference": "",
+                "texte": ""
+            },
+            "repons": "",
+            "antienne_marie": {
+                "antienne_A": "<p>Il éclaira de sa doctrine ceux qui étaient dans les ténèbres de l'erreur. Avec une charité ardente, il racheta ceux qui étaient captifs des chaînes et de la misère.</p>",
+                "antienne_B": ""
+            },
+            "intercession": "",
+            "oraison": "<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>",
+            "benediction": ""
+        }
+    },

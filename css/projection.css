@@ -636,7 +636,7 @@ p {
 }
 
 input:checked + .slider {
-  background-color: var(--liturgical-color);
+  background-color: var(--liturgical-white);
 }
 
 input:checked + .slider:before {

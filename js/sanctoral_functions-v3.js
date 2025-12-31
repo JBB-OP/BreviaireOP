@@ -713,12 +713,12 @@ var sanctoral = {
             "benediction": ""
         }
     },
-    "07/01": {
-        "date": "07/01",
-        "titre": "S. CHARLES MELCHIORI DE SEZZE",
-        "sous_titre": "religieux Ier Ordre",
-        "rang": "Mémoire Mineurs",
-        "biographie": "La vie de saint Charles de Sezze (1613-1670) est rythmée par des épisodes de maladie, qu’il vécut comme autant d’occasions d’aller à Dieu. Ses parents, de modestes paysans de Sezze (Italie), le mettent à l’école dans l’espoir d’en faire un prêtre, mais il peine à apprendre. Une grave maladie dont il guérit miraculeusement le renvoie à la culture des champs, propice à la contemplation. Il s’imprègne de l’exemple des saints et mène une vie pure et austère. À nouveau frappé par la maladie, il fait vœu d’embrasser la vie religieuse s’il guérit. À l’âge de 20 ans, il prend l’habit de frère lai (frère non prêtre) chez les franciscains réformés de Naziano. Il se consacre à l’adoration du saint Sacrement et rêve de donner son sang pour la foi chrétienne. Mais une fièvre violente l’empêche de se joindre aux frères en partance pour l’Inde. Il reconnaît la volonté de Dieu dans ce contretemps et en retire de nouvelles grâces. Envoyé à Rome, cet ignorant confond les savants sur des questions théologiques difficiles. Clément IX lui-même vient le consulter. Il meurt le 6 janvier 1670 au couvent de San Francesco a Ripa, à Rome. Béatifié par Léon XIII le 22 janvier 1882, c’est le premier saint à avoir été canonisé par Jean XXIII, le 12 avril 1959.",
+    "07/01":{
+    "date":"07/01",
+    "titre":"Saint Raymond de Peñafort",
+    "sous_titre":"prêtre, dominicain",
+    "rang":"Mémoire",
+    "biographie": "...",
         "laudatoSii": "FALSE",
         "vepres_veille": {
             "antienne_1": {
@@ -810,12 +810,12 @@ var sanctoral = {
             },
             "repons_bible": "",
             "lecture_patristique": {
-                "titre": "",
-                "sous_titre": "",
-                "texte": ""
+                "titre": "<p>Extrait des Lettres de saint Raymond de Penyafort</p>",
+                "sous_titre": "<p>Que le Dieu d'amour et de paix pacifie vos cœurs</p>",
+                "texte": "Saint Paul, prédicateur de la vérité, a dit vrai, sans mensonge, lorsqu'il a affirmé : Tous ceux qui veulent vivre avec piété dans le Christ seront persécutés. Je crois donc que personne de cette génération n'en est excepté, sinon ceux qui ont négligé ou ignoré de vivre dans le monde présent en hommes raisonnables, justes et pieux.<br/>Mais vous, il ne faut pas que vous soyez comptés  parmi ceux dont les maisons sont en paix, tranquilles et sûres, et que le bâton du Seigneur ne menace pas ceux dont la vie s'achève dans le b01aheur et qui descendent en paix au séjour des morts.<br/>Votre pureté et votre piété méritent et réclament, parce que vous êtes agréables à Dieu, que votre pureté soit purifiée encore davantage jusqu'à une transparence parfaite, par des meurtrissures répétées. Si un double ou un triple glaive vous frappe, il faut admettre que c'est la joie parfaite, et un signe d'amour. Le glaive à deux tranchants, ce sont combats au-dehors, craintes au-dedans. Et il est doublé ou triplé au-dedans, parce que l'esprit malin trouble profondément le cœur par sa ruse et ses séductions. Et ce genre de combats, vous l'avez suffisamment éprouvé jusqu'ici, autrement vous n'auriez pas pu parvenir à cette paix et tranquillité intérieure si belle.<br/>Au-dehors, le glaive est doublé ou triplé lorsque surgit sans raison une persécution ecclésiastique pour des motifs spirituels ; et là, les blessures les  plus douloureuses Tiennent de nos amis.<br/>Telle est cette croix du Christ, désirable et bonne : saint André, vraiment « viril » selon le sens de son nom, l'a embrassée d'un cœur joyeux ; en elle seule saint Paul, l'instrument de choix, nous dit que nous devons mettre notre orgueil.<br/>..."
             },
-            "repons_patristique": "",
-            "oraison": "<p>Ô Dieu, joie et lumière des bienheureux, tu as orné de dons célestes saint Charles de Sezze, qui brûlait de charité divine. Par son intercession écoute-nous dans ta bonté et enflamme nos cœurs du feu de ton amour. Par Jésus.</p>"
+            "repons_patristique": "...",
+            "oraison": "<p>Dieu qui as donné à saint Raymond de Penyafort un immense amour des pécheurs et des prisonniers daigne, à sa prière, briser les liens de nos fautes pour que nous soyons libres d'agir comme il te plaît. Par Jésus Christ.</p>"
         },
         "laudes": {
             "antienne_invitatoire": {
@@ -862,11 +862,11 @@ var sanctoral = {
             },
             "repons": "",
             "antienne_zacharie": {
-                "antienne_A": "",
+                "antienne_A": "<p>Qui fait la volonté de mon Père, dit le Seigneur, sera mon frère, ma sœur et ma mère.</p>",
                 "antienne_B": ""
             },
             "intercession": "",
-            "oraison": "<p>Ô Dieu, joie et lumière des bienheureux, tu as orné de dons célestes saint Charles de Sezze, qui brûlait de charité divine. Par son intercession écoute-nous dans ta bonté et enflamme nos cœurs du feu de ton amour. Par Jésus.</p>",
+            "oraison": "<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>",
             "benediction": ""
         },
         "milieu_du_jour": {
@@ -943,11 +943,11 @@ var sanctoral = {
             },
             "repons": "",
             "antienne_marie": {
-                "antienne_A": "",
+                "antienne_A": "<p>Il éclaira de sa doctrine ceux qui étaient dans les ténèbres de l'erreur. Avec une charité ardente, il racheta ceux qui étaient captifs des chaînes et de la misère.</p>",
                 "antienne_B": ""
             },
             "intercession": "",
-            "oraison": "<p>Ô Dieu, joie et lumière des bienheureux, tu as orné de dons célestes saint Charles de Sezze, qui brûlait de charité divine. Par son intercession écoute-nous dans ta bonté et enflamme nos cœurs du feu de ton amour. Par Jésus.</p>",
+            "oraison": "<p>Répands sur nous, Seigneur, cet esprit de contemplation et d’amour dont tu as comblé ta servante Angèle de Foligno ; puissions-nous, en cherchant à te servir comme elle, croire et vivre de manière à te plaire. Par Jésus Christ.</p>",
             "benediction": ""
         }
     },
@@ -4045,720 +4045,720 @@ var sanctoral = {
             "benediction": ""
         }
     },
-    "07/02": {
-        "date": "07/02",
-        "titre": "Ste COLETTE ",
-        "sous_titre": "vierge IIe Ordre",
-        "rang": "Fête IIe Ordre",
-        "biographie": "Née à Corbie (Somme) en 1381, orpheline à 18 ans, elle fut sous la tutelle du seigneur abbé de Saint-Pierre-de-Corbie, de qui elle obtient la permission de se faire religieuse. Trois essais différents n’ayant pu répondre à son idéal de pauvreté, elle entre - sur le conseil du Cordelier Jehan Pinet - dans le Tiers-Ordre franciscain à Hesdin (Artois). En 1402, elle revient à Corbie où elle vit en recluse pendant quatre ans. C’est alors qu’elle se sent appelée à réformer la famille franciscaine. Accompagnée par le Franciscain Henri de Baume, elle se rend auprès de Benoît XIII, pape d’Avignon, dont elle relevait. Celui-ci, tout heureux, approuve son projet, reçoit sa profession de la Règle de sainte Claire, et la nomme abbesse de tous les monastères qu’elle fondera ou réformera. Son pays natal refusant de la recevoir, elle vient en Franche-Comté inaugurer sa mission : Besançon est, en 1410, le premier monastère régulier de la Réforme ; dès lors, les fondations et les réformes se succèdent. Elle rétablit aussi la vie religieuse dans de nombreux couvents du Ier Ordre, particulièrement en Franche-Comté, en Artois, en Germanie Inférieure. Elle meurt au monastère de Gand (Belgique) le 6 mars 1447. Son corps fut transporté à Poligny (Jura) en 1783. Elle fut béatifiée en 1625 et canonisée par le pape Pie VII le 24 mai 1807.",
-        "laudatoSii": "FALSE",
-        "vepres_veille": {
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "repons": "",
-            "antienne_marie": {
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "intercession": "",
-            "oraison": "",
-            "benediction": ""
-        },
-        "lectures": {
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Qu’il est bon, qu’il est beau, d’aimer Dieu et de le servir.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "Psaume 18 B",
-                "titre": "<p>Hymne à Dieu, maître de la loi</p>",
-                "texte": "<p><span class=\"verse_number\">8</span> La loi du Seigne<u>u</u>r est parfaite,<br />\n   qui redonne vie ; *<br />\nla charte du Seigne<u>u</u>r est sûre,<br />\n   qui rend s<u>a</u>ges les simples.<br /><br /><span class=\"verse_number\">9</span> Les préceptes du Seigne<u>u</u>r sont droits,<br />\n   ils réjou<u>i</u>ssent le cœur ; *<br />\nle commandement du Seigne<u>u</u>r est limpide,<br />\n   il clarif<u>i</u>e le regard.<br /><br /><span class=\"verse_number\">10</span> La crainte qu'il insp<u>i</u>re est pure,<br />\n   elle est l<u>à</u> pour toujours ; *<br />\nles décisions du Seigne<u>u</u>r sont justes<br />\n   et vraim<u>e</u>nt équitables :<br /><br /><span class=\"verse_number\">11</span> plus désir<u>a</u>bles que l'or,<br />\n   qu'une m<u>a</u>sse d'or fin, *<br />\nplus savoure<u>u</u>ses que le miel<br />\n   qui co<u>u</u>le des rayons.<br /><br /><span class=\"verse_number\">12</span> Aussi ton serviteur en <u>e</u>st illuminé ; +<br />\n   à les garder, il tro<u>u</u>ve son profit. *<br /><span class=\"verse_number\">13</span> Qui peut discern<u>e</u>r ses erreurs ?<br />\n   Purifie-moi de c<u>e</u>lles qui m'échappent.<br /><br /><span class=\"verse_number\">14</span> Préserve aussi ton servite<u>u</u>r de l'orgueil :<br />\n   qu'il n'ait sur m<u>o</u>i aucune emprise. *<br />\nAlors je ser<u>a</u>i sans reproche,<br />\n   p<u>u</u>r d'un grand péché.<br /><br /><span class=\"verse_number\">15</span> Accueille les par<u>o</u>les de ma bouche,<br />\n   le murm<u>u</u>re de mon cœur ; *<br />\nqu'ils parvi<u>e</u>nnent devant toi,<br />\n   Seigneur, mon roch<u>e</u>r, mon défenseur !</p>"
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "<p>Pour l'amour de Jésus Christ, nous avons tout abandonné. </p>",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "Psaume 44-I",
-                "titre": "<p>Chant nuptial pour le roi</p>",
-                "texte": "<p><span class=\"verse_number\">2</span> D'heureuses paroles jaill<u>i</u>ssent de mon cœur<br />\nquand je dis mes po<u>è</u>mes pour le roi<br />\nd'une langue aussi vive que la pl<u>u</u>me du scribe !<br /><br /><span class=\"verse_number\">3</span> Tu es beau, comme aucun des enf<u>a</u>nts de l'homme,<br />\nla grâce est répand<u>u</u>e sur tes lèvres :<br />\noui, Dieu te bén<u>i</u>t pour toujours.<br /><br /><span class=\"verse_number\">4</span> Guerrier valeureux, porte l'épée de nobl<u>e</u>sse et d'honneur !<br /><span class=\"verse_number\">5</span> Ton honneur, c'est de cour<u>i</u>r au combat<br />\npour la justice, la clém<u>e</u>nce et la vérité.<br /><br /><span class=\"verse_number\">6</span> Ta main jettera la stupeur, les fl<u>è</u>ches qui déchirent ;<br />\nsous tes coups, les pe<u>u</u>ples s'abattront,<br />\nles ennemis du roi, frapp<u>é</u>s en plein cœur.<br /><br /><span class=\"verse_number\">7</span> Ton trône est divin, un tr<u>ô</u>ne éternel ;<br />\nton sceptre royal est sc<u>e</u>ptre de droiture :<br /><span class=\"verse_number\">8</span> tu aimes la justice, tu répro<u>u</u>ves le mal.<br /><br />\nOui, Dieu, ton Die<u>u</u> t'a consacré<br />\nd'une onction de joie, comme auc<u>u</u>n de tes semblables ;<br /><span class=\"verse_number\">9</span> la myrrhe et l'aloès parf<u>u</u>ment ton vêtement.<br /><br />\nDes palais d'ivoire, la mus<u>i</u>que t'enchante.<br /><span class=\"verse_number\">10</span> Parmi tes bien-aimées sont des f<u>i</u>lles de roi ;<br />\nà ta droite, la préférée, sous les <u>o</u>rs d'Ophir.</p>"
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "Psaume 44-II",
-                "titre": "",
-                "texte": "<p><span class=\"verse_number\">11</span> Écoute, ma fille, reg<u>a</u>rde et tends l'oreille ;<br />\noublie ton peuple et la mais<u>o</u>n de ton père :<br /><span class=\"verse_number\">12</span> le roi sera sédu<u>i</u>t par ta beauté.<br /><br />\nIl est ton Seigneur : prosterne-t<u>o</u>i devant lui.<br /><span class=\"verse_number\">13</span> Alors, fille de Tyr, les plus r<u>i</u>ches du peuple,<br />\nchargés de présents, quêter<u>o</u>nt ton sourire.<br /><br /><span class=\"verse_number\">14</span> Fille de roi, elle est l<u>à</u>, dans sa gloire,<br />\nvêtue d'ét<u>o</u>ffes d'or ;<br /><span class=\"verse_number\">15</span> on la conduit, toute par<u>é</u>e, vers le roi.<br /><br />\nDes jeunes filles, ses compagnes, lui f<u>o</u>nt cortège ;<br /><span class=\"verse_number\">16</span> on les conduit parmi les ch<u>a</u>nts de fête :<br />\nelles entrent au pal<u>a</u>is du roi.<br />\n <br /><span class=\"verse_number\">17</span> À la place de tes pères se lèver<u>o</u>nt tes fils ;<br />\nsur toute la terre tu feras d'e<u>u</u>x des princes.<br /><br /><span class=\"verse_number\">18</span> Je ferai vivre ton nom pour les <u>â</u>ges des âges :<br />\nque les peuples te rendent grâce,<br />\ntoujo<u>u</u>rs, à jamais !</p>"
-            },
-            "verset": "<p>V/ C’est de Dieu, et de Lui seul, qu’il faut tout attendre.<br/>Croyez qu’Il achèvera ce qu’Il a commencé.</p>",
-            "lecture_biblique": {
-                "titre": "<p>DU LIVRE DE BEN SIRAC 51, 13-30</p>",
-                "texte": "Quand j’étais encore jeune et que je n’avais pas erré çà et là, aux yeux de tous j’ai cherché la Sagesse dans ma prière. Devant le Temple, je priais pour la recevoir, et jusqu’au bout je la rechercherai. Depuis la fleur jusqu’à la maturité de la grappe, elle a été la joie de mon cœur. Mon pied s’est avancé sur le droit chemin ; depuis ma jeunesse, je marchais sur ses traces. Il m’a suffi de tendre un peu l’oreille pour la recevoir, et j’y ai trouvé de grandes leçons. Grâce à elle, j’ai progressé ; je rendrai gloire à celui qui me donne la Sagesse. J’ai résolu de la mettre en pratique, ardemment j’ai désiré le bien, et jamais je n’aurai à le regretter. Pour elle, j’ai vaillamment combattu, j’ai mis, à pratiquer la Loi, beaucoup d’exactitude. J’ai levé mes mains vers le ciel, j’ai déploré de la connaître si mal. J’ai dirigé mon âme vers elle, c’est dans la pureté que je l’ai trouvée. Avec elle, dès le commencement, j’ai trouvé l’intelligence, c’est pourquoi je ne serai jamais abandonné. Bouleversé jusqu’au fond de moi-même, je l’ai recherchée ; c’est pourquoi j’ai obtenu un bien excellent. En récompense, le Seigneur m’a donné une langue avec laquelle je le louerai. Approchez-vous de moi, vous qui n’avez pas d’instruction prenez place dans mon école. Pourquoi dire que vous manquez de sagesse, pourquoi vos âmes ont-elles si grande soif ? J’ouvre la bouche et déclare : « Faites-en l’acquisition sans rien payer ; placez votre cou sous le joug, et recevez l’instruction. » On la trouve tout près de soi. Constatez-le de vos yeux : en prenant peu de peine, j’ai trouvé beaucoup de repos. Accédez à l’instruction à grand prix d’argent :vous en retirerez beaucoup d’or. Que votre âme trouve sa joie dans la miséricorde du Seigneur, n’ayez pas de honte à le louer. Accomplissez votre œuvre avant le temps fixé, et il vous donnera la récompense en son temps."
-            },
-            "repons_bible": "Stance/<br/>Pourquoi garder toute la nuit <br/>vos lampes allumées ?<br/>Pourquoi donner à votre vie<br/>le sens d’une attente infinie ?<br/>Quelle espérance vous tient éveillées, <br/>vierges sages, et quelle promesse de joie ?<br/><br/>R/ Heureux les invités aux noces de l’Agneau !<br/><br/>Vers la ténèbre lumineuse <br/>vos regards sont levés,<br/>et Dieu qui vous attend <br/>comblera seul votre quête.<br/><br/>Pour une perle sans prix,<br/>vous avez tout quitté,<br/>les mains ouvertes et libres en offrande.<br/><br/>À votre humble fierté, l’Église, joyeuse, <br/>reconnaît son visage, sa grâce de fiancée.<br/><br/>À travers l’amour qui brûle en vous, <br/>servantes du Seigneur,<br/>le cœur de Dieu nous presse<br/>De l’aimer sans partage. ",
-            "lecture_patristique": {
-                "titre": "<p>EXTRAIT DES DERNIERS AVIS DE STE COLETTE</p>",
-                "sous_titre": "<p>Le chemin de toute perfection et de toute sainteté</p>",
-                "texte": "C’est du Tout-Puissant et de Lui seul qu’il faut tout attendre. Croyez qu’il achèvera ce qu’Il a commencé ; croyez en même temps, mes bien-aimées Sœurs, qu’Il consommera l’œuvre de votre sanctification ; mais c’est à une condition, c’est que vous répondiez fidèlement à toute l’étendue de votre vocation et que par vos bonnes œuvres, vous travailliez à rendre certaine votre élection.<br><br>En quoi consistent ces bonnes œuvres ? Pour vous, mes chères Sœurs, elles consistent toutes dans l’accomplissement de la Règle ; observez-la à la lettre et vous aurez trouvé le chemin de toute perfection et de toute sainteté.<br><br>Aimez la pauvreté comme votre Mère; gardez-la comme le plus précieux des trésors ; c’est le plus riche héritage que notre Père saint François nous ait légué !<br><br>Soyons généreuses envers Dieu. Mais qu’est-ce qu’être généreux ? C’est donner plus qu’on ne doit. Il nous est donc impossible à la rigueur d’être généreuses envers Dieu puisqu’en lui donnant tout, nous ne lui donnons que ce qui lui est dû ; cependant, Il est assez bon pour regarder comme une marque de générosité, d’abord tout ce que nous faisons avec ferveur et allégresse ; deuxièmement, l’exactitude que nous mettons à remplir les plus légères observances ; troisièmement, le désir que nous avons d’en faire plus encore, si nous le pouvions. Surtout, oublions-nous nous-mêmes et n’ayons en vue que le bon plaisir et la gloire de Dieu : c’est alors qu’Il verra dans nos œuvres la générosité dont notre faiblesse est capable.<br><br>Est-il nécessaire que je vous recommande la dévotion et la confiance envers la très sainte Vierge ?<br><br>Elle est trop profondément gravée dans vos cœurs pour qu’elle puisse jamais s’effacer ou même s’altérer. Marie est la Mère de Dieu et la nôtre : elle est la gardienne de la réforme ; servez-la donc constamment. Elle vous soutiendra dans vos faiblesses ; elle vous défendra contre les assauts de l’enfer ; elle entretiendra dans vos cœurs ce feu sacré de l’amour divin qui doit faire la vie d’une Clarisse.<br><br>Je sens que cette demeure terrestre dans laquelle mon âme est renfermée va bientôt se dissoudre et rentrer dans la poussière d’où elle est sortie... Qu’il retourne donc en terre, ce misérable corps ! Qu’il soit détruit afin de rendre gloire à Dieu par sa destruction, qu’il y retourne jusqu’à ce jour où il sortira du tombeau pour se réunir à mon âme et ne plus s’en séparer !...<br><br>Ce jour vous attend aussi mes chères Sœurs, ce jour de félicité pour les Élus, jour que le Seigneur a fait et qui n’aura jamais de fin. Alors, nous nous retrouverons réunies dans le Sein de Dieu, océan de paix et de joie. Vivez de manière à ce que vos noms ne soient jamais effacés du Livre de Vie.<br><br>Adieu donc, mes chères et bien-aimées Sœurs ! Non, je ne vous oublierai pas plus au ciel que je ne vous ai oubliées sur la terre. Que l’amour et la grâce de notre Seigneur remplissent vos esprits et vos cœurs ! Que ses bénédictions descendent sur vous et vous conservent jusqu’à la fin."
-            },
-            "repons_patristique": "R/ Aujourd’hui comme au premier jour, <br/>le Royaume est promis aux pauvres.<br/><br/>Que le souvenir de son appel <br/>ne quitte jamais ta mémoire !<br/><br/>C’est le Père qui t’a attirée,<br/>et le Fils de Dieu s’est fait ton Chemin.<br/><br/>Claire et François te précèdent ;<br/>avec tes sœurs, poursuis ta course de joie.",
-            "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>"
-        },
-        "laudes": {
-            "antienne_invitatoire": {
-                "antienne_A": "Louons Jésus, notre Dieu, qui nous attire à son amour.",
-                "antienne_B": ""
-            },
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Tu m’as consacrée au servie de ta louange, et je garde en mon cœur les paroles de vie.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "Psaume 62",
-                "titre": "",
-                "texte": "<p><span class=\"verse_number\">2</span> Dieu, tu es mon Dieu,<br />\n   je te ch<u>e</u>rche dès l’aube : *<br />\nmon âme a s<u>o</u>if de toi ;<br />\naprès toi langu<u>i</u>t ma chair,<br />\nterre aride, altér<u>é</u>e, sans eau.<br /><br /><span class=\"verse_number\">3</span> Je t’ai contempl<u>é</u> au sanctuaire,<br />\nj’ai vu ta f<u>o</u>rce et ta gloire.<br /><span class=\"verse_number\">4</span> Ton amour vaut mie<u>u</u>x que la vie :<br />\ntu seras la lou<u>a</u>nge de mes lèvres !<br /><br /><span class=\"verse_number\">5</span> Toute ma vie je v<u>a</u>is te bénir,<br />\nlever les mains en invoqu<u>a</u>nt ton nom.<br /><span class=\"verse_number\">6</span> Comme par un festin je ser<u>a</u>i rassasié ;<br />\nla joie sur les lèvres, je dir<u>a</u>i ta louange.<br /><br /><span class=\"verse_number\">7</span> Dans la nuit, je me souvi<u>e</u>ns de toi<br />\net je reste des he<u>u</u>res à te parler.<br /><span class=\"verse_number\">8</span> Oui, tu es ven<u>u</u> à mon secours :<br />\nje crie de joie à l’<u>o</u>mbre de tes ailes.<br /><span class=\"verse_number\">9</span> Mon âme s’att<u>a</u>che à toi,<br />\nta main dr<u>o</u>ite me soutient.<br />\n[10-12]</p>"
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "<p>Aimons Dieu... Chantons ses louanges.</p>",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "Cantique des trois enfants",
-                "titre": "",
-                "texte": "<p><span class=\"verse_number\">57</span> Toutes les œ<u>u</u>vres du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">58</span> Vous, les <u>a</u>nges du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">59</span> Vo<u>u</u>s, les cieux,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">60</span> et vous, les ea<u>u</u>x par-dessus le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">61</span> et toutes les puiss<u>a</u>nces du Seigneur,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">62</span> Et vous, le sol<u>e</u>il et la lune,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">63</span> et vous, les <u>a</u>stres du ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">64</span> vous toutes, plu<u>i</u>es et rosées,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">65</span> Vous tous, so<u>u</u>ffles et vents,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">66</span> et vous, le fe<u>u</u> et la chaleur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">67</span> et vous, la fraîche<u>u</u>r et le froid,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">68</span> Et vous, le g<u>i</u>vre et la rosée,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">69</span> et vous, le g<u>e</u>l et le froid,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">70</span> et vous, la gl<u>a</u>ce et la neige,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">71</span> Et vous, les nu<u>i</u>ts et les jours,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">72</span> et vous, la lumi<u>è</u>re et les ténèbres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">73</span> et vous, les écl<u>a</u>irs, les nuées,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">74</span> Que la terre bén<u>i</u>sse le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">75</span> Et vous, mont<u>a</u>gnes et collines,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">76</span> et vous, les pl<u>a</u>ntes de la terre,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">77</span> et vous, so<u>u</u>rces et fontaines,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">78</span> Et vous, océ<u>a</u>ns et rivières,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">79</span> baleines et b<u>ê</u>tes de la mer,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">80</span> vous tous, les oisea<u>u</u>x dans le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">81</span> vous tous, fa<u>u</u>ves et troupeaux<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">82</span> Et vous, les enf<u>a</u>nts des hommes,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">83</span> Toi, Israël,<br />\n   bénis le Seigneur,<br /><span class=\"verse_number\">84</span> Et vo<u>u</u>s, les prêtres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">85</span> vo<u>u</u>s, ses serviteurs,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">86</span> Les esprits et les <u>â</u>mes des justes,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">87</span> les saints et les h<u>u</u>mbles de cœur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">88</span> Ananias, Azari<u>a</u>s et Misaël,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br />\nBénissons le Père, le F<u>i</u>ls et l'Esprit Saint :<br />\nÀ lui, haute gloire, louange éternelle !<br /><span class=\"verse_number\">56</span> Béni sois-tu, Seigneur, au firmam<u>e</u>nt du ciel :<br />\nÀ toi, haute gloire, louange éternelle !</p>"
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "<p>Sa vie, telle une flamme, ranime dans l’Église l’attente du Royaume. </p>",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "Psaume 149",
-                "titre": "",
-                "texte": "<span class=\"verse_number\">1</span> Chantez au Seigne<u>u</u>r un chant nouveau,<br>louez-le dans l’assembl<u>é</u>e de ses fidèles !<br><span class=\"verse_number\">2</span> En Israël, j<u>o</u>ie pour son créateur ;<br>dans Sion, allégr<u>e</u>sse pour son Roi !<br><span class=\"verse_number\">3</span> Dansez à la lou<u>a</u>nge de son nom,<br>jouez pour lui, tambour<u>i</u>ns et cithares !<br><br><span class=\"verse_number\">4</span> Car le Seigneur <u>a</u>ime son peuple,<br>il donne aux humbles l’écl<u>a</u>t de la victoire.<br><span class=\"verse_number\">5</span> Que les fidèles ex<u>u</u>ltent, glorieux,<br>criant leur joie à l’he<u>u</u>re du triomphe.<br><span class=\"verse_number\">6</span> Qu’ils proclament les él<u>o</u>ges de Dieu,<br>tenant en main l’ép<u>é</u>e à deux tranchants.<br><br><span class=\"verse_number\">7</span> Tirer venge<u>a</u>nce des nations,<br>infliger aux pe<u>u</u>ples un châtiment,<br><span class=\"verse_number\">8</span> charger de ch<u>a</u>înes les rois,<br>jeter les pr<u>i</u>nces dans les fers,<br><span class=\"verse_number\">9</span> leur appliquer la sent<u>e</u>nce écrite,<br>c’est la fiert<u>é</u> de ses fidèles.<br>"
-            },
-            "pericope": {
-                "reference": "Jdt 13, 19-20",
-                "texte": " Jamais l'espérance dont tu as fait preuve ne s'éloignera du cœur des hommes, mais ils se rappelleront éternellement la puissance de Dieu. Oui, Dieu fasse que tu sois exaltée à jamais, qu'il te visite de ses bienfaits, car tu n'as pas épargné ta propre vie pour la cause de notre race humiliée, tu es sortie pour empêcher notre ruine, marchant avec droiture devant notre Dieu. \" Et tout le peuple dit : « Amen ! Amen ! »"
-            },
-            "repons": "R/ Seigneur, tu es mon Dieu,<br/>* je n’ai pas d’autre bonheur que toi.<br/><br/>V/ Tu m’apprends le chemin de la vie <br/>*je n’ai pas d’autre bonheur que toi. <br/><br/>V/ Ta parole est la lumière de mes pas,<br/>* je n’ai pas d’autre bonheur que toi ; <br/><br/>Gloire au Père. R/ Seigneur…",
-            "antienne_zacharie": {
-                "antienne_A": "<p>Lancée sur des chemins inconnus, Colette fait lever pour tout un peuple une espérance neuve.</p>",
-                "antienne_B": ""
-            },
-            "intercession": "<p>Bénissons le Seigneur pour l’œuvre accomplie par l’Esprit en sainte Colette :</p><br/> R/ <p>Béni sois-tu, Seigneur, pour sainte Colette, qui a consacré sa vie à travailler pour l’Église, en vraie disciple de François.</p><br/><p>Pour son exemple rayonnant qui a fait refleurir paix et silence, prière et joyeuse pénitence, parmi les filles de Claire.<br/><br/>Pour son amour de « Dame Pauvreté », qui a renouvelé dans l’Église l’esprit des Béatitudes.<br/><br/>Pour sa prière incessante et sa charité toujours en éveil, qui ont fait d’elle une messagère de paix et d’unité.</p>",
-            "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
-            "benediction": ""
-        },
-        "milieu_du_jour": {
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Tant que paix, amour et charité seront entre vous, notre Seigneur ne vous délaissera pas.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "Is 30, 21",
-                "texte": "Tes oreilles entendront la voix qui dira derrière toi quand tu devras aller ou à droite ou à gauche : « Voici le chemin, prenez-le ». "
-            },
-            "repons": "V/ Nous nous sommes engagées à marcher <br/>dans le sentier étroit, <br/>à la suite de Jésus Christ, notre Sauveur. "
-        },
-        "tierce": {
-            "antienne": "",
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "verset": ""
-        },
-        "none": {
-            "antienne": "",
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "verset": ""
-        },
-        "vepres": {
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Libre pour ton Seigneur, tu as suivi d’un cœur joyeux le chemin de sa Pâque.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "Psaume 121",
-                "titre": "<p>Salut à la Ville sainte</p>",
-                "texte": "<p><span class=\"verse_number\">1</span> Quelle j<u>o</u>ie quand on m’a dit :<br />\n« Nous irons à la mais<u>o</u>n du Seigneur ! »<br /><br /><span class=\"verse_number\">2</span> Maintenant notre m<u>a</u>rche prend fin<br />\ndevant tes p<u>o</u>rtes, Jérusalem !<br /><span class=\"verse_number\">3</span> Jérusalem, te voic<u>i</u> dans tes murs :<br />\nville où tout ens<u>e</u>mble ne fait qu’un !<br /><br /><span class=\"verse_number\">4</span> C’est là que montent les tribus,<br />\n   les trib<u>u</u>s du Seigneur, *<br />\nlà qu’Israël doit rendre grâce<br />\n   au n<u>o</u>m du Seigneur.<br /><span class=\"verse_number\">5</span> C’est là le si<u>è</u>ge du droit, *<br />\nle siège de la mais<u>o</u>n de David.<br /><br /><span class=\"verse_number\">6</span> Appelez le bonhe<u>u</u>r sur Jérusalem :<br />\n« P<u>a</u>ix à ceux qui t’aiment !<br /><span class=\"verse_number\">7</span> Que la paix r<u>è</u>gne dans tes murs,<br />\nle bonhe<u>u</u>r dans tes palais ! »<br /><br /><span class=\"verse_number\">8</span> À cause de mes fr<u>è</u>res et de mes proches,<br />\nje dirai : « P<u>a</u>ix sur toi ! »<br /><span class=\"verse_number\">9</span> À cause de la maison du Seigne<u>u</u>r notre Dieu,<br />\nje dés<u>i</u>re ton bien.</p>"
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "<p>Ta foi vigilante accueille l’Esprit Il te fait naître au Royaume des cieux.</p>",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "Psaume 126",
-                "titre": "<p>Dieu, notre unique espérance</p>",
-                "texte": "<span class=\"verse_number\">1</span> Si le Seigneur ne bât<u>i</u>t la maison,<br>les bâtisseurs trav<u>a</u>illent en vain ; *<br>si le Seigneur ne g<u>a</u>rde la ville,<br>c’est en vain que v<u>e</u>illent les gardes.<br><br><span class=\"verse_number\">2</span> En vain tu dev<u>a</u>nces le jour,<br>tu retardes le mom<u>e</u>nt de ton repos, +<br>tu manges un p<u>a</u>in de douleur : *<br>Dieu comble son bien-aim<u>é</u> quand il dort.<br><br><span class=\"verse_number\">3</span> Des fils, voilà ce que d<u>o</u>nne le Seigneur,<br>des enfants, la récomp<u>e</u>nse qu’il accorde ; *<br><span class=\"verse_number\">4</span> comme des flèches aux m<u>a</u>ins d’un guerrier,<br>ainsi les f<u>i</u>ls de la jeunesse.<br><br><span class=\"verse_number\">5</span> Heureux l’h<u>o</u>mme vaillant<br>qui a garni son carqu<u>o</u>is de telles armes ! *<br>S’ils affrontent leurs ennem<u>i</u>s sur la place,<br>ils ne seront p<u>a</u>s humiliés.<br>"
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "<p>Heureuse d’être pauvre, tu te hâtes vers le Royaume.</p>",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "Cantique Ap 19",
-                "titre": "<p>Les noces de l'Agneau</p>",
-                "texte": "<span class=\"verse_number\">1</span> Alléluia !<br>  <br>  Le salut, la puissance,<br>  la gl<u>o</u>ire à notre Dieu,<br>  Alléluia !<br>  <span class=\"verse_number\">2</span> Ils   sont justes, ils sont vrais,<br>  s<u>e</u>s jugements.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">5</span> Célébrez   notre Dieu,<br>  servite<u>u</u>rs du Seigneur,<br>  Alléluia !<br>  vous tous qui le craignez, <br>  les pet<u>i</u>ts et les grands.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">6</span> Il   règne, le Seigneur,<br>  notre Die<u>u</u> tout-puissant,<br>  Alléluia !<br>  <span class=\"verse_number\">7</span> Exultons,   crions de joie,<br>  et r<u>e</u>ndons-lui la gloire !<br>  Alléluia !<br>  <br>  Car elles sont venues,<br>  les N<u>o</u>ces de l'Agneau,<br>  Alléluia !<br>  Et pour lui son épouse<br>  a revêt<u>u</u> sa parure.<br>  Alléluia !<br>"
-            },
-            "pericope": {
-                "reference": "Ph 3, 10-14",
-                "texte": "Il s’agit de connaître le Christ et la puissance de sa résurrection, et la communion à ses souffrances, de devenir semblable à lui dans sa mort, afin de parvenir, s’il est possible, à la résurrection d’entre les morts. Non que j’aie déjà obtenu tout cela ou que je sois déjà devenu parfait ; mais je m’élance pour tâcher de le saisir, parce que j’ai été saisi moi-même par Jésus Christ. Frères, je n’estime pas l’avoir déjà saisi. Mon seul souci : oubliant le chemin parcouru et tout tendu en avant, je m’élance vers le but, en vue du prix attaché à l’appel d’en-haut que Dieu nous adresse en Jésus Christ. "
-            },
-            "repons": "R/ Gardez la pauvreté.<br/>* Aimez-la comme une mère.<br/>V/ C’est le plus riche héritage reçu de saint François,<br/>* Aimez-la...<br/>V/ Elle vous conduit sur les traces de Jésus Christ,<br/>* Aimez-la...<br/>V/ Elle vous introduira dans la terre des vivants. <br/>R/ Gardez...",
-            "antienne_marie": {
-                "antienne_A": "<p>Avec la Vierge Marie, dans l’assurance de l’Esprit, tu parcourais le chemin de l’Évangile </p>",
-                "antienne_B": ""
-            },
-            "intercession": "<p>Rendons grâce au Seigneur, auteur de tout bien, et prions-le dans la joie :</p><br/> R/ <p>En ta grande tendresse, exauce-nous, Seigneur.</p><br/><p>Nous te rendons grâce, Seigneur, pour le don de l’Esprit qui a puissamment agi en sainte Colette, afin de l’aider à accomplir sa mission ;<br/>– nous te prions pour la fidélité de tous les baptisés à leur vocation d’apôtres.<br/><br/>Nous te rendons grâce pour la force de son intercession ; <br/>– que son aide demeure efficace pour ceux qui sont accablés par la misère et la souffrance.<br/><br/>Nous te rendons grâce pour le don de contemplation qui ne l’a pas quittée, même au plus fort de ses activités ;<br/>– à travers nos tâches temporelles, garde nos cœurs fixés là où se trouvent les vrais biens.<br/><br/>Nous te rendons grâce pour sa vie, pleine et féconde, de servante du Seigneur, pour sa mort douce et sereine ;<br/>– que la paix de ton amour accompagne ceux qui vont mourir. </p>",
-            "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
-            "benediction": ""
-        }
-    },
-    "07/02_2": {
-        "date": "07/02",
-        "titre": "Ste COLETTE ",
-        "sous_titre": "vierge IIe Ordre",
-        "rang": "Mémoire",
-        "biographie": "Née à Corbie (Somme) en 1381, orpheline à 18 ans, elle fut sous la tutelle du seigneur abbé de Saint-Pierre-de-Corbie, de qui elle obtient la permission de se faire religieuse. Trois essais différents n’ayant pu répondre à son idéal de pauvreté, elle entre - sur le conseil du Cordelier Jehan Pinet - dans le Tiers-Ordre franciscain à Hesdin (Artois). En 1402, elle revient à Corbie où elle vit en recluse pendant quatre ans. C’est alors qu’elle se sent appelée à réformer la famille franciscaine. Accompagnée par le Franciscain Henri de Baume, elle se rend auprès de Benoît XIII, pape d’Avignon, dont elle relevait. Celui-ci, tout heureux, approuve son projet, reçoit sa profession de la Règle de sainte Claire, et la nomme abbesse de tous les monastères qu’elle fondera ou réformera. Son pays natal refusant de la recevoir, elle vient en Franche-Comté inaugurer sa mission : Besançon est, en 1410, le premier monastère régulier de la Réforme ; dès lors, les fondations et les réformes se succèdent. Elle rétablit aussi la vie religieuse dans de nombreux couvents du Ier Ordre, particulièrement en Franche-Comté, en Artois, en Germanie Inférieure. Elle meurt au monastère de Gand (Belgique) le 6 mars 1447. Son corps fut transporté à Poligny (Jura) en 1783. Elle fut béatifiée en 1625 et canonisée par le pape Pie VII le 24 mai 1807.",
-        "laudatoSii": "FALSE",
-        "vepres_veille": {
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "repons": "",
-            "antienne_marie": {
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "intercession": "",
-            "oraison": "",
-            "benediction": ""
-        },
-        "lectures": {
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Qu’il est bon, qu’il est beau, d’aimer Dieu et de le servir.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "Psaume 18 B",
-                "titre": "<p>Hymne à Dieu, maître de la loi</p>",
-                "texte": "<p><span class=\"verse_number\">8</span> La loi du Seigne<u>u</u>r est parfaite,<br />\n   qui redonne vie ; *<br />\nla charte du Seigne<u>u</u>r est sûre,<br />\n   qui rend s<u>a</u>ges les simples.<br /><br /><span class=\"verse_number\">9</span> Les préceptes du Seigne<u>u</u>r sont droits,<br />\n   ils réjou<u>i</u>ssent le cœur ; *<br />\nle commandement du Seigne<u>u</u>r est limpide,<br />\n   il clarif<u>i</u>e le regard.<br /><br /><span class=\"verse_number\">10</span> La crainte qu'il insp<u>i</u>re est pure,<br />\n   elle est l<u>à</u> pour toujours ; *<br />\nles décisions du Seigne<u>u</u>r sont justes<br />\n   et vraim<u>e</u>nt équitables :<br /><br /><span class=\"verse_number\">11</span> plus désir<u>a</u>bles que l'or,<br />\n   qu'une m<u>a</u>sse d'or fin, *<br />\nplus savoure<u>u</u>ses que le miel<br />\n   qui co<u>u</u>le des rayons.<br /><br /><span class=\"verse_number\">12</span> Aussi ton serviteur en <u>e</u>st illuminé ; +<br />\n   à les garder, il tro<u>u</u>ve son profit. *<br /><span class=\"verse_number\">13</span> Qui peut discern<u>e</u>r ses erreurs ?<br />\n   Purifie-moi de c<u>e</u>lles qui m'échappent.<br /><br /><span class=\"verse_number\">14</span> Préserve aussi ton servite<u>u</u>r de l'orgueil :<br />\n   qu'il n'ait sur m<u>o</u>i aucune emprise. *<br />\nAlors je ser<u>a</u>i sans reproche,<br />\n   p<u>u</u>r d'un grand péché.<br /><br /><span class=\"verse_number\">15</span> Accueille les par<u>o</u>les de ma bouche,<br />\n   le murm<u>u</u>re de mon cœur ; *<br />\nqu'ils parvi<u>e</u>nnent devant toi,<br />\n   Seigneur, mon roch<u>e</u>r, mon défenseur !</p>"
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "<p>Pour l'amour de Jésus Christ, nous avons tout abandonné. </p>",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "Psaume 44-I",
-                "titre": "<p>Chant nuptial pour le roi</p>",
-                "texte": "<p><span class=\"verse_number\">2</span> D'heureuses paroles jaill<u>i</u>ssent de mon cœur<br />\nquand je dis mes po<u>è</u>mes pour le roi<br />\nd'une langue aussi vive que la pl<u>u</u>me du scribe !<br /><br /><span class=\"verse_number\">3</span> Tu es beau, comme aucun des enf<u>a</u>nts de l'homme,<br />\nla grâce est répand<u>u</u>e sur tes lèvres :<br />\noui, Dieu te bén<u>i</u>t pour toujours.<br /><br /><span class=\"verse_number\">4</span> Guerrier valeureux, porte l'épée de nobl<u>e</u>sse et d'honneur !<br /><span class=\"verse_number\">5</span> Ton honneur, c'est de cour<u>i</u>r au combat<br />\npour la justice, la clém<u>e</u>nce et la vérité.<br /><br /><span class=\"verse_number\">6</span> Ta main jettera la stupeur, les fl<u>è</u>ches qui déchirent ;<br />\nsous tes coups, les pe<u>u</u>ples s'abattront,<br />\nles ennemis du roi, frapp<u>é</u>s en plein cœur.<br /><br /><span class=\"verse_number\">7</span> Ton trône est divin, un tr<u>ô</u>ne éternel ;<br />\nton sceptre royal est sc<u>e</u>ptre de droiture :<br /><span class=\"verse_number\">8</span> tu aimes la justice, tu répro<u>u</u>ves le mal.<br /><br />\nOui, Dieu, ton Die<u>u</u> t'a consacré<br />\nd'une onction de joie, comme auc<u>u</u>n de tes semblables ;<br /><span class=\"verse_number\">9</span> la myrrhe et l'aloès parf<u>u</u>ment ton vêtement.<br /><br />\nDes palais d'ivoire, la mus<u>i</u>que t'enchante.<br /><span class=\"verse_number\">10</span> Parmi tes bien-aimées sont des f<u>i</u>lles de roi ;<br />\nà ta droite, la préférée, sous les <u>o</u>rs d'Ophir.</p>"
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "Psaume 44-II",
-                "titre": "",
-                "texte": "<p><span class=\"verse_number\">11</span> Écoute, ma fille, reg<u>a</u>rde et tends l'oreille ;<br />\noublie ton peuple et la mais<u>o</u>n de ton père :<br /><span class=\"verse_number\">12</span> le roi sera sédu<u>i</u>t par ta beauté.<br /><br />\nIl est ton Seigneur : prosterne-t<u>o</u>i devant lui.<br /><span class=\"verse_number\">13</span> Alors, fille de Tyr, les plus r<u>i</u>ches du peuple,<br />\nchargés de présents, quêter<u>o</u>nt ton sourire.<br /><br /><span class=\"verse_number\">14</span> Fille de roi, elle est l<u>à</u>, dans sa gloire,<br />\nvêtue d'ét<u>o</u>ffes d'or ;<br /><span class=\"verse_number\">15</span> on la conduit, toute par<u>é</u>e, vers le roi.<br /><br />\nDes jeunes filles, ses compagnes, lui f<u>o</u>nt cortège ;<br /><span class=\"verse_number\">16</span> on les conduit parmi les ch<u>a</u>nts de fête :<br />\nelles entrent au pal<u>a</u>is du roi.<br />\n <br /><span class=\"verse_number\">17</span> À la place de tes pères se lèver<u>o</u>nt tes fils ;<br />\nsur toute la terre tu feras d'e<u>u</u>x des princes.<br /><br /><span class=\"verse_number\">18</span> Je ferai vivre ton nom pour les <u>â</u>ges des âges :<br />\nque les peuples te rendent grâce,<br />\ntoujo<u>u</u>rs, à jamais !</p>"
-            },
-            "verset": "<p>V/ C’est de Dieu, et de Lui seul, qu’il faut tout attendre.<br/>Croyez qu’Il achèvera ce qu’Il a commencé.</p>",
-            "lecture_biblique": {
-                "titre": "<p>DU LIVRE DE BEN SIRAC 51, 13-30</p>",
-                "texte": "Quand j’étais encore jeune et que je n’avais pas erré çà et là, aux yeux de tous j’ai cherché la Sagesse dans ma prière. Devant le Temple, je priais pour la recevoir, et jusqu’au bout je la rechercherai. Depuis la fleur jusqu’à la maturité de la grappe, elle a été la joie de mon cœur. Mon pied s’est avancé sur le droit chemin ; depuis ma jeunesse, je marchais sur ses traces. Il m’a suffi de tendre un peu l’oreille pour la recevoir, et j’y ai trouvé de grandes leçons. Grâce à elle, j’ai progressé ; je rendrai gloire à celui qui me donne la Sagesse. J’ai résolu de la mettre en pratique, ardemment j’ai désiré le bien, et jamais je n’aurai à le regretter. Pour elle, j’ai vaillamment combattu, j’ai mis, à pratiquer la Loi, beaucoup d’exactitude. J’ai levé mes mains vers le ciel, j’ai déploré de la connaître si mal. J’ai dirigé mon âme vers elle, c’est dans la pureté que je l’ai trouvée. Avec elle, dès le commencement, j’ai trouvé l’intelligence, c’est pourquoi je ne serai jamais abandonné. Bouleversé jusqu’au fond de moi-même, je l’ai recherchée ; c’est pourquoi j’ai obtenu un bien excellent. En récompense, le Seigneur m’a donné une langue avec laquelle je le louerai. Approchez-vous de moi, vous qui n’avez pas d’instruction prenez place dans mon école. Pourquoi dire que vous manquez de sagesse, pourquoi vos âmes ont-elles si grande soif ? J’ouvre la bouche et déclare : « Faites-en l’acquisition sans rien payer ; placez votre cou sous le joug, et recevez l’instruction. » On la trouve tout près de soi. Constatez-le de vos yeux : en prenant peu de peine, j’ai trouvé beaucoup de repos. Accédez à l’instruction à grand prix d’argent :vous en retirerez beaucoup d’or. Que votre âme trouve sa joie dans la miséricorde du Seigneur, n’ayez pas de honte à le louer. Accomplissez votre œuvre avant le temps fixé, et il vous donnera la récompense en son temps."
-            },
-            "repons_bible": "Stance/<br/>Pourquoi garder toute la nuit <br/>vos lampes allumées ?<br/>Pourquoi donner à votre vie<br/>le sens d’une attente infinie ?<br/>Quelle espérance vous tient éveillées, <br/>vierges sages, et quelle promesse de joie ?<br/><br/>R/ Heureux les invités aux noces de l’Agneau !<br/><br/>Vers la ténèbre lumineuse <br/>vos regards sont levés,<br/>et Dieu qui vous attend <br/>comblera seul votre quête.<br/><br/>Pour une perle sans prix,<br/>vous avez tout quitté,<br/>les mains ouvertes et libres en offrande.<br/><br/>À votre humble fierté, l’Église, joyeuse, <br/>reconnaît son visage, sa grâce de fiancée.<br/><br/>À travers l’amour qui brûle en vous, <br/>servantes du Seigneur,<br/>le cœur de Dieu nous presse<br/>De l’aimer sans partage. ",
-            "lecture_patristique": {
-                "titre": "<p>EXTRAIT DES DERNIERS AVIS DE STE COLETTE</p>",
-                "sous_titre": "<p>Le chemin de toute perfection et de toute sainteté</p>",
-                "texte": "C’est du Tout-Puissant et de Lui seul qu’il faut tout attendre. Croyez qu’il achèvera ce qu’Il a commencé ; croyez en même temps, mes bien-aimées Sœurs, qu’Il consommera l’œuvre de votre sanctification ; mais c’est à une condition, c’est que vous répondiez fidèlement à toute l’étendue de votre vocation et que par vos bonnes œuvres, vous travailliez à rendre certaine votre élection.<br><br>En quoi consistent ces bonnes œuvres ? Pour vous, mes chères Sœurs, elles consistent toutes dans l’accomplissement de la Règle ; observez-la à la lettre et vous aurez trouvé le chemin de toute perfection et de toute sainteté.<br><br>Aimez la pauvreté comme votre Mère; gardez-la comme le plus précieux des trésors ; c’est le plus riche héritage que notre Père saint François nous ait légué !<br><br>Soyons généreuses envers Dieu. Mais qu’est-ce qu’être généreux ? C’est donner plus qu’on ne doit. Il nous est donc impossible à la rigueur d’être généreuses envers Dieu puisqu’en lui donnant tout, nous ne lui donnons que ce qui lui est dû ; cependant, Il est assez bon pour regarder comme une marque de générosité, d’abord tout ce que nous faisons avec ferveur et allégresse ; deuxièmement, l’exactitude que nous mettons à remplir les plus légères observances ; troisièmement, le désir que nous avons d’en faire plus encore, si nous le pouvions. Surtout, oublions-nous nous-mêmes et n’ayons en vue que le bon plaisir et la gloire de Dieu : c’est alors qu’Il verra dans nos œuvres la générosité dont notre faiblesse est capable.<br><br>Est-il nécessaire que je vous recommande la dévotion et la confiance envers la très sainte Vierge ?<br><br>Elle est trop profondément gravée dans vos cœurs pour qu’elle puisse jamais s’effacer ou même s’altérer. Marie est la Mère de Dieu et la nôtre : elle est la gardienne de la réforme ; servez-la donc constamment. Elle vous soutiendra dans vos faiblesses ; elle vous défendra contre les assauts de l’enfer ; elle entretiendra dans vos cœurs ce feu sacré de l’amour divin qui doit faire la vie d’une Clarisse.<br><br>Je sens que cette demeure terrestre dans laquelle mon âme est renfermée va bientôt se dissoudre et rentrer dans la poussière d’où elle est sortie... Qu’il retourne donc en terre, ce misérable corps ! Qu’il soit détruit afin de rendre gloire à Dieu par sa destruction, qu’il y retourne jusqu’à ce jour où il sortira du tombeau pour se réunir à mon âme et ne plus s’en séparer !...<br><br>Ce jour vous attend aussi mes chères Sœurs, ce jour de félicité pour les Élus, jour que le Seigneur a fait et qui n’aura jamais de fin. Alors, nous nous retrouverons réunies dans le Sein de Dieu, océan de paix et de joie. Vivez de manière à ce que vos noms ne soient jamais effacés du Livre de Vie.<br><br>Adieu donc, mes chères et bien-aimées Sœurs ! Non, je ne vous oublierai pas plus au ciel que je ne vous ai oubliées sur la terre. Que l’amour et la grâce de notre Seigneur remplissent vos esprits et vos cœurs ! Que ses bénédictions descendent sur vous et vous conservent jusqu’à la fin."
-            },
-            "repons_patristique": "R/ Aujourd’hui comme au premier jour, <br/>le Royaume est promis aux pauvres.<br/><br/>Que le souvenir de son appel <br/>ne quitte jamais ta mémoire !<br/><br/>C’est le Père qui t’a attirée,<br/>et le Fils de Dieu s’est fait ton Chemin.<br/><br/>Claire et François te précèdent ;<br/>avec tes sœurs, poursuis ta course de joie.",
-            "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>"
-        },
-        "laudes": {
-            "antienne_invitatoire": {
-                "antienne_A": "Louons Jésus, notre Dieu, qui nous attire à son amour.",
-                "antienne_B": ""
-            },
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Tu m’as consacrée au servie de ta louange, et je garde en mon cœur les paroles de vie.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "Psaume 62",
-                "titre": "",
-                "texte": "<p><span class=\"verse_number\">2</span> Dieu, tu es mon Dieu,<br />\n   je te ch<u>e</u>rche dès l’aube : *<br />\nmon âme a s<u>o</u>if de toi ;<br />\naprès toi langu<u>i</u>t ma chair,<br />\nterre aride, altér<u>é</u>e, sans eau.<br /><br /><span class=\"verse_number\">3</span> Je t’ai contempl<u>é</u> au sanctuaire,<br />\nj’ai vu ta f<u>o</u>rce et ta gloire.<br /><span class=\"verse_number\">4</span> Ton amour vaut mie<u>u</u>x que la vie :<br />\ntu seras la lou<u>a</u>nge de mes lèvres !<br /><br /><span class=\"verse_number\">5</span> Toute ma vie je v<u>a</u>is te bénir,<br />\nlever les mains en invoqu<u>a</u>nt ton nom.<br /><span class=\"verse_number\">6</span> Comme par un festin je ser<u>a</u>i rassasié ;<br />\nla joie sur les lèvres, je dir<u>a</u>i ta louange.<br /><br /><span class=\"verse_number\">7</span> Dans la nuit, je me souvi<u>e</u>ns de toi<br />\net je reste des he<u>u</u>res à te parler.<br /><span class=\"verse_number\">8</span> Oui, tu es ven<u>u</u> à mon secours :<br />\nje crie de joie à l’<u>o</u>mbre de tes ailes.<br /><span class=\"verse_number\">9</span> Mon âme s’att<u>a</u>che à toi,<br />\nta main dr<u>o</u>ite me soutient.<br />\n[10-12]</p>"
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "<p>Aimons Dieu... Chantons ses louanges.</p>",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "Cantique des trois enfants",
-                "titre": "",
-                "texte": "<p><span class=\"verse_number\">57</span> Toutes les œ<u>u</u>vres du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">58</span> Vous, les <u>a</u>nges du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">59</span> Vo<u>u</u>s, les cieux,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">60</span> et vous, les ea<u>u</u>x par-dessus le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">61</span> et toutes les puiss<u>a</u>nces du Seigneur,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">62</span> Et vous, le sol<u>e</u>il et la lune,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">63</span> et vous, les <u>a</u>stres du ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">64</span> vous toutes, plu<u>i</u>es et rosées,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">65</span> Vous tous, so<u>u</u>ffles et vents,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">66</span> et vous, le fe<u>u</u> et la chaleur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">67</span> et vous, la fraîche<u>u</u>r et le froid,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">68</span> Et vous, le g<u>i</u>vre et la rosée,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">69</span> et vous, le g<u>e</u>l et le froid,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">70</span> et vous, la gl<u>a</u>ce et la neige,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">71</span> Et vous, les nu<u>i</u>ts et les jours,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">72</span> et vous, la lumi<u>è</u>re et les ténèbres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">73</span> et vous, les écl<u>a</u>irs, les nuées,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">74</span> Que la terre bén<u>i</u>sse le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">75</span> Et vous, mont<u>a</u>gnes et collines,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">76</span> et vous, les pl<u>a</u>ntes de la terre,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">77</span> et vous, so<u>u</u>rces et fontaines,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">78</span> Et vous, océ<u>a</u>ns et rivières,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">79</span> baleines et b<u>ê</u>tes de la mer,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">80</span> vous tous, les oisea<u>u</u>x dans le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">81</span> vous tous, fa<u>u</u>ves et troupeaux<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">82</span> Et vous, les enf<u>a</u>nts des hommes,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">83</span> Toi, Israël,<br />\n   bénis le Seigneur,<br /><span class=\"verse_number\">84</span> Et vo<u>u</u>s, les prêtres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">85</span> vo<u>u</u>s, ses serviteurs,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">86</span> Les esprits et les <u>â</u>mes des justes,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">87</span> les saints et les h<u>u</u>mbles de cœur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">88</span> Ananias, Azari<u>a</u>s et Misaël,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br />\nBénissons le Père, le F<u>i</u>ls et l'Esprit Saint :<br />\nÀ lui, haute gloire, louange éternelle !<br /><span class=\"verse_number\">56</span> Béni sois-tu, Seigneur, au firmam<u>e</u>nt du ciel :<br />\nÀ toi, haute gloire, louange éternelle !</p>"
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "<p>Sa vie, telle une flamme, ranime dans l’Église l’attente du Royaume. </p>",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "Psaume 149",
-                "titre": "",
-                "texte": "<span class=\"verse_number\">1</span> Chantez au Seigne<u>u</u>r un chant nouveau,<br>louez-le dans l’assembl<u>é</u>e de ses fidèles !<br><span class=\"verse_number\">2</span> En Israël, j<u>o</u>ie pour son créateur ;<br>dans Sion, allégr<u>e</u>sse pour son Roi !<br><span class=\"verse_number\">3</span> Dansez à la lou<u>a</u>nge de son nom,<br>jouez pour lui, tambour<u>i</u>ns et cithares !<br><br><span class=\"verse_number\">4</span> Car le Seigneur <u>a</u>ime son peuple,<br>il donne aux humbles l’écl<u>a</u>t de la victoire.<br><span class=\"verse_number\">5</span> Que les fidèles ex<u>u</u>ltent, glorieux,<br>criant leur joie à l’he<u>u</u>re du triomphe.<br><span class=\"verse_number\">6</span> Qu’ils proclament les él<u>o</u>ges de Dieu,<br>tenant en main l’ép<u>é</u>e à deux tranchants.<br><br><span class=\"verse_number\">7</span> Tirer venge<u>a</u>nce des nations,<br>infliger aux pe<u>u</u>ples un châtiment,<br><span class=\"verse_number\">8</span> charger de ch<u>a</u>înes les rois,<br>jeter les pr<u>i</u>nces dans les fers,<br><span class=\"verse_number\">9</span> leur appliquer la sent<u>e</u>nce écrite,<br>c’est la fiert<u>é</u> de ses fidèles.<br>"
-            },
-            "pericope": {
-                "reference": "Jdt 13, 19-20",
-                "texte": " Jamais l'espérance dont tu as fait preuve ne s'éloignera du cœur des hommes, mais ils se rappelleront éternellement la puissance de Dieu. Oui, Dieu fasse que tu sois exaltée à jamais, qu'il te visite de ses bienfaits, car tu n'as pas épargné ta propre vie pour la cause de notre race humiliée, tu es sortie pour empêcher notre ruine, marchant avec droiture devant notre Dieu. \" Et tout le peuple dit : « Amen ! Amen ! »"
-            },
-            "repons": "R/ Seigneur, tu es mon Dieu,<br/>* je n’ai pas d’autre bonheur que toi.<br/><br/>V/ Tu m’apprends le chemin de la vie <br/>*je n’ai pas d’autre bonheur que toi. <br/><br/>V/ Ta parole est la lumière de mes pas,<br/>* je n’ai pas d’autre bonheur que toi ; <br/><br/>Gloire au Père. R/ Seigneur…",
-            "antienne_zacharie": {
-                "antienne_A": "<p>Lancée sur des chemins inconnus, Colette fait lever pour tout un peuple une espérance neuve.</p>",
-                "antienne_B": ""
-            },
-            "intercession": "<p>Bénissons le Seigneur pour l’œuvre accomplie par l’Esprit en sainte Colette :</p><br/> R/ <p>Béni sois-tu, Seigneur, pour sainte Colette, qui a consacré sa vie à travailler pour l’Église, en vraie disciple de François.</p><br/><p>Pour son exemple rayonnant qui a fait refleurir paix et silence, prière et joyeuse pénitence, parmi les filles de Claire.<br/><br/>Pour son amour de « Dame Pauvreté », qui a renouvelé dans l’Église l’esprit des Béatitudes.<br/><br/>Pour sa prière incessante et sa charité toujours en éveil, qui ont fait d’elle une messagère de paix et d’unité.</p>",
-            "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
-            "benediction": ""
-        },
-        "milieu_du_jour": {
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Tant que paix, amour et charité seront entre vous, notre Seigneur ne vous délaissera pas.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "Is 30, 21",
-                "texte": "Tes oreilles entendront la voix qui dira derrière toi quand tu devras aller ou à droite ou à gauche : « Voici le chemin, prenez-le ». "
-            },
-            "repons": "V/ Nous nous sommes engagées à marcher <br/>dans le sentier étroit, <br/>à la suite de Jésus Christ, notre Sauveur. "
-        },
-        "tierce": {
-            "antienne": "",
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "verset": ""
-        },
-        "none": {
-            "antienne": "",
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "verset": ""
-        },
-        "vepres": {
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "<p>Libre pour ton Seigneur, tu as suivi d’un cœur joyeux le chemin de sa Pâque.</p>",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "Psaume 121",
-                "titre": "<p>Salut à la Ville sainte</p>",
-                "texte": "<p><span class=\"verse_number\">1</span> Quelle j<u>o</u>ie quand on m’a dit :<br />\n« Nous irons à la mais<u>o</u>n du Seigneur ! »<br /><br /><span class=\"verse_number\">2</span> Maintenant notre m<u>a</u>rche prend fin<br />\ndevant tes p<u>o</u>rtes, Jérusalem !<br /><span class=\"verse_number\">3</span> Jérusalem, te voic<u>i</u> dans tes murs :<br />\nville où tout ens<u>e</u>mble ne fait qu’un !<br /><br /><span class=\"verse_number\">4</span> C’est là que montent les tribus,<br />\n   les trib<u>u</u>s du Seigneur, *<br />\nlà qu’Israël doit rendre grâce<br />\n   au n<u>o</u>m du Seigneur.<br /><span class=\"verse_number\">5</span> C’est là le si<u>è</u>ge du droit, *<br />\nle siège de la mais<u>o</u>n de David.<br /><br /><span class=\"verse_number\">6</span> Appelez le bonhe<u>u</u>r sur Jérusalem :<br />\n« P<u>a</u>ix à ceux qui t’aiment !<br /><span class=\"verse_number\">7</span> Que la paix r<u>è</u>gne dans tes murs,<br />\nle bonhe<u>u</u>r dans tes palais ! »<br /><br /><span class=\"verse_number\">8</span> À cause de mes fr<u>è</u>res et de mes proches,<br />\nje dirai : « P<u>a</u>ix sur toi ! »<br /><span class=\"verse_number\">9</span> À cause de la maison du Seigne<u>u</u>r notre Dieu,<br />\nje dés<u>i</u>re ton bien.</p>"
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "<p>Ta foi vigilante accueille l’Esprit Il te fait naître au Royaume des cieux.</p>",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "Psaume 126",
-                "titre": "<p>Dieu, notre unique espérance</p>",
-                "texte": "<span class=\"verse_number\">1</span> Si le Seigneur ne bât<u>i</u>t la maison,<br>les bâtisseurs trav<u>a</u>illent en vain ; *<br>si le Seigneur ne g<u>a</u>rde la ville,<br>c’est en vain que v<u>e</u>illent les gardes.<br><br><span class=\"verse_number\">2</span> En vain tu dev<u>a</u>nces le jour,<br>tu retardes le mom<u>e</u>nt de ton repos, +<br>tu manges un p<u>a</u>in de douleur : *<br>Dieu comble son bien-aim<u>é</u> quand il dort.<br><br><span class=\"verse_number\">3</span> Des fils, voilà ce que d<u>o</u>nne le Seigneur,<br>des enfants, la récomp<u>e</u>nse qu’il accorde ; *<br><span class=\"verse_number\">4</span> comme des flèches aux m<u>a</u>ins d’un guerrier,<br>ainsi les f<u>i</u>ls de la jeunesse.<br><br><span class=\"verse_number\">5</span> Heureux l’h<u>o</u>mme vaillant<br>qui a garni son carqu<u>o</u>is de telles armes ! *<br>S’ils affrontent leurs ennem<u>i</u>s sur la place,<br>ils ne seront p<u>a</u>s humiliés.<br>"
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "<p>Heureuse d’être pauvre, tu te hâtes vers le Royaume.</p>",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "Cantique Ap 19",
-                "titre": "<p>Les noces de l'Agneau</p>",
-                "texte": "<span class=\"verse_number\">1</span> Alléluia !<br>  <br>  Le salut, la puissance,<br>  la gl<u>o</u>ire à notre Dieu,<br>  Alléluia !<br>  <span class=\"verse_number\">2</span> Ils   sont justes, ils sont vrais,<br>  s<u>e</u>s jugements.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">5</span> Célébrez   notre Dieu,<br>  servite<u>u</u>rs du Seigneur,<br>  Alléluia !<br>  vous tous qui le craignez, <br>  les pet<u>i</u>ts et les grands.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">6</span> Il   règne, le Seigneur,<br>  notre Die<u>u</u> tout-puissant,<br>  Alléluia !<br>  <span class=\"verse_number\">7</span> Exultons,   crions de joie,<br>  et r<u>e</u>ndons-lui la gloire !<br>  Alléluia !<br>  <br>  Car elles sont venues,<br>  les N<u>o</u>ces de l'Agneau,<br>  Alléluia !<br>  Et pour lui son épouse<br>  a revêt<u>u</u> sa parure.<br>  Alléluia !<br>"
-            },
-            "pericope": {
-                "reference": "Ph 3, 10-14",
-                "texte": "Il s’agit de connaître le Christ et la puissance de sa résurrection, et la communion à ses souffrances, de devenir semblable à lui dans sa mort, afin de parvenir, s’il est possible, à la résurrection d’entre les morts. Non que j’aie déjà obtenu tout cela ou que je sois déjà devenu parfait ; mais je m’élance pour tâcher de le saisir, parce que j’ai été saisi moi-même par Jésus Christ. Frères, je n’estime pas l’avoir déjà saisi. Mon seul souci : oubliant le chemin parcouru et tout tendu en avant, je m’élance vers le but, en vue du prix attaché à l’appel d’en-haut que Dieu nous adresse en Jésus Christ. "
-            },
-            "repons": "R/ Gardez la pauvreté.<br/>* Aimez-la comme une mère.<br/>V/ C’est le plus riche héritage reçu de saint François,<br/>* Aimez-la...<br/>V/ Elle vous conduit sur les traces de Jésus Christ,<br/>* Aimez-la...<br/>V/ Elle vous introduira dans la terre des vivants. <br/>R/ Gardez...",
-            "antienne_marie": {
-                "antienne_A": "<p>Avec la Vierge Marie, dans l’assurance de l’Esprit, tu parcourais le chemin de l’Évangile </p>",
-                "antienne_B": ""
-            },
-            "intercession": "<p>Rendons grâce au Seigneur, auteur de tout bien, et prions-le dans la joie :</p><br/> R/ <p>En ta grande tendresse, exauce-nous, Seigneur.</p><br/><p>Nous te rendons grâce, Seigneur, pour le don de l’Esprit qui a puissamment agi en sainte Colette, afin de l’aider à accomplir sa mission ;<br/>– nous te prions pour la fidélité de tous les baptisés à leur vocation d’apôtres.<br/><br/>Nous te rendons grâce pour la force de son intercession ; <br/>– que son aide demeure efficace pour ceux qui sont accablés par la misère et la souffrance.<br/><br/>Nous te rendons grâce pour le don de contemplation qui ne l’a pas quittée, même au plus fort de ses activités ;<br/>– à travers nos tâches temporelles, garde nos cœurs fixés là où se trouvent les vrais biens.<br/><br/>Nous te rendons grâce pour sa vie, pleine et féconde, de servante du Seigneur, pour sa mort douce et sereine ;<br/>– que la paix de ton amour accompagne ceux qui vont mourir. </p>",
-            "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
-            "benediction": ""
-        }
-    },
-    "07/02_3": {
-        "date": "07/02",
-        "titre": "S. JEAN LANTRUA DE TRIORA ",
-        "sous_titre": "religieux-prêtre Ier Ordre, martyr",
-        "rang": "Mémoire facultative",
-        "biographie": "François Marie Lantrua naquit à Molini di Triora (Imperia) le 15 mars 1760. Il entra à 17 ans dans la Province Romaine de l’Ordre des Frères Mineurs. Ses études achevées il fut ordonné prêtre et se consacra entièrement à l’apostolat. Se sentant appelé à un plus grand service dans le champ des missions, il obtint d’être envoyé en Chine dans le Hunan, où pendant seize ans il travailla avec succès à la diffusion de la foi chrétienne. Arrêté lors de la persécution, il fut mené à Chanxa où il connut pendant sept mois une incarcération extrêmement pénible avant d’accomplir dans le martyre le sacrifice de sa vie le 7 février 1816. Son corps recueilli par des chrétiens fut transféré secrètement à Macao, puis de là à Rome dans la basilique de l’Ara Coeli. Béatifié par Léon XIII le 27 mai 1900 avec 76 martyrs de Cochinchine et du Tonkin, il fut canonisé par Jean Paul II le 1er octobre 2000.",
-        "laudatoSii": "FALSE",
-        "vepres_veille": {
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "repons": "",
-            "antienne_marie": {
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "intercession": "",
-            "oraison": "",
-            "benediction": ""
-        },
-        "lectures": {
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "verset": "",
-            "lecture_biblique": {
-                "titre": "",
-                "texte": ""
-            },
-            "repons_bible": "",
-            "lecture_patristique": {
-                "titre": "",
-                "sous_titre": "",
-                "texte": ""
-            },
-            "repons_patristique": "",
-            "oraison": "<p> Ô Dieu, qui a couronné de la gloire éternelle le saint martyr Jean de Triora dans sa lutte pour la foi, accorde par ses mérites aux peuples qui ignorent le Christ d’être illuminés par le Saint Esprit et de pouvoir entrer eux aussi dans la voie du salut. Par Jésus Christ.</p>"
-        },
-        "laudes": {
-            "antienne_invitatoire": {
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "repons": "",
-            "antienne_zacharie": {
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "intercession": "",
-            "oraison": "<p> Ô Dieu, qui a couronné de la gloire éternelle le saint martyr Jean de Triora dans sa lutte pour la foi, accorde par ses mérites aux peuples qui ignorent le Christ d’être illuminés par le Saint Esprit et de pouvoir entrer eux aussi dans la voie du salut. Par Jésus Christ.</p>",
-            "benediction": ""
-        },
-        "milieu_du_jour": {
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "repons": ""
-        },
-        "tierce": {
-            "antienne": "",
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "verset": ""
-        },
-        "none": {
-            "antienne": "",
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "verset": ""
-        },
-        "vepres": {
-            "hymne": {
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_1": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_1": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_2": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_2": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "antienne_3": {
-                "additionel": "",
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "psaume_3": {
-                "reference": "",
-                "titre": "",
-                "texte": ""
-            },
-            "pericope": {
-                "reference": "",
-                "texte": ""
-            },
-            "repons": "",
-            "antienne_marie": {
-                "antienne_A": "",
-                "antienne_B": ""
-            },
-            "intercession": "",
-            "oraison": "<p> Ô Dieu, qui a couronné de la gloire éternelle le saint martyr Jean de Triora dans sa lutte pour la foi, accorde par ses mérites aux peuples qui ignorent le Christ d’être illuminés par le Saint Esprit et de pouvoir entrer eux aussi dans la voie du salut. Par Jésus Christ.</p>",
-            "benediction": ""
-        }
-    },
+    // "07/02": {
+    //     "date": "07/02",
+    //     "titre": "Ste COLETTE ",
+    //     "sous_titre": "vierge IIe Ordre",
+    //     "rang": "Fête IIe Ordre",
+    //     "biographie": "Née à Corbie (Somme) en 1381, orpheline à 18 ans, elle fut sous la tutelle du seigneur abbé de Saint-Pierre-de-Corbie, de qui elle obtient la permission de se faire religieuse. Trois essais différents n’ayant pu répondre à son idéal de pauvreté, elle entre - sur le conseil du Cordelier Jehan Pinet - dans le Tiers-Ordre franciscain à Hesdin (Artois). En 1402, elle revient à Corbie où elle vit en recluse pendant quatre ans. C’est alors qu’elle se sent appelée à réformer la famille franciscaine. Accompagnée par le Franciscain Henri de Baume, elle se rend auprès de Benoît XIII, pape d’Avignon, dont elle relevait. Celui-ci, tout heureux, approuve son projet, reçoit sa profession de la Règle de sainte Claire, et la nomme abbesse de tous les monastères qu’elle fondera ou réformera. Son pays natal refusant de la recevoir, elle vient en Franche-Comté inaugurer sa mission : Besançon est, en 1410, le premier monastère régulier de la Réforme ; dès lors, les fondations et les réformes se succèdent. Elle rétablit aussi la vie religieuse dans de nombreux couvents du Ier Ordre, particulièrement en Franche-Comté, en Artois, en Germanie Inférieure. Elle meurt au monastère de Gand (Belgique) le 6 mars 1447. Son corps fut transporté à Poligny (Jura) en 1783. Elle fut béatifiée en 1625 et canonisée par le pape Pie VII le 24 mai 1807.",
+    //     "laudatoSii": "FALSE",
+    //     "vepres_veille": {
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "repons": "",
+    //         "antienne_marie": {
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "",
+    //         "oraison": "",
+    //         "benediction": ""
+    //     },
+    //     "lectures": {
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Qu’il est bon, qu’il est beau, d’aimer Dieu et de le servir.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "Psaume 18 B",
+    //             "titre": "<p>Hymne à Dieu, maître de la loi</p>",
+    //             "texte": "<p><span class=\"verse_number\">8</span> La loi du Seigne<u>u</u>r est parfaite,<br />\n   qui redonne vie ; *<br />\nla charte du Seigne<u>u</u>r est sûre,<br />\n   qui rend s<u>a</u>ges les simples.<br /><br /><span class=\"verse_number\">9</span> Les préceptes du Seigne<u>u</u>r sont droits,<br />\n   ils réjou<u>i</u>ssent le cœur ; *<br />\nle commandement du Seigne<u>u</u>r est limpide,<br />\n   il clarif<u>i</u>e le regard.<br /><br /><span class=\"verse_number\">10</span> La crainte qu'il insp<u>i</u>re est pure,<br />\n   elle est l<u>à</u> pour toujours ; *<br />\nles décisions du Seigne<u>u</u>r sont justes<br />\n   et vraim<u>e</u>nt équitables :<br /><br /><span class=\"verse_number\">11</span> plus désir<u>a</u>bles que l'or,<br />\n   qu'une m<u>a</u>sse d'or fin, *<br />\nplus savoure<u>u</u>ses que le miel<br />\n   qui co<u>u</u>le des rayons.<br /><br /><span class=\"verse_number\">12</span> Aussi ton serviteur en <u>e</u>st illuminé ; +<br />\n   à les garder, il tro<u>u</u>ve son profit. *<br /><span class=\"verse_number\">13</span> Qui peut discern<u>e</u>r ses erreurs ?<br />\n   Purifie-moi de c<u>e</u>lles qui m'échappent.<br /><br /><span class=\"verse_number\">14</span> Préserve aussi ton servite<u>u</u>r de l'orgueil :<br />\n   qu'il n'ait sur m<u>o</u>i aucune emprise. *<br />\nAlors je ser<u>a</u>i sans reproche,<br />\n   p<u>u</u>r d'un grand péché.<br /><br /><span class=\"verse_number\">15</span> Accueille les par<u>o</u>les de ma bouche,<br />\n   le murm<u>u</u>re de mon cœur ; *<br />\nqu'ils parvi<u>e</u>nnent devant toi,<br />\n   Seigneur, mon roch<u>e</u>r, mon défenseur !</p>"
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Pour l'amour de Jésus Christ, nous avons tout abandonné. </p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "Psaume 44-I",
+    //             "titre": "<p>Chant nuptial pour le roi</p>",
+    //             "texte": "<p><span class=\"verse_number\">2</span> D'heureuses paroles jaill<u>i</u>ssent de mon cœur<br />\nquand je dis mes po<u>è</u>mes pour le roi<br />\nd'une langue aussi vive que la pl<u>u</u>me du scribe !<br /><br /><span class=\"verse_number\">3</span> Tu es beau, comme aucun des enf<u>a</u>nts de l'homme,<br />\nla grâce est répand<u>u</u>e sur tes lèvres :<br />\noui, Dieu te bén<u>i</u>t pour toujours.<br /><br /><span class=\"verse_number\">4</span> Guerrier valeureux, porte l'épée de nobl<u>e</u>sse et d'honneur !<br /><span class=\"verse_number\">5</span> Ton honneur, c'est de cour<u>i</u>r au combat<br />\npour la justice, la clém<u>e</u>nce et la vérité.<br /><br /><span class=\"verse_number\">6</span> Ta main jettera la stupeur, les fl<u>è</u>ches qui déchirent ;<br />\nsous tes coups, les pe<u>u</u>ples s'abattront,<br />\nles ennemis du roi, frapp<u>é</u>s en plein cœur.<br /><br /><span class=\"verse_number\">7</span> Ton trône est divin, un tr<u>ô</u>ne éternel ;<br />\nton sceptre royal est sc<u>e</u>ptre de droiture :<br /><span class=\"verse_number\">8</span> tu aimes la justice, tu répro<u>u</u>ves le mal.<br /><br />\nOui, Dieu, ton Die<u>u</u> t'a consacré<br />\nd'une onction de joie, comme auc<u>u</u>n de tes semblables ;<br /><span class=\"verse_number\">9</span> la myrrhe et l'aloès parf<u>u</u>ment ton vêtement.<br /><br />\nDes palais d'ivoire, la mus<u>i</u>que t'enchante.<br /><span class=\"verse_number\">10</span> Parmi tes bien-aimées sont des f<u>i</u>lles de roi ;<br />\nà ta droite, la préférée, sous les <u>o</u>rs d'Ophir.</p>"
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "Psaume 44-II",
+    //             "titre": "",
+    //             "texte": "<p><span class=\"verse_number\">11</span> Écoute, ma fille, reg<u>a</u>rde et tends l'oreille ;<br />\noublie ton peuple et la mais<u>o</u>n de ton père :<br /><span class=\"verse_number\">12</span> le roi sera sédu<u>i</u>t par ta beauté.<br /><br />\nIl est ton Seigneur : prosterne-t<u>o</u>i devant lui.<br /><span class=\"verse_number\">13</span> Alors, fille de Tyr, les plus r<u>i</u>ches du peuple,<br />\nchargés de présents, quêter<u>o</u>nt ton sourire.<br /><br /><span class=\"verse_number\">14</span> Fille de roi, elle est l<u>à</u>, dans sa gloire,<br />\nvêtue d'ét<u>o</u>ffes d'or ;<br /><span class=\"verse_number\">15</span> on la conduit, toute par<u>é</u>e, vers le roi.<br /><br />\nDes jeunes filles, ses compagnes, lui f<u>o</u>nt cortège ;<br /><span class=\"verse_number\">16</span> on les conduit parmi les ch<u>a</u>nts de fête :<br />\nelles entrent au pal<u>a</u>is du roi.<br />\n <br /><span class=\"verse_number\">17</span> À la place de tes pères se lèver<u>o</u>nt tes fils ;<br />\nsur toute la terre tu feras d'e<u>u</u>x des princes.<br /><br /><span class=\"verse_number\">18</span> Je ferai vivre ton nom pour les <u>â</u>ges des âges :<br />\nque les peuples te rendent grâce,<br />\ntoujo<u>u</u>rs, à jamais !</p>"
+    //         },
+    //         "verset": "<p>V/ C’est de Dieu, et de Lui seul, qu’il faut tout attendre.<br/>Croyez qu’Il achèvera ce qu’Il a commencé.</p>",
+    //         "lecture_biblique": {
+    //             "titre": "<p>DU LIVRE DE BEN SIRAC 51, 13-30</p>",
+    //             "texte": "Quand j’étais encore jeune et que je n’avais pas erré çà et là, aux yeux de tous j’ai cherché la Sagesse dans ma prière. Devant le Temple, je priais pour la recevoir, et jusqu’au bout je la rechercherai. Depuis la fleur jusqu’à la maturité de la grappe, elle a été la joie de mon cœur. Mon pied s’est avancé sur le droit chemin ; depuis ma jeunesse, je marchais sur ses traces. Il m’a suffi de tendre un peu l’oreille pour la recevoir, et j’y ai trouvé de grandes leçons. Grâce à elle, j’ai progressé ; je rendrai gloire à celui qui me donne la Sagesse. J’ai résolu de la mettre en pratique, ardemment j’ai désiré le bien, et jamais je n’aurai à le regretter. Pour elle, j’ai vaillamment combattu, j’ai mis, à pratiquer la Loi, beaucoup d’exactitude. J’ai levé mes mains vers le ciel, j’ai déploré de la connaître si mal. J’ai dirigé mon âme vers elle, c’est dans la pureté que je l’ai trouvée. Avec elle, dès le commencement, j’ai trouvé l’intelligence, c’est pourquoi je ne serai jamais abandonné. Bouleversé jusqu’au fond de moi-même, je l’ai recherchée ; c’est pourquoi j’ai obtenu un bien excellent. En récompense, le Seigneur m’a donné une langue avec laquelle je le louerai. Approchez-vous de moi, vous qui n’avez pas d’instruction prenez place dans mon école. Pourquoi dire que vous manquez de sagesse, pourquoi vos âmes ont-elles si grande soif ? J’ouvre la bouche et déclare : « Faites-en l’acquisition sans rien payer ; placez votre cou sous le joug, et recevez l’instruction. » On la trouve tout près de soi. Constatez-le de vos yeux : en prenant peu de peine, j’ai trouvé beaucoup de repos. Accédez à l’instruction à grand prix d’argent :vous en retirerez beaucoup d’or. Que votre âme trouve sa joie dans la miséricorde du Seigneur, n’ayez pas de honte à le louer. Accomplissez votre œuvre avant le temps fixé, et il vous donnera la récompense en son temps."
+    //         },
+    //         "repons_bible": "Stance/<br/>Pourquoi garder toute la nuit <br/>vos lampes allumées ?<br/>Pourquoi donner à votre vie<br/>le sens d’une attente infinie ?<br/>Quelle espérance vous tient éveillées, <br/>vierges sages, et quelle promesse de joie ?<br/><br/>R/ Heureux les invités aux noces de l’Agneau !<br/><br/>Vers la ténèbre lumineuse <br/>vos regards sont levés,<br/>et Dieu qui vous attend <br/>comblera seul votre quête.<br/><br/>Pour une perle sans prix,<br/>vous avez tout quitté,<br/>les mains ouvertes et libres en offrande.<br/><br/>À votre humble fierté, l’Église, joyeuse, <br/>reconnaît son visage, sa grâce de fiancée.<br/><br/>À travers l’amour qui brûle en vous, <br/>servantes du Seigneur,<br/>le cœur de Dieu nous presse<br/>De l’aimer sans partage. ",
+    //         "lecture_patristique": {
+    //             "titre": "<p>EXTRAIT DES DERNIERS AVIS DE STE COLETTE</p>",
+    //             "sous_titre": "<p>Le chemin de toute perfection et de toute sainteté</p>",
+    //             "texte": "C’est du Tout-Puissant et de Lui seul qu’il faut tout attendre. Croyez qu’il achèvera ce qu’Il a commencé ; croyez en même temps, mes bien-aimées Sœurs, qu’Il consommera l’œuvre de votre sanctification ; mais c’est à une condition, c’est que vous répondiez fidèlement à toute l’étendue de votre vocation et que par vos bonnes œuvres, vous travailliez à rendre certaine votre élection.<br><br>En quoi consistent ces bonnes œuvres ? Pour vous, mes chères Sœurs, elles consistent toutes dans l’accomplissement de la Règle ; observez-la à la lettre et vous aurez trouvé le chemin de toute perfection et de toute sainteté.<br><br>Aimez la pauvreté comme votre Mère; gardez-la comme le plus précieux des trésors ; c’est le plus riche héritage que notre Père saint François nous ait légué !<br><br>Soyons généreuses envers Dieu. Mais qu’est-ce qu’être généreux ? C’est donner plus qu’on ne doit. Il nous est donc impossible à la rigueur d’être généreuses envers Dieu puisqu’en lui donnant tout, nous ne lui donnons que ce qui lui est dû ; cependant, Il est assez bon pour regarder comme une marque de générosité, d’abord tout ce que nous faisons avec ferveur et allégresse ; deuxièmement, l’exactitude que nous mettons à remplir les plus légères observances ; troisièmement, le désir que nous avons d’en faire plus encore, si nous le pouvions. Surtout, oublions-nous nous-mêmes et n’ayons en vue que le bon plaisir et la gloire de Dieu : c’est alors qu’Il verra dans nos œuvres la générosité dont notre faiblesse est capable.<br><br>Est-il nécessaire que je vous recommande la dévotion et la confiance envers la très sainte Vierge ?<br><br>Elle est trop profondément gravée dans vos cœurs pour qu’elle puisse jamais s’effacer ou même s’altérer. Marie est la Mère de Dieu et la nôtre : elle est la gardienne de la réforme ; servez-la donc constamment. Elle vous soutiendra dans vos faiblesses ; elle vous défendra contre les assauts de l’enfer ; elle entretiendra dans vos cœurs ce feu sacré de l’amour divin qui doit faire la vie d’une Clarisse.<br><br>Je sens que cette demeure terrestre dans laquelle mon âme est renfermée va bientôt se dissoudre et rentrer dans la poussière d’où elle est sortie... Qu’il retourne donc en terre, ce misérable corps ! Qu’il soit détruit afin de rendre gloire à Dieu par sa destruction, qu’il y retourne jusqu’à ce jour où il sortira du tombeau pour se réunir à mon âme et ne plus s’en séparer !...<br><br>Ce jour vous attend aussi mes chères Sœurs, ce jour de félicité pour les Élus, jour que le Seigneur a fait et qui n’aura jamais de fin. Alors, nous nous retrouverons réunies dans le Sein de Dieu, océan de paix et de joie. Vivez de manière à ce que vos noms ne soient jamais effacés du Livre de Vie.<br><br>Adieu donc, mes chères et bien-aimées Sœurs ! Non, je ne vous oublierai pas plus au ciel que je ne vous ai oubliées sur la terre. Que l’amour et la grâce de notre Seigneur remplissent vos esprits et vos cœurs ! Que ses bénédictions descendent sur vous et vous conservent jusqu’à la fin."
+    //         },
+    //         "repons_patristique": "R/ Aujourd’hui comme au premier jour, <br/>le Royaume est promis aux pauvres.<br/><br/>Que le souvenir de son appel <br/>ne quitte jamais ta mémoire !<br/><br/>C’est le Père qui t’a attirée,<br/>et le Fils de Dieu s’est fait ton Chemin.<br/><br/>Claire et François te précèdent ;<br/>avec tes sœurs, poursuis ta course de joie.",
+    //         "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>"
+    //     },
+    //     "laudes": {
+    //         "antienne_invitatoire": {
+    //             "antienne_A": "Louons Jésus, notre Dieu, qui nous attire à son amour.",
+    //             "antienne_B": ""
+    //         },
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Tu m’as consacrée au servie de ta louange, et je garde en mon cœur les paroles de vie.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "Psaume 62",
+    //             "titre": "",
+    //             "texte": "<p><span class=\"verse_number\">2</span> Dieu, tu es mon Dieu,<br />\n   je te ch<u>e</u>rche dès l’aube : *<br />\nmon âme a s<u>o</u>if de toi ;<br />\naprès toi langu<u>i</u>t ma chair,<br />\nterre aride, altér<u>é</u>e, sans eau.<br /><br /><span class=\"verse_number\">3</span> Je t’ai contempl<u>é</u> au sanctuaire,<br />\nj’ai vu ta f<u>o</u>rce et ta gloire.<br /><span class=\"verse_number\">4</span> Ton amour vaut mie<u>u</u>x que la vie :<br />\ntu seras la lou<u>a</u>nge de mes lèvres !<br /><br /><span class=\"verse_number\">5</span> Toute ma vie je v<u>a</u>is te bénir,<br />\nlever les mains en invoqu<u>a</u>nt ton nom.<br /><span class=\"verse_number\">6</span> Comme par un festin je ser<u>a</u>i rassasié ;<br />\nla joie sur les lèvres, je dir<u>a</u>i ta louange.<br /><br /><span class=\"verse_number\">7</span> Dans la nuit, je me souvi<u>e</u>ns de toi<br />\net je reste des he<u>u</u>res à te parler.<br /><span class=\"verse_number\">8</span> Oui, tu es ven<u>u</u> à mon secours :<br />\nje crie de joie à l’<u>o</u>mbre de tes ailes.<br /><span class=\"verse_number\">9</span> Mon âme s’att<u>a</u>che à toi,<br />\nta main dr<u>o</u>ite me soutient.<br />\n[10-12]</p>"
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Aimons Dieu... Chantons ses louanges.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "Cantique des trois enfants",
+    //             "titre": "",
+    //             "texte": "<p><span class=\"verse_number\">57</span> Toutes les œ<u>u</u>vres du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">58</span> Vous, les <u>a</u>nges du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">59</span> Vo<u>u</u>s, les cieux,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">60</span> et vous, les ea<u>u</u>x par-dessus le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">61</span> et toutes les puiss<u>a</u>nces du Seigneur,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">62</span> Et vous, le sol<u>e</u>il et la lune,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">63</span> et vous, les <u>a</u>stres du ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">64</span> vous toutes, plu<u>i</u>es et rosées,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">65</span> Vous tous, so<u>u</u>ffles et vents,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">66</span> et vous, le fe<u>u</u> et la chaleur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">67</span> et vous, la fraîche<u>u</u>r et le froid,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">68</span> Et vous, le g<u>i</u>vre et la rosée,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">69</span> et vous, le g<u>e</u>l et le froid,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">70</span> et vous, la gl<u>a</u>ce et la neige,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">71</span> Et vous, les nu<u>i</u>ts et les jours,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">72</span> et vous, la lumi<u>è</u>re et les ténèbres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">73</span> et vous, les écl<u>a</u>irs, les nuées,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">74</span> Que la terre bén<u>i</u>sse le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">75</span> Et vous, mont<u>a</u>gnes et collines,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">76</span> et vous, les pl<u>a</u>ntes de la terre,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">77</span> et vous, so<u>u</u>rces et fontaines,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">78</span> Et vous, océ<u>a</u>ns et rivières,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">79</span> baleines et b<u>ê</u>tes de la mer,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">80</span> vous tous, les oisea<u>u</u>x dans le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">81</span> vous tous, fa<u>u</u>ves et troupeaux<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">82</span> Et vous, les enf<u>a</u>nts des hommes,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">83</span> Toi, Israël,<br />\n   bénis le Seigneur,<br /><span class=\"verse_number\">84</span> Et vo<u>u</u>s, les prêtres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">85</span> vo<u>u</u>s, ses serviteurs,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">86</span> Les esprits et les <u>â</u>mes des justes,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">87</span> les saints et les h<u>u</u>mbles de cœur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">88</span> Ananias, Azari<u>a</u>s et Misaël,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br />\nBénissons le Père, le F<u>i</u>ls et l'Esprit Saint :<br />\nÀ lui, haute gloire, louange éternelle !<br /><span class=\"verse_number\">56</span> Béni sois-tu, Seigneur, au firmam<u>e</u>nt du ciel :<br />\nÀ toi, haute gloire, louange éternelle !</p>"
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Sa vie, telle une flamme, ranime dans l’Église l’attente du Royaume. </p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "Psaume 149",
+    //             "titre": "",
+    //             "texte": "<span class=\"verse_number\">1</span> Chantez au Seigne<u>u</u>r un chant nouveau,<br>louez-le dans l’assembl<u>é</u>e de ses fidèles !<br><span class=\"verse_number\">2</span> En Israël, j<u>o</u>ie pour son créateur ;<br>dans Sion, allégr<u>e</u>sse pour son Roi !<br><span class=\"verse_number\">3</span> Dansez à la lou<u>a</u>nge de son nom,<br>jouez pour lui, tambour<u>i</u>ns et cithares !<br><br><span class=\"verse_number\">4</span> Car le Seigneur <u>a</u>ime son peuple,<br>il donne aux humbles l’écl<u>a</u>t de la victoire.<br><span class=\"verse_number\">5</span> Que les fidèles ex<u>u</u>ltent, glorieux,<br>criant leur joie à l’he<u>u</u>re du triomphe.<br><span class=\"verse_number\">6</span> Qu’ils proclament les él<u>o</u>ges de Dieu,<br>tenant en main l’ép<u>é</u>e à deux tranchants.<br><br><span class=\"verse_number\">7</span> Tirer venge<u>a</u>nce des nations,<br>infliger aux pe<u>u</u>ples un châtiment,<br><span class=\"verse_number\">8</span> charger de ch<u>a</u>înes les rois,<br>jeter les pr<u>i</u>nces dans les fers,<br><span class=\"verse_number\">9</span> leur appliquer la sent<u>e</u>nce écrite,<br>c’est la fiert<u>é</u> de ses fidèles.<br>"
+    //         },
+    //         "pericope": {
+    //             "reference": "Jdt 13, 19-20",
+    //             "texte": " Jamais l'espérance dont tu as fait preuve ne s'éloignera du cœur des hommes, mais ils se rappelleront éternellement la puissance de Dieu. Oui, Dieu fasse que tu sois exaltée à jamais, qu'il te visite de ses bienfaits, car tu n'as pas épargné ta propre vie pour la cause de notre race humiliée, tu es sortie pour empêcher notre ruine, marchant avec droiture devant notre Dieu. \" Et tout le peuple dit : « Amen ! Amen ! »"
+    //         },
+    //         "repons": "R/ Seigneur, tu es mon Dieu,<br/>* je n’ai pas d’autre bonheur que toi.<br/><br/>V/ Tu m’apprends le chemin de la vie <br/>*je n’ai pas d’autre bonheur que toi. <br/><br/>V/ Ta parole est la lumière de mes pas,<br/>* je n’ai pas d’autre bonheur que toi ; <br/><br/>Gloire au Père. R/ Seigneur…",
+    //         "antienne_zacharie": {
+    //             "antienne_A": "<p>Lancée sur des chemins inconnus, Colette fait lever pour tout un peuple une espérance neuve.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "<p>Bénissons le Seigneur pour l’œuvre accomplie par l’Esprit en sainte Colette :</p><br/> R/ <p>Béni sois-tu, Seigneur, pour sainte Colette, qui a consacré sa vie à travailler pour l’Église, en vraie disciple de François.</p><br/><p>Pour son exemple rayonnant qui a fait refleurir paix et silence, prière et joyeuse pénitence, parmi les filles de Claire.<br/><br/>Pour son amour de « Dame Pauvreté », qui a renouvelé dans l’Église l’esprit des Béatitudes.<br/><br/>Pour sa prière incessante et sa charité toujours en éveil, qui ont fait d’elle une messagère de paix et d’unité.</p>",
+    //         "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
+    //         "benediction": ""
+    //     },
+    //     "milieu_du_jour": {
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Tant que paix, amour et charité seront entre vous, notre Seigneur ne vous délaissera pas.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "Is 30, 21",
+    //             "texte": "Tes oreilles entendront la voix qui dira derrière toi quand tu devras aller ou à droite ou à gauche : « Voici le chemin, prenez-le ». "
+    //         },
+    //         "repons": "V/ Nous nous sommes engagées à marcher <br/>dans le sentier étroit, <br/>à la suite de Jésus Christ, notre Sauveur. "
+    //     },
+    //     "tierce": {
+    //         "antienne": "",
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "verset": ""
+    //     },
+    //     "none": {
+    //         "antienne": "",
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "verset": ""
+    //     },
+    //     "vepres": {
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Libre pour ton Seigneur, tu as suivi d’un cœur joyeux le chemin de sa Pâque.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "Psaume 121",
+    //             "titre": "<p>Salut à la Ville sainte</p>",
+    //             "texte": "<p><span class=\"verse_number\">1</span> Quelle j<u>o</u>ie quand on m’a dit :<br />\n« Nous irons à la mais<u>o</u>n du Seigneur ! »<br /><br /><span class=\"verse_number\">2</span> Maintenant notre m<u>a</u>rche prend fin<br />\ndevant tes p<u>o</u>rtes, Jérusalem !<br /><span class=\"verse_number\">3</span> Jérusalem, te voic<u>i</u> dans tes murs :<br />\nville où tout ens<u>e</u>mble ne fait qu’un !<br /><br /><span class=\"verse_number\">4</span> C’est là que montent les tribus,<br />\n   les trib<u>u</u>s du Seigneur, *<br />\nlà qu’Israël doit rendre grâce<br />\n   au n<u>o</u>m du Seigneur.<br /><span class=\"verse_number\">5</span> C’est là le si<u>è</u>ge du droit, *<br />\nle siège de la mais<u>o</u>n de David.<br /><br /><span class=\"verse_number\">6</span> Appelez le bonhe<u>u</u>r sur Jérusalem :<br />\n« P<u>a</u>ix à ceux qui t’aiment !<br /><span class=\"verse_number\">7</span> Que la paix r<u>è</u>gne dans tes murs,<br />\nle bonhe<u>u</u>r dans tes palais ! »<br /><br /><span class=\"verse_number\">8</span> À cause de mes fr<u>è</u>res et de mes proches,<br />\nje dirai : « P<u>a</u>ix sur toi ! »<br /><span class=\"verse_number\">9</span> À cause de la maison du Seigne<u>u</u>r notre Dieu,<br />\nje dés<u>i</u>re ton bien.</p>"
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Ta foi vigilante accueille l’Esprit Il te fait naître au Royaume des cieux.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "Psaume 126",
+    //             "titre": "<p>Dieu, notre unique espérance</p>",
+    //             "texte": "<span class=\"verse_number\">1</span> Si le Seigneur ne bât<u>i</u>t la maison,<br>les bâtisseurs trav<u>a</u>illent en vain ; *<br>si le Seigneur ne g<u>a</u>rde la ville,<br>c’est en vain que v<u>e</u>illent les gardes.<br><br><span class=\"verse_number\">2</span> En vain tu dev<u>a</u>nces le jour,<br>tu retardes le mom<u>e</u>nt de ton repos, +<br>tu manges un p<u>a</u>in de douleur : *<br>Dieu comble son bien-aim<u>é</u> quand il dort.<br><br><span class=\"verse_number\">3</span> Des fils, voilà ce que d<u>o</u>nne le Seigneur,<br>des enfants, la récomp<u>e</u>nse qu’il accorde ; *<br><span class=\"verse_number\">4</span> comme des flèches aux m<u>a</u>ins d’un guerrier,<br>ainsi les f<u>i</u>ls de la jeunesse.<br><br><span class=\"verse_number\">5</span> Heureux l’h<u>o</u>mme vaillant<br>qui a garni son carqu<u>o</u>is de telles armes ! *<br>S’ils affrontent leurs ennem<u>i</u>s sur la place,<br>ils ne seront p<u>a</u>s humiliés.<br>"
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Heureuse d’être pauvre, tu te hâtes vers le Royaume.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "Cantique Ap 19",
+    //             "titre": "<p>Les noces de l'Agneau</p>",
+    //             "texte": "<span class=\"verse_number\">1</span> Alléluia !<br>  <br>  Le salut, la puissance,<br>  la gl<u>o</u>ire à notre Dieu,<br>  Alléluia !<br>  <span class=\"verse_number\">2</span> Ils   sont justes, ils sont vrais,<br>  s<u>e</u>s jugements.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">5</span> Célébrez   notre Dieu,<br>  servite<u>u</u>rs du Seigneur,<br>  Alléluia !<br>  vous tous qui le craignez, <br>  les pet<u>i</u>ts et les grands.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">6</span> Il   règne, le Seigneur,<br>  notre Die<u>u</u> tout-puissant,<br>  Alléluia !<br>  <span class=\"verse_number\">7</span> Exultons,   crions de joie,<br>  et r<u>e</u>ndons-lui la gloire !<br>  Alléluia !<br>  <br>  Car elles sont venues,<br>  les N<u>o</u>ces de l'Agneau,<br>  Alléluia !<br>  Et pour lui son épouse<br>  a revêt<u>u</u> sa parure.<br>  Alléluia !<br>"
+    //         },
+    //         "pericope": {
+    //             "reference": "Ph 3, 10-14",
+    //             "texte": "Il s’agit de connaître le Christ et la puissance de sa résurrection, et la communion à ses souffrances, de devenir semblable à lui dans sa mort, afin de parvenir, s’il est possible, à la résurrection d’entre les morts. Non que j’aie déjà obtenu tout cela ou que je sois déjà devenu parfait ; mais je m’élance pour tâcher de le saisir, parce que j’ai été saisi moi-même par Jésus Christ. Frères, je n’estime pas l’avoir déjà saisi. Mon seul souci : oubliant le chemin parcouru et tout tendu en avant, je m’élance vers le but, en vue du prix attaché à l’appel d’en-haut que Dieu nous adresse en Jésus Christ. "
+    //         },
+    //         "repons": "R/ Gardez la pauvreté.<br/>* Aimez-la comme une mère.<br/>V/ C’est le plus riche héritage reçu de saint François,<br/>* Aimez-la...<br/>V/ Elle vous conduit sur les traces de Jésus Christ,<br/>* Aimez-la...<br/>V/ Elle vous introduira dans la terre des vivants. <br/>R/ Gardez...",
+    //         "antienne_marie": {
+    //             "antienne_A": "<p>Avec la Vierge Marie, dans l’assurance de l’Esprit, tu parcourais le chemin de l’Évangile </p>",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "<p>Rendons grâce au Seigneur, auteur de tout bien, et prions-le dans la joie :</p><br/> R/ <p>En ta grande tendresse, exauce-nous, Seigneur.</p><br/><p>Nous te rendons grâce, Seigneur, pour le don de l’Esprit qui a puissamment agi en sainte Colette, afin de l’aider à accomplir sa mission ;<br/>– nous te prions pour la fidélité de tous les baptisés à leur vocation d’apôtres.<br/><br/>Nous te rendons grâce pour la force de son intercession ; <br/>– que son aide demeure efficace pour ceux qui sont accablés par la misère et la souffrance.<br/><br/>Nous te rendons grâce pour le don de contemplation qui ne l’a pas quittée, même au plus fort de ses activités ;<br/>– à travers nos tâches temporelles, garde nos cœurs fixés là où se trouvent les vrais biens.<br/><br/>Nous te rendons grâce pour sa vie, pleine et féconde, de servante du Seigneur, pour sa mort douce et sereine ;<br/>– que la paix de ton amour accompagne ceux qui vont mourir. </p>",
+    //         "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
+    //         "benediction": ""
+    //     }
+    // },
+    // "07/02_2": {
+    //     "date": "07/02",
+    //     "titre": "Ste COLETTE ",
+    //     "sous_titre": "vierge IIe Ordre",
+    //     "rang": "Mémoire",
+    //     "biographie": "Née à Corbie (Somme) en 1381, orpheline à 18 ans, elle fut sous la tutelle du seigneur abbé de Saint-Pierre-de-Corbie, de qui elle obtient la permission de se faire religieuse. Trois essais différents n’ayant pu répondre à son idéal de pauvreté, elle entre - sur le conseil du Cordelier Jehan Pinet - dans le Tiers-Ordre franciscain à Hesdin (Artois). En 1402, elle revient à Corbie où elle vit en recluse pendant quatre ans. C’est alors qu’elle se sent appelée à réformer la famille franciscaine. Accompagnée par le Franciscain Henri de Baume, elle se rend auprès de Benoît XIII, pape d’Avignon, dont elle relevait. Celui-ci, tout heureux, approuve son projet, reçoit sa profession de la Règle de sainte Claire, et la nomme abbesse de tous les monastères qu’elle fondera ou réformera. Son pays natal refusant de la recevoir, elle vient en Franche-Comté inaugurer sa mission : Besançon est, en 1410, le premier monastère régulier de la Réforme ; dès lors, les fondations et les réformes se succèdent. Elle rétablit aussi la vie religieuse dans de nombreux couvents du Ier Ordre, particulièrement en Franche-Comté, en Artois, en Germanie Inférieure. Elle meurt au monastère de Gand (Belgique) le 6 mars 1447. Son corps fut transporté à Poligny (Jura) en 1783. Elle fut béatifiée en 1625 et canonisée par le pape Pie VII le 24 mai 1807.",
+    //     "laudatoSii": "FALSE",
+    //     "vepres_veille": {
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "repons": "",
+    //         "antienne_marie": {
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "",
+    //         "oraison": "",
+    //         "benediction": ""
+    //     },
+    //     "lectures": {
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Qu’il est bon, qu’il est beau, d’aimer Dieu et de le servir.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "Psaume 18 B",
+    //             "titre": "<p>Hymne à Dieu, maître de la loi</p>",
+    //             "texte": "<p><span class=\"verse_number\">8</span> La loi du Seigne<u>u</u>r est parfaite,<br />\n   qui redonne vie ; *<br />\nla charte du Seigne<u>u</u>r est sûre,<br />\n   qui rend s<u>a</u>ges les simples.<br /><br /><span class=\"verse_number\">9</span> Les préceptes du Seigne<u>u</u>r sont droits,<br />\n   ils réjou<u>i</u>ssent le cœur ; *<br />\nle commandement du Seigne<u>u</u>r est limpide,<br />\n   il clarif<u>i</u>e le regard.<br /><br /><span class=\"verse_number\">10</span> La crainte qu'il insp<u>i</u>re est pure,<br />\n   elle est l<u>à</u> pour toujours ; *<br />\nles décisions du Seigne<u>u</u>r sont justes<br />\n   et vraim<u>e</u>nt équitables :<br /><br /><span class=\"verse_number\">11</span> plus désir<u>a</u>bles que l'or,<br />\n   qu'une m<u>a</u>sse d'or fin, *<br />\nplus savoure<u>u</u>ses que le miel<br />\n   qui co<u>u</u>le des rayons.<br /><br /><span class=\"verse_number\">12</span> Aussi ton serviteur en <u>e</u>st illuminé ; +<br />\n   à les garder, il tro<u>u</u>ve son profit. *<br /><span class=\"verse_number\">13</span> Qui peut discern<u>e</u>r ses erreurs ?<br />\n   Purifie-moi de c<u>e</u>lles qui m'échappent.<br /><br /><span class=\"verse_number\">14</span> Préserve aussi ton servite<u>u</u>r de l'orgueil :<br />\n   qu'il n'ait sur m<u>o</u>i aucune emprise. *<br />\nAlors je ser<u>a</u>i sans reproche,<br />\n   p<u>u</u>r d'un grand péché.<br /><br /><span class=\"verse_number\">15</span> Accueille les par<u>o</u>les de ma bouche,<br />\n   le murm<u>u</u>re de mon cœur ; *<br />\nqu'ils parvi<u>e</u>nnent devant toi,<br />\n   Seigneur, mon roch<u>e</u>r, mon défenseur !</p>"
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Pour l'amour de Jésus Christ, nous avons tout abandonné. </p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "Psaume 44-I",
+    //             "titre": "<p>Chant nuptial pour le roi</p>",
+    //             "texte": "<p><span class=\"verse_number\">2</span> D'heureuses paroles jaill<u>i</u>ssent de mon cœur<br />\nquand je dis mes po<u>è</u>mes pour le roi<br />\nd'une langue aussi vive que la pl<u>u</u>me du scribe !<br /><br /><span class=\"verse_number\">3</span> Tu es beau, comme aucun des enf<u>a</u>nts de l'homme,<br />\nla grâce est répand<u>u</u>e sur tes lèvres :<br />\noui, Dieu te bén<u>i</u>t pour toujours.<br /><br /><span class=\"verse_number\">4</span> Guerrier valeureux, porte l'épée de nobl<u>e</u>sse et d'honneur !<br /><span class=\"verse_number\">5</span> Ton honneur, c'est de cour<u>i</u>r au combat<br />\npour la justice, la clém<u>e</u>nce et la vérité.<br /><br /><span class=\"verse_number\">6</span> Ta main jettera la stupeur, les fl<u>è</u>ches qui déchirent ;<br />\nsous tes coups, les pe<u>u</u>ples s'abattront,<br />\nles ennemis du roi, frapp<u>é</u>s en plein cœur.<br /><br /><span class=\"verse_number\">7</span> Ton trône est divin, un tr<u>ô</u>ne éternel ;<br />\nton sceptre royal est sc<u>e</u>ptre de droiture :<br /><span class=\"verse_number\">8</span> tu aimes la justice, tu répro<u>u</u>ves le mal.<br /><br />\nOui, Dieu, ton Die<u>u</u> t'a consacré<br />\nd'une onction de joie, comme auc<u>u</u>n de tes semblables ;<br /><span class=\"verse_number\">9</span> la myrrhe et l'aloès parf<u>u</u>ment ton vêtement.<br /><br />\nDes palais d'ivoire, la mus<u>i</u>que t'enchante.<br /><span class=\"verse_number\">10</span> Parmi tes bien-aimées sont des f<u>i</u>lles de roi ;<br />\nà ta droite, la préférée, sous les <u>o</u>rs d'Ophir.</p>"
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "Psaume 44-II",
+    //             "titre": "",
+    //             "texte": "<p><span class=\"verse_number\">11</span> Écoute, ma fille, reg<u>a</u>rde et tends l'oreille ;<br />\noublie ton peuple et la mais<u>o</u>n de ton père :<br /><span class=\"verse_number\">12</span> le roi sera sédu<u>i</u>t par ta beauté.<br /><br />\nIl est ton Seigneur : prosterne-t<u>o</u>i devant lui.<br /><span class=\"verse_number\">13</span> Alors, fille de Tyr, les plus r<u>i</u>ches du peuple,<br />\nchargés de présents, quêter<u>o</u>nt ton sourire.<br /><br /><span class=\"verse_number\">14</span> Fille de roi, elle est l<u>à</u>, dans sa gloire,<br />\nvêtue d'ét<u>o</u>ffes d'or ;<br /><span class=\"verse_number\">15</span> on la conduit, toute par<u>é</u>e, vers le roi.<br /><br />\nDes jeunes filles, ses compagnes, lui f<u>o</u>nt cortège ;<br /><span class=\"verse_number\">16</span> on les conduit parmi les ch<u>a</u>nts de fête :<br />\nelles entrent au pal<u>a</u>is du roi.<br />\n <br /><span class=\"verse_number\">17</span> À la place de tes pères se lèver<u>o</u>nt tes fils ;<br />\nsur toute la terre tu feras d'e<u>u</u>x des princes.<br /><br /><span class=\"verse_number\">18</span> Je ferai vivre ton nom pour les <u>â</u>ges des âges :<br />\nque les peuples te rendent grâce,<br />\ntoujo<u>u</u>rs, à jamais !</p>"
+    //         },
+    //         "verset": "<p>V/ C’est de Dieu, et de Lui seul, qu’il faut tout attendre.<br/>Croyez qu’Il achèvera ce qu’Il a commencé.</p>",
+    //         "lecture_biblique": {
+    //             "titre": "<p>DU LIVRE DE BEN SIRAC 51, 13-30</p>",
+    //             "texte": "Quand j’étais encore jeune et que je n’avais pas erré çà et là, aux yeux de tous j’ai cherché la Sagesse dans ma prière. Devant le Temple, je priais pour la recevoir, et jusqu’au bout je la rechercherai. Depuis la fleur jusqu’à la maturité de la grappe, elle a été la joie de mon cœur. Mon pied s’est avancé sur le droit chemin ; depuis ma jeunesse, je marchais sur ses traces. Il m’a suffi de tendre un peu l’oreille pour la recevoir, et j’y ai trouvé de grandes leçons. Grâce à elle, j’ai progressé ; je rendrai gloire à celui qui me donne la Sagesse. J’ai résolu de la mettre en pratique, ardemment j’ai désiré le bien, et jamais je n’aurai à le regretter. Pour elle, j’ai vaillamment combattu, j’ai mis, à pratiquer la Loi, beaucoup d’exactitude. J’ai levé mes mains vers le ciel, j’ai déploré de la connaître si mal. J’ai dirigé mon âme vers elle, c’est dans la pureté que je l’ai trouvée. Avec elle, dès le commencement, j’ai trouvé l’intelligence, c’est pourquoi je ne serai jamais abandonné. Bouleversé jusqu’au fond de moi-même, je l’ai recherchée ; c’est pourquoi j’ai obtenu un bien excellent. En récompense, le Seigneur m’a donné une langue avec laquelle je le louerai. Approchez-vous de moi, vous qui n’avez pas d’instruction prenez place dans mon école. Pourquoi dire que vous manquez de sagesse, pourquoi vos âmes ont-elles si grande soif ? J’ouvre la bouche et déclare : « Faites-en l’acquisition sans rien payer ; placez votre cou sous le joug, et recevez l’instruction. » On la trouve tout près de soi. Constatez-le de vos yeux : en prenant peu de peine, j’ai trouvé beaucoup de repos. Accédez à l’instruction à grand prix d’argent :vous en retirerez beaucoup d’or. Que votre âme trouve sa joie dans la miséricorde du Seigneur, n’ayez pas de honte à le louer. Accomplissez votre œuvre avant le temps fixé, et il vous donnera la récompense en son temps."
+    //         },
+    //         "repons_bible": "Stance/<br/>Pourquoi garder toute la nuit <br/>vos lampes allumées ?<br/>Pourquoi donner à votre vie<br/>le sens d’une attente infinie ?<br/>Quelle espérance vous tient éveillées, <br/>vierges sages, et quelle promesse de joie ?<br/><br/>R/ Heureux les invités aux noces de l’Agneau !<br/><br/>Vers la ténèbre lumineuse <br/>vos regards sont levés,<br/>et Dieu qui vous attend <br/>comblera seul votre quête.<br/><br/>Pour une perle sans prix,<br/>vous avez tout quitté,<br/>les mains ouvertes et libres en offrande.<br/><br/>À votre humble fierté, l’Église, joyeuse, <br/>reconnaît son visage, sa grâce de fiancée.<br/><br/>À travers l’amour qui brûle en vous, <br/>servantes du Seigneur,<br/>le cœur de Dieu nous presse<br/>De l’aimer sans partage. ",
+    //         "lecture_patristique": {
+    //             "titre": "<p>EXTRAIT DES DERNIERS AVIS DE STE COLETTE</p>",
+    //             "sous_titre": "<p>Le chemin de toute perfection et de toute sainteté</p>",
+    //             "texte": "C’est du Tout-Puissant et de Lui seul qu’il faut tout attendre. Croyez qu’il achèvera ce qu’Il a commencé ; croyez en même temps, mes bien-aimées Sœurs, qu’Il consommera l’œuvre de votre sanctification ; mais c’est à une condition, c’est que vous répondiez fidèlement à toute l’étendue de votre vocation et que par vos bonnes œuvres, vous travailliez à rendre certaine votre élection.<br><br>En quoi consistent ces bonnes œuvres ? Pour vous, mes chères Sœurs, elles consistent toutes dans l’accomplissement de la Règle ; observez-la à la lettre et vous aurez trouvé le chemin de toute perfection et de toute sainteté.<br><br>Aimez la pauvreté comme votre Mère; gardez-la comme le plus précieux des trésors ; c’est le plus riche héritage que notre Père saint François nous ait légué !<br><br>Soyons généreuses envers Dieu. Mais qu’est-ce qu’être généreux ? C’est donner plus qu’on ne doit. Il nous est donc impossible à la rigueur d’être généreuses envers Dieu puisqu’en lui donnant tout, nous ne lui donnons que ce qui lui est dû ; cependant, Il est assez bon pour regarder comme une marque de générosité, d’abord tout ce que nous faisons avec ferveur et allégresse ; deuxièmement, l’exactitude que nous mettons à remplir les plus légères observances ; troisièmement, le désir que nous avons d’en faire plus encore, si nous le pouvions. Surtout, oublions-nous nous-mêmes et n’ayons en vue que le bon plaisir et la gloire de Dieu : c’est alors qu’Il verra dans nos œuvres la générosité dont notre faiblesse est capable.<br><br>Est-il nécessaire que je vous recommande la dévotion et la confiance envers la très sainte Vierge ?<br><br>Elle est trop profondément gravée dans vos cœurs pour qu’elle puisse jamais s’effacer ou même s’altérer. Marie est la Mère de Dieu et la nôtre : elle est la gardienne de la réforme ; servez-la donc constamment. Elle vous soutiendra dans vos faiblesses ; elle vous défendra contre les assauts de l’enfer ; elle entretiendra dans vos cœurs ce feu sacré de l’amour divin qui doit faire la vie d’une Clarisse.<br><br>Je sens que cette demeure terrestre dans laquelle mon âme est renfermée va bientôt se dissoudre et rentrer dans la poussière d’où elle est sortie... Qu’il retourne donc en terre, ce misérable corps ! Qu’il soit détruit afin de rendre gloire à Dieu par sa destruction, qu’il y retourne jusqu’à ce jour où il sortira du tombeau pour se réunir à mon âme et ne plus s’en séparer !...<br><br>Ce jour vous attend aussi mes chères Sœurs, ce jour de félicité pour les Élus, jour que le Seigneur a fait et qui n’aura jamais de fin. Alors, nous nous retrouverons réunies dans le Sein de Dieu, océan de paix et de joie. Vivez de manière à ce que vos noms ne soient jamais effacés du Livre de Vie.<br><br>Adieu donc, mes chères et bien-aimées Sœurs ! Non, je ne vous oublierai pas plus au ciel que je ne vous ai oubliées sur la terre. Que l’amour et la grâce de notre Seigneur remplissent vos esprits et vos cœurs ! Que ses bénédictions descendent sur vous et vous conservent jusqu’à la fin."
+    //         },
+    //         "repons_patristique": "R/ Aujourd’hui comme au premier jour, <br/>le Royaume est promis aux pauvres.<br/><br/>Que le souvenir de son appel <br/>ne quitte jamais ta mémoire !<br/><br/>C’est le Père qui t’a attirée,<br/>et le Fils de Dieu s’est fait ton Chemin.<br/><br/>Claire et François te précèdent ;<br/>avec tes sœurs, poursuis ta course de joie.",
+    //         "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>"
+    //     },
+    //     "laudes": {
+    //         "antienne_invitatoire": {
+    //             "antienne_A": "Louons Jésus, notre Dieu, qui nous attire à son amour.",
+    //             "antienne_B": ""
+    //         },
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Tu m’as consacrée au servie de ta louange, et je garde en mon cœur les paroles de vie.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "Psaume 62",
+    //             "titre": "",
+    //             "texte": "<p><span class=\"verse_number\">2</span> Dieu, tu es mon Dieu,<br />\n   je te ch<u>e</u>rche dès l’aube : *<br />\nmon âme a s<u>o</u>if de toi ;<br />\naprès toi langu<u>i</u>t ma chair,<br />\nterre aride, altér<u>é</u>e, sans eau.<br /><br /><span class=\"verse_number\">3</span> Je t’ai contempl<u>é</u> au sanctuaire,<br />\nj’ai vu ta f<u>o</u>rce et ta gloire.<br /><span class=\"verse_number\">4</span> Ton amour vaut mie<u>u</u>x que la vie :<br />\ntu seras la lou<u>a</u>nge de mes lèvres !<br /><br /><span class=\"verse_number\">5</span> Toute ma vie je v<u>a</u>is te bénir,<br />\nlever les mains en invoqu<u>a</u>nt ton nom.<br /><span class=\"verse_number\">6</span> Comme par un festin je ser<u>a</u>i rassasié ;<br />\nla joie sur les lèvres, je dir<u>a</u>i ta louange.<br /><br /><span class=\"verse_number\">7</span> Dans la nuit, je me souvi<u>e</u>ns de toi<br />\net je reste des he<u>u</u>res à te parler.<br /><span class=\"verse_number\">8</span> Oui, tu es ven<u>u</u> à mon secours :<br />\nje crie de joie à l’<u>o</u>mbre de tes ailes.<br /><span class=\"verse_number\">9</span> Mon âme s’att<u>a</u>che à toi,<br />\nta main dr<u>o</u>ite me soutient.<br />\n[10-12]</p>"
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Aimons Dieu... Chantons ses louanges.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "Cantique des trois enfants",
+    //             "titre": "",
+    //             "texte": "<p><span class=\"verse_number\">57</span> Toutes les œ<u>u</u>vres du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">58</span> Vous, les <u>a</u>nges du Seigneur,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">59</span> Vo<u>u</u>s, les cieux,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">60</span> et vous, les ea<u>u</u>x par-dessus le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">61</span> et toutes les puiss<u>a</u>nces du Seigneur,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">62</span> Et vous, le sol<u>e</u>il et la lune,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">63</span> et vous, les <u>a</u>stres du ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">64</span> vous toutes, plu<u>i</u>es et rosées,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">65</span> Vous tous, so<u>u</u>ffles et vents,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">66</span> et vous, le fe<u>u</u> et la chaleur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">67</span> et vous, la fraîche<u>u</u>r et le froid,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">68</span> Et vous, le g<u>i</u>vre et la rosée,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">69</span> et vous, le g<u>e</u>l et le froid,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">70</span> et vous, la gl<u>a</u>ce et la neige,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">71</span> Et vous, les nu<u>i</u>ts et les jours,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">72</span> et vous, la lumi<u>è</u>re et les ténèbres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">73</span> et vous, les écl<u>a</u>irs, les nuées,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">74</span> Que la terre bén<u>i</u>sse le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">75</span> Et vous, mont<u>a</u>gnes et collines,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">76</span> et vous, les pl<u>a</u>ntes de la terre,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">77</span> et vous, so<u>u</u>rces et fontaines,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">78</span> Et vous, océ<u>a</u>ns et rivières,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">79</span> baleines et b<u>ê</u>tes de la mer,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">80</span> vous tous, les oisea<u>u</u>x dans le ciel,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">81</span> vous tous, fa<u>u</u>ves et troupeaux<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">82</span> Et vous, les enf<u>a</u>nts des hommes,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br /><span class=\"verse_number\">83</span> Toi, Israël,<br />\n   bénis le Seigneur,<br /><span class=\"verse_number\">84</span> Et vo<u>u</u>s, les prêtres,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">85</span> vo<u>u</u>s, ses serviteurs,<br />\n   bénissez le Seigneur !<br /><br /><span class=\"verse_number\">86</span> Les esprits et les <u>â</u>mes des justes,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">87</span> les saints et les h<u>u</u>mbles de cœur,<br />\n   bénissez le Seigneur,<br /><span class=\"verse_number\">88</span> Ananias, Azari<u>a</u>s et Misaël,<br />\n   bénissez le Seigneur :<br />\nÀ lui, haute gloire, louange éternelle !<br /><br />\nBénissons le Père, le F<u>i</u>ls et l'Esprit Saint :<br />\nÀ lui, haute gloire, louange éternelle !<br /><span class=\"verse_number\">56</span> Béni sois-tu, Seigneur, au firmam<u>e</u>nt du ciel :<br />\nÀ toi, haute gloire, louange éternelle !</p>"
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Sa vie, telle une flamme, ranime dans l’Église l’attente du Royaume. </p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "Psaume 149",
+    //             "titre": "",
+    //             "texte": "<span class=\"verse_number\">1</span> Chantez au Seigne<u>u</u>r un chant nouveau,<br>louez-le dans l’assembl<u>é</u>e de ses fidèles !<br><span class=\"verse_number\">2</span> En Israël, j<u>o</u>ie pour son créateur ;<br>dans Sion, allégr<u>e</u>sse pour son Roi !<br><span class=\"verse_number\">3</span> Dansez à la lou<u>a</u>nge de son nom,<br>jouez pour lui, tambour<u>i</u>ns et cithares !<br><br><span class=\"verse_number\">4</span> Car le Seigneur <u>a</u>ime son peuple,<br>il donne aux humbles l’écl<u>a</u>t de la victoire.<br><span class=\"verse_number\">5</span> Que les fidèles ex<u>u</u>ltent, glorieux,<br>criant leur joie à l’he<u>u</u>re du triomphe.<br><span class=\"verse_number\">6</span> Qu’ils proclament les él<u>o</u>ges de Dieu,<br>tenant en main l’ép<u>é</u>e à deux tranchants.<br><br><span class=\"verse_number\">7</span> Tirer venge<u>a</u>nce des nations,<br>infliger aux pe<u>u</u>ples un châtiment,<br><span class=\"verse_number\">8</span> charger de ch<u>a</u>înes les rois,<br>jeter les pr<u>i</u>nces dans les fers,<br><span class=\"verse_number\">9</span> leur appliquer la sent<u>e</u>nce écrite,<br>c’est la fiert<u>é</u> de ses fidèles.<br>"
+    //         },
+    //         "pericope": {
+    //             "reference": "Jdt 13, 19-20",
+    //             "texte": " Jamais l'espérance dont tu as fait preuve ne s'éloignera du cœur des hommes, mais ils se rappelleront éternellement la puissance de Dieu. Oui, Dieu fasse que tu sois exaltée à jamais, qu'il te visite de ses bienfaits, car tu n'as pas épargné ta propre vie pour la cause de notre race humiliée, tu es sortie pour empêcher notre ruine, marchant avec droiture devant notre Dieu. \" Et tout le peuple dit : « Amen ! Amen ! »"
+    //         },
+    //         "repons": "R/ Seigneur, tu es mon Dieu,<br/>* je n’ai pas d’autre bonheur que toi.<br/><br/>V/ Tu m’apprends le chemin de la vie <br/>*je n’ai pas d’autre bonheur que toi. <br/><br/>V/ Ta parole est la lumière de mes pas,<br/>* je n’ai pas d’autre bonheur que toi ; <br/><br/>Gloire au Père. R/ Seigneur…",
+    //         "antienne_zacharie": {
+    //             "antienne_A": "<p>Lancée sur des chemins inconnus, Colette fait lever pour tout un peuple une espérance neuve.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "<p>Bénissons le Seigneur pour l’œuvre accomplie par l’Esprit en sainte Colette :</p><br/> R/ <p>Béni sois-tu, Seigneur, pour sainte Colette, qui a consacré sa vie à travailler pour l’Église, en vraie disciple de François.</p><br/><p>Pour son exemple rayonnant qui a fait refleurir paix et silence, prière et joyeuse pénitence, parmi les filles de Claire.<br/><br/>Pour son amour de « Dame Pauvreté », qui a renouvelé dans l’Église l’esprit des Béatitudes.<br/><br/>Pour sa prière incessante et sa charité toujours en éveil, qui ont fait d’elle une messagère de paix et d’unité.</p>",
+    //         "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
+    //         "benediction": ""
+    //     },
+    //     "milieu_du_jour": {
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Tant que paix, amour et charité seront entre vous, notre Seigneur ne vous délaissera pas.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "Is 30, 21",
+    //             "texte": "Tes oreilles entendront la voix qui dira derrière toi quand tu devras aller ou à droite ou à gauche : « Voici le chemin, prenez-le ». "
+    //         },
+    //         "repons": "V/ Nous nous sommes engagées à marcher <br/>dans le sentier étroit, <br/>à la suite de Jésus Christ, notre Sauveur. "
+    //     },
+    //     "tierce": {
+    //         "antienne": "",
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "verset": ""
+    //     },
+    //     "none": {
+    //         "antienne": "",
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "verset": ""
+    //     },
+    //     "vepres": {
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Libre pour ton Seigneur, tu as suivi d’un cœur joyeux le chemin de sa Pâque.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "Psaume 121",
+    //             "titre": "<p>Salut à la Ville sainte</p>",
+    //             "texte": "<p><span class=\"verse_number\">1</span> Quelle j<u>o</u>ie quand on m’a dit :<br />\n« Nous irons à la mais<u>o</u>n du Seigneur ! »<br /><br /><span class=\"verse_number\">2</span> Maintenant notre m<u>a</u>rche prend fin<br />\ndevant tes p<u>o</u>rtes, Jérusalem !<br /><span class=\"verse_number\">3</span> Jérusalem, te voic<u>i</u> dans tes murs :<br />\nville où tout ens<u>e</u>mble ne fait qu’un !<br /><br /><span class=\"verse_number\">4</span> C’est là que montent les tribus,<br />\n   les trib<u>u</u>s du Seigneur, *<br />\nlà qu’Israël doit rendre grâce<br />\n   au n<u>o</u>m du Seigneur.<br /><span class=\"verse_number\">5</span> C’est là le si<u>è</u>ge du droit, *<br />\nle siège de la mais<u>o</u>n de David.<br /><br /><span class=\"verse_number\">6</span> Appelez le bonhe<u>u</u>r sur Jérusalem :<br />\n« P<u>a</u>ix à ceux qui t’aiment !<br /><span class=\"verse_number\">7</span> Que la paix r<u>è</u>gne dans tes murs,<br />\nle bonhe<u>u</u>r dans tes palais ! »<br /><br /><span class=\"verse_number\">8</span> À cause de mes fr<u>è</u>res et de mes proches,<br />\nje dirai : « P<u>a</u>ix sur toi ! »<br /><span class=\"verse_number\">9</span> À cause de la maison du Seigne<u>u</u>r notre Dieu,<br />\nje dés<u>i</u>re ton bien.</p>"
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Ta foi vigilante accueille l’Esprit Il te fait naître au Royaume des cieux.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "Psaume 126",
+    //             "titre": "<p>Dieu, notre unique espérance</p>",
+    //             "texte": "<span class=\"verse_number\">1</span> Si le Seigneur ne bât<u>i</u>t la maison,<br>les bâtisseurs trav<u>a</u>illent en vain ; *<br>si le Seigneur ne g<u>a</u>rde la ville,<br>c’est en vain que v<u>e</u>illent les gardes.<br><br><span class=\"verse_number\">2</span> En vain tu dev<u>a</u>nces le jour,<br>tu retardes le mom<u>e</u>nt de ton repos, +<br>tu manges un p<u>a</u>in de douleur : *<br>Dieu comble son bien-aim<u>é</u> quand il dort.<br><br><span class=\"verse_number\">3</span> Des fils, voilà ce que d<u>o</u>nne le Seigneur,<br>des enfants, la récomp<u>e</u>nse qu’il accorde ; *<br><span class=\"verse_number\">4</span> comme des flèches aux m<u>a</u>ins d’un guerrier,<br>ainsi les f<u>i</u>ls de la jeunesse.<br><br><span class=\"verse_number\">5</span> Heureux l’h<u>o</u>mme vaillant<br>qui a garni son carqu<u>o</u>is de telles armes ! *<br>S’ils affrontent leurs ennem<u>i</u>s sur la place,<br>ils ne seront p<u>a</u>s humiliés.<br>"
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "<p>Heureuse d’être pauvre, tu te hâtes vers le Royaume.</p>",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "Cantique Ap 19",
+    //             "titre": "<p>Les noces de l'Agneau</p>",
+    //             "texte": "<span class=\"verse_number\">1</span> Alléluia !<br>  <br>  Le salut, la puissance,<br>  la gl<u>o</u>ire à notre Dieu,<br>  Alléluia !<br>  <span class=\"verse_number\">2</span> Ils   sont justes, ils sont vrais,<br>  s<u>e</u>s jugements.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">5</span> Célébrez   notre Dieu,<br>  servite<u>u</u>rs du Seigneur,<br>  Alléluia !<br>  vous tous qui le craignez, <br>  les pet<u>i</u>ts et les grands.<br>  Alléluia !<br>  <br>  <span class=\"verse_number\">6</span> Il   règne, le Seigneur,<br>  notre Die<u>u</u> tout-puissant,<br>  Alléluia !<br>  <span class=\"verse_number\">7</span> Exultons,   crions de joie,<br>  et r<u>e</u>ndons-lui la gloire !<br>  Alléluia !<br>  <br>  Car elles sont venues,<br>  les N<u>o</u>ces de l'Agneau,<br>  Alléluia !<br>  Et pour lui son épouse<br>  a revêt<u>u</u> sa parure.<br>  Alléluia !<br>"
+    //         },
+    //         "pericope": {
+    //             "reference": "Ph 3, 10-14",
+    //             "texte": "Il s’agit de connaître le Christ et la puissance de sa résurrection, et la communion à ses souffrances, de devenir semblable à lui dans sa mort, afin de parvenir, s’il est possible, à la résurrection d’entre les morts. Non que j’aie déjà obtenu tout cela ou que je sois déjà devenu parfait ; mais je m’élance pour tâcher de le saisir, parce que j’ai été saisi moi-même par Jésus Christ. Frères, je n’estime pas l’avoir déjà saisi. Mon seul souci : oubliant le chemin parcouru et tout tendu en avant, je m’élance vers le but, en vue du prix attaché à l’appel d’en-haut que Dieu nous adresse en Jésus Christ. "
+    //         },
+    //         "repons": "R/ Gardez la pauvreté.<br/>* Aimez-la comme une mère.<br/>V/ C’est le plus riche héritage reçu de saint François,<br/>* Aimez-la...<br/>V/ Elle vous conduit sur les traces de Jésus Christ,<br/>* Aimez-la...<br/>V/ Elle vous introduira dans la terre des vivants. <br/>R/ Gardez...",
+    //         "antienne_marie": {
+    //             "antienne_A": "<p>Avec la Vierge Marie, dans l’assurance de l’Esprit, tu parcourais le chemin de l’Évangile </p>",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "<p>Rendons grâce au Seigneur, auteur de tout bien, et prions-le dans la joie :</p><br/> R/ <p>En ta grande tendresse, exauce-nous, Seigneur.</p><br/><p>Nous te rendons grâce, Seigneur, pour le don de l’Esprit qui a puissamment agi en sainte Colette, afin de l’aider à accomplir sa mission ;<br/>– nous te prions pour la fidélité de tous les baptisés à leur vocation d’apôtres.<br/><br/>Nous te rendons grâce pour la force de son intercession ; <br/>– que son aide demeure efficace pour ceux qui sont accablés par la misère et la souffrance.<br/><br/>Nous te rendons grâce pour le don de contemplation qui ne l’a pas quittée, même au plus fort de ses activités ;<br/>– à travers nos tâches temporelles, garde nos cœurs fixés là où se trouvent les vrais biens.<br/><br/>Nous te rendons grâce pour sa vie, pleine et féconde, de servante du Seigneur, pour sa mort douce et sereine ;<br/>– que la paix de ton amour accompagne ceux qui vont mourir. </p>",
+    //         "oraison": "<p>Dieu, notre Père, tu as fait de sainte Colette un exemple et un guide de vie évangélique pour de nombreuses sœurs de sainte Claire ; fais que cet esprit franciscain qu’elle a enseigné avec sagesse et confirmé par la sainteté de ses exemples se développe pleinement en nous. Par Jésus Christ.</p>",
+    //         "benediction": ""
+    //     }
+    // },
+    // "07/02_3": {
+    //     "date": "07/02",
+    //     "titre": "S. JEAN LANTRUA DE TRIORA ",
+    //     "sous_titre": "religieux-prêtre Ier Ordre, martyr",
+    //     "rang": "Mémoire facultative",
+    //     "biographie": "François Marie Lantrua naquit à Molini di Triora (Imperia) le 15 mars 1760. Il entra à 17 ans dans la Province Romaine de l’Ordre des Frères Mineurs. Ses études achevées il fut ordonné prêtre et se consacra entièrement à l’apostolat. Se sentant appelé à un plus grand service dans le champ des missions, il obtint d’être envoyé en Chine dans le Hunan, où pendant seize ans il travailla avec succès à la diffusion de la foi chrétienne. Arrêté lors de la persécution, il fut mené à Chanxa où il connut pendant sept mois une incarcération extrêmement pénible avant d’accomplir dans le martyre le sacrifice de sa vie le 7 février 1816. Son corps recueilli par des chrétiens fut transféré secrètement à Macao, puis de là à Rome dans la basilique de l’Ara Coeli. Béatifié par Léon XIII le 27 mai 1900 avec 76 martyrs de Cochinchine et du Tonkin, il fut canonisé par Jean Paul II le 1er octobre 2000.",
+    //     "laudatoSii": "FALSE",
+    //     "vepres_veille": {
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "repons": "",
+    //         "antienne_marie": {
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "",
+    //         "oraison": "",
+    //         "benediction": ""
+    //     },
+    //     "lectures": {
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "verset": "",
+    //         "lecture_biblique": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "repons_bible": "",
+    //         "lecture_patristique": {
+    //             "titre": "",
+    //             "sous_titre": "",
+    //             "texte": ""
+    //         },
+    //         "repons_patristique": "",
+    //         "oraison": "<p> Ô Dieu, qui a couronné de la gloire éternelle le saint martyr Jean de Triora dans sa lutte pour la foi, accorde par ses mérites aux peuples qui ignorent le Christ d’être illuminés par le Saint Esprit et de pouvoir entrer eux aussi dans la voie du salut. Par Jésus Christ.</p>"
+    //     },
+    //     "laudes": {
+    //         "antienne_invitatoire": {
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "repons": "",
+    //         "antienne_zacharie": {
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "",
+    //         "oraison": "<p> Ô Dieu, qui a couronné de la gloire éternelle le saint martyr Jean de Triora dans sa lutte pour la foi, accorde par ses mérites aux peuples qui ignorent le Christ d’être illuminés par le Saint Esprit et de pouvoir entrer eux aussi dans la voie du salut. Par Jésus Christ.</p>",
+    //         "benediction": ""
+    //     },
+    //     "milieu_du_jour": {
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "repons": ""
+    //     },
+    //     "tierce": {
+    //         "antienne": "",
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "verset": ""
+    //     },
+    //     "none": {
+    //         "antienne": "",
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "verset": ""
+    //     },
+    //     "vepres": {
+    //         "hymne": {
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_1": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_1": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_2": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_2": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "antienne_3": {
+    //             "additionel": "",
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "psaume_3": {
+    //             "reference": "",
+    //             "titre": "",
+    //             "texte": ""
+    //         },
+    //         "pericope": {
+    //             "reference": "",
+    //             "texte": ""
+    //         },
+    //         "repons": "",
+    //         "antienne_marie": {
+    //             "antienne_A": "",
+    //             "antienne_B": ""
+    //         },
+    //         "intercession": "",
+    //         "oraison": "<p> Ô Dieu, qui a couronné de la gloire éternelle le saint martyr Jean de Triora dans sa lutte pour la foi, accorde par ses mérites aux peuples qui ignorent le Christ d’être illuminés par le Saint Esprit et de pouvoir entrer eux aussi dans la voie du salut. Par Jésus Christ.</p>",
+    //         "benediction": ""
+    //     }
+    // },
     "08/02": {
         "date": "08/02",
         "titre": "Bse JACQUELINE ",
