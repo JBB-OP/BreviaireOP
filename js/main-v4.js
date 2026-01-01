@@ -235,47 +235,53 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // TRADUCTION
 // Translation switch
-function toggleTraduction(){
+function toggleTraduction() {
   const currentTraduction = document.documentElement.getAttribute('data-traduction');
   const newTraduction = currentTraduction === 'BJ' ? 'AELF' : 'BJ';
   document.documentElement.setAttribute('data-traduction', newTraduction);
   localStorage.setItem('traduction', newTraduction);
-  
+
   // Update the translation status text
   const valueElement = document.getElementById('traduction-value');
   if (valueElement) {
     valueElement.textContent = newTraduction;
   }
-  
+
+  // Update the switch position
+  const traductionToggle = document.getElementById('traduction-toggle');
+  if (traductionToggle) {
+    traductionToggle.checked = newTraduction === 'BJ';
+  }
+
   return newTraduction;
-};
+}
 
 // Load user preference on translation on startup
 window.addEventListener('DOMContentLoaded', () => {
   const savedTraduction = localStorage.getItem('traduction');
   let currentTraduction;
+
   if (savedTraduction) {
     currentTraduction = savedTraduction;
-    document.documentElement.setAttribute('data-traduction', savedTraduction);
   } else {
     // Default to AELF if no preference is saved
     currentTraduction = 'AELF';
-    document.documentElement.setAttribute('data-traduction', 'AELF');
   }
 
-  // Update the translation status text on load
+  // Set the data attribute
+  document.documentElement.setAttribute('data-traduction', currentTraduction);
+
+  // Update the translation status text if the element exists
   const valueElement = document.getElementById('traduction-value');
   if (valueElement) {
     valueElement.textContent = currentTraduction;
   }
 
-  // Add event listener for the translation toggle
+  // Update the switch position if the element exists
   const traductionToggle = document.getElementById('traduction-toggle');
   if (traductionToggle) {
-    traductionToggle.addEventListener('change', function() {
-      const newTraduction = toggleTraduction();
-      console.log('La traduction choisie est :', newTraduction);
-    });
+    traductionToggle.checked = currentTraduction === 'BJ';
+    traductionToggle.addEventListener('change', toggleTraduction);
   }
 });
 
