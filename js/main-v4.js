@@ -256,8 +256,8 @@ function toggleTraduction() {
   return newTraduction;
 }
 
-// Load user preference on translation on startup
-window.addEventListener('DOMContentLoaded', () => {
+// Function to initialize translation settings
+function initializeTranslation() {
   const savedTraduction = localStorage.getItem('traduction');
   let currentTraduction;
 
@@ -283,5 +283,18 @@ window.addEventListener('DOMContentLoaded', () => {
     traductionToggle.checked = currentTraduction === 'BJ';
     traductionToggle.addEventListener('change', toggleTraduction);
   }
+}
+
+// Load user preference on translation on startup
+window.addEventListener('DOMContentLoaded', () => {
+  initializeTranslation();
 });
+
+// Also initialize when the settings page is loaded
+function update_settings() {
+  // ... existing code ...
+  
+  // Initialize translation settings when the settings page is loaded
+  initializeTranslation();
+}
 

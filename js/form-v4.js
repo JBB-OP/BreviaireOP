@@ -498,6 +498,11 @@ function update_settings(){
   update_anchors();
   update_liturgical_color("vert");
   update_office_class(office);
+  
+  // Initialize translation settings when the settings page is loaded
+  if (typeof initializeTranslation === 'function') {
+    initializeTranslation();
+  }
 }
 
 
