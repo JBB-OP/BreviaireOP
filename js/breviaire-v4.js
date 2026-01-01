@@ -893,26 +893,44 @@ function create_complies_html(contenu, infos, date_obj, hymne){
 
 
 
-  // Antiennes des psaumes commentées pour les complies
-  // texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Antienne: </h2>");
-  // texte_final = texte_final.concat("<i>" + contenu["antienne_1"] + "</i>");
+  // Check if we have a custom psalm selection for complies
+  var customPsalm = window.currentCompliesPsalm || null;
+  
+  if (customPsalm) {
+    // Use custom psalm selection
+    if (customPsalm === '90') {
+      // Use only Psalm 90
+      texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+      texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
+      sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+    } else if (customPsalm === '4,133') {
+      // Use Psalms 4 and 133
+      // We need to get these psalms from somewhere - for now, we'll use the API data
+      // In a real implementation, you would need to have these psalms available
+      
+      // For now, we'll use the existing psalms from the API
+      // You might need to modify this to get the correct psalms
+      texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+      texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
+      sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+      
+      if (contenu["psaume_2"].length != 0) {
+        texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
+        texte_final = texte_final.concat(contenu["psaume_2"]['texte'] + "</div>");
+        sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
+      }
+    }
+  } else {
+    // Use default psalms from API
+    texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+    texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
+    sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
 
-  texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
-  texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
-  sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
-
-
-  if (contenu["psaume_2"].length != 0) {
-
-    // Antienne du deuxième psaume commentée
-    // if (contenu["antienne_2"] != "") {
-    //   texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2>Antienne: </h2>");
-    //   texte_final = texte_final.concat("<i>" + contenu["antienne_2"] + "</i>");
-    // }
-
-    texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
-    texte_final = texte_final.concat(contenu["psaume_2"]['texte'] + "</div>");
-    sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
+    if (contenu["psaume_2"].length != 0) {
+      texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
+      texte_final = texte_final.concat(contenu["psaume_2"]['texte'] + "</div>");
+      sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
+    }
   }
 
 

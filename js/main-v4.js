@@ -233,6 +233,137 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Function to determine the complies psalm based on the day of the week and solemnities
+function getCompliesPsalm(date) {
+  const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  const dateObj = new Date(date);
+  const dayOfWeek = days[dateObj.getDay()];
+  
+  // Check if today is a solemnity (you'll need to implement this function)
+  const isTodaySolemnity = isSolemnity(date);
+  
+  // Check if tomorrow is a solemnity
+  const tomorrow = new Date(dateObj);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const isTomorrowSolemnity = isSolemnity(tomorrow.toISOString().split('T')[0]);
+  
+  // Determine the psalm based on the rules
+  if (dayOfWeek === 'dimanche' || dayOfWeek === 'mardi' || dayOfWeek === 'jeudi' || isTodaySolemnity) {
+    return '90'; // Psalm 90 for Sunday, Tuesday, Thursday, or solemnities
+  } else if (dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
+    return '4,133'; // Psalms 4 and 133 for Monday, Wednesday, Friday, Saturday, or if tomorrow is a solemnity
+  } else {
+    return '90'; // Default to Psalm 90
+  }
+}
+
+// Placeholder function for checking if a date is a solemnity
+// You'll need to implement this based on your specific requirements
+function isSolemnity(date) {
+  // This is a placeholder - you need to implement the actual logic
+  // to check if a date is a solemnity based on your liturgical calendar
+  // For now, we'll return false for all dates
+  return false;
+}
+
+// Function to check if a date is a solemnity using AELF API
+function isSolemnity(date, callback) {
+  // First, check if we have cached data for this date
+  const cachedData = localStorage.getItem('aelf_solemnity_cache_' + date);
+  if (cachedData) {
+    const data = JSON.parse(cachedData);
+    callback(checkSolemnityFromData(data));
+    return;
+  }
+  
+  // If not cached, make the API call
+  const urlAelf = "https://api.aelf.org/v1/informations/" + date + "/france";
+  $.ajax({
+    url: urlAelf,
+    success: function(result) {
+      // Cache the result for future use (for 24 hours)
+      const cacheData = {
+        data: result,
+        timestamp: new Date().getTime()
+      };
+      localStorage.setItem('aelf_solemnity_cache_' + date, JSON.stringify(cacheData));
+      callback(checkSolemnityFromData(result));
+    },
+    error: function() {
+      // If API call fails, return false
+      callback(false);
+    }
+  });
+}
+
+// Helper function to check if data indicates a solemnity
+function checkSolemnityFromData(data) {
+  if (!data || !data.informations) {
+    return false;
+  }
+  
+  const info = data.informations;
+  
+  // Check the degree (rang) - solemnities often have specific degrees
+  if (info.rang && (info.rang.toLowerCase() === 'solennité' || info.rang.toLowerCase().includes('solenn'))) {
+    return true;
+  }
+  
+  // Check the title for common solemnity indicators
+  const title = info.ligne1 ? info.ligne1.toLowerCase() : '';
+  if (title.includes('solennité')) {
+    return true;
+  }
+  
+  // Check specific solemnities by name
+  const solemnityNames = [
+    'noël', 'épiphanie', 'ascension', 'pentecôte', 'sainte famille',
+    'trinité', 'christ roi', 'toussaint', 'immaculée conception',
+    'assomption', 'annunciation', 'saints apôtres', 'saint joseph',
+    'sacrement', 'cœur de jésus', 'saint pierre', 'saint paul'
+  ];
+  
+  if (solemnityNames.some(name => title.includes(name))) {
+    return true;
+  }
+  
+  // Check if it's a Sunday with a special title (could be a solemnity)
+  const dateObj = new Date(data.date);
+  if (dateObj.getDay() === 0) { // 0 is Sunday
+    if (title.includes('pâques') || title.includes('résurrection')) {
+      return true;
+    }
+  }
+  
+  return false;
+}
+
+// Function to determine the complies psalm based on the day of the week and solemnities
+function getCompliesPsalm(date, callback) {
+  const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  const dateObj = new Date(date);
+  const dayOfWeek = days[dateObj.getDay()];
+  
+  // Check if today is a solemnity
+  isSolemnity(date, function(isTodaySolemnity) {
+    // Check if tomorrow is a solemnity
+    const tomorrow = new Date(dateObj);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowDateStr = tomorrow.toISOString().split('T')[0];
+    
+    isSolemnity(tomorrowDateStr, function(isTomorrowSolemnity) {
+      // Determine the psalm based on the rules
+      if (dayOfWeek === 'dimanche' || dayOfWeek === 'mardi' || dayOfWeek === 'jeudi' || isTodaySolemnity) {
+        callback('90'); // Psalm 90 for Sunday, Tuesday, Thursday, or solemnities
+      } else if (dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
+        callback('4,133'); // Psalms 4 and 133 for Monday, Wednesday, Friday, Saturday, or if tomorrow is a solemnity
+      } else {
+        callback('90'); // Default to Psalm 90
+      }
+    });
+  });
+}
+
 // TRADUCTION
 // Translation switch
 function toggleTraduction() {

@@ -286,7 +286,14 @@ function update_office(scroll=0){
 	const hymne = true;
   let elements = document.getElementsByClassName("psaume_invitatoire_select");
 	var invitatoire = elements.length > 0 ? elements[0].value : 94;  
-
+  
+  // If this is complies, determine the psalm
+  if (office === 'complies' && typeof getCompliesPsalm === 'function') {
+    getCompliesPsalm(date, function(psalm) {
+      // Store the psalm for later use in create_office_html
+      window.currentCompliesPsalm = psalm;
+    });
+  }
 
 	var urlAelf = "https://api.aelf.org/v1/" + office + "/" + date + "/" + zone.split(";")[0];
 
