@@ -19,6 +19,11 @@ $(document).ready(function(){
     document.getElementById("global_container").style.fontSize = cookieValue + "px";
   }
   getScreenLock();
+  
+  // Show the welcome popup if it is not disabled
+  if (typeof showWelcomePopup === 'function') {
+    showWelcomePopup();
+  }
 });
 
 document.addEventListener('visibilitychange', async () => {
@@ -612,6 +617,39 @@ function initializeCompliesRepartition() {
     if (!compliesRepartitionValue.textContent) {
       compliesRepartitionValue.textContent = compliesRepartitionToggle.checked ? '2 jours' : '7 jours';
     }
+  }
+}
+
+function showWelcomePopup() {
+  const disablePopup = localStorage.getItem('disablePopup');
+  const welcomePopup = document.getElementById('welcome-popup');
+  const disableWelcomePopupToggle = document.getElementById('disable-welcome-popup-toggle');
+  
+  if (welcomePopup && disableWelcomePopupToggle) {
+    // Check if the popup should be shown
+    if (disablePopup !== 'true') {
+      welcomePopup.style.display = 'block';
+    }
+    
+    // Add event listener to close the popup
+    document.getElementById('close-popup').addEventListener('click', function() {
+      welcomePopup.style.display = 'none';
+    });
+    
+    // Add event listener to go to settings
+    document.getElementById('settings-popup').addEventListener('click', function() {
+      welcomePopup.style.display = 'none';
+      update_settings();
+    });
+    
+    // Add event listener to disable the popup
+    disableWelcomePopupToggle.addEventListener('change', function() {
+      if (disableWelcomePopupToggle.checked) {
+        localStorage.setItem('disablePopup', 'true');
+      } else {
+        localStorage.setItem('disablePopup', 'false');
+      }
+    });
   }
 }
 
