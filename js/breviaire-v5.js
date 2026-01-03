@@ -875,110 +875,6 @@ function create_petite_heure_html(contenu, infos, date_obj, hymne){
 }
 
 
-function create_complies_html(contenu, infos, date_obj, hymne){
-
-  var titre = '<div class="office_titre" id="office_titre">';
-  titre = titre.concat("<h1>Complies du " + date_obj.getDate() + " " + tab_mois[date_obj.getMonth()] + "</h1>")
-  titre = titre.concat(infos['ligne1'] + "</div>")
-
-  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
-
-  if (infos["dominicain"]) {
-    sommaire = sommaire.concat("<li><a class='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
-  }
-
-  var texte_final = '<div class="office_text" id="office_text">';
-  texte_final = texte_final.concat('<div class="text_part" id="introduction"> \n'+ contenu["introduction"] + "</div>");
-  sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
-
-  // Acte pénitentiel
-  texte_final = texte_final.concat("<div class='text_part' id='acte_penitentiel'><h2>Acte pénitentiel</h2>");
-  texte_final = texte_final.concat("<p><i>Bref examen de conscience à genoux.</i><br /> Je confesse à Dieu tout-puissant,<br /> à la bienheureuse Marie toujours vierge,<br /> à notre Père saint Dominique<br /> à tous les saints et à vous, mes frères,<br /> que j’ai beaucoup péché<br /> par pensée, par parole, par action et par omission.<br /> C’ est ma faute. Je vous demande de prier pour moi.<br /><br /> <i>Le prieur ou l’hebdomadier :</i><br /> Que Dieu tout-puissant nous fasse miséricorde,<br /> qu’il nous pardonne nos péchés, nous délivre de tout mal,<br /> qu’il nous garde et nous affermisse dans le bien<br /> et qu’il nous conduise à la vie éternelle.<br /> R/ Amen.</p></div>");
-  sommaire = sommaire.concat("<li><a href='#acte_penitentiel'>Acte pénitentiel</a></li>");
-
-  if (hymne) {
-    texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne " + contenu["hymne"]["titre"] + " </h2>");
-    texte_final = texte_final.concat(contenu["hymne"]["texte"] + "</div>");
-
-  } else {
-    texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne</h2></div>");
-  }
-  sommaire = sommaire.concat("<li><a href='#hymne'>Hymne</a></li>");
-
-
-  // Antiennes des psaumes commentées pour les complies
-  // texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Antienne: </h2>");
-  // texte_final = texte_final.concat("<i>" + contenu["antienne_1"] + "</i>");
-
-  texte_final = texte_final.concat("<h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
-  texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
-  sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
-
-
-  if (contenu["psaume_2"].length != 0) {
-
-    // Antienne du deuxième psaume commentée
-    // if (contenu["antienne_2"] != "") {
-    //   texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2>Antienne: </h2>");
-    //   texte_final = texte_final.concat("<i>" + contenu["antienne_2"] + "</i>");
-    // }
-
-    texte_final = texte_final.concat("<h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
-    texte_final = texte_final.concat(contenu["psaume_2"]['texte'] + "</div>");
-    sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
-  }
-
-
-
-
-  texte_final = texte_final.concat("<div class='text_part' id='pericope'><h2>Parole de Dieu (" + contenu['pericope']['reference'] + ")</h2>");
-  texte_final = texte_final.concat(contenu['pericope']['texte']);
-
-  texte_final = texte_final.concat("<h2>Répons </h2>");
-  // texte_final = texte_final.concat(contenu['repons']+ "</div>");
-  // sommaire = sommaire.concat("<li><a href='#pericope'>Péricope</a></li>");
-  // Répons fixe pour les complies
-  texte_final = texte_final.concat("<p>R/ En tes mains, Seigneur, je remets mon esprit.<br />V/ C'est toi qui nous rachète, Seigneur, Dieu de Vérité. R/<br />Gloire au Père et au Fils et au Saint-Esprit. R/</p>");
-  sommaire = sommaire.concat("<li><a href='#pericope'>Péricope</a></li>");
-
-
-  texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2> " + contenu["cantique_symeon"]['titre'] + "</h2>");
-  texte_final = texte_final.concat("Ant. <i>" + contenu["antienne_symeon"] + "</i>");
-
-  texte_final = texte_final.concat(contenu["cantique_symeon"]['texte']);
-  texte_final = texte_final.concat("<br/>Ant. <i>" + contenu["antienne_symeon"] + "</i></div>");
-  sommaire = sommaire.concat("<li><a href='#cantique_symeon'>Cantique de Syméon</a></li>");
-
-
-  // texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison: </h2>");
-  // texte_final = texte_final.concat(contenu['oraison']);
-  // Oraison fixe pour les complies
-  texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison </h2>");
-  texte_final = texte_final.concat("<p><i>Prions.</i> Visite cette maison, Seigneur, et repousse loin delle toutes les embûches de l’ennemi ; que tes saints anges viennent l’habiter pour nous garder dans la paix et que ta bénédiction demeure sur nous à jamais. Par le Christ, notre Seigneur.<br /> R/ Amen.</p>");
-
-  texte_final = texte_final.concat("<h2>Benediction </h2>");
-  texte_final = texte_final.concat(contenu['benediction'] + "</div>");
-  sommaire = sommaire.concat("<li><a href='#oraison'>Oraison</a></li>");
-
-  // texte_final = texte_final.concat("<div class='text_part' id='hymne_mariale'><h2>Hymne mariale: " + contenu["hymne_mariale"]["titre"] + " </h2>");
-  // texte_final = texte_final.concat(contenu["hymne_mariale"]["texte"] + "</div><br/>");
-  // sommaire = sommaire.concat("<li><a href='#hymne_mariale'>" + contenu["hymne_mariale"]["titre"] + "</a></li>");
-
-  // Hymne mariale - toujours Salve Regina pour les complies
-  texte_final = texte_final.concat("<div class='text_part' id='hymne_mariale'><h2>Salve Regina</h2>");
-  texte_final = texte_final.concat("<p>Salve, Regina, Mater misericordiæ,<br />vita, dulcedo, et spes nostra, salve.<br />Ad te clamamus exsules filii Hevæ.<br />Ad te suspiramus, gementes et flentes<br />in hac lacrimarum valle.<br /><br />Eia, ergo, advocata nostra,<br />illos tuos misericordes oculos ad nos converte.<br />Et Iesum, benedictum fructum ventris tui,<br />nobis post hoc exsilium ostende.<br /><br />O clemens, O pia,<br />O dulcis Virgo Maria. (T.P. Alleluia)</p></div><br/>");
-  sommaire = sommaire.concat("<li><a href='#hymne_mariale'>Salve Regina</a></li>");
-  
-  // Antienne à saint Dominique
-  texte_final = texte_final.concat("<div class='text_part' id='antienne_dominique'><h2>Antienne à saint Dominique</h2>");
-  texte_final = texte_final.concat("<p>O lumen Ecclesiae, Doctor veritatis,<br />Rosa patientiae, Ebur castitatis.<br />Aquam sapientiae propinasti gratis.<br />Praedicator gratiae, nos iunge beatis.<br />Amen. (T.P. Alleluia).</p></div>");
-  sommaire = sommaire.concat("<li><a href='#antienne_dominique'>Antienne à saint Dominique</a></li>");
-  
-  sommaire = sommaire.concat("</ul></div>");
-  texte_final = add_symbol_span(texte_final);
-
-  return {texte: texte_final, titre: titre, sommaire: sommaire, couleur: infos['couleur']};
-}
 
 function create_psaumes_html(contenu){
   var texte_final = ""
@@ -1235,3 +1131,170 @@ function main(){
 }
 
 //main();
+function create_complies_html(contenu, infos, date_obj, hymne){
+  console.log("=== create_complies_html (v5) called ===");
+  console.log("Custom psalm:", window.currentCompliesPsalm);
+
+  var titre = '<div class="office_titre" id="office_titre">';
+  titre = titre.concat("<h1>Complies du " + date_obj.getDate() + " " + tab_mois[date_obj.getMonth()] + "</h1>")
+  titre = titre.concat(infos['ligne1'] + "</div>")
+
+  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
+
+  if (infos["dominicain"]) {
+    sommaire = sommaire.concat("<li><a class='sommaire_bibliographie' href='#biographie'>Biographie</a></li>");
+  }
+
+  var texte_final = '<div class="office_text" id="office_text">';
+  texte_final = texte_final.concat('<div class="text_part" id="introduction"> \n'+ contenu["introduction"] + "</div>");
+  sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
+
+  // Acte pénitentiel
+  texte_final = texte_final.concat("<div class='text_part' id='acte_penitentiel'><h2>Acte pénitentiel</h2>");
+  texte_final = texte_final.concat("<p><i>Bref examen de conscience à genoux.</i><br /> Je confesse à Dieu tout-puissant,<br /> à la bienheureuse Marie toujours vierge,<br /> à notre Père saint Dominique<br /> à tous les saints et à vous, mes frères,<br /> que j’ai beaucoup péché<br /> par pensée, par parole, par action et par omission.<br /> C’ est ma faute. Je vous demande de prier pour moi.<br /><br /> <i>Le prieur ou l’hebdomadier :</i><br /> Que Dieu tout-puissant nous fasse miséricorde,<br /> qu’il nous pardonne nos péchés, nous délivre de tout mal,<br /> qu’il nous garde et nous affermisse dans le bien<br /> et qu’il nous conduise à la vie éternelle.<br /> R/ Amen.</p></div>");
+  sommaire = sommaire.concat("<li><a href='#acte_penitentiel'>Acte pénitentiel</a></li>");
+
+  if (hymne) {
+    texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne : " + contenu["hymne"]["titre"] + " </h2>");
+    texte_final = texte_final.concat(contenu["hymne"]["texte"] + "</div>");
+
+  } else {
+    texte_final = texte_final.concat("<div class='text_part' id='hymne'><h2>Hymne</h2></div>");
+  }
+  sommaire = sommaire.concat("<li><a href='#hymne'>Hymne</a></li>");
+
+
+
+  // Check if we have a custom psalm selection for complies
+  var customPsalm = window.currentCompliesPsalm || null;
+  console.log("=== Complies HTML Generation ===");
+  console.log("Custom psalm selection:", customPsalm);
+  console.log("psaume_from_reference available:", typeof psaume_from_reference === 'function');
+  if (typeof psaume_from_reference === 'function') {
+    console.log("Testing psaume_from_reference:");
+    console.log("Psalm 4:", psaume_from_reference("Psaume 4") ? "Found" : "Not found");
+    console.log("Psalm 133:", psaume_from_reference("Psaume 133") ? "Found" : "Not found");
+  }
+  
+  if (customPsalm) {
+    // Use custom psalm selection
+    if (customPsalm === 'Psaume 90') {
+      // Use only Psalm 90 from our database
+      console.log("Using Psaume 90 from local database");
+      if (typeof psaume_from_reference === 'function') {
+        var psaume90 = psaume_from_reference("Psaume 90");
+        console.log("Psaume 90:", psaume90 ? "Found" : "Not found");
+        
+        if (psaume90) {
+          console.log("Displaying Psaume 90 from local database");
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Psaume 90</h2>");
+          texte_final = texte_final.concat(psaume90 + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_1'>Psaume 90</a></li>");
+        } else {
+          console.log("Psaume 90 not found in local database, falling back to API psalm");
+          // Fallback to API psalm if psaume_from_reference is not available or psalm not found
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+          texte_final = texte_final.concat(contenu["psaume_1"]["texte"] + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+        }
+      } else {
+        console.log("psaume_from_reference not available, falling back to API psalm");
+        // Fallback to API psalm if psaume_from_reference is not available
+        texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+        texte_final = texte_final.concat(contenu["psaume_1"]["texte"] + "</div>");
+        sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+      }
+    } else if (customPsalm === 'Psaumes 4,133') {
+      // Use Psalms 4 and 133 from our database
+      console.log("Attempting to use Psaumes 4 and 133 from local database");
+      if (typeof psaume_from_reference === 'function') {
+        console.log("psaume_from_reference is available");
+        var psaume4 = psaume_from_reference("Psaume 4");
+        var psaume133 = psaume_from_reference("Psaume 133");
+        
+        console.log("Psalm 4:", psaume4 ? "Found" : "Not found");
+        console.log("Psalm 133:", psaume133 ? "Found" : "Not found");
+        
+        if (psaume4) {
+          console.log("Displaying Psalm 4 from local database");
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Psaume 4</h2>");
+          texte_final = texte_final.concat(psaume4 + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_1'>Psaume 4</a></li>");
+        }
+        
+        if (psaume133) {
+          console.log("Displaying Psalm 133 from local database");
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2>Psaume 133</h2>");
+          texte_final = texte_final.concat(psaume133 + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_2'>Psaume 133</a></li>");
+        }
+      } else {
+        console.log("psaume_from_reference not available, falling back to API psalms");
+        // Fallback to API psalms if psaume_from_reference is not available
+        texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+        texte_final = texte_final.concat(contenu["psaume_1"]["texte"] + "</div>");
+        sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+        
+        if (contenu["psaume_2"].length != 0) {
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
+          texte_final = texte_final.concat(contenu["psaume_2"]["texte"] + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
+        }
+      }
+    }
+  } else {
+    console.log("No custom psalm selection, using default API psalms");
+    // Use default psalms from API
+    texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+    texte_final = texte_final.concat(contenu["psaume_1"]["texte"] + "</div>");
+    sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+
+    if (contenu["psaume_2"].length != 0) {
+      texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2> " + titre_psaume(contenu["psaume_2"]['reference']) + "</h2>");
+      texte_final = texte_final.concat(contenu["psaume_2"]["texte"] + "</div>");
+      sommaire = sommaire.concat("<li><a href='#psaume_2'>" + titre_psaume(contenu["psaume_2"]['reference']) + "</a></li>");
+    }
+  }
+
+
+
+
+  texte_final = texte_final.concat("<div class='text_part' id='pericope'><h2>Parole de Dieu (" + contenu['pericope']['reference'] + ")</h2>");
+  texte_final = texte_final.concat(contenu['pericope']['texte']);
+
+  texte_final = texte_final.concat("<h2>Répons </h2>");
+    // Répons fixe pour les complies
+  texte_final = texte_final.concat("<p>R/ En tes mains, Seigneur, je remets mon esprit.<br />V/ C'est toi qui nous rachète, Seigneur, Dieu de Vérité. R/<br />Gloire au Père et au Fils et au Saint-Esprit. R/</p>");
+  sommaire = sommaire.concat("<li><a href='#pericope'>Péricope</a></li>");
+
+
+  texte_final = texte_final.concat("<div class='text_part' id='cantique_symeon'><h2>Antienne : </h2>");
+  texte_final = texte_final.concat("<i>" + contenu["antienne_symeon"] + "</i>");
+
+  texte_final = texte_final.concat("<h2> " + contenu["cantique_symeon"]['titre'] + "</h2>");
+  texte_final = texte_final.concat(contenu["cantique_symeon"]["texte"] + "</div>");
+  sommaire = sommaire.concat("<li><a href='#cantique_symeon'>Cantique de Syméon</a></li>");
+
+
+  // Oraison fixe pour les complies
+  texte_final = texte_final.concat("<div class='text_part' id='oraison'><h2>Oraison </h2>");
+  texte_final = texte_final.concat("<p><i>Prions.</i> Visite cette maison, Seigneur, et repousse loin delle toutes les embûches de l’ennemi ; que tes saints anges viennent l'habiter pour nous garder dans la paix et que ta bénédiction demeure sur nous à jamais. Par le Christ, notre Seigneur.<br /> R/ Amen.</p>");
+  texte_final = texte_final.concat("<h2>Benediction </h2>");
+  texte_final = texte_final.concat(contenu['benediction'] + "</div>");
+  sommaire = sommaire.concat("<li><a href='#oraison'>Oraison</a></li>");
+
+  // Hymne mariale - toujours Salve Regina pour les complies
+  texte_final = texte_final.concat("<div class='text_part' id='hymne_mariale'><h2>Salve Regina</h2>");
+  texte_final = texte_final.concat("<p>Salve, Regina, Mater misericordiæ,<br />vita, dulcedo, et spes nostra, salve.<br />Ad te clamamus exsules filii Hevæ.<br />Ad te suspiramus, gementes et flentes<br />in hac lacrimarum valle.<br /><br />Eia, ergo, advocata nostra,<br />illos tuos misericordes oculos ad nos converte.<br />Et Iesum, benedictum fructum ventris tui,<br />nobis post hoc exsilium ostende.<br /><br />O clemens, O pia,<br />O dulcis Virgo Maria. (T.P. Alleluia)</p></div><br/>");
+  sommaire = sommaire.concat("<li><a href='#hymne_mariale'>Salve Regina</a></li>");
+
+  // Antienne à saint Dominique
+  texte_final = texte_final.concat("<div class='text_part' id='antienne_dominique'><h2>Antienne à saint Dominique</h2>");
+  texte_final = texte_final.concat("<p>O lumen Ecclesiae, Doctor veritatis,<br />Rosa patientiae, Ebur castitatis.<br />Aquam sapientiae propinasti gratis.<br />Praedicator gratiae, nos iunge beatis.<br />Amen. (T.P. Alleluia).</p></div>");
+  sommaire = sommaire.concat("<li><a href='#antienne_dominique'>Antienne à saint Dominique</a></li>");
+
+  sommaire = sommaire.concat("</ul></div>");
+  texte_final = add_symbol_span(texte_final);
+
+  return {texte: texte_final, titre: titre, sommaire: sommaire, couleur: infos['couleur']};
+}

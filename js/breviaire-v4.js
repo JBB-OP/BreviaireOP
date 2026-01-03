@@ -862,6 +862,8 @@ function create_petite_heure_html(contenu, infos, date_obj, hymne){
 
 
 function create_complies_html(contenu, infos, date_obj, hymne){
+  console.log("=== create_complies_html (v4) called ===");
+  console.log("Custom psalm:", window.currentCompliesPsalm);
 
   var titre = '<div class="office_titre" id="office_titre">';
   titre = titre.concat("<h1>Complies du " + date_obj.getDate() + " " + tab_mois[date_obj.getMonth()] + "</h1>")
@@ -895,32 +897,69 @@ function create_complies_html(contenu, infos, date_obj, hymne){
 
   // Check if we have a custom psalm selection for complies
   var customPsalm = window.currentCompliesPsalm || null;
+  console.log("=== Complies HTML Generation ===");
+  console.log("Custom psalm selection:", customPsalm);
+  console.log("psaume_from_reference available:", typeof psaume_from_reference === 'function');
+  if (typeof psaume_from_reference === 'function') {
+    console.log("Testing psaume_from_reference:");
+    console.log("Psalm 4:", psaume_from_reference("Psaume 4") ? "Found" : "Not found");
+    console.log("Psalm 133:", psaume_from_reference("Psaume 133") ? "Found" : "Not found");
+  }
   
   if (customPsalm) {
     // Use custom psalm selection
-    if (customPsalm === '90') {
-      // Use only Psalm 90
-      texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
-      texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
-      sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
-    } else if (customPsalm === '4,133') {
-      // Use Psalms 4 and 133 from our database
+    if (customPsalm === 'Psaume 90') {
+      // Use only Psalm 90 from our database
+      console.log("Using Psaume 90 from local database");
       if (typeof psaume_from_reference === 'function') {
+        var psaume90 = psaume_from_reference("Psaume 90");
+        console.log("Psaume 90:", psaume90 ? "Found" : "Not found");
+        
+        if (psaume90) {
+          console.log("Displaying Psaume 90 from local database");
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Psaume 90</h2>");
+          texte_final = texte_final.concat(psaume90 + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_1'>Psaume 90</a></li>");
+        } else {
+          console.log("Psaume 90 not found in local database, falling back to API psalm");
+          // Fallback to API psalm if psaume_from_reference is not available or psalm not found
+          texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+          texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
+          sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+        }
+      } else {
+        console.log("psaume_from_reference not available, falling back to API psalm");
+        // Fallback to API psalm if psaume_from_reference is not available
+        texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
+        texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
+        sommaire = sommaire.concat("<li><a href='#psaume_1'>" + titre_psaume(contenu["psaume_1"]['reference']) + "</a></li>");
+      }
+    } else if (customPsalm === 'Psaumes 4,133') {
+      // Use Psalms 4 and 133 from our database
+      console.log("Attempting to use Psaumes 4 and 133 from local database");
+      if (typeof psaume_from_reference === 'function') {
+        console.log("psaume_from_reference is available");
         var psaume4 = psaume_from_reference("Psaume 4");
         var psaume133 = psaume_from_reference("Psaume 133");
         
+        console.log("Psalm 4:", psaume4 ? "Found" : "Not found");
+        console.log("Psalm 133:", psaume133 ? "Found" : "Not found");
+        
         if (psaume4) {
+          console.log("Displaying Psalm 4 from local database");
           texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2>Psaume 4</h2>");
           texte_final = texte_final.concat(psaume4 + "</div>");
           sommaire = sommaire.concat("<li><a href='#psaume_1'>Psaume 4</a></li>");
         }
         
         if (psaume133) {
+          console.log("Displaying Psalm 133 from local database");
           texte_final = texte_final.concat("<div class='text_part' id='psaume_2'><h2>Psaume 133</h2>");
           texte_final = texte_final.concat(psaume133 + "</div>");
           sommaire = sommaire.concat("<li><a href='#psaume_2'>Psaume 133</a></li>");
         }
       } else {
+        console.log("psaume_from_reference not available, falling back to API psalms");
         // Fallback to API psalms if psaume_from_reference is not available
         texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
         texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
@@ -934,6 +973,7 @@ function create_complies_html(contenu, infos, date_obj, hymne){
       }
     }
   } else {
+    console.log("No custom psalm selection, using default API psalms");
     // Use default psalms from API
     texte_final = texte_final.concat("<div class='text_part' id='psaume_1'><h2> " + titre_psaume(contenu["psaume_1"]['reference']) + "</h2>");
     texte_final = texte_final.concat(contenu["psaume_1"]['texte'] + "</div>");
