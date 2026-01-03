@@ -268,28 +268,40 @@ function isSolemnity(date) {
 
 // Function to check if a date is a solemnity using AELF API
 function isSolemnity(date, callback) {
+  console.log("=== isSolemnity called ===");
+  console.log("Date:", date);
+  
   // First, check if we have cached data for this date
   const cachedData = localStorage.getItem('aelf_solemnity_cache_' + date);
   if (cachedData) {
+    console.log("Using cached data for", date);
     const data = JSON.parse(cachedData);
-    callback(checkSolemnityFromData(data));
+    const result = checkSolemnityFromData(data);
+    console.log("Cached result:", result);
+    callback(result);
     return;
   }
+  
+  console.log("No cached data, calling AELF API for", date);
   
   // If not cached, make the API call
   const urlAelf = "https://api.aelf.org/v1/informations/" + date + "/france";
   $.ajax({
     url: urlAelf,
     success: function(result) {
+      console.log("API call successful for", date);
       // Cache the result for future use (for 24 hours)
       const cacheData = {
         data: result,
         timestamp: new Date().getTime()
       };
       localStorage.setItem('aelf_solemnity_cache_' + date, JSON.stringify(cacheData));
-      callback(checkSolemnityFromData(result));
+      const solemnityResult = checkSolemnityFromData(result);
+      console.log("API result:", solemnityResult);
+      callback(solemnityResult);
     },
     error: function() {
+      console.log("API call failed for", date);
       // If API call fails, return false
       callback(false);
     }
@@ -298,20 +310,35 @@ function isSolemnity(date, callback) {
 
 // Helper function to check if data indicates a solemnity
 function checkSolemnityFromData(data) {
-  if (!data || !data.informations) {
+  console.log("=== checkSolemnityFromData called ===");
+  console.log("Data:", data);
+  
+  // Handle cached data structure
+  let infoData = data;
+  if (data && data.data) {
+    console.log("Using cached data structure");
+    infoData = data.data;
+  }
+  
+  if (!infoData || !infoData.informations) {
+    console.log("No data or informations found");
     return false;
   }
   
-  const info = data.informations;
+  const info = infoData.informations;
+  console.log("Info:", info);
   
   // Check the degree (rang) - solemnities often have specific degrees
   if (info.rang && (info.rang.toLowerCase() === 'solennité' || info.rang.toLowerCase().includes('solenn'))) {
+    console.log("Found solemnity in rang:", info.rang);
     return true;
   }
   
   // Check the title for common solemnity indicators
   const title = info.ligne1 ? info.ligne1.toLowerCase() : '';
+  console.log("Title:", title);
   if (title.includes('solennité')) {
+    console.log("Found solemnity in title");
     return true;
   }
   
@@ -324,44 +351,97 @@ function checkSolemnityFromData(data) {
   ];
   
   if (solemnityNames.some(name => title.includes(name))) {
+    console.log("Found solemnity in name:", name);
     return true;
   }
   
   // Check if it's a Sunday with a special title (could be a solemnity)
-  const dateObj = new Date(data.date);
+  const dateObj = new Date(infoData.date);
   if (dateObj.getDay() === 0) { // 0 is Sunday
     if (title.includes('pâques') || title.includes('résurrection')) {
+      console.log("Found solemnity in Sunday title");
       return true;
     }
   }
   
+  console.log("No solemnity found");
   return false;
 }
 
 // Function to determine the complies psalm based on the day of the week and solemnities
 function getCompliesPsalm(date, callback) {
+  console.log("=== getCompliesPsalm called ===");
+  console.log("Date:", date);
+  
   const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
   const dateObj = new Date(date);
   const dayOfWeek = days[dateObj.getDay()];
   
+  console.log("Day of week:", dayOfWeek);
+  
   // Check if today is a solemnity
   isSolemnity(date, function(isTodaySolemnity) {
+    console.log("Is today a solemnity?", isTodaySolemnity);
+    
     // Check if tomorrow is a solemnity
     const tomorrow = new Date(dateObj);
     tomorrow.setDate(tomorrow.getDate() + 1);
     const tomorrowDateStr = tomorrow.toISOString().split('T')[0];
     
     isSolemnity(tomorrowDateStr, function(isTomorrowSolemnity) {
+      console.log("Is tomorrow a solemnity?", isTomorrowSolemnity);
+      
       // Determine the psalm based on the rules
-      if (dayOfWeek === 'dimanche' || dayOfWeek === 'mardi' || dayOfWeek === 'jeudi' || isTodaySolemnity) {
-        callback('90'); // Psalm 90 for Sunday, Tuesday, Thursday, or solemnities
+      if (isTodaySolemnity) {
+        console.log("Returning Psaume 90 (solemnity)");
+        callback('Psaume 90'); // Psalm 90 for solemnities
+      } else if (dayOfWeek === 'dimanche' || dayOfWeek === 'mardi' || dayOfWeek === 'jeudi') {
+        console.log("Returning Psaume 90");
+        callback('Psaume 90'); // Psalm 90 for Sunday, Tuesday, Thursday
       } else if (dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
-        callback('4,133'); // Psalms 4 and 133 for Monday, Wednesday, Friday, Saturday, or if tomorrow is a solemnity
+        console.log("Returning Psaumes 4,133");
+        callback('Psaumes 4,133'); // Psalms 4 and 133 for Monday, Wednesday, Friday, Saturday, or if tomorrow is a solemnity
       } else {
-        callback('90'); // Default to Psalm 90
+        console.log("Returning default Psaume 90");
+        callback('Psaume 90'); // Default to Psalm 90
       }
     });
   });
+}
+
+// CONVENT SELECTION
+// Function to initialize convent selection
+function initializeConventSelection() {
+  // Get the select element
+  const conventSelect = document.getElementById('convent-select');
+  const conventValue = document.getElementById('convent-value');
+  
+  if (conventSelect && conventValue) {
+    // Load the saved convent from localStorage
+    const savedConvent = localStorage.getItem('selectedConvent');
+    
+    // Set the saved convent as the selected option
+    if (savedConvent) {
+      const option = conventSelect.querySelector(`option[value="${savedConvent}"]`);
+      if (option) {
+        option.selected = true;
+        conventValue.textContent = savedConvent;
+      }
+    }
+    
+    // Add event listener to save the selected convent
+    conventSelect.addEventListener('change', function() {
+      const selectedConvent = conventSelect.value;
+      localStorage.setItem('selectedConvent', selectedConvent);
+      conventValue.textContent = selectedConvent;
+      console.log('Convent selected:', selectedConvent);
+    });
+    
+    // Set the initial value
+    if (!conventValue.textContent) {
+      conventValue.textContent = conventSelect.value;
+    }
+  }
 }
 
 // TRADUCTION
@@ -427,5 +507,78 @@ function update_settings() {
   
   // Initialize translation settings when the settings page is loaded
   initializeTranslation();
+  
+  // Initialize psaume repartition selection when the settings page is loaded
+  if (typeof initializePsaumeRepartition === 'function') {
+    initializePsaumeRepartition();
+  }
+}
+
+// Function to initialize psaume repartition selection
+function initializePsaumeRepartition() {
+  // Get the select element
+  const psaumeRepartitionToggle = document.getElementById('psaume-repartition-toggle');
+  const psaumeRepartitionValue = document.getElementById('psaume-repartition-value');
+  
+  if (psaumeRepartitionToggle && psaumeRepartitionValue) {
+    // Load the saved psaume repartition from localStorage
+    const savedPsaumeRepartition = localStorage.getItem('psaumeRepartition');
+    
+    // Set the saved psaume repartition as the selected option
+    if (savedPsaumeRepartition) {
+      psaumeRepartitionToggle.checked = savedPsaumeRepartition === 'Toulousaine';
+      psaumeRepartitionValue.textContent = savedPsaumeRepartition;
+    } else {
+      // Default to Romaine
+      psaumeRepartitionToggle.checked = false;
+      psaumeRepartitionValue.textContent = 'Romaine';
+    }
+    
+    // Add event listener to save the selected psaume repartition
+    psaumeRepartitionToggle.addEventListener('change', function() {
+      const selectedPsaumeRepartition = psaumeRepartitionToggle.checked ? 'Toulousaine' : 'Romaine';
+      localStorage.setItem('psaumeRepartition', selectedPsaumeRepartition);
+      psaumeRepartitionValue.textContent = selectedPsaumeRepartition;
+      console.log('Psaume repartition selected:', selectedPsaumeRepartition);
+    });
+    
+    // Set the initial value
+    if (!psaumeRepartitionValue.textContent) {
+      psaumeRepartitionValue.textContent = psaumeRepartitionToggle.checked ? 'Toulousaine' : 'Romaine';
+    }
+  }
+}
+
+function initializePopupDisable() {
+  const disablePopupToggle = document.getElementById('disable-popup-toggle');
+  const popupValue = document.getElementById('popup-value');
+  
+  if (disablePopupToggle && popupValue) {
+    // Load the saved popup disable state from localStorage
+    const savedPopupDisable = localStorage.getItem('disablePopup');
+    
+    // Set the saved popup disable state as the checked state
+    if (savedPopupDisable) {
+      disablePopupToggle.checked = savedPopupDisable === 'true';
+      popupValue.textContent = disablePopupToggle.checked ? 'désactivé' : 'activé';
+    } else {
+      // Default to activated
+      disablePopupToggle.checked = false;
+      popupValue.textContent = 'activé';
+    }
+    
+    // Add event listener to save the selected popup disable state
+    disablePopupToggle.addEventListener('change', function() {
+      const isDisabled = disablePopupToggle.checked;
+      localStorage.setItem('disablePopup', isDisabled);
+      popupValue.textContent = isDisabled ? 'désactivé' : 'activé';
+      console.log('Popup disable state:', isDisabled ? 'désactivé' : 'activé');
+    });
+    
+    // Set the initial value
+    if (!popupValue.textContent) {
+      popupValue.textContent = disablePopupToggle.checked ? 'désactivé' : 'activé';
+    }
+  }
 }
 

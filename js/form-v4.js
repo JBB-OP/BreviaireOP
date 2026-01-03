@@ -288,11 +288,26 @@ function update_office(scroll=0){
 	var invitatoire = elements.length > 0 ? elements[0].value : 94;  
   
   // If this is complies, determine the psalm
-  if (office === 'complies' && typeof getCompliesPsalm === 'function') {
-    getCompliesPsalm(date, function(psalm) {
-      // Store the psalm for later use in create_office_html
-      window.currentCompliesPsalm = psalm;
-    });
+  if (office === 'complies') {
+    console.log("Office is complies, calling getCompliesPsalm");
+    console.log("Testing psaume_from_reference availability:", typeof psaume_from_reference === 'function' ? "Available" : "Not available");
+    if (typeof psaume_from_reference === 'function') {
+      console.log("Testing psaume_from_reference:");
+      console.log("Psaume 4:", psaume_from_reference("Psaume 4") ? "Found" : "Not found");
+      console.log("Psaume 90:", psaume_from_reference("Psaume 90") ? "Found" : "Not found");
+      console.log("Psaume 133:", psaume_from_reference("Psaume 133") ? "Found" : "Not found");
+    }
+    if (typeof getCompliesPsalm === 'function') {
+      console.log("getCompliesPsalm function is available");
+      getCompliesPsalm(date, function(psalm) {
+        console.log("getCompliesPsalm returned:", psalm);
+        // Store the psalm for later use in create_office_html
+        window.currentCompliesPsalm = psalm;
+        console.log("window.currentCompliesPsalm set to:", window.currentCompliesPsalm);
+      });
+    } else {
+      console.log("getCompliesPsalm function is NOT available");
+    }
   }
 
 	var urlAelf = "https://api.aelf.org/v1/" + office + "/" + date + "/" + zone.split(";")[0];
@@ -387,7 +402,7 @@ function update_office_credits(){
   var titre = '<div class="office_titre" id="office_titre">';
   titre = titre.concat("<h1>Informations</h1></div>")
  
-  texte_final = texte_final.concat("<div class='text_part' id='credits'>");
+  texte_final = texte_final.concat("<div class='text_part' id='credits' style='margin-top: 0px;'>");
   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
   sommaire = sommaire.concat("<li><a href='#credits'>Crédits</a></li>");
 
@@ -413,10 +428,9 @@ function update_office_credits(){
 
   // texte_final = texte_final.concat("</div>");
 
-
-
   texte_final = texte_final.concat("</div>");
-
+  
+  // Ajout du bouton switch pour la répartition des psaumes
   $(".office_biographie").each(function(){$(this).html("")});
   $(".office_content").each(function(){$(this).html(texte_final)});
   $(".office_titre").each(function(){$(this).html(titre)});
@@ -475,14 +489,36 @@ function update_settings(){
   var titre = '<div class="office_titre" id="office_titre">';
   titre = titre.concat("<h1>Paramètres</h1></div>")
  
-  texte_final = texte_final.concat("<div class='text_part' id='parametres'>");
+  // Ajout de la liste des couvents
+  texte_final = texte_final.concat("<div class='text_part' id='couvents' style='margin-top: 0px;'>");
   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
-  sommaire = sommaire.concat("<li><a href='#parametres'>Paramètres</a></li>");
+  sommaire = sommaire.concat("<li><a href='#couvents'>Couvents</a></li>");
+
+  texte_final = texte_final.concat('<h2> Couvents </h2>');
+  texte_final = texte_final.concat('Sélectionnez votre couvent :<br><br>');
+  texte_final = texte_final.concat('<select id="convent-select">');
+  texte_final = texte_final.concat('<option value="">-- Sélectionnez un couvent --</option>');
+  texte_final = texte_final.concat('<option value="Bordeaux">Bordeaux</option>');
+  texte_final = texte_final.concat('<option value="La Réunion">La Réunion</option>');
+  texte_final = texte_final.concat('<option value="La Sainte-Baume">La Sainte-Baume</option>');
+  texte_final = texte_final.concat('<option value="Majunga">Majunga</option>');
+  texte_final = texte_final.concat('<option value="Marseille">Marseille</option>');
+  texte_final = texte_final.concat('<option value="Monaco">Monaco</option>');
+  texte_final = texte_final.concat('<option value="Montpellier">Montpellier</option>');
+  texte_final = texte_final.concat('<option value="Nice">Nice</option>');
+  texte_final = texte_final.concat('<option value="Port-au-Prince">Port-au-Prince</option>');
+  texte_final = texte_final.concat('<option value="Toulouse">Toulouse</option>');
+  texte_final = texte_final.concat('</select>');
+  texte_final = texte_final.concat('<p id="convent-status">Le couvent sélectionné est : <span id="convent-value"></span></p>');
+  texte_final = texte_final.concat("</div>");
+
+  // Ajout du bouton switch pour la traduction
+  texte_final = texte_final.concat("<div class='text_part' id='traduction'>");
+  sommaire = sommaire.concat("<li><a href='#traduction'>Traduction</a></li>");
 
   texte_final = texte_final.concat("<h2> Traduction </h2>");
   texte_final = texte_final.concat("Deux traductions des psaumes sont employés dans la province de Toulouse : la traduction liturgique de la Bible de Jérusalem ou la traduction liturgique officiel éditée par AELF.<br><br>");
 
-  // Ajout du bouton switch pour la traduction
   texte_final = texte_final.concat('<div class="traduction-switch">');
   texte_final = texte_final.concat('<span class="label-text">AELF</span>');
   texte_final = texte_final.concat('<label class="switch">');
@@ -492,6 +528,52 @@ function update_settings(){
   texte_final = texte_final.concat('<span class="label-text">BJ</span>');
   texte_final = texte_final.concat('</div>');
   texte_final = texte_final.concat('<p id="traduction-status">La traduction choisie est : <span id="traduction-value"></span></p>');
+  texte_final = texte_final.concat("</div>");
+
+  // Ajout du bouton switch pour la répartition des psaumes
+  texte_final = texte_final.concat("<div class='text_part' id='repartitionpsaumes'>");
+  sommaire = sommaire.concat("<li><a href='#repartitionpsaumes'>Répartition des psaumes</a></li>");
+
+  texte_final = texte_final.concat('<h2> Répartition des psaumes </h2>');
+  texte_final = texte_final.concat('Choisissez la répartition des psaumes :<br><br>');
+  texte_final = texte_final.concat('<div class="psaume-repartition-switch">');
+  texte_final = texte_final.concat('<span class="label-text">Romaine</span>');
+  texte_final = texte_final.concat('<label class="switch">');
+  texte_final = texte_final.concat('<input type="checkbox" id="psaume-repartition-toggle">');
+  texte_final = texte_final.concat('<span class="slider round"></span>');
+  texte_final = texte_final.concat('</label>');
+  texte_final = texte_final.concat('<span class="label-text">Toulousaine</span>');
+  texte_final = texte_final.concat('</div>');
+  texte_final = texte_final.concat('<p id="psaume-repartition-status">La répartition des psaumes est : <span id="psaume-repartition-value"></span></p>');
+  texte_final = texte_final.concat("</div>");
+
+  // Ajout de la case à cocher pour désactiver le pop-up d'ouverture
+  texte_final = texte_final.concat("<div class='text_part' id='popdesactive'>");
+  sommaire = sommaire.concat("<li><a href='#popdesactive'>Ouverture de l'app'</a></li>");
+
+  texte_final = texte_final.concat('<h2> Pop-up d\'ouverture </h2>');
+  texte_final = texte_final.concat('<div class="popup-disable-switch">');
+  texte_final = texte_final.concat('<label class="checkbox-container">');
+  texte_final = texte_final.concat('<input type="checkbox" id="disable-popup-toggle">');
+  texte_final = texte_final.concat('<span class="checkmark"></span>');
+  texte_final = texte_final.concat('Désactiver le pop-up à l\'ouverture');
+  texte_final = texte_final.concat('</label>');
+  texte_final = texte_final.concat('</div>');
+  texte_final = texte_final.concat('<p id="popup-status">Le pop-up d\'ouverture est : <span id="popup-value"></span></p>');
+
+  texte_final = texte_final.concat("</div>");
+
+  // déplacement des explications sur l'installation dans la partie Paramètres
+  texte_final = texte_final.concat("<div class='text_part' id='installation'>");
+  sommaire = sommaire.concat("<li><a href='#installation'>Installation</a></li>");
+
+  texte_final = texte_final.concat("<h2> Installation </h2>");
+  texte_final = texte_final.concat("Pour installer cette application sur votre téléphone. <br><br>");
+  texte_final = texte_final.concat("<h3> iOS </h3>");
+  texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Partage" (<span class="material-symbols-outlined">ios_share</span>)<li>Appuyer sur "Ajouter à l\'écran d\'accueil" (<span class="material-symbols-outlined">add_box</span>)<li>Appuyer sur "Ajouter"</ul>');
+
+  texte_final = texte_final.concat("<h3> Android </h3>");
+  texte_final = texte_final.concat('<ul><li> Appuyer sur le bouton "Plus d\'informations" (<span class="material-symbols-outlined">more_vert</span>)<li>Appuyer sur "Installer l\'application" (<span class="material-symbols-outlined">install_mobile</span>)<li>Appuyer sur "Installer"</ul>');
 
   texte_final = texte_final.concat("</div>");
 
@@ -510,6 +592,21 @@ function update_settings(){
   if (typeof initializeTranslation === 'function') {
     initializeTranslation();
   }
+  
+  // Initialize convent selection when the settings page is loaded
+  if (typeof initializeConventSelection === 'function') {
+    initializeConventSelection();
+  }
+  
+  // Initialize psaume repartition when the settings page is loaded
+  if (typeof initializePsaumeRepartition === 'function') {
+    initializePsaumeRepartition();
+  }
+  
+  // Initialize popup disable when the settings page is loaded
+  if (typeof initializePopupDisable === 'function') {
+    initializePopupDisable();
+  }
 }
 
 
@@ -519,32 +616,6 @@ function update_office_consecrations(){
   var titre = '<div class="office_titre" id="office_titre">';
   titre = titre.concat("<h1>Consécrations à Marie</h1></div>")
  
-  // texte_final = texte_final.concat("<div class='text_part' id='maximilien' style='margin-top: 0px;'>");
-  // sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
-  // sommaire = sommaire.concat("<li><a href='#maximilien'>St Maximilien-Marie Kolbe</a></li>");
-
-  // texte_final = texte_final.concat("<h2> Consécration de St Maximilien-Marie Kolbe </h2>");
-  // texte_final = texte_final.concat("Immaculée Conception, Reine du ciel et de la terre, Refuge des pécheurs et Mère très aimante, à qui Dieu voulut confier tout l’ordre de la Miséricorde, me voici à tes pieds, moi, pauvre pécheur.<br>");
-  // texte_final = texte_final.concat("<br>Je t’en supplie, accepte mon être tout entier comme ton bien et ta propriété ; agis en moi selon ta volonté, en mon âme et mon corps, en ma vie, ma mort et mon éternité.<br>");
-  // texte_final = texte_final.concat("<br>Dispose avant tout de moi comme tu le désires, pour que se réalise enfin ce qui est dit de toi : « La Femme écrasera la tête du serpent » et aussi « Toi seule vaincras les hérésies dans le monde entier ».<br>");
-  // texte_final = texte_final.concat("<br>Qu’en tes mains toutes pures, si riches de miséricorde, je devienne un instrument de ton amour, capable de ranimer et d’épanouir pleinement tant d’âmes tièdes ou égarées.<br>");
-  // texte_final = texte_final.concat("<br>Ainsi s’étendra sans fin le Règne du Coeur divin de Jésus. Vraiment, ta seule présence attire les grâces qui convertissent et sanctifient les âmes, puisque la Grâce jaillit du Coeur divin de Jésus sur nous tous, en passant par tes mains maternelles.<br>");
-  // texte_final = texte_final.concat("<br>Amen.");
-
-  // texte_final = texte_final.concat("</div>");
-
-
-
-  // texte_final = texte_final.concat("<div class='text_part' id='mariemamere'>");
-  // sommaire = sommaire.concat("<li><a href='#mariemamere'>Ô Marie ma Mère</a></li>");
-
-  // texte_final = texte_final.concat("<h2> Ô Marie ma Mère </h2>");
-  // texte_final = texte_final.concat("Ô Marie ma Mère je me donne à toi, prends-moi dans ton cœur Immaculé. Avec toi je veux aimer Jésus comme tu l'aimes. Je te consacre mon corps et mon âme, mes dons et mes biens, pour que tout en moi glorifie le Seigneur. Puisque je t'appartiens, fais de moi ce qu'il te plaira ; je suis ton enfant et je t'aime.");
-
-  // texte_final = texte_final.concat("</div>");
-
-
-
   texte_final = texte_final.concat("<div class='text_part' id='louis'>");
   sommaire = sommaire.concat("<li><a href='#louis'>St Louis-Marie Grignion de Monfort</a></li>");
 
@@ -554,31 +625,6 @@ function update_office_consecrations(){
   texte_final = texte_final.concat("<br>Amen.");
 
   texte_final = texte_final.concat("</div>");
-
-
-
-  // texte_final = texte_final.concat("<div class='text_part' id='mission'>");
-  // sommaire = sommaire.concat("<li><a href='#mission'>Mission de l'Immaculée</a></li>");
-
-  // texte_final = texte_final.concat("<h2> Consécration quotidienne de la Mission de l'Immaculée </h2>");
-  // texte_final = texte_final.concat("Vierge Immaculée, ma mère, Marie, je renouvelle aujourd’hui et pour toujours, la consécration de tout mon être, pour que tu disposes de moi pour le salut des âmes. <br>");
-  // texte_final = texte_final.concat("<br>Je te demande seulement, ô ma reine et mère de l’Église, de participer fidèlement à ta mission pour que s’établisse le règne de Jésus dans le monde. <br>");
-  // texte_final = texte_final.concat("<br>Je t’offre donc, ô cœur immaculé de Marie, les prières, les actions et les sacrifices de ce jour.<br>");
-
-
-  // texte_final = texte_final.concat("</div>");
-
-
-  // texte_final = texte_final.concat("<div class='text_part' id='familles'>");
-  // sommaire = sommaire.concat("<li><a href='#familles'>Consécration des familles</a></li>");
-
-  // texte_final = texte_final.concat("<h2> Consécration des familles </h2>");
-  // texte_final = texte_final.concat("Immaculée Conception, Reine du Ciel et de la Terre, Refuge des pécheurs et Mère très aimante, à qui Dieu voulut confier tout l'ordre de la Miséricorde, nous voici à tes pieds, nous, pauvres pécheurs.<br>");
-  // texte_final = texte_final.concat("<br>En ce jour, ô Notre-Dame, nous renouvelons la Consécration de tout nous-mêmes à ton Cœur Immaculé. Nous te confions toutes nos familles et celles du monde entier, en particulier les plus fragiles, et celles qui sont persécutées à cause de leur foi. Nous te confions nos enfants, nos personnes âgées, nos malades et tous nos défunts.<br>");  
-  // texte_final = texte_final.concat("<br>Fais de toutes nos familles des foyers qui s'ouvrent à l'écoute de la Parole de Dieu et à la pratique des sacrements, avec la joie de vivre dans la foi, l'espérance et la charité. Qu'elles soient ton bien et ta propriété.<br>");  
-  // texte_final = texte_final.concat("<br>Agis en chacun de leurs membres selon ta volonté en leurs âmes, en leurs corps, en leurs vies, leurs morts et leur éternité. Qu'en tes mains toutes pures, si riches de miséricorde, Ils reçoivent les sept dons du Saint Esprit et tous les charismes nécessaires pour se donner à l'évangélisation du monde, dans tous les domaines de l'activité humaine.<br>");  
-  // texte_final = texte_final.concat("<br>Ainsi s'étendra sans fin, le règne du Cœur Divin de Jésus. Vraiment ta seule présence attire les grâces qui convertissent et sanctifient les âmes, puisque la Grâce jaillit du Coeur Sacré de Jésus sur nous tous, en passant par tes mains maternelles.<br>");  
-  // texte_final = texte_final.concat("<br>Amen.");
 
 
   $(".office_biographie").each(function(){$(this).html("")});
@@ -859,7 +905,7 @@ function update_office_formulesdoctrinales(){
  
   texte_final = texte_final.concat("<div class='text_part' id='commandementscharite' style='margin-top: 0px;'>");
   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
-sommaire = sommaire.concat("<li><a href='#commandementscharite'>Les deux commandements de la charité</a></li>");
+  sommaire = sommaire.concat("<li><a href='#commandementscharite'>Les deux commandements de la charité</a></li>");
 
 texte_final = texte_final.concat("<h2> Les deux commandements de la charité </h2>");
 texte_final = texte_final.concat("1. Tu aimeras le Seigneur ton Dieu de tout ton cœur, de toute ton âme et de tout ton esprit.<br>2. Tu aimeras ton prochain comme toi-même.");
@@ -975,103 +1021,14 @@ function update_office_prieresop(){
   var titre = '<div class="office_titre" id="office_titre">';
   titre = titre.concat("<h1>Prières de l'Ordre des Prêcheurs</h1></div>")
  
-  texte_final = texte_final.concat("<div class='text_part' id='commandementscharite' style='margin-top: 0px;'>");
+  texte_final = texte_final.concat("<div class='text_part' id='xxxx' style='margin-top: 0px;'>");
   sommaire = sommaire.concat("<li><a href='.'>Retour à la date actuelle</a></li>");
-sommaire = sommaire.concat("<li><a href='#commandementscharite'>Les deux commandements de la charité</a></li>");
+  sommaire = sommaire.concat("<li><a href='#xxxx</a></li>");
 
-texte_final = texte_final.concat("<h2> Les deux commandements de la charité </h2>");
-texte_final = texte_final.concat("1. Tu aimeras le Seigneur ton Dieu de tout ton cœur, de toute ton âme et de tout ton esprit.<br>2. Tu aimeras ton prochain comme toi-même.");
+  texte_final = texte_final.concat("<h2> à faire </h2>");
+  texte_final = texte_final.concat("...");
 
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='regleor'>");
-sommaire = sommaire.concat("<li><a href='#regleor'>La règle d’or</a></li>");
-
-texte_final = texte_final.concat("<h2> La règle d’or (Mt 7,12) </h2>");
-texte_final = texte_final.concat("Tout ce que vous désirez que les autres fassent pour vous, faites-le vous-mêmes pour eux.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='beatitudes'>");
-sommaire = sommaire.concat("<li><a href='#beatitudes'>Les Béatitudes</a></li>");
-
-texte_final = texte_final.concat("<h2> Les Béatitudes <i>(Mt 5,3-12)</i> </h2>");
-texte_final = texte_final.concat("Heureux les pauvres de cœur : le Royaume des cieux est à eux !<br>Heureux les doux : ils obtiendront la terre promise !<br>Heureux ceux qui pleurent : ils seront consolés !<br>Heureux ceux qui ont faim et soif de la justice : ils seront rassasiés !<br>Heureux les miséricordieux : ils obtiendront miséricorde !<br>Heureux les cœurs purs : ils verront Dieu !<br>Heureux les artisans de paix : ils seront appelés fils de Dieu !<br>Heureux ceux qui sont persécutés pour la justice : le Royaume des cieux est à eux !<br>Heureux serez-vous si l’on vous insulte, si l’on vous persécute et si l’on dit faussement toute sorte de mal contre vous, à cause de moi.<br>Réjouissez-vous, soyez dans l’allégresse, car votre récompense sera grande dans les cieux !");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='vertustheologales'>");
-sommaire = sommaire.concat("<li><a href='#vertustheologales'>Les trois vertus théologales</a></li>");
-
-texte_final = texte_final.concat("<h2> Les trois vertus théologales </h2>");
-texte_final = texte_final.concat("1. Foi.<br>2. Espérance.<br>3. Charité.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='vertuscardinales'>");
-sommaire = sommaire.concat("<li><a href='#vertuscardinales'>Les quatre vertus cardinales</a></li>");
-
-texte_final = texte_final.concat("<h2> Les quatre vertus cardinales </h2>");
-texte_final = texte_final.concat("1. Prudence.<br>2. Justice.<br>3. Force.<br>4. Tempérance.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='donsse'>");
-sommaire = sommaire.concat("<li><a href='#donsse'>Les sept dons du Saint-Esprit</a></li>");
-
-texte_final = texte_final.concat("<h2> Les sept dons du Saint-Esprit </h2>");
-texte_final = texte_final.concat("1. Sagesse.<br>2. Intelligence.<br>3. Conseil.<br>4. Force.<br>5. Science.<br>6. Piété.<br>7. Crainte de Dieu.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='fruitsse'>");
-sommaire = sommaire.concat("<li><a href='#fruitsse'>Les douze fruits du Saint-Esprit</a></li>");
-
-texte_final = texte_final.concat("<h2> Les douze fruits du Saint-Esprit </h2>");
-texte_final = texte_final.concat("1. Charité.<br>2. Joie.<br>3. Paix.<br>4. Patience.<br>5. Longanimité.<br>6. Bonté.<br>7. Bénignité.<br>8. Mansuétude.<br>9. Modestie.<br>10. Continence.<br>11. Chasteté.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='precepteseglise'>");
-sommaire = sommaire.concat("<li><a href='#precepteseglise'>Les cinq préceptes de l’Église</a></li>");
-
-texte_final = texte_final.concat("<h2> Les cinq préceptes de l’Église </h2>");
-texte_final = texte_final.concat("1. Participer à l’Eucharistie dominicale et aux autres fêtes d’obligation et s’abstenir des travaux et des activités qui pourraient empêcher la sanctification de tels jours.<br>2. Confesser ses péchés au moins une fois par an.<br>3. Recevoir le Sacrement de l’Eucharistie au moins à Pâques.<br>4. S’abstenir de manger de la viande et observer le jeûne durant les jours établis par l’Église.<br>5. Subvenir aux besoins matériels de l’Église, selon ses possibilités.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='misericordecorporelle'>");
-sommaire = sommaire.concat("<li><a href='#misericordecorporelle'>Les sept œuvres de miséricorde corporelle</a></li>");
-
-texte_final = texte_final.concat("<h2> Les sept œuvres de miséricorde corporelle </h2>");
-texte_final = texte_final.concat("1. Donner à manger à ceux qui ont faim.<br>2. Donner à boire à ceux qui ont soif.<br>3. Vêtir ceux qui sont nus.<br>4. Loger les pèlerins.<br>5. Visiter les malades.<br>6. Visiter les prisonniers.<br>7. Ensevelir les morts.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='misericordespirituelle'>");
-sommaire = sommaire.concat("<li><a href='#misericordespirituelle'>Les sept œuvres de miséricorde spirituelle</a></li>");
-
-texte_final = texte_final.concat("<h2> Les sept œuvres de miséricorde spirituelle </h2>");
-texte_final = texte_final.concat("1. Conseiller ceux qui doutent.<br>2. Enseigner ceux qui sont ignorants.<br>3. Réprimander les pécheurs.<br>4. Consoler les affligés.<br>5. Pardonner les offenses.<br>6. Supporter patiemment les personnes importunes.<br>7. Prier Dieu pour les vivants et pour les morts.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='pechescapitaux'>");
-sommaire = sommaire.concat("<li><a href='#pechescapitaux'>Les sept péchés capitaux</a></li>");
-
-texte_final = texte_final.concat("<h2> Les sept péchés capitaux </h2>");
-texte_final = texte_final.concat("1. Orgueil.<br>2. Avarice.<br>3. Envie.<br>4. Colère.<br>5. Impureté.<br>6. Gourmandise.<br>7. Paresse ou acédie.");
-
-texte_final = texte_final.concat("</div>");
-
-texte_final = texte_final.concat("<div class='text_part' id='finsdernieres'>");
-sommaire = sommaire.concat("<li><a href='#finsdernieres'>Les quatre fins de l’homme</a></li>");
-
-texte_final = texte_final.concat("<h2> Les quatre fins de l’homme </h2>");
-texte_final = texte_final.concat("1. Mort.<br>2. Jugement.<br>3. Enfer.<br>4. Paradis.");
-
-texte_final = texte_final.concat("</div>");
-
+  texte_final = texte_final.concat("</div>");
 
 
 
