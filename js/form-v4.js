@@ -430,7 +430,6 @@ function update_office_credits(){
 
   texte_final = texte_final.concat("</div>");
   
-  // Ajout du bouton switch pour la répartition des psaumes
   $(".office_biographie").each(function(){$(this).html("")});
   $(".office_content").each(function(){$(this).html(texte_final)});
   $(".office_titre").each(function(){$(this).html(titre)});
@@ -449,7 +448,7 @@ function update_office_credits(){
 }
 
 
-// 
+// ancienne fonction installation
 
 // function update_office_installation(){
 //   var texte_final = '<div class="office_text" id="office_text">';
@@ -509,7 +508,7 @@ function update_settings(){
   texte_final = texte_final.concat('<option value="Port-au-Prince">Port-au-Prince</option>');
   texte_final = texte_final.concat('<option value="Toulouse">Toulouse</option>');
   texte_final = texte_final.concat('</select>');
-  texte_final = texte_final.concat('<p id="convent-status">Le couvent sélectionné est : <span id="convent-value"></span></p>');
+  texte_final = texte_final.concat('<p id="convent-status">Le couvent sélectionné est celui de <span id="convent-value"></span>.</p>');
   texte_final = texte_final.concat("</div>");
 
   // Ajout du bouton switch pour la traduction
@@ -527,7 +526,7 @@ function update_settings(){
   texte_final = texte_final.concat('</label>');
   texte_final = texte_final.concat('<span class="label-text">BJ</span>');
   texte_final = texte_final.concat('</div>');
-  texte_final = texte_final.concat('<p id="traduction-status">La traduction choisie est : <span id="traduction-value"></span></p>');
+  texte_final = texte_final.concat('<p id="traduction-status">La traduction choisie est la traduction <span id="traduction-value"></span>.</p>');
   texte_final = texte_final.concat("</div>");
 
   // Ajout du bouton switch pour la répartition des psaumes
@@ -544,8 +543,24 @@ function update_settings(){
   texte_final = texte_final.concat('</label>');
   texte_final = texte_final.concat('<span class="label-text">Toulousaine</span>');
   texte_final = texte_final.concat('</div>');
-  texte_final = texte_final.concat('<p id="psaume-repartition-status">La répartition des psaumes est : <span id="psaume-repartition-value"></span></p>');
+  texte_final = texte_final.concat('<p id="psaume-repartition-status">La répartition des psaumes est la répartition <span id="psaume-repartition-value"></span>.</p>');
   texte_final = texte_final.concat("</div>");
+
+  texte_final = texte_final.concat('<h3> Répartition des psaumes des complies </h3>');
+  texte_final = texte_final.concat('Choisissez la répartition des psaumes des complies :<br><br>');
+  // Ajout du bouton switch pour la répartition des psaumes des complies
+  texte_final = texte_final.concat('<div class="complies-repartition-switch">');
+  texte_final = texte_final.concat('<span class="label-text">7 jours</span>');
+  texte_final = texte_final.concat('<label class="switch">');
+  texte_final = texte_final.concat('<input type="checkbox" id="complies-repartition-toggle">');
+  texte_final = texte_final.concat('<span class="slider round"></span>');
+  texte_final = texte_final.concat('</label>');
+  texte_final = texte_final.concat('<span class="label-text">2 jours (Ps 90 / Ps 4 et 133)</span>');
+  texte_final = texte_final.concat('</div>');
+  texte_final = texte_final.concat('<p id="complies-repartition-status">La répartition des psaumes des complies est sur <span id="complies-repartition-value"></span>.</p>');
+  texte_final = texte_final.concat('<p id="notabenecomplies">Nota Bene : si la répartition est sur deux jours, alors les psaumes des complies seront pris dans la traduction de la BJ.</p>');
+  texte_final = texte_final.concat("</div>");
+
 
   // Ajout de la case à cocher pour désactiver le pop-up d'ouverture
   texte_final = texte_final.concat("<div class='text_part' id='popdesactive'>");
@@ -606,6 +621,16 @@ function update_settings(){
   // Initialize popup disable when the settings page is loaded
   if (typeof initializePopupDisable === 'function') {
     initializePopupDisable();
+  }
+  
+  // Initialize settings based on convent selection when the settings page is loaded
+  if (typeof updateSettingsBasedOnConvent === 'function') {
+    updateSettingsBasedOnConvent();
+  }
+  
+  // Initialize complies repartition when the settings page is loaded
+  if (typeof initializeCompliesRepartition === 'function') {
+    initializeCompliesRepartition();
   }
 }
 
