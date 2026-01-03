@@ -582,3 +582,97 @@ function initializePopupDisable() {
   }
 }
 
+function initializeCompliesRepartition() {
+  const compliesRepartitionToggle = document.getElementById('complies-repartition-toggle');
+  const compliesRepartitionValue = document.getElementById('complies-repartition-value');
+  
+  if (compliesRepartitionToggle && compliesRepartitionValue) {
+    // Load the saved complies repartition from localStorage
+    const savedCompliesRepartition = localStorage.getItem('compliesRepartition');
+    
+    // Set the saved complies repartition as the selected option
+    if (savedCompliesRepartition) {
+      compliesRepartitionToggle.checked = savedCompliesRepartition === '2 jours';
+      compliesRepartitionValue.textContent = savedCompliesRepartition;
+    } else {
+      // Default to 7 jours
+      compliesRepartitionToggle.checked = false;
+      compliesRepartitionValue.textContent = '7 jours';
+    }
+    
+    // Add event listener to save the selected complies repartition
+    compliesRepartitionToggle.addEventListener('change', function() {
+      const selectedCompliesRepartition = compliesRepartitionToggle.checked ? '2 jours' : '7 jours';
+      localStorage.setItem('compliesRepartition', selectedCompliesRepartition);
+      compliesRepartitionValue.textContent = selectedCompliesRepartition;
+      console.log('Complies repartition selected:', selectedCompliesRepartition);
+    });
+    
+    // Set the initial value
+    if (!compliesRepartitionValue.textContent) {
+      compliesRepartitionValue.textContent = compliesRepartitionToggle.checked ? '2 jours' : '7 jours';
+    }
+  }
+}
+
+function updateSettingsBasedOnConvent() {
+  const conventSelect = document.getElementById('convent-select');
+  const traductionToggle = document.getElementById('traduction-toggle');
+  const psaumeRepartitionToggle = document.getElementById('psaume-repartition-toggle');
+  
+  if (conventSelect && traductionToggle && psaumeRepartitionToggle) {
+    // Add event listener to update settings based on convent selection
+    conventSelect.addEventListener('change', function() {
+      const selectedConvent = conventSelect.value;
+      
+      // Reset to default values
+      traductionToggle.checked = false;
+      psaumeRepartitionToggle.checked = false;
+      
+      // Update settings based on the selected convent
+      if (selectedConvent === 'Bordeaux' || selectedConvent === 'Montpellier' || selectedConvent === 'Marseille' || selectedConvent === 'La Sainte-Baume' || selectedConvent === 'Monaco') {
+        // Set translation to BJ
+        traductionToggle.checked = true;
+        localStorage.setItem('traduction', 'BJ');
+        document.getElementById('traduction-value').textContent = 'BJ';
+      } else if (selectedConvent === 'Toulouse') {
+        // Set translation to BJ and psaume repartition to Toulousaine
+        traductionToggle.checked = true;
+        psaumeRepartitionToggle.checked = true;
+        localStorage.setItem('traduction', 'BJ');
+        localStorage.setItem('psaumeRepartition', 'Toulousaine');
+        document.getElementById('traduction-value').textContent = 'BJ';
+        document.getElementById('psaume-repartition-value').textContent = 'Toulousaine';
+      } else {
+        // Set translation to AELF and psaume repartition to Romaine
+        traductionToggle.checked = false;
+        psaumeRepartitionToggle.checked = false;
+        localStorage.setItem('traduction', 'AELF');
+        localStorage.setItem('psaumeRepartition', 'Romaine');
+        document.getElementById('traduction-value').textContent = 'AELF';
+        document.getElementById('psaume-repartition-value').textContent = 'Romaine';
+      }
+    });
+    
+    // Add event listener to update translation based on psaume repartition selection
+    psaumeRepartitionToggle.addEventListener('change', function() {
+      if (psaumeRepartitionToggle.checked) {
+        // If psaume repartition is Toulousaine, set translation to BJ
+        traductionToggle.checked = true;
+        localStorage.setItem('traduction', 'BJ');
+        document.getElementById('traduction-value').textContent = 'BJ';
+      }
+    });
+    
+    // Add event listener to update psaume repartition based on translation selection
+    traductionToggle.addEventListener('change', function() {
+      if (!traductionToggle.checked && psaumeRepartitionToggle.checked) {
+        // If translation is AELF and psaume repartition is Toulousaine, set psaume repartition to Romaine
+        psaumeRepartitionToggle.checked = false;
+        localStorage.setItem('psaumeRepartition', 'Romaine');
+        document.getElementById('psaume-repartition-value').textContent = 'Romaine';
+      }
+    });
+  }
+}
+
