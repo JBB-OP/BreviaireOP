@@ -416,3 +416,33 @@ input:checked + .slider:before {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
+
+/* Center elements in settings */
+#convent-select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.psaume-repartition-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.popup-disable-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Complies repartition switch */
+.complies-repartition-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
