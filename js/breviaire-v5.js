@@ -1035,14 +1035,18 @@ function add_symbol_span(texte){
   texte = texte.replaceAll(" :", "&nbsp:");
   texte = texte.replaceAll(" +", "&nbsp+");
   texte = texte.replaceAll(" ;", "&nbsp;");
-    texte = texte.replaceAll(" °", "&nbsp°");
+  texte = texte.replaceAll(" °", "&nbsp°");
 
 
 
   texte = texte.replaceAll("*", '<span class="liturgical_symbol">*</span>');
   texte = texte.replaceAll("+", '<span class="liturgical_symbol">+</span>');
   texte = texte.replaceAll("R/", '<span class="liturgical_symbol">R/</span>');
+  texte = texte.replaceAll("&#8479", '<span class="liturgical_symbol">&#8479</span>');
+  texte = texte.replaceAll("&#x211F", '<span class="liturgical_symbol">&#x211F</span>');
   texte = texte.replaceAll("V/", '<span class="liturgical_symbol">V/</span>');
+  texte = texte.replaceAll("&#8483", '<span class="liturgical_symbol">&#8483</span>');
+  texte = texte.replaceAll("&#x2123", '<span class="liturgical_symbol">&#x2123</span>');
   texte = texte.replaceAll("Ant.", '<span class="liturgical_symbol">Ant.</span>');
   texte = texte.replaceAll("°", '<span class="liturgical_symbol">°</span>');
 
