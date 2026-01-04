@@ -1,0 +1,3570 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2023-11-15",
+    "source": "Martyrologe Romain et sources dominicaines"
+  },
+  "saints": {
+    "01-01": [
+        {
+            "id": "marie-mere-de-dieu",
+            "nom": "Sainte Marie, Mère de Dieu",
+            "titre": "Solennité",
+            "rang": "Solennité",
+            "date": "1er janvier",
+            "biographie": "En l'Octave de la Nativité du Seigneur et au jour de sa circoncision, solennité de <b>sainte Marie Mère de Dieu</b>. Au concile d'Éphèse, les Pères l'acclamèrent Théotokos, parce qu'en elle la personne du Verbe prit chair, se fit homme pour nous les hommes et pour notre salut.",
+            "type": "solennité",
+            "lieu": "Jérusalem",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "fulgence-de-ruspe",
+            "nom": "Saint Fulgence de Ruspe",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "1er janvier",
+            "biographie": "En Byzacène, en 532, <b>saint Fulgence de Ruspe</b>, évêque. Procurateur de cette province il se fit moine ; devenu évêque il eut à souffrir de la part des Ariens, au temps de la persécution des Vandales. Il fut deux fois exilé en Sardaigne par le roi Thrasamond. Rendu à son peuple en 523, il le dirigea environ neuf années, puis il quitta son siège en 531, pour se préparer à la mort.",
+            "type": "évêque",
+            "lieu": "Byzacène",
+            "siecle": "Ve-VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "532"
+            },
+            "attributs": []
+        },
+        {
+            "id": "joseph-marie-tomasi",
+            "nom": "Saint Joseph-Marie Tomasi",
+            "titre": "Prêtre et cardinal",
+            "rang": "Mémoire",
+            "date": "1er janvier",
+            "biographie": "À Rome, en 1713, <b>saint Joseph-Marie Tomasi</b>, prêtre de l'Ordre des Clercs Réguliers Théatins et cardinal. Désirant ardemment la restauration du culte divin, il consacra presque toute sa vie à étudier et éditer des documents et des textes anciens de la sainte liturgie. Il s'appliqua aussi à faire le catéchisme aux enfants.",
+            "type": "cardinal",
+            "lieu": "Rome",
+            "siecle": "XVIIe-XVIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1713"
+            },
+            "attributs": []
+        },
+        {
+            "id": "vincent-marie-strambi",
+            "nom": "Saint Vincent Marie Strambi",
+            "titre": "Évêque passioniste",
+            "rang": "Mémoire",
+            "date": "1er janvier",
+            "biographie": "À Rome, en 1824, <b>saint Vincent Marie Strambi</b>, évêque de Macerata et de Tolentino, de la Congrégation des Passionistes. Condamné à l'exil pour sa fidélité au pape Pie VII, entre 1809 et 1814, lors de l'occupation des états pontificaux par l'empereur Napoléon Ier, il devint ensuite, à partir de 1823, conseiller du pape Léon XII.",
+            "type": "évêque",
+            "lieu": "Rome",
+            "siecle": "XVIIIe-XIXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1824"
+            },
+            "attributs": []
+        },
+        {
+            "id": "sigismond-gorazdowski",
+            "nom": "Saint Sigismond Gorazdowski",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "1er janvier",
+            "biographie": "À Lvov en Ukraine, en 1920, <b>saint Sigismond Gorazdowski</b>, prêtre, de nationalité polonaise. Il fonda l'Institut des Sœurs de Saint-Joseph voué au bien des pauvres et des opprimés.",
+            "type": "prêtre",
+            "lieu": "Lvov",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1920"
+            },
+            "attributs": []
+        }
+    ],
+    "01-02": [
+        {
+            "id": "basile-et-gregoire",
+            "nom": "Saints Basile le Grand et Grégoire de Nazianze",
+            "titre": "Évêques et Docteurs de l'Église",
+            "rang": "Mémoire",
+            "date": "2 janvier",
+            "biographie": "Au IVe siècle, les <b>saints Basile le Grand et Grégoire de Nazianze</b>, évêques et Docteurs de l'Église. Basile, évêque de Césarée en Cappadoce, appelé le Grand pour sa doctrine et sa sagesse, enseigna aux moines la méditation des Écritures, le labeur de l'obéissance et la charité fraternelle. Il organisa leur vie par des règles qu'il avait lui-même rédigées. Par ses écrits, il instruisit les fidèles et se distingua par son souci pastoral des pauvres et des malades. Il mourut le 1er janvier 379. Grégoire, son ami, évêque successivement de Sasimes, de Constantinople au moment du concile de Constantinople I, puis de Nazianze ; il défendit contre les Ariens le mystère de la Trinité et la divinité du Verbe incarné, ce qui lui valut d'être appelé le Théologien. Il mourut en 389.",
+            "type": "docteur",
+            "lieu": "Césarée et Nazianze",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "379 et 389"
+            },
+            "attributs": []
+        },
+        {
+            "id": "macaire-d-alexandrie",
+            "nom": "Saint Macaire d'Alexandrie",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "2 janvier",
+            "biographie": "Vers 394, <b>saint Macaire d'Alexandrie</b>, abbé. Il eut un grand rayonnement sur les moines de Basse-Égypte, notamment auprès d'Évagre ; il connut la déportation lors de la persécution arienne en 374.",
+            "type": "abbé",
+            "lieu": "Alexandrie",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "394"
+            },
+            "attributs": []
+        },
+        {
+            "id": "airaud-de-maurienne",
+            "nom": "Saint Airald",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "2 janvier",
+            "biographie": "À Saint-Jean de Maurienne, en 1146, <b>saint Airald</b>, évêque, qui, tant à la solitude de l'abbaye de Portes que sur le siège de Maurienne, unit à la prudence et au discernement, l'austérité des mœurs du chartreux.",
+            "type": "évêque",
+            "lieu": "Maurienne",
+            "siecle": "XIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1146"
+            },
+            "attributs": []
+        }
+    ],
+    "01-03": [
+        {
+            "id": "nom-de-jesus",
+            "nom": "Très Saint Nom de Jésus",
+            "titre": "Fête",
+            "rang": "Mémoire",
+            "date": "3 janvier",
+            "biographie": "Le Très Saint Nom de Jésus, devant qui doit fléchir tout genou aux cieux, sur terre et dans les enfers. Dans notre Ordre, de nombreux frères, dans leur prédication, faisaient mention du « très doux nom du Sauveur ». Le pape Grégoire X, après le concile de Lyon de 1274, confia spécialement aux Prêcheurs la promotion de la vénération du Très Saint Nom de Jésus. Le Maître Jean de Verceil fit beaucoup pour que cette dévotion s'ancrât dans la tradition de l'Ordre et se répandît dans toute l'Église.",
+            "type": "fête",
+            "lieu": "Universel",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        },
+        {
+            "id": "genevieve",
+            "nom": "Sainte Geneviève",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "3 janvier",
+            "biographie": "À Paris, vers 500, <b>sainte Geneviève</b>, vierge. Née à Nanterre, elle reçut, à l'âge de quinze ans, le voile des vierges des mains de saint Germain d'Auxerre. Grâce à son rayonnement spirituel, elle encouragea l'érection de la basilique de saint Denis, à l'emplacement de son tombeau. Elle réconforta les habitants de Paris lors de l'invasion des Huns en 451.",
+            "type": "vierge",
+            "lieu": "Paris",
+            "siecle": "Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 500"
+            },
+            "attributs": []
+        },
+        {
+            "id": "stephanie-quinzani",
+            "nom": "Bienheureuse Stéphanie Quinzani",
+            "titre": "Tertiaire dominicaine",
+            "rang": "Mémoire facultative",
+            "date": "3 janvier",
+            "biographie": "Dans notre Ordre, en 1530, la <b>bienheureuse Stéphanie Quinzani</b>. Originaire de la région de Brescia, sa famille s'établit à Soncino. Élevée dans la proximité du couvent des Dominicains, elle prit l'habit du Tiers Ordre et consacra sa vie au soin des malades. Douée d'une clairvoyance extraordinaire, elle fut souvent appelée pour des missions de pacification. Elle traversa avec force quarante années de sécheresse spirituelle et de doutes. Elle reçut en 1489 les stigmates de la Passion.",
+            "type": "mystique",
+            "lieu": "Soncino",
+            "siecle": "XVe-XVIe siècle",
+            "dates": {
+                "naissance": "1457",
+                "mort": "1530"
+            },
+            "attributs": []
+        }
+    ],
+    "01-04": [
+        {
+            "id": "delphin-de-bordeaux",
+            "nom": "Saint Delphin",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "4 janvier",
+            "biographie": "À Bordeaux, en 403, <b>saint Delphin</b>, évêque, qui fut lié d'une grande amitié à saint Paulin de Nole qu'il avait baptisé. Il travailla à arrêter les erreurs de Priscillien.",
+            "type": "évêque",
+            "lieu": "Bordeaux",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "403"
+            },
+            "attributs": []
+        },
+        {
+            "id": "zdislava",
+            "nom": "Sainte Zdislava",
+            "titre": "Tertiaire dominicaine",
+            "rang": "Mémoire",
+            "date": "4 janvier",
+            "biographie": "Dans notre Ordre, à Jablonné en Bohème, en 1252, <b>sainte Zdislava</b>. Née en Moravie vers 1220 dans une famille noble, connue pour sa piété et sa bienfaisance, elle épousa Havel de Lemberk, un seigneur proche du roi dont les possessions se trouvaient en Bohême septentrionale. Elle fut réputée pour sa charité envers les pauvres et pour l'amour avec lequel elle s'occupait de sa famille et éduquait ses quatre enfants. Elle fonda avec son mari des couvents dominicains à Turnov et Jablonné, entrant elle-même dans le Tiers-Ordre dominicain. Décédée à l'âge de 32 ans, elle fut enterrée dans l'église conventuelle saint Laurent à Jablonné.",
+            "type": "laïque",
+            "lieu": "Jablonné",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Vers 1220",
+                "mort": "1252"
+            },
+            "attributs": []
+        },
+        {
+            "id": "angele-de-foligno",
+            "nom": "Sainte Angèle de Foligno",
+            "titre": "Tertiaire franciscaine",
+            "rang": "Mémoire",
+            "date": "4 janvier",
+            "biographie": "En Ombrie, en 1310, <b>sainte Angèle de Foligno</b>. Après la mort de son époux et de ses fils, elle adopta la vie pauvre et pénitente des Tertiaires de Saint-François. Un pèlerinage à Assise fut le début de nombreuses grâces mystiques. Malade, admirée pour sa doctrine, elle mourut en odeur de sainteté entourée de disciples.",
+            "type": "mystique",
+            "lieu": "Foligno",
+            "siecle": "XIIIe-XIVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1310"
+            },
+            "attributs": []
+        },
+        {
+            "id": "elisabeth-ann-setton",
+            "nom": "Sainte Élisabeth-Anne Setton",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "4 janvier",
+            "biographie": "Aux États-Unis d'Amérique, en 1821, <b>sainte Élisabeth-Anne Setton</b>, veuve et mère de cinq enfants. Episcopalienne, elle fit profession de foi catholique et déploya son activité au service de l'instruction des jeunes filles et de l'éducation des enfants pauvres, avec la Congrégation des Sœurs de la Charité de Saint Joseph qu'elle avait fondée.",
+            "type": "fondatrice",
+            "lieu": "États-Unis",
+            "siecle": "XVIIIe-XIXe siècle",
+            "dates": {
+                "naissance": "1774",
+                "mort": "1821"
+            },
+            "attributs": []
+        }
+    ],
+    "01-05": [
+        {
+            "id": "telesphore",
+            "nom": "Saint Télesphore",
+            "titre": "Pape",
+            "rang": "Mémoire",
+            "date": "5 janvier",
+            "biographie": "Vers 136, <b>saint Télesphore</b>, pape. D'origine grecque, il gouverna l'Église de Rome pendant dix ans, sous l'Empereur Hadrien.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "IIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 136"
+            },
+            "attributs": []
+        },
+        {
+            "id": "edouard-le-confesseur",
+            "nom": "Saint Édouard le Confesseur",
+            "titre": "Roi",
+            "rang": "Mémoire",
+            "date": "5 janvier",
+            "biographie": "À Londres, en 1066, <b>saint Édouard le Confesseur</b>, roi d'Angleterre depuis 1042, qui fut très aimé de son peuple à cause de sa remarquable charité. Il assura la paix à son royaume et maintint avec soin la communion avec le Siège romain. Sa succession contestée fut à l'origine de la conquête normande de l'Angleterre par Guillaume le Conquérant, quelques mois après sa mort.",
+            "type": "roi",
+            "lieu": "Londres",
+            "siecle": "XIe siècle",
+            "dates": {
+                "naissance": "Vers 1003",
+                "mort": "1066"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-nepomucene-neumann",
+            "nom": "Saint Jean Népomucène Neumann",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "5 janvier",
+            "biographie": "À Philadelphie en Pennsylvanie, en 1860, <b>saint Jean Népomucène Neumann</b>, évêque, de la Congrégation du Très Saint Rédempteur, qui vint en aide aux immigrants pauvres par son action, ses conseils et sa charité. Il s'appliqua à promouvoir la formation chrétienne des enfants.",
+            "type": "évêque",
+            "lieu": "Philadelphie",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1811",
+                "mort": "1860"
+            },
+            "attributs": []
+        },
+        {
+            "id": "charles-de-saint-andre",
+            "nom": "Saint Charles de Saint-André",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "5 janvier",
+            "biographie": "À Dublin en Irlande, en 1893, <b>saint Charles de Saint-André</b>, prêtre de la Congrégation de la Passion, ministre assidu du sacrement de pénitence. Il fut canonisé en 2007 par le pape Benoît XVI.",
+            "type": "prêtre",
+            "lieu": "Dublin",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1821",
+                "mort": "1893"
+            },
+            "attributs": []
+        }
+    ],
+    "01-06": [
+        {
+            "id": "pierre-thomas",
+            "nom": "Saint Pierre Thomas",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "6 janvier",
+            "biographie": "À Famagouste, dans l'île de Chypre, en 1366, <b>saint Pierre Thomas</b>, évêque de Constantinople, de l'Ordre des Carmes, que le pape Innocent VI envoya en Orient avec la mission de légat.",
+            "type": "évêque",
+            "lieu": "Famagouste",
+            "siecle": "XIVe siècle",
+            "dates": {
+                "naissance": "Vers 1305",
+                "mort": "1366"
+            },
+            "attributs": []
+        },
+        {
+            "id": "andre-corsini",
+            "nom": "Saint André Corsini",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "6 janvier",
+            "biographie": "À Fiesole en Toscane, en 1373, <b>saint André Corsini</b>, évêque, de l'Ordre des Carmes, qui releva les couvents de son Ordre ravagés par la peste. Il gouverna son Église avec sagesse, portant secours aux pauvres et apaisant les discordes.",
+            "type": "évêque",
+            "lieu": "Fiesole",
+            "siecle": "XIVe siècle",
+            "dates": {
+                "naissance": "1302",
+                "mort": "1373"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-de-ribera",
+            "nom": "Saint Jean de Ribera",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "6 janvier",
+            "biographie": "À Valence en Espagne, en 1611, <b>saint Jean de Ribera</b>, évêque, exerçant également les fonctions de vice-roi de Catalogne et de Naples. Il fut un dévot de la sainte Eucharistie et un défenseur de la vérité catholique.",
+            "type": "évêque",
+            "lieu": "Valence",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "1532",
+                "mort": "1611"
+            },
+            "attributs": []
+        },
+        {
+            "id": "raphaele-marie-du-sacre-coeur",
+            "nom": "Sainte Raphaëlle-Marie du Sacré Cœur",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "6 janvier",
+            "biographie": "À Rome, en 1925, <b>sainte Raphaëlle-Marie du Sacré Cœur</b> (dans le siècle, Raphaëlle Porras Ayllon), vierge. Elle fonda la Congrégation des Servantes du Sacré Cœur de Jésus, mais, tenue pour folle, elle termina sa vie dans les tribulations et la pénitence.",
+            "type": "fondatrice",
+            "lieu": "Rome",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1850",
+                "mort": "1925"
+            },
+            "attributs": []
+        },
+        {
+            "id": "andre-bessette",
+            "nom": "Saint André Bessette",
+            "titre": "Religieux",
+            "rang": "Mémoire",
+            "date": "6 janvier",
+            "biographie": "Au Québec, en 1937, <b>saint André Bessette</b>, religieux de la Congrégation de la Sainte-Croix, qui s'employa à construire à Montréal un célèbre sanctuaire en l'honneur de saint Joseph.",
+            "type": "religieux",
+            "lieu": "Montréal",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1845",
+                "mort": "1937"
+            },
+            "attributs": []
+        }
+    ],
+    "01-07": [
+        {
+            "id": "lucien-d-antioche",
+            "nom": "Saint Lucien d'Antioche",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "7 janvier",
+            "biographie": "À Nicomédie, en Turquie, en 312, le martyre de <b>saint Lucien d'Antioche</b>, prêtre. Il fonda en cette ville une école d'exégèse et entreprit la révision et la traduction de l'Ancien Testament. Arrêté sous la persécution de Dioclétien, il fut exécuté après neuf ans de détention.",
+            "type": "martyr",
+            "lieu": "Nicomédie",
+            "siecle": "IIIe-IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "312"
+            },
+            "attributs": []
+        },
+        {
+            "id": "aldric-du-mans",
+            "nom": "Saint Aldric",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "7 janvier",
+            "biographie": "Au Mans, en 856, <b>saint Aldric</b>, évêque. Né en 800, élevé à la cour d'Aix-la-Chapelle, il mit tout son zèle à développer le culte divin et celui des saints.",
+            "type": "évêque",
+            "lieu": "Le Mans",
+            "siecle": "IXe siècle",
+            "dates": {
+                "naissance": "800",
+                "mort": "856"
+            },
+            "attributs": []
+        },
+        {
+            "id": "raymond-de-penyafort",
+            "nom": "Saint Raymond de Peñyafort",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "7 janvier",
+            "biographie": "Dans notre Ordre, en 1275, <b>saint Raymond de Peñyafort</b>, prêtre. Célébre par sa science du Droit canonique, il écrivit une Somme réputée sur le sacrement de pénitence. Élu deuxième successeur de saint Dominique à la tête de l'Ordre, il rédigea de nouvelles Constitutions. Il encouragea l'apostolat des frères auprès des Juifs et des Musulmans. Il s'endormit dans le Seigneur à Barcelone, le 6 janvier 1275, à l'âge de cent ans, laissant le souvenir d'un prêtre animé d'un immense amour des pécheurs.",
+            "type": "prêtre",
+            "lieu": "Barcelone",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Vers 1175",
+                "mort": "1275"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marie-therese-haze",
+            "nom": "Bienheureuse Marie-Thérèse Haze",
+            "titre": "Fondatrice",
+            "rang": "Mémoire facultative",
+            "date": "7 janvier",
+            "biographie": "En Belgique, en 1876, la <b>bienheureuse Marie-Thérèse Haze</b>. Religieuse originaire de Liège, elle établit dans son pays des écoles libres et fonda la Congrégation des Filles de la Croix.",
+            "type": "fondatrice",
+            "lieu": "Liège",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1782",
+                "mort": "1876"
+            },
+            "attributs": []
+        }
+    ],
+    "01-08": [
+        {
+            "id": "claude-apollinaire",
+            "nom": "Saint Claude Apollinaire",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "8 janvier",
+            "biographie": "À Hiérapolis en Phrygie, après 175, <b>saint Claude Apollinaire</b>, évêque. Il adressa à l'Empereur Marc-Aurèle une Apologie pour les chrétiens.",
+            "type": "évêque",
+            "lieu": "Hiérapolis",
+            "siecle": "IIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Après 175"
+            },
+            "attributs": []
+        },
+        {
+            "id": "lucien-maximien-julien",
+            "nom": "Saints Lucien, Maximien et Julien",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "8 janvier",
+            "biographie": "À Beauvais, vers 290, les <b>saints Lucien, Maximien et Julien</b>, martyrs.",
+            "type": "martyrs",
+            "lieu": "Beauvais",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 290"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gudule",
+            "nom": "Sainte Gudule",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "8 janvier",
+            "biographie": "À Morzelle en Brabant, vers 712, <b>sainte Gudule</b>, vierge. Elle se consacra depuis sa maison à la charité envers les pauvres et à la prière. Ses reliques furent portées à Bruxelles dont elle est la sainte patronne.",
+            "type": "vierge",
+            "lieu": "Bruxelles",
+            "siecle": "VIIe-VIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 712"
+            },
+            "attributs": []
+        },
+        {
+            "id": "laurent-justinien",
+            "nom": "Saint Laurent Justinien",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "8 janvier",
+            "biographie": "À Venise, en 1456, <b>saint Laurent Justinien</b>, évêque, premier patriarche de cette église qu'il illustra par sa doctrine.",
+            "type": "évêque",
+            "lieu": "Venise",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "1381",
+                "mort": "1456"
+            },
+            "attributs": []
+        }
+    ],
+    "01-09": [
+        {
+            "id": "julien-et-basilisse",
+            "nom": "Saints Julien et Basilisse",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "9 janvier",
+            "biographie": "Vers 304, en Égypte, le martyre de <b>saint Julien</b>. Son épouse, <b>sainte Basilisse</b>, et lui consacrèrent leurs forces et leurs biens au soulagement des pauvres et des malades, qu'ils abritaient dans leur propre maison.",
+            "type": "martyrs",
+            "lieu": "Égypte",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 304"
+            },
+            "attributs": []
+        },
+        {
+            "id": "pierre-de-sebaste",
+            "nom": "Saint Pierre de Sébaste",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "9 janvier",
+            "biographie": "En Arménie, <b>saint Pierre de Sébaste</b>, évêque. Frère de saint Basile le Grand, il participa au concile de Constantinople et rétablit dans son diocèse l'orthodoxie compromise par son prédécesseur.",
+            "type": "évêque",
+            "lieu": "Sébaste",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 391"
+            },
+            "attributs": []
+        },
+        {
+            "id": "adrien-de-cantorbery",
+            "nom": "Saint Adrien",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "9 janvier",
+            "biographie": "À Cantorbéry, en 710, <b>saint Adrien</b>, abbé. Né en Afrique, moine et abbé près de Naples, il fut choisi pour être archevêque de Cantorbéry par le pape Vitalien. Il s'effaça au profit de Théodore de Tarse et devint abbé de Saint-Augustin de Cantorbéry.",
+            "type": "abbé",
+            "lieu": "Cantorbéry",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "710"
+            },
+            "attributs": []
+        },
+        {
+            "id": "alix-le-clerc",
+            "nom": "Bienheureuse Alix Le Clerc",
+            "titre": "Fondatrice",
+            "rang": "Mémoire facultative",
+            "date": "9 janvier",
+            "biographie": "À Nancy, en 1622, la <b>bienheureuse Alix Le Clerc</b>, fondatrice en 1597, avec saint Pierre Fourier, de la Congrégation Notre-Dame, dans l'esprit du renouveau du concile de Trente.",
+            "type": "fondatrice",
+            "lieu": "Nancy",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "1576",
+                "mort": "1622"
+            },
+            "attributs": []
+        },
+        {
+            "id": "pauline-jaricot",
+            "nom": "Bienheureuse Pauline Jaricot",
+            "titre": "Fondatrice",
+            "rang": "Mémoire facultative",
+            "date": "9 janvier",
+            "biographie": "À Lyon en 1862, la <b>Bienheureuse Pauline Jaricot</b>, vierge. Lyonnaise issue de la bourgeoisie, elle a consacré sa vie à la Mission, au service des pauvres et à la prière. En 1826, elle crée le Rosaire Vivant : la récitation du Rosaire est répartie entre des groupes de 15 personnes. Chaque personne s'engage à réciter quotidiennement une dizaine en méditant un des mystères de la vie de Jésus. Ainsi chaque jour le Rosaire est récité en entier par le groupe.",
+            "type": "fondatrice",
+            "lieu": "Lyon",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1799",
+                "mort": "1862"
+            },
+            "attributs": []
+        }
+    ],
+    "01-10": [
+        {
+            "id": "gregoire-de-nysse",
+            "nom": "Saint Grégoire de Nysse",
+            "titre": "Évêque et Docteur de l'Église",
+            "rang": "Mémoire",
+            "date": "10 janvier",
+            "biographie": "À Nysse en Cappadoce, peu avant 400, <b>saint Grégoire</b>, évêque, frère cadet de saint Basile le Grand, remarquable par sa vie et sa doctrine théologique. Il fut exilé de sa ville sous l'Empereur arien Valens pour avoir confessé la foi orthodoxe. Il joua un rôle prédominant au concile de Constantinople de 381.",
+            "type": "docteur",
+            "lieu": "Nysse",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Vers 335",
+                "mort": "Vers 395"
+            },
+            "attributs": []
+        },
+        {
+            "id": "agathon",
+            "nom": "Saint Agathon",
+            "titre": "Pape",
+            "rang": "Mémoire",
+            "date": "10 janvier",
+            "biographie": "À Rome près de saint Pierre, en 681, la mise au tombeau de <b>saint Agathon</b>, pape, qui défendit l'intégrité de la foi contre les monothélites et promut l'unité de l'Église en plusieurs synodes.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "681"
+            },
+            "attributs": []
+        },
+        {
+            "id": "guillaume-de-bourges",
+            "nom": "Saint Guillaume",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "10 janvier",
+            "biographie": "À Bourges, en 1209, <b>saint Guillaume</b>, évêque. Descendant des comtes de Nevers, moine cistercien à Pontigny, puis abbé de Châlis, enfin promu à l'évêché de Bourges, il ne relâcha en rien l'austérité de sa vie et se distingua par sa charité à l'égard du clergé, des prisonniers et des miséreux.",
+            "type": "évêque",
+            "lieu": "Bourges",
+            "siecle": "XIIe-XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1209"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gonzalve-d-amarante",
+            "nom": "Bienheureux Gonzalve d'Amarante",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "10 janvier",
+            "biographie": "Dans notre Ordre, en 1259, le <b>bienheureux Gonzalve d'Amarante</b>, prêtre. Il fut d'abord curé dans le diocèse de Braga, au Portugal. Au terme d'un long pélerinage à Rome et en Terre Sainte, il se fit ermite et finalement entra dans notre Ordre. Après son noviciat, il fut autorisé à retourner à son ancien ermitage en compagnie d'un autre frère, d'où il évangélisa la population environnante.",
+            "type": "prêtre",
+            "lieu": "Amarante",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "1187",
+                "mort": "1259"
+            },
+            "attributs": []
+        },
+        {
+            "id": "anne-des-anges-de-monteagudo",
+            "nom": "Bienheureuse Anne des Anges de Monteagudo",
+            "titre": "Religieuse",
+            "rang": "Mémoire facultative",
+            "date": "10 janvier",
+            "biographie": "De même, en 1686, la <b>bienheureuse Anne des Anges de Monteagudo</b>. Née en 1602 à Arequipa, au Pérou, elle entra au monastère de Sainte-Catherine-de-Sienne dont elle fut élue prieure en 1645. Elle fut, selon son oraison funèbre, « douée du don de prophétie et de bon conseil pour le bien de toute la ville, en commençant par les évêques ».",
+            "type": "religieuse",
+            "lieu": "Arequipa",
+            "siecle": "XVIIe siècle",
+            "dates": {
+                "naissance": "1602",
+                "mort": "1686"
+            },
+            "attributs": []
+        },
+        {
+            "id": "leonie-francoise-de-sales-aviat",
+            "nom": "Sainte Léonie Françoise de Sales Aviat",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "10 janvier",
+            "biographie": "À Pérouse en Ombrie, en 1914, <b>sainte Léonie Françoise de Sales Aviat</b>, vierge, qui se dépensa pour fournir du travail aux jeunes. Elle fonda les Oblates de Saint François de Sales.",
+            "type": "fondatrice",
+            "lieu": "Pérouse",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1844",
+                "mort": "1914"
+            },
+            "attributs": []
+        }
+    ],
+    "01-11": [
+        {
+            "id": "paulin-d-aquilee",
+            "nom": "Saint Paulin",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "11 janvier",
+            "biographie": "À Frioul aux confins de la Vénétie, en 802, <b>saint Paulin</b>, évêque. Célèbre grammairien originaire du Frioul, il devint évêque d'Aquilée. Il entreprit de convertir à la foi les Avares et les Slovènes.",
+            "type": "évêque",
+            "lieu": "Aquilée",
+            "siecle": "VIIIe-IXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "802"
+            },
+            "attributs": []
+        },
+        {
+            "id": "bernard-scammacca",
+            "nom": "Bienheureux Bernard Scammacca",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "11 janvier",
+            "biographie": "Dans notre Ordre, en 1487, le <b>bienheureux Bernard Scammacca</b>, prêtre. Né à Catane, dans une illustre famille sicilienne, il se convertit à la suite d'un duel où il fut blessé. Entré dans l'Ordre et devenu prédicateur ardent, il rivalisa avec les religieux les plus parfaits et excella en humilité, obéissance, douceur et modestie.",
+            "type": "prêtre",
+            "lieu": "Catane",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "1430",
+                "mort": "1487"
+            },
+            "attributs": []
+        },
+        {
+            "id": "guillaume-carter",
+            "nom": "Saint Guillaume Carter",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "11 janvier",
+            "biographie": "À Londres, en 1584, <b>saint Guillaume Carter</b>, martyr. Marié, condamné à mort sous le règne d'Élisabeth Ière, pour avoir édité un traité sur le schisme, il fut pendu au gibet de Tyburn.",
+            "type": "martyr",
+            "lieu": "Londres",
+            "siecle": "XVIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1584"
+            },
+            "attributs": []
+        }
+    ],
+    "01-12": [
+        {
+            "id": "benoit-biscop",
+            "nom": "Saint Benoît Biscop",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "12 janvier",
+            "biographie": "En Northumbrie, vers 690, <b>saint Benoît Biscop</b>, abbé bénédictin de Cantorbéry qui fit cinq fois le pélerinage de Rome. Il fonda l'abbaye de Wearmouth où il fut le maître de Bède le Vénérable.",
+            "type": "abbé",
+            "lieu": "Northumbrie",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Vers 628",
+                "mort": "690"
+            },
+            "attributs": []
+        },
+        {
+            "id": "aelred-de-rievaulx",
+            "nom": "Saint Aelred de Rievaulx",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "12 janvier",
+            "biographie": "En Northumbrie, en 1166, <b>saint Aelred de Rievaulx</b>, abbé. Élevé à la cour du roi d'Écosse, il entra dans l'Ordre de Cîteaux. Maître éminent de la vie monastique, il promut avec insistance et suavité, par son action et par ses écrits, la vie spirituelle et l'amitié en Christ.",
+            "type": "abbé",
+            "lieu": "Northumbrie",
+            "siecle": "XIIe siècle",
+            "dates": {
+                "naissance": "1110",
+                "mort": "1167"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marguerite-bourgeoys",
+            "nom": "Sainte Marguerite Bourgeoys",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "12 janvier",
+            "biographie": "À Montréal, en 1700, <b>sainte Marguerite Bourgeoys</b>, vierge. Originaire de Troyes, elle partit au Québec comme institutrice en 1653. Elle y aida colons et soldats, et prit grand soin de l'éducation des jeunes filles, pour lesquelles elle fonda la Congrégation des Sœurs de Notre-Dame.",
+            "type": "fondatrice",
+            "lieu": "Montréal",
+            "siecle": "XVIIe-XVIIIe siècle",
+            "dates": {
+                "naissance": "1620",
+                "mort": "1700"
+            },
+            "attributs": []
+        },
+        {
+            "id": "antoine-marie-pucci",
+            "nom": "Saint Antoine-Marie Pucci",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "12 janvier",
+            "biographie": "À Viareggio en Toscane, en 1892, <b>saint Antoine-Marie Pucci</b>, prêtre de l'Ordre des Servites de Marie. Durant presque cinquante ans de ministère paroissial, il s'efforça de soigner les enfants victimes de la misère ou de la maladie.",
+            "type": "prêtre",
+            "lieu": "Viareggio",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1819",
+                "mort": "1892"
+            },
+            "attributs": []
+        }
+    ],
+    "01-13": [
+        {
+            "id": "hilaire-de-poitiers",
+            "nom": "Saint Hilaire de Poitiers",
+            "titre": "Évêque et Docteur de l'Église",
+            "rang": "Mémoire",
+            "date": "13 janvier",
+            "biographie": "En 367, <b>saint Hilaire de Poitiers</b>, évêque et Docteur de l'Église. Il est marié et père de famille, lorsqu'il est élu évêque de Poitiers vers 350. Sous l'Empereur Constance attaché à l'hérésie arienne, il défendit courageusement par ses écrits la foi de Nicée sur la Trinité et la divinité du Christ, ce qui lui valut d'être exilé quatre ans en Phrygie où il écrivit son De Trinitate. Il composa également des commentaires sur les psaumes et sur l'Évangile de saint Matthieu.",
+            "type": "docteur",
+            "lieu": "Poitiers",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Vers 315",
+                "mort": "367"
+            },
+            "attributs": []
+        },
+        {
+            "id": "abdallah",
+            "nom": "Saint Abdallah",
+            "titre": "Moine et martyr",
+            "rang": "Mémoire",
+            "date": "13 janvier",
+            "biographie": "En 852, à Cordoue, <b>saint Abdallah</b>, moine, martyrisé avec saint Gumesinde, prêtre, pour avoir confessé la foi chrétienne face à l'Islam.",
+            "type": "martyr",
+            "lieu": "Cordoue",
+            "siecle": "IXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "852"
+            },
+            "attributs": []
+        },
+        {
+            "id": "bernon",
+            "nom": "Saint Bernon",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "13 janvier",
+            "biographie": "En 927, <b>saint Bernon</b>, abbé, qui fonda sur les terres de Guillaume le Pieux, duc d'Aquitaine, l'abbaye de Cluny, en 910.",
+            "type": "abbé",
+            "lieu": "Cluny",
+            "siecle": "IXe-Xe siècle",
+            "dates": {
+                "naissance": "Vers 850",
+                "mort": "927"
+            },
+            "attributs": []
+        },
+        {
+            "id": "yvette",
+            "nom": "Sainte Yvette",
+            "titre": "Veuve",
+            "rang": "Mémoire",
+            "date": "13 janvier",
+            "biographie": "À Huy près de Liège, en 1228, <b>sainte Yvette</b>, veuve, qui se consacra à soigner les lépreux et finit sa vie près d'eux, en recluse.",
+            "type": "laïque",
+            "lieu": "Huy",
+            "siecle": "XIIe-XIIIe siècle",
+            "dates": {
+                "naissance": "1157",
+                "mort": "1228"
+            },
+            "attributs": []
+        }
+    ],
+    "01-14": [
+        {
+            "id": "felix-de-nole",
+            "nom": "Saint Félix",
+            "titre": "Évêque et confesseur",
+            "rang": "Mémoire",
+            "date": "14 janvier",
+            "biographie": "À Nole en Campanie, vers 260, <b>saint Félix</b>, évêque et confesseur de la foi. Après avoir été en prison, où il supporta d'affreuses tortures, il revint parmi les siens quand la paix fut établie, vivant dans la pauvreté volontaire jusqu'à une extrême vieillesse.",
+            "type": "évêque",
+            "lieu": "Nole",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 260"
+            },
+            "attributs": []
+        },
+        {
+            "id": "ninon",
+            "nom": "Sainte Ninon",
+            "titre": "Apôtre de la Géorgie",
+            "rang": "Mémoire",
+            "date": "14 janvier",
+            "biographie": "Au pays des Ibères au-delà du Pont-Euxin, au IVe siècle, <b>sainte Ninon</b>. Captive chrétienne, elle suscita, par la sainteté de sa vie, un tel respect qu'elle attira la reine et le roi, dont le fils, grâce à ses prières et à sa foi au Christ, avait retrouvé la santé.",
+            "type": "apôtre",
+            "lieu": "Géorgie",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "IVe siècle"
+            },
+            "attributs": []
+        },
+        {
+            "id": "dace-de-milan",
+            "nom": "Saint Dace",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "14 janvier",
+            "biographie": "À Milan, en 552, la mise au tombeau de <b>saint Dace</b>, évêque. Chassé de son siège par les Goths, il trouva refuge à Constantinople ; il y défendit, dans la querelle des Trois Chapitres, le pape Vigile, que l'Empereur Justinien sommait de condamner.",
+            "type": "évêque",
+            "lieu": "Milan",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "552"
+            },
+            "attributs": []
+        }
+    ],
+    "01-15": [
+        {
+            "id": "jean-calybite",
+            "nom": "Saint Jean Calybite",
+            "titre": "Ermite",
+            "rang": "Mémoire",
+            "date": "15 janvier",
+            "biographie": "À Constantinople, vers 450, <b>saint Jean Calybite</b>, surnommé \"le pauvre pour le Christ\", il a connu une vie proche de celle de saint Alexis. Il demeura dans une \"calybe\", c'est-à-dire une cabane. Entièrement donné à la contemplation et complètement caché à la vue de ses parents, ceux-ci le reconnurent seulement à sa mort, à partir du codex doré des Évangiles qu'ils lui avaient donné.",
+            "type": "ermite",
+            "lieu": "Constantinople",
+            "siecle": "Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 450"
+            },
+            "attributs": []
+        },
+        {
+            "id": "remi-de-reims",
+            "nom": "Saint Rémi",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "15 janvier",
+            "biographie": "À Reims, vers 530, <b>saint Rémi</b>, évêque. Après avoir conduit le roi Clovis au baptême en 496, et l'avoir initié aux autres sacrements, il contribua à la conversion d'une partie du peuple des Francs. Il quitta cette vie, célèbre par sa sainteté après plus de soixante ans d'épiscopat.",
+            "type": "évêque",
+            "lieu": "Reims",
+            "siecle": "Ve-VIe siècle",
+            "dates": {
+                "naissance": "Vers 437",
+                "mort": "Vers 533"
+            },
+            "attributs": []
+        },
+        {
+            "id": "bonnet",
+            "nom": "Saint Bonnet",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "15 janvier",
+            "biographie": "Dans notre diocèse, <b>saint Bonnet</b>, évêque. Né vers 623 en Auvergne, il a dès sa jeunesse de hautes fonctions auprès du roi d'Austrasie et reçoit en 677 la charge du gouvernement de Marseille. Aussi fervent chrétien que bon administrateur, il s'oppose à la vente des esclaves et s'emploie à leur libération. En 690, à la mort de son frère, évêque de Clermont, il est choisi pour lui succéder. Après un bref épiscopat, bienfaisant et difficile, il se retire dans un monastère pour achever sa vie dans la prière.",
+            "type": "évêque",
+            "lieu": "Clermont",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Vers 623",
+                "mort": "Vers 710"
+            },
+            "attributs": []
+        },
+        {
+            "id": "martyrs-de-chine",
+            "nom": "Saints François Fernandez de Capillas et Pierre Sans y Jordan",
+            "titre": "Martyrs de Chine",
+            "rang": "Mémoire",
+            "date": "15 janvier",
+            "biographie": "Dans notre Ordre, mémoire commune des martyrs de Chine, <b>saint François Fernandez de Capillas</b>, prêtre, <b>saint Pierre Sans y Jordan</b>, évêque, et de leurs compagnons. Après avoir porté le nom du Christ aux îles Philippines et dans le Sud de la Chine, lors de la persécution des Tartares, François de Capillas fut mis en prison, maintenu longtemps captif, torturé et enfin décapité, devenant en 1648 le premier martyr de Chine. Quant à saint Pierre Sans, il fut arrêté en 1747 avec d'autres prêtres. Sur le lieu du supplice, il se mit à genoux et, quand il eut terminé sa prière, tendit son cou à la hache.",
+            "type": "martyrs",
+            "lieu": "Chine",
+            "siecle": "XVIIe-XVIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1648 et 1747"
+            },
+            "attributs": []
+        },
+        {
+            "id": "arnold-janssen",
+            "nom": "Saint Arnold Janssen",
+            "titre": "Prêtre et fondateur",
+            "rang": "Mémoire",
+            "date": "15 janvier",
+            "biographie": "À Steyl en Hollande, en 1909, <b>saint Arnold Janssen</b>, prêtre, fondateur de la Société du Verbe divin destinée à propager la foi en terres de missions.",
+            "type": "fondateur",
+            "lieu": "Steyl",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1837",
+                "mort": "1909"
+            },
+            "attributs": []
+        }
+    ],
+    "01-16": [
+        {
+            "id": "marcel-ier",
+            "nom": "Saint Marcel Ier",
+            "titre": "Pape",
+            "rang": "Mémoire",
+            "date": "16 janvier",
+            "biographie": "À Rome, au cimetière de Priscille sur la voie Salarienne nouvelle, en 309, la mise au tombeau de <b>saint Marcel Ier</b>, pape. L'Empereur Maxence le chassa de la ville et mourut en exil des suites des mauvais traitements qu'il avait endurés.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "309"
+            },
+            "attributs": []
+        },
+        {
+            "id": "honorat-d-arles",
+            "nom": "Saint Honorat",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "16 janvier",
+            "biographie": "Dans notre diocèse, en 430, <b>saint Honorat</b>, évêque. Devenu chrétien malgré la volonté de son père, il quitte la Gaule, attiré par la vie érémitique. Avec son frère Venance, il part pour l'Orient, mais s'arrête et séjourne à Marseille. Devenu prêtre à Fréjus, il fonde le monastère de Lérins qui sera bientôt, sous son influence, une pépinière d'évêques, d'apôtres et de saints. Appelé en 426 à gouverner l'Église d'Arles, il s'y révèle un excellent pasteur et un docteur illustre. Ses reliques furent transférées à Lérins et saint Hilaire, son successeur en Arles, écrivit fidèlement l'histoire de sa vie.",
+            "type": "évêque",
+            "lieu": "Arles",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "430"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jeanne-de-bagno-di-romagna",
+            "nom": "Sainte Jeanne",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "16 janvier",
+            "biographie": "À Bagno di Romagna, en 1105, <b>sainte Jeanne</b>, vierge, qui fut reçue dans l'Ordre des Camaldules et brilla surtout par son obéissance et son humilité.",
+            "type": "vierge",
+            "lieu": "Bagno di Romagna",
+            "siecle": "XIe-XIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1105"
+            },
+            "attributs": []
+        },
+        {
+            "id": "cinq-martyrs-de-marrakech",
+            "nom": "Saints Vital, Bérard, Othon, Pierre, Accurse et Adjute",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "16 janvier",
+            "biographie": "À Marrakech dans le royaume des Maures au Maroc, en 1220, les cinq premiers martyrs de l'Ordre des Mineurs : les <b>saints Vital, Bérard, Othon et Pierre</b>, prêtres, <b>Accurse et Adjute</b>, frères convers. Envoyés par saint François annoncer l'Évangile du Christ aux Musulmans, ils furent saisis à Séville et bientôt conduits à Marrakech, où ils furent décapités sur ordres du prince.",
+            "type": "martyrs",
+            "lieu": "Marrakech",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1220"
+            },
+            "attributs": []
+        }
+    ],
+    "01-17": [
+        {
+            "id": "antoine-le-grand",
+            "nom": "Saint Antoine le Grand",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "17 janvier",
+            "biographie": "En 356, <b>saint Antoine le Grand</b>, abbé. Après la mort de ses parents, en Haute-Égypte, il distribua tous ses biens aux pauvres et se retira dans la solitude de la Thébaïde, où il commença à mener une vie d'ascète. Son rayonnement et la biographie que saint Athanase lui a consacrée lui suscitèrent de nombreux disciples et firent de lui le « Père des moines ».",
+            "type": "abbé",
+            "lieu": "Thébaïde",
+            "siecle": "IIIe-IVe siècle",
+            "dates": {
+                "naissance": "Vers 251",
+                "mort": "356"
+            },
+            "attributs": []
+        },
+        {
+            "id": "julien-sabas",
+            "nom": "Saint Julien Sabas",
+            "titre": "Ermite",
+            "rang": "Mémoire",
+            "date": "17 janvier",
+            "biographie": "En 377, <b>saint Julien</b>, surnommé Sabas, ermite de la région d'Édesse. Il dût un moment laisser sa solitude pour répondre à Antioche à des accusations d'arianisme.",
+            "type": "ermite",
+            "lieu": "Édesse",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "377"
+            },
+            "attributs": []
+        },
+        {
+            "id": "sulpice-le-pieux",
+            "nom": "Saint Sulpice le Pieux",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "17 janvier",
+            "biographie": "À Bourges, vers 647, <b>saint Sulpice</b>, surnommé le Pieux, évêque. Il fut promu de la cour royale à l'épiscopat. Il contribua à la conversion de Juifs de la ville et au soin des pauvres.",
+            "type": "évêque",
+            "lieu": "Bourges",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 647"
+            },
+            "attributs": []
+        },
+        {
+            "id": "apparition-de-pontmain",
+            "nom": "Apparition de Pontmain",
+            "titre": "Événement marial",
+            "rang": "Mémoire facultative",
+            "date": "17 janvier",
+            "biographie": "Le soir du 17 janvier 1871, la Vierge Marie apparut silencieusement à de jeunes enfants dans le ciel de Pontmain vêtue d'une robe bleue parsemée d'étoiles, avec un voile noir et une couronne d'or pour les exhorter à prier en faveur de la patrie menacée. Pendant le chapelet, elle grandit lentement au fur et à mesure des Ave Maria, puis une banderole blanche se déroule en plein ciel et des lettres d'or viennent s'écrire tour à tour : « Mais priez, mes enfants, Dieu vous exaucera en peu de temps. Mon fils se laisse toucher. »",
+            "type": "apparition",
+            "lieu": "Pontmain",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        },
+        {
+            "id": "janvier-sanchez-delgado",
+            "nom": "Saint Janvier Sanchez Delgado",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "17 janvier",
+            "biographie": "À Tocolatlan au Mexique, en 1927, <b>saint Janvier Sanchez Delgado</b>, prêtre et martyr, qui, au cours de la persécution mexicaine, fut battu sauvagement, piqué à coups de baïonnette et pendu à un arbre, en haine de l'Église.",
+            "type": "martyr",
+            "lieu": "Mexique",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1927"
+            },
+            "attributs": []
+        }
+    ],
+    "01-18": [
+        {
+            "id": "prisca",
+            "nom": "Sainte Prisca",
+            "titre": "Martyre",
+            "rang": "Mémoire",
+            "date": "18 janvier",
+            "biographie": "À Rome, le martyre de <b>sainte Prisca</b>, à qui une basilique fut dédiée sur l'Aventin avant la fin du Ve siècle.",
+            "type": "martyre",
+            "lieu": "Rome",
+            "siecle": "Ier-Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marguerite-de-hongrie",
+            "nom": "Sainte Marguerite de Hongrie",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "18 janvier",
+            "biographie": "Dans notre Ordre, en 1270, <b>sainte Marguerite de Hongrie</b>, vierge. Fille du roi Béla IV, elle fut vouée à Dieu par ses parents pour la libération de la patrie du pouvoir des Tartares et donnée enfant aux moniales de l'Ordre des Prêcheurs. Elle fit profession à douze ans dans les mains du Maître Humbert de Romans et s'appliqua dès lors à ressembler au Christ crucifié.",
+            "type": "vierge",
+            "lieu": "Hongrie",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "1242",
+                "mort": "1270"
+            },
+            "attributs": []
+        },
+        {
+            "id": "christine-ciccarelli",
+            "nom": "Sainte Christine Ciccarelli",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "18 janvier",
+            "biographie": "En 1543, <b>sainte Christine Ciccarelli</b>, vierge. Moniale de l'Ordre des Ermites de Saint-Augustin, elle fut dévouée aux pauvres et assidue à la contemplation.",
+            "type": "vierge",
+            "lieu": "Italie",
+            "siecle": "XVe-XVIe siècle",
+            "dates": {
+                "naissance": "1481",
+                "mort": "1543"
+            },
+            "attributs": []
+        }
+    ],
+    "01-19": [
+        {
+            "id": "germanicus",
+            "nom": "Saint Germanicus",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "19 janvier",
+            "biographie": "À Smyrne en Asie, vers 167, <b>saint Germanicus</b>, jeune martyr de Philadelphie. Au temps de Marc Antonin et de Lucien Aurèle, il fut disciple de saint Polycarpe qu'il précéda dans le martyre.",
+            "type": "martyr",
+            "lieu": "Smyrne",
+            "siecle": "IIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 167"
+            },
+            "attributs": []
+        },
+        {
+            "id": "knut",
+            "nom": "Saint Knut",
+            "titre": "Roi",
+            "rang": "Mémoire",
+            "date": "19 janvier",
+            "biographie": "En 1086, à Odense, <b>saint Knut</b>, roi de Danemark. Juste et courageux, il fut assassiné alors qu'il préparait une invasion de l'Angleterre.",
+            "type": "roi",
+            "lieu": "Danemark",
+            "siecle": "XIe siècle",
+            "dates": {
+                "naissance": "Vers 1042",
+                "mort": "1086"
+            },
+            "attributs": []
+        },
+        {
+            "id": "andre-grego-de-peschiera",
+            "nom": "Bienheureux André Grego de Peschiera",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "19 janvier",
+            "biographie": "Dans notre Ordre, en 1485, le <b>bienheureux André Grego de Peschiera</b>, prêtre. Né dans une famille pauvre des bords du lac de Garde, il entra dans l'Ordre à Brescia et fit ses études à Saint-Marc de Florence, au moment où la réforme du bienheureux Antoine della Chiesa était à son apogée. Il fut l'apôtre de la Valteline, région montagneuse de l'Italie du Nord que saint Dominique avait évangélisée à la fin de sa vie. Il mourut à l'âge de quatre-vingt-cinq ans au terme d'une vie de prédication itinérante.",
+            "type": "prêtre",
+            "lieu": "Italie",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "1400",
+                "mort": "1485"
+            },
+            "attributs": []
+        }
+    ],
+    "01-20": [
+        {
+            "id": "fabien",
+            "nom": "Saint Fabien",
+            "titre": "Pape et martyr",
+            "rang": "Mémoire",
+            "date": "20 janvier",
+            "biographie": "En 250, le martyre de <b>saint Fabien</b>, pape et martyr. Laïc appelé au pontificat, il gouverna l'Église de Rome durant quatorze années. Il subit le martyre lors de la persécution de Dèce.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "250"
+            },
+            "attributs": []
+        },
+        {
+            "id": "sebastien",
+            "nom": "Saint Sébastien",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "20 janvier",
+            "biographie": "En 305, le martyre de <b>saint Sébastien</b>. Originaire de Narbonne, en garnison à Milan, comme le rapporte saint Ambroise, il partit pour Rome au moment des persécutions. C'est là, qu'il fut tué lors de l'épuration de l'armée et inhumé sur la voie Appienne.",
+            "type": "martyr",
+            "lieu": "Rome",
+            "siecle": "IIIe-IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "305"
+            },
+            "attributs": []
+        },
+        {
+            "id": "wulstan",
+            "nom": "Saint Wulstan",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "20 janvier",
+            "biographie": "En Angleterre, en 1095, <b>saint Wulstan</b>, évêque de Worcester de 1062 à 1095. C'est le seul évêque à avoir conservé son diocèse sous le règne de Guillaume le Conquérant, après la conquête normande de l'Angleterre. Il mit le plus grand soin à visiter les paroisses, à favoriser les Lettres, ainsi qu'à condamner les marchands d'esclaves.",
+            "type": "évêque",
+            "lieu": "Angleterre",
+            "siecle": "XIe siècle",
+            "dates": {
+                "naissance": "1008",
+                "mort": "1095"
+            },
+            "attributs": []
+        }
+    ],
+    "01-21": [
+        {
+            "id": "fructueux-augure-euloge",
+            "nom": "Saints Fructueux, Augure et Euloge",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "21 janvier",
+            "biographie": "À Tarragone en Espagne, en 259, les <b>saints martyrs Fructueux</b>, évêque, <b>Augure et Euloge</b>, diacres. Durant la persécution de Valérien et Gallien, après leur confession de foi devant le gouverneur, ils furent conduits à l'amphithéâtre, où tous les trois achevèrent leur martyre.",
+            "type": "martyrs",
+            "lieu": "Tarragone",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "259"
+            },
+            "attributs": []
+        },
+        {
+            "id": "agnes",
+            "nom": "Sainte Agnès",
+            "titre": "Martyre",
+            "rang": "Mémoire",
+            "date": "21 janvier",
+            "biographie": "De même à Rome, vers 305, le martyre de <b>sainte Agnès</b>, jeune romaine qui proclama la foi devant les autorités et fut condamnée à la décapitation sous la persécution de Dioclétien.",
+            "type": "martyre",
+            "lieu": "Rome",
+            "siecle": "IIIe-IVe siècle",
+            "dates": {
+                "naissance": "Vers 291",
+                "mort": "Vers 304"
+            },
+            "attributs": []
+        },
+        {
+            "id": "alban-roe-thomas-green",
+            "nom": "Saint Alban Roe et Bienheureux Thomas Green",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "21 janvier",
+            "biographie": "À Londres, en 1606, <b>saint Alban Roe</b>, bénédictin, et le <b>bienheureux Thomas Green</b>, prêtres et martyrs. Sous le roi Charles Ier, l'un après dix-sept ans, l'autre après quatorze ans passés en prison, et tous deux d'un âge déjà avancé, furent ensemble pendus pour le Christ au gibet de Tyburn.",
+            "type": "martyrs",
+            "lieu": "Londres",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1606"
+            },
+            "attributs": []
+        }
+    ],
+    "01-22": [
+        {
+            "id": "vincent-de-saragosse",
+            "nom": "Saint Vincent",
+            "titre": "Diacre et martyr",
+            "rang": "Mémoire",
+            "date": "22 janvier",
+            "biographie": "En 304, <b>saint Vincent</b>, diacre de Saragosse et martyr. Dans la persécution de Dioclétien, avec son évêque saint Valère, il fut conduit à Valence, subit divers supplices, et s'envola au ciel, vainqueur, pour recevoir la couronne du martyre.",
+            "type": "martyr",
+            "lieu": "Valence",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "304"
+            },
+            "attributs": []
+        },
+        {
+            "id": "antoine-della-chiesa",
+            "nom": "Bienheureux Antoine della Chiesa",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "22 janvier",
+            "biographie": "Dans notre Ordre, en 1459, le <b>bienheureux Antoine della Chiesa</b>, prêtre. Il prit l'habit de l'Ordre à 22 ans au couvent de Verceil et fut, pendant plusieurs années, le compagnon d'apostolat de saint Bernardin de Sienne. Prieur à Côme, Savone, Florence et Bologne, il rétablit partout la vie régulière, appuyé par le maître Barthélémy Texier, recherchant avec indulgence la fragilité humaine et la corrigeant avec fermeté.",
+            "type": "prêtre",
+            "lieu": "Italie",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "1394",
+                "mort": "1459"
+            },
+            "attributs": []
+        },
+        {
+            "id": "vincent-palloti",
+            "nom": "Saint Vincent Palloti",
+            "titre": "Prêtre et fondateur",
+            "rang": "Mémoire",
+            "date": "22 janvier",
+            "biographie": "À Rome en 1850, <b>saint Vincent Palloti</b>, prêtre, fondateur de la Société de l'Apostolat catholique. Il stimula les fidèles, par ses écrits et par ses œuvres, à travailler activement au service de l'Église.",
+            "type": "fondateur",
+            "lieu": "Rome",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1795",
+                "mort": "1850"
+            },
+            "attributs": []
+        }
+    ],
+    "01-23": [
+        {
+            "id": "emerentienne",
+            "nom": "Sainte Émérentienne",
+            "titre": "Martyre",
+            "rang": "Mémoire",
+            "date": "23 janvier",
+            "biographie": "À Rome, en 304, au cimetière majeur sur la voie Nomentane, <b>sainte Émérentienne</b>, martyre. Encore catéchumène, elle priait au tombeau de sainte Agnès dont elle avait été, selon la tradition, la sœur de lait, quand elle fut lapidée par les païens.",
+            "type": "martyre",
+            "lieu": "Rome",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "304"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-l-aumonier",
+            "nom": "Saint Jean l'Aumônier",
+            "titre": "Patriarche",
+            "rang": "Mémoire",
+            "date": "23 janvier",
+            "biographie": "En 636, <b>saint Jean l'Aumônier</b>, patriarche d'Alexandrie. Célébre par sa miséricorde envers les pauvres, il prit soin de faire construire des églises, des hospices et des orphelinats et s'efforça de soulager toute misère de la cité, rassemblant dans ce but les biens de l'Église et exhortant les riches à faire preuve de bienfaisance envers les pauvres.",
+            "type": "patriarche",
+            "lieu": "Alexandrie",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "636"
+            },
+            "attributs": []
+        },
+        {
+            "id": "ildefonse-de-tolede",
+            "nom": "Saint Ildefonse",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "23 janvier",
+            "biographie": "À Tolède en Espagne, vers 667, <b>saint Ildefonse</b>, évêque. Après ses études à Séville, sous l'épiscopat de saint Isidore, il entra au monastère d'Agali, dont il fut bientôt abbé. Élu évêque de Tolède en 657, il contribua à l'unification de la liturgie espagnole et écrivit de nombreux ouvrages en l'honneur de Marie Mère de Dieu et toujours Vierge.",
+            "type": "évêque",
+            "lieu": "Tolède",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Vers 607",
+                "mort": "667"
+            },
+            "attributs": []
+        },
+        {
+            "id": "henri-suso",
+            "nom": "Bienheureux Henri Suso",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "23 janvier",
+            "biographie": "Dans notre Ordre, en 1366, le <b>bienheureux Henri Suso</b>, prêtre. Avec Maître Eckhart et Jean Tauler, il appartient à l'école des mystiques rhénans. Célébre pour ses pénitences, il est l'auteur d'ouvrages qui ont fait date dans l'histoire de la littérature spirituelle, comme L'Horloge de la Sagesse, le livre le plus célèbre dans l'Allemagne des XIVe et XVe siècles.",
+            "type": "mystique",
+            "lieu": "Allemagne",
+            "siecle": "XIVe siècle",
+            "dates": {
+                "naissance": "1295",
+                "mort": "1366"
+            },
+            "attributs": []
+        }
+    ],
+    "01-24": [
+        {
+            "id": "babylas",
+            "nom": "Saint Babylas",
+            "titre": "Évêque et martyr",
+            "rang": "Mémoire",
+            "date": "24 janvier",
+            "biographie": "À Antioche de Syrie, en 250, <b>saint Babylas</b>, évêque et martyr durant la persécution de Dèce. Avec lui, dit-on, souffrirent aussi trois enfants : Urbain, Prilidien et Épolone, qu'il avait formés dans la foi du Christ.",
+            "type": "martyr",
+            "lieu": "Antioche",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "250"
+            },
+            "attributs": []
+        },
+        {
+            "id": "francois-de-sales",
+            "nom": "Saint François de Sales",
+            "titre": "Évêque et Docteur de l'Église",
+            "rang": "Mémoire",
+            "date": "24 janvier",
+            "biographie": "En 1622, à Lyon, <b>saint François de Sales</b>, évêque de Genève et Docteur de l'Église. Savoyard de haute naissance, il fut missionnaire dans le Chablais. Il amena à la communion catholique de nombreux Calvinistes, et enseigna aux chrétiens par ses écrits la « vraie dévotion » et l'amour de Dieu. Avec sainte Jeanne de Chantal, il fonda l'Ordre de la Visitation. Il rendit son âme à Dieu le 28 décembre 1622.",
+            "type": "docteur",
+            "lieu": "Lyon",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "1567",
+                "mort": "1622"
+            },
+            "attributs": []
+        }
+    ],
+    "01-25": [
+        {
+            "id": "conversion-de-saint-paul",
+            "nom": "Conversion de saint Paul",
+            "titre": "Fête",
+            "rang": "Fête",
+            "date": "25 janvier",
+            "biographie": "Fête de la Conversion de <b>saint Paul</b> apôtre. Après avoir approuvé le meurtre d'Étienne, alors qu'il faisait route vers Damas, animé d'une rage meurtrière contre les disciples du Christ, Jésus en personne se révéla à lui et le choisit pour que, rempli de l'Esprit Saint, il annonce parmi les nations l'Évangile du salut.",
+            "type": "fête",
+            "lieu": "Damas",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        },
+        {
+            "id": "ananie",
+            "nom": "Saint Ananie",
+            "titre": "Disciple",
+            "rang": "Mémoire",
+            "date": "25 janvier",
+            "biographie": "Vers 60, <b>saint Ananie</b>, le disciple du Seigneur qui, à Damas, baptisa Paul après sa conversion.",
+            "type": "disciple",
+            "lieu": "Damas",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "juventin-maximin",
+            "nom": "Saints Juventin et Maximin",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "25 janvier",
+            "biographie": "À Antioche de Syrie, en 363, le martyre des <b>saints Juventin et Maximin</b>, officiers de la garde impériale, qui furent décapités pour avoir protesté contre les édits antichrétiens de Julien l'Apostat.",
+            "type": "martyrs",
+            "lieu": "Antioche",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "363"
+            },
+            "attributs": []
+        }
+    ],
+    "01-26": [
+        {
+            "id": "timothee-et-tite",
+            "nom": "Saints Timothée et Tite",
+            "titre": "Évêques",
+            "rang": "Mémoire",
+            "date": "26 janvier",
+            "biographie": "Au Ier siècle, les <b>saints Timothée et Tite</b>, évêques. Disciples de l'Apôtre saint Paul, ils furent ses collaborateurs d'apostolat et dirigèrent, l'un l'Église d'Éphèse, l'autre celle de Crète.",
+            "type": "évêques",
+            "lieu": "Éphèse et Crète",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "alberic-de-citeaux",
+            "nom": "Saint Albéric",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "26 janvier",
+            "biographie": "À Cîteaux en Bourgogne, en 1109, <b>saint Albéric</b>, abbé. Il fut parmi les premiers moines de Molesme à venir au nouveau monastère, dont il fut ensuite élu abbé et qu'il gouverna avec zèle.",
+            "type": "abbé",
+            "lieu": "Cîteaux",
+            "siecle": "XIe-XIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1109"
+            },
+            "attributs": []
+        },
+        {
+            "id": "michel-kozal",
+            "nom": "Bienheureux Michel Kozal",
+            "titre": "Évêque et martyr",
+            "rang": "Mémoire facultative",
+            "date": "26 janvier",
+            "biographie": "En 1943, le martyre du <b>bienheureux Michel Kozal</b>, évêque. Dès l'invasion de la Pologne par les troupes allemandes en 1939, il s'opposa à l'idéologie nazie ; arrêté, il mourut au camp de Dachau.",
+            "type": "martyr",
+            "lieu": "Dachau",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1893",
+                "mort": "1943"
+            },
+            "attributs": []
+        }
+    ],
+    "01-27": [
+        {
+            "id": "gilduin",
+            "nom": "Saint Gilduin",
+            "titre": "Diacre",
+            "rang": "Mémoire",
+            "date": "27 janvier",
+            "biographie": "À Chartres, en 1077, <b>saint Gilduin</b>, diacre à Dol de Bretagne. Encore jeune homme, il fut élu évêque de Dol. Il se rendit auprès du pape saint Grégoire VII pour décliner cette élection dont il se jugeait indigne. En revenant de Rome, il fut saisi par la fièvre aux confins du pays chartrain et y termina sa vie.",
+            "type": "diacre",
+            "lieu": "Chartres",
+            "siecle": "XIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1077"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marcolin-de-forli",
+            "nom": "Bienheureux Marcolin de Forli",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "27 janvier",
+            "biographie": "Dans notre Ordre, en 1397, le <b>bienheureux Marcolin de Forli</b>, prêtre. Originaire de Romagne, il entra tout jeune au couvent de Forli, sa ville natale, au moment où Raymond de Capoue travaillait à la réforme de l'Ordre. Homme de prière intense, il avait une nombreuse clientèle d'affligés et d'infirmes qu'il soulageait et consolait.",
+            "type": "prêtre",
+            "lieu": "Forli",
+            "siecle": "XIVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1397"
+            },
+            "attributs": []
+        },
+        {
+            "id": "angele-merici",
+            "nom": "Sainte Angèle Merici",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "27 janvier",
+            "biographie": "À Brescia, en 1540, <b>sainte Angèle Merici</b>, vierge. De petite noblesse bresciane, elle prit d'abord l'habit du Tiers-Ordre de Saint François et réunit des jeunes filles dans la Compagnie de sainte Ursule qu'elle avait fondée pour l'éducation des adolescentes.",
+            "type": "fondatrice",
+            "lieu": "Brescia",
+            "siecle": "XVe-XVIe siècle",
+            "dates": {
+                "naissance": "1474",
+                "mort": "1540"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-marie-muzeyi",
+            "nom": "Saint Jean-Marie Muzeyi",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "27 janvier",
+            "biographie": "Près de Mengo en Ouganda, en 1887, <b>saint Jean-Marie</b>. Familier à la cour, et devenu chrétien, il fit sa profession de foi au Christ et fut décapité, dernière victime de la persécution déclenchée par le roi Mwenga.",
+            "type": "martyr",
+            "lieu": "Ouganda",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1887"
+            },
+            "attributs": []
+        }
+    ],
+    "01-28": [
+        {
+            "id": "thomas-d-aquin",
+            "nom": "Saint Thomas d'Aquin",
+            "titre": "Prêtre et Docteur de l'Église",
+            "rang": "Solennité",
+            "date": "28 janvier",
+            "biographie": "Dans notre Ordre, en 1274, solennité de <b>saint Thomas d'Aquin</b>, prêtre et docteur de l'Église. Ce théologien hors du commun est avant tout un fils de l'Ordre de saint Dominique, qu'il choisit en 1244 en dépit de l'opposition de sa famille. Doué des plus hautes qualités intellectuelles, il contribua au développement de la vie intellectuelle de l'Ordre ; sa réputation était telle que le pape lui-même, le bienheureux Grégoire X, l'appela au deuxième Concile général de Lyon. Alors qu'il s'y rendait, il mourut au monastère de Fossanova dans le Latium, le 7 mars 1274. En 1369, son corps fut transféré à Toulouse, en l'église des Jacobins. Il est devenu en raison de l'éminence de sa doctrine le Docteur propre de l'Ordre, avant d'être déclaré Docteur de l'Église en 1567 par le pape saint Pie V.",
+            "type": "docteur",
+            "lieu": "Fossanova",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "1225",
+                "mort": "1274"
+            },
+            "attributs": []
+        },
+        {
+            "id": "julien-de-cuenca",
+            "nom": "Saint Julien",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "28 janvier",
+            "biographie": "À Cuenca en Espagne, vers 1207, <b>saint Julien</b>, évêque. Second titulaire de la ville après sa reconquête sur les Maures, il fit l'admiration de tous, en distribuant aux pauvres tous les revenus de son évêché et en gagnant son pain par le travail de ses mains.",
+            "type": "évêque",
+            "lieu": "Cuenca",
+            "siecle": "XIIe-XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1207"
+            },
+            "attributs": []
+        }
+    ],
+    "01-29": [
+        {
+            "id": "sulpice-severe",
+            "nom": "Saint Sulpice Sévère",
+            "titre": "Écrivain ecclésiastique",
+            "rang": "Mémoire",
+            "date": "29 janvier",
+            "biographie": "En Provence, en 406, <b>saint Sulpice Sévère</b>. Né vers 360, sorti des écoles de Bordeaux, il mena une brillante carrière d'avocat avant de devenir le biographe de saint Martin de Tours et le chroniqueur de l'Église d'Aquitaine.",
+            "type": "écrivain",
+            "lieu": "Provence",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "Vers 360",
+                "mort": "Vers 420"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gildas-le-sage",
+            "nom": "Saint Gildas",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "29 janvier",
+            "biographie": "En Bretagne, en 570, <b>saint Gildas</b>, abbé, surnommé le Sage. Originaire d'Écosse, cet érudit vécut d'abord en Irlande, puis fonda le monastère de Rhuys (Ruisse) dans le Morbihan. Il mourut sur l'île d'Houat.",
+            "type": "abbé",
+            "lieu": "Bretagne",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Vers 500",
+                "mort": "570"
+            },
+            "attributs": []
+        },
+        {
+            "id": "villana-de-botti",
+            "nom": "Bienheureuse Villana de Botti",
+            "titre": "Tertiaire dominicaine",
+            "rang": "Mémoire facultative",
+            "date": "29 janvier",
+            "biographie": "Ce même jour, dans notre Ordre, en 1361, la <b>bienheureuse Villana de Botti</b>. Fille d'un riche négociant florentin, elle eut une jeunesse facile. Mariée à un riche seigneur, elle se convertit et distribua largement ses biens aux pauvres. Devenue tertiaire de Saint-Dominique, elle se consacra à l'étude de l'Écriture et à la contemplation du Christ en croix.",
+            "type": "mystique",
+            "lieu": "Florence",
+            "siecle": "XIVe siècle",
+            "dates": {
+                "naissance": "1332",
+                "mort": "1361"
+            },
+            "attributs": []
+        }
+    ],
+    "01-30": [
+        {
+            "id": "martine",
+            "nom": "Sainte Martine",
+            "titre": "Martyre",
+            "rang": "Mémoire",
+            "date": "30 janvier",
+            "biographie": "À Rome, vers 226, sous la persécution d'Alexandre Sévère, le martyre de <b>sainte Martine</b>. Après l'invention de ses reliques sous le pontificat d'Urbain VIII, en 1634, elle devint l'une des saintes patronnes de la ville de Rome.",
+            "type": "martyre",
+            "lieu": "Rome",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 226"
+            },
+            "attributs": []
+        },
+        {
+            "id": "bathilde",
+            "nom": "Sainte Bathilde",
+            "titre": "Reine",
+            "rang": "Mémoire",
+            "date": "30 janvier",
+            "biographie": "À Chelles près de la Marne sur le territoire de Paris, en 680, <b>sainte Bathilde</b>. Esclave anglosaxonne, elle devint l'épouse de Clovis II, roi des Francs. Elle fonda des monastères sous la Règle de saint Benoît, mais à la manière de celui de Luxeuil ; après la mort de Clovis II, elle devint régente du royaume des Francs et, quand son fils devint roi, passa les dernières années de sa vie au monastère des moniales de Chelles, près de Paris.",
+            "type": "reine",
+            "lieu": "Chelles",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Vers 626",
+                "mort": "680"
+            },
+            "attributs": []
+        },
+        {
+            "id": "pierre-nolasque",
+            "nom": "Saint Pierre Nolasque",
+            "titre": "Fondateur",
+            "rang": "Mémoire",
+            "date": "30 janvier",
+            "biographie": "Dans notre diocèse de Toulouse, en 1256 ou 1258, <b>saint Pierre Nolasque</b>, prêtre. Avec saint Raymond de Penyafort et le roi d'Aragon Jacques Ier, il fonda l'Ordre de Notre-Dame de la Merci pour le rachat des chrétiens sous le joug de l'esclavage en terre musulmane.",
+            "type": "fondateur",
+            "lieu": "Toulouse",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Vers 1189",
+                "mort": "1256"
+            },
+            "attributs": []
+        },
+        {
+            "id": "david-galvan",
+            "nom": "Saint David Galvan",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "30 janvier",
+            "biographie": "À Guadalajara au Mexique, en 1915, <b>saint David Galvan</b>, prêtre et martyr. Dans la persécution mexicaine, parce qu'il avait revendiqué la dignité du mariage, il fut fusillé sans jugement par un soldat.",
+            "type": "martyr",
+            "lieu": "Mexique",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1882",
+                "mort": "1915"
+            },
+            "attributs": []
+        }
+    ],
+    "01-31": [
+        {
+            "id": "cyr-et-jean",
+            "nom": "Saints Cyr et Jean",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "31 janvier",
+            "biographie": "À Alexandrie, au IVe siècle, les <b>saints martyrs Cyr et Jean</b>, qui, après avoir confessé la foi au Christ, furent décapités.",
+            "type": "martyrs",
+            "lieu": "Alexandrie",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "IVe siècle"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marcelle",
+            "nom": "Sainte Marcelle",
+            "titre": "Veuve",
+            "rang": "Mémoire",
+            "date": "31 janvier",
+            "biographie": "À Rome, en 410, <b>sainte Marcelle</b>, veuve. Comme l'écrit saint Jérôme, elle méprisa richesses et noblesse, et se rendit plus noble par sa pauvreté et son humilité.",
+            "type": "veuve",
+            "lieu": "Rome",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "410"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-bosco",
+            "nom": "Saint Jean Bosco",
+            "titre": "Prêtre et fondateur",
+            "rang": "Mémoire",
+            "date": "31 janvier",
+            "biographie": "En 1888, à Turin, <b>saint Jean Bosco</b>, prêtre. Il connut une enfance pauvre et dure. Après son ordination, il mit à Turin toute son énergie à l'éducation des jeunes et fonda en 1857, la Société de Saint-François de Sales, ou Salésiens, et, avec l'aide de sainte Marie-Dominique Mazzarello, l'Institut des Filles de Marie Auxiliatrice, pour enseigner aux jeunes un métier et la vie chrétienne. Il vint à Toulouse les 5 et 6 février 1882 pour visiter l'orphelinat de la Grande Allée et prêcha à la cathédrale. La basilique Saint-Sernin possède une relique du saint.",
+            "type": "fondateur",
+            "lieu": "Turin",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1815",
+                "mort": "1888"
+            },
+            "attributs": []
+        }
+    ],
+    "02-01": [
+        {
+            "id": "brigitte-d-irlande",
+            "nom": "Sainte Brigitte",
+            "titre": "Abbesse",
+            "rang": "Mémoire",
+            "date": "1er février",
+            "biographie": "En Irlande, en 523, <b>sainte Brigitte</b>, abbesse. Fille d'un chef de clan païen et d'une esclave chrétienne, elle fonda un monastère à Kaldare, au sud-ouest de Dublin qui devint un foyer du monachisme féminin irlandais.",
+            "type": "abbesse",
+            "lieu": "Irlande",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Vers 451",
+                "mort": "523"
+            },
+            "attributs": []
+        },
+        {
+            "id": "sigebert-iii",
+            "nom": "Saint Sigebert III",
+            "titre": "Roi",
+            "rang": "Mémoire",
+            "date": "1er février",
+            "biographie": "À Metz, en 656, <b>saint Sigebert III</b>, roi d'Austrasie, fils de Dagobert Ier, il régna sous la tutelle de maires du Palais. Il fit construire les monastères de Stavelot, Malmédy et beaucoup d'autres, et fit de larges aumônes aux églises et aux pauvres. Il mourut à 25 ans et fut inhumé dans l'église de l'abbaye Saint-Martin-de-Metz.",
+            "type": "roi",
+            "lieu": "Metz",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "630",
+                "mort": "656"
+            },
+            "attributs": []
+        },
+        {
+            "id": "henri-morse",
+            "nom": "Saint Henri Morse",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "1er février",
+            "biographie": "À Londres, en 1645, <b>saint Henri Morse</b>, prêtre jésuite et martyr. Plusieurs fois arrêté, deux fois envoyé en exil, il fut, sous le roi Charles Ier, enfermé en prison et, après y avoir célébré la messe, pendu à Tyburn.",
+            "type": "martyr",
+            "lieu": "Londres",
+            "siecle": "XVIIe siècle",
+            "dates": {
+                "naissance": "1595",
+                "mort": "1645"
+            },
+            "attributs": []
+        }
+    ],
+    "02-02": [
+        {
+            "id": "presentation-du-seigneur",
+            "nom": "Présentation du Seigneur",
+            "titre": "Fête",
+            "rang": "Solennité",
+            "date": "2 février",
+            "biographie": "Fête de la Présentation du Seigneur, que les Grecs appellent Hypapante, la Rencontre. Quarante jours après sa Naissance, Jésus fut présenté au Temple par Marie et Joseph. Il y est reconnu lumière pour éclairer les nations païennes et gloire d'Israël son peuple.",
+            "type": "fête",
+            "lieu": "Jérusalem",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        },
+        {
+            "id": "laurent-de-cantorbery",
+            "nom": "Saint Laurent",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "2 février",
+            "biographie": "À Cantorbéry en Angleterre, en 619, <b>saint Laurent</b>, évêque, qui reçut le gouvernement de cette Église après saint Augustin, où il obtint la conversion du roi Edbald.",
+            "type": "évêque",
+            "lieu": "Cantorbéry",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "619"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jeanne-de-lestonnac",
+            "nom": "Sainte Jeanne de Lestonnac",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "2 février",
+            "biographie": "À Bordeaux, en 1640, <b>sainte Jeanne de Lestonnac</b>. Jeune fille, elle repoussa les invitations et les tentatives de sa mère pour qu'elle quitte l'Église catholique. Après la mort de son mari, elle veilla avec sagesse à l'éducation de ses cinq enfants, puis fonda la Compagnie des Filles de Notre-Dame sur le modèle de la Compagnie de Jésus, pour favoriser l'éducation chrétienne des jeunes filles.",
+            "type": "fondatrice",
+            "lieu": "Bordeaux",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "1556",
+                "mort": "1640"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-theophane-venard",
+            "nom": "Saint Jean-Théophane Vénard",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "2 février",
+            "biographie": "À Hanoï, en 1861, <b>saint Jean-Théophane Vénard</b>, prêtre de la Société des Missions étrangères de Paris et martyr. Originaire des Deux-Sèvres, après son entrée au séminaire en 1851, il endura au Tonkin six années de ministère clandestin marquées par les fatigues et les angoisses ; il fut dénoncé et, comme il refusait de piétiner la croix, il fut enfermé dans une cage et décapité sous l'Empereur Tu Duc. Sainte Thérèse de Lisieux en fit un de ses préférés, reconnaissant en lui sa propre voie d'enfance.",
+            "type": "martyr",
+            "lieu": "Hanoï",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1829",
+                "mort": "1861"
+            },
+            "attributs": []
+        }
+    ],
+    "02-03": [
+        {
+            "id": "syméon-et-anne",
+            "nom": "Saints Syméon et Anne",
+            "titre": "Prophètes",
+            "rang": "Mémoire",
+            "date": "3 février",
+            "biographie": "À Jérusalem, commémoraison des <b>saints Syméon et Anne</b>, l'un, vieillard juste et religieux, l'autre, veuve et prophétesse. Alors que Jésus enfant était présenté au Temple par ses parents, ils saluèrent en lui le Messie Sauveur, l'espérance bienheureuse et la rédemption d'Israël.",
+            "type": "prophètes",
+            "lieu": "Jérusalem",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "theodore-de-marseille",
+            "nom": "Saint Théodore",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "3 février",
+            "biographie": "Dans notre diocèse en 594, <b>saint Théodore</b>, évêque. Alors que la ville de Marseille se trouve en proie à de violentes luttes politiques, il administra son diocèse avec une foi, une fermeté et une constance remarquables et avec un zèle parfois excessif. Tout dévoué à son peuple, il meurt le 2 janvier 594. Sa fête est célébrée au jour anniversaire de son ordination épiscopale.",
+            "type": "évêque",
+            "lieu": "Marseille",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "594"
+            },
+            "attributs": []
+        },
+        {
+            "id": "anschaire-de-hambourg",
+            "nom": "Saint Anschaire",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "3 février",
+            "biographie": "En 865, <b>saint Anschaire</b>, évêque de Hambourg, puis en même temps de Brême en Saxe. D'abord moine de Corbie, il fut envoyé par le pape Grégoire IV comme légat pour toute l'Europe du Nord. Il annonça l'Évangile au Danemark et en Suède et y établit l'Église du Christ, malgré bien des difficultés et de maigres résultats, jusqu'à ce que, épuisé, il meurt à Brême.",
+            "type": "évêque",
+            "lieu": "Brême",
+            "siecle": "IXe siècle",
+            "dates": {
+                "naissance": "801",
+                "mort": "865"
+            },
+            "attributs": []
+        },
+        {
+            "id": "pierre-de-ruffia-antoine-pavoni-barthelemy-cerveri",
+            "nom": "Bienheureux Pierre de Ruffia, Antoine Pavoni et Barthélémy Cerveri",
+            "titre": "Martyrs",
+            "rang": "Mémoire facultative",
+            "date": "3 février",
+            "biographie": "Dans notre Ordre, le martyre des <b>bienheureux Pierre de Ruffia</b> en 1365, <b>Antoine Pavoni</b> en 1374, et <b>Barthélémy Cerveri</b> en 1466. Tous trois appartiennent au couvent de Savigliano, au sud-ouest de Turin, et remplirent la fonction d'inquisiteurs en Italie du Nord. Prêchant la foi catholique, disputant publiquement avec les hérétiques, ils tombèrent sous les coups des Vaudois.",
+            "type": "martyrs",
+            "lieu": "Savigliano",
+            "siecle": "XIVe-XVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1365, 1374, 1466"
+            },
+            "attributs": []
+        },
+        {
+            "id": "claudine-thevenet",
+            "nom": "Sainte Claudine Thévenet",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "3 février",
+            "biographie": "À Lyon, en 1837, <b>sainte Claudine Thévenet</b> (Marie de Saint-Ignace), vierge. Elle fut marquée pendant la Terreur par l'exécution de ses deux frères et recueilli leurs paroles de pardon à leurs bourreaux. En 1818, elle fonda la Congrégation des Sœurs de Jésus et Marie, pour la formation chrétienne des jeunes, où elle exerça ses talents pédagogiques surtout envers les pauvres.",
+            "type": "fondatrice",
+            "lieu": "Lyon",
+            "siecle": "XVIIIe-XIXe siècle",
+            "dates": {
+                "naissance": "1774",
+                "mort": "1837"
+            },
+            "attributs": []
+        }
+    ],
+    "02-04": [
+        {
+            "id": "raban-maur",
+            "nom": "Saint Raban Maur",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "4 février",
+            "biographie": "À Mayence en Franconie, en 856, <b>saint Raban</b>, surnommé Maur, évêque. Il était moine de Fulda quand il fut élu au siège de Mayence. Ce savant était d'une grande éloquence, il ne négligea rien qui contribua à la gloire de Dieu.",
+            "type": "évêque",
+            "lieu": "Mayence",
+            "siecle": "IXe siècle",
+            "dates": {
+                "naissance": "Vers 780",
+                "mort": "856"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jeanne-de-valois",
+            "nom": "Sainte Jeanne de Valois",
+            "titre": "Reine et fondatrice",
+            "rang": "Mémoire",
+            "date": "4 février",
+            "biographie": "À Bourges, en 1505, <b>sainte Jeanne de Valois</b>, qui fut reine de France. Son mariage avec le roi Louis XII ayant été déclaré nul, elle se retira à Bourges, montra une piété toute particulière pour la Croix et fonda en 1501 l'Ordre des Annonciades en l'honneur de l'Annonciation de Notre-Dame.",
+            "type": "fondatrice",
+            "lieu": "Bourges",
+            "siecle": "XVe-XVIe siècle",
+            "dates": {
+                "naissance": "1464",
+                "mort": "1505"
+            },
+            "attributs": []
+        },
+        {
+            "id": "catherine-de-ricci",
+            "nom": "Sainte Catherine de Ricci",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "4 février",
+            "biographie": "Dans notre Ordre, à Prato en Toscane, en 1590, <b>sainte Catherine de Ricci</b>, vierge du Tiers-Ordre régulier de Saint Dominique. Douée d'un grand sens du gouvernement et du discernement, élue deux fois prieure, elle mit tout son cœur à l'œuvre de restauration religieuse et s'appliqua à honorer les mystères de la Passion du Sauveur qui étaient au cœur de sa vie mystique.",
+            "type": "mystique",
+            "lieu": "Prato",
+            "siecle": "XVIe siècle",
+            "dates": {
+                "naissance": "1522",
+                "mort": "1590"
+            },
+            "attributs": []
+        },
+        {
+            "id": "joseph-de-leonessa",
+            "nom": "Saint Joseph de Leonessa",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "4 février",
+            "biographie": "À Amatrice dans les Abruzzes, en 1612, <b>saint Joseph de Leonessa</b>, prêtre de l'Ordre des Mineurs Capucins. Il soigna à Constantinople les Chrétiens captifs des Turcs. Son zèle le poussa à tenter d'entrer dans le palais pour prêcher l'Évangile au Sultan lui-même. Aussitôt arrêté, il fut suspendu à une croix par un pied et un bras. Banni ensuite par le Sultan et rentré dans sa patrie, il se consacra aux missions et au soin des pauvres en Ombrie.",
+            "type": "prêtre",
+            "lieu": "Amatrice",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "1556",
+                "mort": "1612"
+            },
+            "attributs": []
+        }
+    ],
+    "02-05": [
+        {
+            "id": "agathe",
+            "nom": "Sainte Agathe",
+            "titre": "Vierge et martyre",
+            "rang": "Mémoire",
+            "date": "5 février",
+            "biographie": "En Italie, en 250, <b>sainte Agathe</b>, vierge et martyre. À Catane en Sicile, encore jeune fille, quand sévit la persécution de Dèce, elle conserva son corps pur et sa foi intacte dans le martyre, offrant au Christ Seigneur le témoignage de sa vie. De Sicile, le culte de la jeune martyre gagna Constantinople et Rome, d'où il se répandit dans tout l'Occident.",
+            "type": "martyre",
+            "lieu": "Catane",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Vers 231",
+                "mort": "250"
+            },
+            "attributs": []
+        },
+        {
+            "id": "avit-de-vienne",
+            "nom": "Saint Avit",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "5 février",
+            "biographie": "En 518, <b>saint Avit</b>, évêque. Issu d'une noble famille, il succéda à son père au siège de Vienne en 490. Il eut un rôle de premier plan dans la conversion du roi arien Sigismond et présida, en 517, le concile d'Épaon qui sanctionna le passage des Burgondes au catholicisme.",
+            "type": "évêque",
+            "lieu": "Vienne",
+            "siecle": "Ve-VIe siècle",
+            "dates": {
+                "naissance": "Vers 450",
+                "mort": "518"
+            },
+            "attributs": []
+        },
+        {
+            "id": "louis-ibarchi",
+            "nom": "Saint Louis Ibarchi",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "5 février",
+            "biographie": "En 1597, le martyre de <b>saint Louis Ibarchi</b>. Ce jeune japonais de douze ans était enfant de chœur chez les missionnaires franciscains quand il fut arrêté et crucifié à Nagasaki avec vingt autres martyrs canonisés en 1867.",
+            "type": "martyr",
+            "lieu": "Nagasaki",
+            "siecle": "XVIe siècle",
+            "dates": {
+                "naissance": "1585",
+                "mort": "1597"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jesus-mendez",
+            "nom": "Saint Jésus Mendez",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "5 février",
+            "biographie": "Au Mexique, en 1928, <b>saint Jésus Mendez</b>, prêtre et martyr, qui, dans la persécution antireligieuse en ce pays, fut fusillé, donnant sa vie pour le Christ Roi.",
+            "type": "martyr",
+            "lieu": "Mexique",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1928"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marie-eugene-de-l-enfant-jesus",
+            "nom": "Bienheureux Marie-Eugène de l'Enfant-Jésus",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "5 février",
+            "biographie": "À Venasque en 1967, <b>bienheureux Marie-Eugène de l'Enfant-Jésus</b> (Henri Grialou), prêtre. Natif du Gua, dans l'Aveyron, il rejoignit les carmes déchaux à Avon en 1922, à la suite à son ordination presbytérale. Fondateur de l'Institut séculier carmélitain Notre-Dame de Vie à Venasque, en 1932, il occupa plusieurs charges de gouvernement dans l'Ordre et au sein de sa Province d'Avignon-Aquitaine. Il écrivit la synthèse de spiritualité carmélitaine 'Je veux voir Dieu'. Il meurt le jour de la fête Notre Dame de Vie.",
+            "type": "prêtre",
+            "lieu": "Venasque",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1894",
+                "mort": "1967"
+            },
+            "attributs": []
+        }
+    ],
+    "02-06": [
+        {
+            "id": "dorothee-et-theophile",
+            "nom": "Saints Dorothée et Théophile",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "6 février",
+            "biographie": "Au IIIe siècle, à Césarée de Cappadoce, les <b>saints martyrs Dorothée</b>, vierge, et <b>Théophile</b>, avocat.",
+            "type": "martyrs",
+            "lieu": "Césarée",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "IIIe siècle"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gaston-d-arras",
+            "nom": "Saint Gaston",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "6 février",
+            "biographie": "À Arras, en 540, <b>saint Gaston</b>, évêque. Ermite près de Toul dont l'évêque l'ordonna prêtre, il catéchisa le roi Clovis, et fut envoyé par saint Remi comme évêque à Arras, puis à Cambrai où il restaura l'Église ruinée après l'invasion d'Attila. Il la gouverna pendant une quarantaine d'années et poursuivit l'œuvre d'évangélisation des peuples encore païens.",
+            "type": "évêque",
+            "lieu": "Arras",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "540"
+            },
+            "attributs": []
+        },
+        {
+            "id": "paul-miki-et-compagnons",
+            "nom": "Saint Paul Miki et ses compagnons",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "6 février",
+            "biographie": "À Nagasaki au Japon, en 1597, <b>saint Paul Miki</b> et vingt-cinq compagnons. Une quarantaine d'années après la première mission de saint François-Xavier, des missionnaires européens et japonais continuaient leur apostolat malgré les persécutions. Le 5 février 1597 furent crucifiés vingt-six d'entre eux, dont le Jésuite Paul Miki. Du haut de sa croix, il continuait à prêcher, invitant les gens qui l'entouraient à se convertir et pardonnant à ceux qui étaient responsables de sa mort.",
+            "type": "martyrs",
+            "lieu": "Nagasaki",
+            "siecle": "XVIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1597"
+            },
+            "attributs": []
+        },
+        {
+            "id": "matthieu-correa",
+            "nom": "Saint Matthieu Correa",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "6 février",
+            "biographie": "À Durango au Mexique, en 1927, <b>saint Matthieu Correa</b>, prêtre et martyr. Quand sévit la persécution contre l'Église, sommé de révéler des secrets entendus en confession, il refusa et fut fusillé devant le cimetière.",
+            "type": "martyr",
+            "lieu": "Durango",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1927"
+            },
+            "attributs": []
+        }
+    ],
+    "02-07": [
+        {
+            "id": "parents-defunts",
+            "nom": "Anniversaire des pères et mères défunts",
+            "titre": "Commémoration",
+            "rang": "Mémoire facultative",
+            "date": "7 février",
+            "biographie": "Dans notre Ordre, anniversaire des pères et mères défunts réunis aujourd'hui dans une commune célébration.",
+            "type": "commémoration",
+            "lieu": "Universel",
+            "siecle": "Non applicable",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gilles-marie-de-saint-joseph",
+            "nom": "Saint Gilles-Marie de Saint-Joseph",
+            "titre": "Religieux",
+            "rang": "Mémoire",
+            "date": "7 février",
+            "biographie": "À Naples, en 1812, <b>saint Gilles-Marie de Saint-Joseph</b> (dans le siècle, Joseph Pontillo), religieux franciscain, qui tous les jours dans les rues de la cité mendiait l'aumône très humblement et en échange donnait des paroles de consolation.",
+            "type": "religieux",
+            "lieu": "Naples",
+            "siecle": "XVIIIe-XIXe siècle",
+            "dates": {
+                "naissance": "1729",
+                "mort": "1812"
+            },
+            "attributs": []
+        },
+        {
+            "id": "eugenie-smet",
+            "nom": "Bienheureuse Eugénie Smet",
+            "titre": "Fondatrice",
+            "rang": "Mémoire facultative",
+            "date": "7 février",
+            "biographie": "À Paris, en 1871, la <b>bienheureuse Eugénie Smet</b>, fondatrice de la Société des Auxiliatrices du Purgatoire, qui se vouent à prier pour les âmes des défunts et à visiter les malades.",
+            "type": "fondatrice",
+            "lieu": "Paris",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1825",
+                "mort": "1871"
+            },
+            "attributs": []
+        },
+        {
+            "id": "pie-ix",
+            "nom": "Bienheureux Pie IX",
+            "titre": "Pape",
+            "rang": "Mémoire facultative",
+            "date": "7 février",
+            "biographie": "À Rome, près de saint Laurent, en 1878, le <b>bienheureux Pie IX</b> (Giovanni Maria Mastai Ferretti), pape. Durant son long pontificat de 31 ans, le plus long de l'histoire de la papauté, il réagit avec vigueur contre les dangers des idéologies anti-chrétiennes, il proclama le dogme de l'Immaculée Conception en 1854 et convoqua le premier Concile œcuménique du Vatican en 1869 qui dut s'interrompre en 1870 à cause de la guerre franco-prussienne.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1792",
+                "mort": "1878"
+            },
+            "attributs": []
+        }
+    ],
+    "02-08": [
+        {
+            "id": "zacharie",
+            "nom": "Saint Zacharie",
+            "titre": "Prophète",
+            "rang": "Mémoire",
+            "date": "8 février",
+            "biographie": "Vers 515 avant le Christ, <b>saint Zacharie</b>, prophète. Il annonça le retour d'exil du peuple élu sur la terre promise et la venue d'un roi pacifique, annonce que le Christ accomplit par son entrée triomphale dans la sainte cité de Jérusalem.",
+            "type": "prophète",
+            "lieu": "Jérusalem",
+            "siecle": "VIe siècle av. J.-C.",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "etienne-de-muret",
+            "nom": "Saint Étienne de Muret",
+            "titre": "Ermite",
+            "rang": "Mémoire",
+            "date": "8 février",
+            "biographie": "En 1124, <b>saint Étienne de Muret</b>, ermite dont les Pensées furent recueillies au célèbre monastère de Gramont où la communauté qu'il fonda se transporta après sa mort.",
+            "type": "ermite",
+            "lieu": "Gramont",
+            "siecle": "XIIe siècle",
+            "dates": {
+                "naissance": "Vers 1046",
+                "mort": "1124"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-de-matha",
+            "nom": "Saint Jean de Matha",
+            "titre": "Prêtre et fondateur",
+            "rang": "Mémoire",
+            "date": "8 février",
+            "biographie": "En 1213, <b>saint Jean de Matha</b>, prêtre. Ce lettré philosophe et docteur en théologie fonda en 1198, avec Félix de Valois l'Ordre des Trinitaires pour le rachat des captifs.",
+            "type": "fondateur",
+            "lieu": "Rome",
+            "siecle": "XIIe-XIIIe siècle",
+            "dates": {
+                "naissance": "1160",
+                "mort": "1213"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jerome-emilien",
+            "nom": "Saint Jérôme Émilien",
+            "titre": "Fondateur",
+            "rang": "Mémoire",
+            "date": "8 février",
+            "biographie": "En 1537, en Italie, <b>saint Jérôme Émilien</b>. Après une jeunesse violente et dissolue, il fut capturé par l'ennemi et, détenu en prison se convertit à Dieu, puis se livra tout entier, avec des compagnons qu'il avait rassemblés, à soulager tous ceux qui étaient tombés dans la misère, en particulier les orphelins et les malades, ce qui fut le point de départ de la Congrégation des Clercs réguliers de Somasque. Atteint de la peste en soignant les pestiférés, il mourut à Somasque, près de Bergame en Lombardie.",
+            "type": "fondateur",
+            "lieu": "Somasque",
+            "siecle": "XVe-XVIe siècle",
+            "dates": {
+                "naissance": "1486",
+                "mort": "1537"
+            },
+            "attributs": []
+        },
+        {
+            "id": "josephine-bakhita",
+            "nom": "Sainte Joséphine Bakhita",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "8 février",
+            "biographie": "En 1947, <b>sainte Joséphine Bakhita</b>, vierge. Née au Soudan dans la région du Darfour, elle fut enlevée toute jeune, vendue plusieurs fois à des marchands d'esclaves africains qui ne la ménageaient pas, elle fut libérée et devint chrétienne, puis religieuse à Venise chez les Filles de la Charité. Elle passa le reste de sa vie à Schio, au pays de Vicence, en subvenant aux besoins de tous.",
+            "type": "religieuse",
+            "lieu": "Schio",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1869",
+                "mort": "1947"
+            },
+            "attributs": []
+        }
+    ],
+    "02-09": [
+        {
+            "id": "apolline",
+            "nom": "Sainte Apolline",
+            "titre": "Vierge et martyre",
+            "rang": "Mémoire",
+            "date": "9 février",
+            "biographie": "En 249, à Alexandrie, <b>sainte Apolline</b>, vierge et martyre. Plutôt que de prononcer des formules impies, elle préféra s'élancer dans le feu préparé par ses persécuteurs.",
+            "type": "martyre",
+            "lieu": "Alexandrie",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "249"
+            },
+            "attributs": []
+        },
+        {
+            "id": "maron",
+            "nom": "Saint Maron",
+            "titre": "Ermite",
+            "rang": "Mémoire",
+            "date": "9 février",
+            "biographie": "Sur la montagne près d'Apamée en Syrie, vers 433, <b>saint Maron</b>, ermite, qui consacra sa vie à la prière et à la pénitence. L'Église maronite catholique orientale lui doit son nom, après que les Musulmans eurent envahi la Syrie et que le siège patriarcal d'Antioche fut devenu vacant.",
+            "type": "ermite",
+            "lieu": "Syrie",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 433"
+            },
+            "attributs": []
+        },
+        {
+            "id": "ansbert-de-rouen",
+            "nom": "Saint Ansbert",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "9 février",
+            "biographie": "À Hautmont sur la Sambre, dans le Hainaut, vers 695, <b>saint Ansbert</b>. Chancelier de Clotaire III, il entra à l'abbaye de Fontenelle, aujourd'hui abbaye de Saint-Wandrille en Normandie, dont il devint abbé. Nommé évêque de Rouen en 684, il fut, sur un faux témoignage, exilé par le Maire du palais Pépin d'Héristal, à l'abbaye d'Haumont où il mourut.",
+            "type": "évêque",
+            "lieu": "Rouen",
+            "siecle": "VIIe siècle",
+            "dates": {
+                "naissance": "Vers 629",
+                "mort": "Vers 695"
+            },
+            "attributs": []
+        },
+        {
+            "id": "miguel-cordero",
+            "nom": "Saint Miguel Cordero",
+            "titre": "Frère",
+            "rang": "Mémoire",
+            "date": "9 février",
+            "biographie": "À Premia-de-Mar, près de Barcelone en Catalogne, en 1910, <b>saint Miguel Cordero</b>, frère des Écoles chrétiennes, qui enseigna les Lettres pendant près de quarante ans à Cuenca en Équateur. Revenu en Espagne, il s'appliqua à la parfaite observance de la Règle.",
+            "type": "religieux",
+            "lieu": "Barcelone",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1854",
+                "mort": "1910"
+            },
+            "attributs": []
+        }
+    ],
+    "02-10": [
+        {
+            "id": "scholastique",
+            "nom": "Sainte Scholastique",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "10 février",
+            "biographie": "Vers 543, <b>sainte Scholastique</b>, vierge. Sœur de saint Benoît, consacrée à Dieu dès son enfance, elle eut en Dieu un seul cœur avec son frère. Une fois par an ils passaient ensemble toute une journée en louange de Dieu et en saints entretiens. Elle fut mise au tombeau que saint Benoît avait préparé pour lui-même au Mont-Cassin.",
+            "type": "vierge",
+            "lieu": "Mont-Cassin",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Vers 480",
+                "mort": "Vers 543"
+            },
+            "attributs": []
+        },
+        {
+            "id": "guillaume-de-maleval",
+            "nom": "Saint Guillaume",
+            "titre": "Ermite",
+            "rang": "Mémoire",
+            "date": "10 février",
+            "biographie": "À l'Étable-de-Rhodes sur le territoire de Sienne en Toscane, en 1157, <b>saint Guillaume</b>, ermite de Maleval, dont l'exemple a donné naissance à plusieurs Congrégations d'ermites.",
+            "type": "ermite",
+            "lieu": "Sienne",
+            "siecle": "XIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1157"
+            },
+            "attributs": []
+        },
+        {
+            "id": "arnaud-cataneo",
+            "nom": "Bienheureux Arnaud Cataneo",
+            "titre": "Abbé",
+            "rang": "Mémoire facultative",
+            "date": "10 février",
+            "biographie": "En 1255, à Padoue, le <b>bienheureux Arnaud Cataneo</b>, abbé de Sainte-Sabine, victime d'un Seigneur local qui le jeta dans un cachot et le persécuta de longues années jusqu'à sa mort.",
+            "type": "abbé",
+            "lieu": "Padoue",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1255"
+            },
+            "attributs": []
+        },
+        {
+            "id": "alexandre-de-lugo",
+            "nom": "Bienheureux Alexandre de Lugo",
+            "titre": "Martyr",
+            "rang": "Mémoire facultative",
+            "date": "10 février",
+            "biographie": "Dans notre Ordre, en 1645, le <b>bienheureux Alexandre de Lugo</b>, martyr. Dominicain espagnol qui voulut évangéliser les Turcs. Comme tant d'autres chrétiens, principalement orthodoxes, il connut le martyre par fidélité au Christ qu'il ne voulut jamais renier.",
+            "type": "martyr",
+            "lieu": "Turquie",
+            "siecle": "XVIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1645"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jose-luis-sanchez-del-rio",
+            "nom": "Saint José Luis Sanchez del Rio",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "10 février",
+            "biographie": "En 1928 au Mexique, <b>saint José Luis Sanchez del Rio</b>, martyr. Malgré sa jeunesse, il arrive à se faire engager comme porte drapeau dans les rangs des cristeros. Capturé par l'armée gouvernementale, il refusa de renier sa foi et fut torturé, puis assassiné, n'ayant pas encore 15 ans.",
+            "type": "martyr",
+            "lieu": "Mexique",
+            "siecle": "XXe siècle",
+            "dates": {
+                "naissance": "1913",
+                "mort": "1928"
+            },
+            "attributs": []
+        }
+    ],
+    "02-11": [
+        {
+            "id": "gregoire-ii",
+            "nom": "Saint Grégoire II",
+            "titre": "Pape",
+            "rang": "Mémoire",
+            "date": "11 février",
+            "biographie": "À Rome, en 731, <b>saint Grégoire II</b>, pape. Durant son pontificat, il ordonna saint Boniface pour l'évangélisation de la Germanie, releva l'abbaye du Mont-Cassin et résista aux édits iconoclastes de Léon III l'Isaurien.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "VIIIe siècle",
+            "dates": {
+                "naissance": "Vers 669",
+                "mort": "731"
+            },
+            "attributs": []
+        },
+        {
+            "id": "benoit-d-aniane",
+            "nom": "Saint Benoît d'Aniane",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "11 février",
+            "biographie": "En 821, près d'Aix-La-Chapelle, <b>saint Benoît d'Aniane</b>, abbé. Élevé à la cour de Pépin le Bref, il embrassa la carrière militaire avant d'entrer au monastère bénédictin de Saint-Seine, près de Langres, où il fut abbé. Vers 780, il devint abbé de l'abbaye d'Aniane qu'il avait contribué à faire construire et d'où partit la réforme des monastères carolingiens sous la règle de Saint-Benoît.",
+            "type": "abbé",
+            "lieu": "Aniane",
+            "siecle": "VIIIe-IXe siècle",
+            "dates": {
+                "naissance": "Vers 750",
+                "mort": "821"
+            },
+            "attributs": []
+        },
+        {
+            "id": "notre-dame-de-lourdes",
+            "nom": "Notre-Dame de Lourdes",
+            "titre": "Apparition mariale",
+            "rang": "Mémoire",
+            "date": "11 février",
+            "biographie": "Mémoire de Notre-Dame de Lourdes. En 1858, quatre ans après la proclamation du dogme de l'Immaculée Conception, la Vierge Marie apparut à sainte Bernadette Soubirous dix-huit fois dans la grotte de Massabielle au bord du Gave, près de Lourdes, lui transmettant un message de conversion et de pénitence, un appel à la prière.",
+            "type": "apparition",
+            "lieu": "Lourdes",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        }
+    ],
+    "02-12": [
+        {
+            "id": "eulalie-de-merida",
+            "nom": "Sainte Eulalie de Mérida",
+            "titre": "Martyre",
+            "rang": "Mémoire",
+            "date": "12 février",
+            "biographie": "En 304, en Espagne, le martyre de <b>sainte Eulalie de Mérida</b>, sous la persécution de Dioclétien. Selon sa passion, elle aurait été martyre volontaire à douze ans et mourut sur le bûcher. Sur sa tombe, s'éleva une basilique souvent mentionnée dans des documents wisigothiques.",
+            "type": "martyre",
+            "lieu": "Mérida",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "304"
+            },
+            "attributs": []
+        },
+        {
+            "id": "melece",
+            "nom": "Saint Mélèce",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "12 février",
+            "biographie": "En 381, <b>saint Mélèce</b>. Évêque de Sébaste, il fut élu, en 360, au siège d'Antioche occupés jusqu'alors par des Ariens ; il parvint à rassembler l'épiscopat oriental divisé et joua un rôle majeur dans la préparation du premier concile de Constantinople.",
+            "type": "évêque",
+            "lieu": "Antioche",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "381"
+            },
+            "attributs": []
+        },
+        {
+            "id": "reginald-d-orleans",
+            "nom": "Bienheureux Réginald d'Orléans",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "12 février",
+            "biographie": "Dans notre Ordre, à Paris, en 1220, le <b>bienheureux Réginald d'Orléans</b>, prêtre. Passant à Rome, fut saisi par la parole de saint Dominique et entra dans l'Ordre des Prêcheurs, auquel il attira un grand nombre de frères par l'exemple de ses vertus et l'ardeur de sa parole. Il s'éteignit à Paris et fut enseveli dans l'église Notre-Dame-des-Champs.",
+            "type": "prêtre",
+            "lieu": "Paris",
+            "siecle": "XIIe-XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1220"
+            },
+            "attributs": []
+        }
+    ],
+    "02-13": [
+        {
+            "id": "polyeucte",
+            "nom": "Saint Polyeucte",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "13 février",
+            "biographie": "En 259, en Arménie, le martyre de <b>saint Polyeucte</b>. Soldat converti, il reconnut au cours d'une persécution qu'il était chrétien et fut décapité.",
+            "type": "martyr",
+            "lieu": "Arménie",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "259"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gilbert-de-meaux",
+            "nom": "Saint Gilbert",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "13 février",
+            "biographie": "À Meaux, en 1009, <b>saint Gilbert</b>, évêque, qui donna l'exemple d'une parfaite humilité.",
+            "type": "évêque",
+            "lieu": "Meaux",
+            "siecle": "Xe-XIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1009"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jourdain-de-saxe",
+            "nom": "Bienheureux Jourdain de Saxe",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "13 février",
+            "biographie": "Dans notre Ordre, en 1237, le <b>bienheureux Jourdain de Saxe</b>, prêtre. Étudiant à Paris, il y connut l'Ordre et reçut l'habit des mains de Réginald d'Orléans, le 12 février 1220. Ses qualités exceptionnelles le firent choisir en 1222 comme premier successeur de saint Dominique. C'est lui qui acheva de donner à l'Ordre ses assises institutionnelles et qui engagea sa première expansion missionnaire. Il mourut dans un naufrage près de la côte syrienne après une visite de ses frères établis en Terre Sainte.",
+            "type": "prêtre",
+            "lieu": "Syrie",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1237"
+            },
+            "attributs": []
+        }
+    ],
+    "02-14": [
+        {
+            "id": "cyrille-et-methode",
+            "nom": "Saints Cyrille et Méthode",
+            "titre": "Patrons de l'Europe",
+            "rang": "Mémoire",
+            "date": "14 février",
+            "biographie": "Fête des <b>saints Cyrille</b>, moine, et <b>Méthode</b>, évêque, tous deux patrons de l'Europe. Ces deux frères de Thessalonique, envoyés en Moravie par Photius, patriarche de Constantinople, ils y prêchèrent la foi chrétienne et composèrent un alphabet pour transcrire les livres saints du grec au slavon. Quand ils vinrent à Rome, Cyrille, qui jusque-là s'appelait Constantin, atteint par la maladie se fit moine et s'endormit dans le Seigneur le 14 février 869. Méthode, ordonné évêque de Sirmium par le pape Adrien II, évangélisa la Pannonie et mourut à Valehred en Moravie, le 6 avril 885.",
+            "type": "apôtres",
+            "lieu": "Moravie",
+            "siecle": "IXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "869 et 885"
+            },
+            "attributs": []
+        },
+        {
+            "id": "valentin",
+            "nom": "Saint Valentin",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "14 février",
+            "biographie": "À Rome, vers 269, sur la voie Flaminienne, près du pont Milvius, <b>saint Valentin</b>, martyr. Il fut décapité pour avoir visité et secouru des Chrétiens prisonniers à cause de leur foi.",
+            "type": "martyr",
+            "lieu": "Rome",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "269"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jean-baptiste-de-la-conception",
+            "nom": "Saint Jean-Baptiste de la Conception",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "14 février",
+            "biographie": "À Cordoue en Espagne, en 1613, <b>saint Jean-Baptiste de la Conception</b> (dans le siècle Jean Garcia), prêtre de l'Ordre de la Sainte Trinité, qui entreprit la restauration de l'Ordre au milieu de graves difficultés et d'épreuves causées par certains de ses frères.",
+            "type": "prêtre",
+            "lieu": "Cordoue",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "1561",
+                "mort": "1613"
+            },
+            "attributs": []
+        }
+    ],
+    "02-15": [
+        {
+            "id": "faustin-et-jovite",
+            "nom": "Saints Faustin et Jovite",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "15 février",
+            "biographie": "En 122, les <b>saints martyrs Faustin et Jovite</b>, martyrs qui furent très tôt l'objet d'un culte à Brescia, en Lombardie.",
+            "type": "martyrs",
+            "lieu": "Brescia",
+            "siecle": "IIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "122"
+            },
+            "attributs": []
+        },
+        {
+            "id": "quinide-de-vaison",
+            "nom": "Saint Quinide",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "15 février",
+            "biographie": "En Provence, au VIe siècle, <b>saint Quinide</b>. Évêque de Vaison-la-Romaine, il soutint la foi catholique dans plusieurs conciles régionaux.",
+            "type": "évêque",
+            "lieu": "Vaison-la-Romaine",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Inconnue"
+            },
+            "attributs": []
+        },
+        {
+            "id": "claude-la-colombiere",
+            "nom": "Saint Claude La Colombière",
+            "titre": "Prêtre",
+            "rang": "Mémoire",
+            "date": "15 février",
+            "biographie": "À Paray-le-Monial en Bourgogne, en 1682, <b>saint Claude La Colombière</b>, prêtre de la Compagnie de Jésus. Originaire du Dauphiné, il entra chez les Jésuites à Avignon, puis fut nommé Supérieur à Paray-le-Monial où il fut directeur de sainte Marguerite-Marie Alacoque. Passé par l'Angleterre durant la persécution anticatholique en qualité de chapelain de la duchesse d'York, il en fut expulsé pour complot, il revint en France à Lyon, puis à Paray où il mourut.",
+            "type": "prêtre",
+            "lieu": "Paray-le-Monial",
+            "siecle": "XVIIe siècle",
+            "dates": {
+                "naissance": "1641",
+                "mort": "1682"
+            },
+            "attributs": []
+        }
+    ],
+    "02-16": [
+        {
+            "id": "elie-et-compagnons",
+            "nom": "Saint Élie et ses compagnons",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "16 février",
+            "biographie": "Vers 312, le martyre de <b>saint Élie</b> et de ses compagnons. Chrétiens d'Égypte, ils furent décapités sous la persécution de Maximien.",
+            "type": "martyrs",
+            "lieu": "Égypte",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "312"
+            },
+            "attributs": []
+        },
+        {
+            "id": "nicolas-paglia",
+            "nom": "Bienheureux Nicolas Paglia",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "16 février",
+            "biographie": "Dans notre Ordre, en 1255, le <b>bienheureux Nicolas Paglia</b>, prêtre. Compagnon de saint Dominique, il détermina de nombreuses conversions dans le bourg de Giovinazzo, où il était né, et à Pérouse, où il fonda un couvent. Prêcheur cultivé, il favorisa l'édition de concordances bibliques. Comme prieur de la Province romaine, il assista à la translation des reliques de saint Dominique en 1233.",
+            "type": "prêtre",
+            "lieu": "Giovinazzo",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1255"
+            },
+            "attributs": []
+        }
+    ],
+    "02-17": [
+        {
+            "id": "silvin-d-auchy",
+            "nom": "Saint Silvin",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "17 février",
+            "biographie": "À Auchy, vers 717, la mise au tombeau de <b>saint Silvin</b>, évêque. Quittant la cour de Thierry III, il entreprit un pèlerinage en Terre sainte, puis à Rome où il reçut la consécration épiscopale. Il évangélisa le pays des Morins en Artois.",
+            "type": "évêque",
+            "lieu": "Artois",
+            "siecle": "VIIe-VIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "Vers 717"
+            },
+            "attributs": []
+        },
+        {
+            "id": "sept-fondateurs-des-servites",
+            "nom": "Sept saints fondateurs de l'Ordre des Servites de Marie",
+            "titre": "Fondateurs",
+            "rang": "Mémoire",
+            "date": "17 février",
+            "biographie": "En 1310, en Toscane, les sept <b>saints fondateurs de l'Ordre des Servites de Marie</b>, dont saint Alexis Falconieri. Marchands de Florence, ils décidèrent d'un commun accord de s'établir sur le mont Senario au service de la Vierge Marie et de fonder un Ordre sous la Règle de saint Augustin. Ils contribuèrent à réconcilier leurs concitoyens divisés. Ils sont commémorés ensemble le jour où serait mort centenaire le dernier d'entre eux, Alexis, en 1310.",
+            "type": "fondateurs",
+            "lieu": "Florence",
+            "siecle": "XIIIe-XIVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1310"
+            },
+            "attributs": []
+        },
+        {
+            "id": "pierre-ryou",
+            "nom": "Saint Pierre Ryou",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "17 février",
+            "biographie": "En Corée, en 1866, <b>saint Pierre Ryou</b>, martyr. Père de famille, alors qu'une nuit il lisait l'Évangile à des fidèles réunis dans la maison d'un catéchiste, il fut arrêté et, frappé à mort, il succomba pour le Christ.",
+            "type": "martyr",
+            "lieu": "Corée",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1866"
+            },
+            "attributs": []
+        }
+    ],
+    "02-18": [
+        {
+            "id": "theotone-de-coimbra",
+            "nom": "Saint Théotone",
+            "titre": "Fondateur",
+            "rang": "Mémoire",
+            "date": "18 février",
+            "biographie": "À Coïmbra au Portugal, vers 1162, <b>saint Théotone</b>, qui fit deux fois le pèlerinage de Jérusalem, refusa la garde du Saint-Sépulcre. À son retour dans sa patrie, après son deuxième pèlerinage, il fonda la Congrégation des Chanoines réguliers de la Sainte Croix.",
+            "type": "fondateur",
+            "lieu": "Coïmbra",
+            "siecle": "XIIe siècle",
+            "dates": {
+                "naissance": "1082",
+                "mort": "1162"
+            },
+            "attributs": []
+        },
+        {
+            "id": "fra-angelico",
+            "nom": "Bienheureux Jean de Fiesole (Fra Angelico)",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "18 février",
+            "biographie": "Dans notre Ordre, en 1455, le <b>bienheureux Jean de Fiesole</b>, surnommé \"Fra Angelico\", prêtre. Peintre et miniaturiste de métier, il prit l'habit vers 1420, et eut pour prieur et pour maître saint Antonin. Entre 1439 et 1445, sa grande œuvre fut la décoration du couvent Saint-Marc de Florence dont les Dominicains réformés venaient de faire l'acquisition. À partir de 1445, il vécut surtout à Rome où divers travaux lui furent confiés au Vatican. Retourné à Rome, au terme d'un priorat à Fiesole, il mourut au couvent de la Minerve.",
+            "type": "prêtre",
+            "lieu": "Rome",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "Vers 1395",
+                "mort": "1455"
+            },
+            "attributs": []
+        },
+        {
+            "id": "bernadette-soubirous",
+            "nom": "Sainte Bernadette Soubirous",
+            "titre": "Vierge",
+            "rang": "Mémoire",
+            "date": "18 février",
+            "biographie": "À Nevers, en 1879, <b>sainte Bernadette Soubirous</b>, vierge. Née à Lourdes d'une famille qui connut la misère, elle rencontra à dix-huit reprises la Dame immaculée dans la grotte de Massabielle. Par la suite, ayant pris l'habit de religieuse chez les sœurs de la Charité et de l'Instruction chrétienne de Nevers, elle y mena une vie humble et cachée. On la célèbre le 18 février, jour où la Vierge lui a dit : « Je vous promets de vous rendre heureuse non pas dans ce monde, mais dans l'autre ».",
+            "type": "vierge",
+            "lieu": "Nevers",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1844",
+                "mort": "1879"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gertrude-comensoli",
+            "nom": "Sainte Gertrude Comensoli",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "18 février",
+            "biographie": "À Bergame en Lombardie, en 1903, <b>sainte Gertrude Comensoli</b>, vierge, qui fonda une Congrégation de religieuses pour l'adoration du Saint-Sacrement et l'éducation de la jeunesse.",
+            "type": "fondatrice",
+            "lieu": "Bergame",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1847",
+                "mort": "1903"
+            },
+            "attributs": []
+        }
+    ],
+    "02-19": [
+        {
+            "id": "gabin",
+            "nom": "Saint Gabin",
+            "titre": "Martyr",
+            "rang": "Mémoire",
+            "date": "19 février",
+            "biographie": "À Rome, en 286, <b>saint Gabin</b>. Frère du pape saint Caïus et père de sainte Suzanne, il fut longtemps détenu en prison et y mourut pour la foi sous l'Empereur Dioclétien.",
+            "type": "martyr",
+            "lieu": "Rome",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "286"
+            },
+            "attributs": []
+        },
+        {
+            "id": "boniface-de-lausanne",
+            "nom": "Saint Boniface",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "19 février",
+            "biographie": "À La Cambre près de Bruxelles, en 1260, <b>saint Boniface</b>, qui fut évêque de Lausanne et termina sa vie dans la piété auprès des moniales cisterciennes du lieu.",
+            "type": "évêque",
+            "lieu": "Bruxelles",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1260"
+            },
+            "attributs": []
+        },
+        {
+            "id": "alvare-de-cordoue",
+            "nom": "Bienheureux Alvare de Cordoue",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "19 février",
+            "biographie": "Dans notre Ordre, en 1430, le <b>bienheureux Alvare de Cordoue</b>, prêtre, grand prédicateur. Contemporain de saint Vincent Ferrier, il fut son émule en prédication à travers l'Andalousie et fonda le couvent de la Scala Coeli où il introduisit la réforme que Raymond de Capoue avait inauguré en Italie. Jusqu'à la fin de sa vie, il se consacra à instruire les pauvres, à déraciner les superstitions et à réconcilier les ennemis. D'un voyage en Terre Sainte, il rapporta la dévotion au Chemin de la croix dont il établit les stations dans son couvent.",
+            "type": "prêtre",
+            "lieu": "Andalousie",
+            "siecle": "XIVe-XVe siècle",
+            "dates": {
+                "naissance": "1350",
+                "mort": "1430"
+            },
+            "attributs": []
+        }
+    ],
+    "02-20": [
+        {
+            "id": "eucher",
+            "nom": "Saint Eucher",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "20 février",
+            "biographie": "En 738/743, <b>saint Eucher</b>. Issu d'une puissante famille sous les rois mérovingiens, il entra au monastère de Jumièges, puis fut choisi comme évêque d'Orléans par Charles Martel qui, après seize ans d'épiscopat, l'exila à Cologne. Il mourut à l'abbaye de Saint-Trond, dans l'actuelle province belge de Limbourg.",
+            "type": "évêque",
+            "lieu": "Orléans",
+            "siecle": "VIIIe siècle",
+            "dates": {
+                "naissance": "Vers 687",
+                "mort": "743"
+            },
+            "attributs": []
+        },
+        {
+            "id": "christophe-de-milan",
+            "nom": "Bienheureux Christophe de Milan",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "20 février",
+            "biographie": "Dans notre Ordre, en 1484, le <b>bienheureux Christophe de Milan</b>, prêtre. Entré dans l'Ordre au couvent de Milan, il prêcha surtout en Ligurie avant de fonder le couvent de Taggia, où il se montrait soucieux de la liturgie, de la prédication conventuelle et de l'étude.",
+            "type": "prêtre",
+            "lieu": "Milan",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1484"
+            },
+            "attributs": []
+        },
+        {
+            "id": "jacinthe-marto",
+            "nom": "Bienheureuse Jacinthe Marto",
+            "titre": "Voyante",
+            "rang": "Mémoire facultative",
+            "date": "20 février",
+            "biographie": "À Aljustrel près de Fatima, au Portugal, en 1920, la <b>bienheureuse Jacinthe Marto</b>. Elle est l'un des trois enfants auxquels la Sainte Vierge apparut à Fatima. Elle mourut à dix ans d'une pleurésie.",
+            "type": "voyante",
+            "lieu": "Fatima",
+            "siecle": "XXe siècle",
+            "dates": {
+                "naissance": "1910",
+                "mort": "1920"
+            },
+            "attributs": []
+        }
+    ],
+    "02-21": [
+        {
+            "id": "pierre-damien",
+            "nom": "Saint Pierre Damien",
+            "titre": "Évêque et Docteur de l'Église",
+            "rang": "Mémoire",
+            "date": "21 février",
+            "biographie": "En 1072, à Ostie, <b>saint Pierre Damien</b>, évêque et Docteur de l'Église. Entré dans le \"désert\" de Fonte Avellana en Ombrie, il se fit le promoteur de la vie religieuse. Créé cardinal, il fut chargé de multiples légations ; il rappela la nécessité pour une vie authentiquement chrétienne d'être dans la communion avec le Siège apostolique.",
+            "type": "docteur",
+            "lieu": "Ostie",
+            "siecle": "XIe siècle",
+            "dates": {
+                "naissance": "1007",
+                "mort": "1072"
+            },
+            "attributs": []
+        },
+        {
+            "id": "noel-pinot",
+            "nom": "Bienheureux Noël Pinot",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire facultative",
+            "date": "21 février",
+            "biographie": "À Angers, en 1794, le <b>bienheureux Noël Pinot</b>, prêtre. Né en 1747, il fut aumônier des Incurables d'Angers, puis curé de la paroisse de Louroux-Béconnais. Il refusa de prêter serment à la Constitution civile du clergé en 1791. Arrêté lors du soulèvement des Vendéens contre la conscription et les atteintes à la liberté de l'Église, il fut guillotiné, revêtu de ses ornements sacerdotaux, comme le lui proposait son juge avec ironie.",
+            "type": "martyr",
+            "lieu": "Angers",
+            "siecle": "XVIIIe siècle",
+            "dates": {
+                "naissance": "1747",
+                "mort": "1794"
+            },
+            "attributs": []
+        },
+        {
+            "id": "robert-southwell",
+            "nom": "Saint Robert Southwell",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "21 février",
+            "biographie": "À Londres, en 1595, <b>saint Robert Southwell</b>, prêtre de la Compagnie de Jésus et martyr. Après huit ans de ministère clandestin dans la ville et les alentours, auteur de divers ouvrages et de poésies spirituelles, il fut arrêté, emprisonné à la Tour de Londres, soumis au moins neuf fois à la torture et après trois ans, condamné à mort comme prêtre et pendu à Tyburn.",
+            "type": "martyr",
+            "lieu": "Londres",
+            "siecle": "XVIe siècle",
+            "dates": {
+                "naissance": "1561",
+                "mort": "1595"
+            },
+            "attributs": []
+        }
+    ],
+    "02-22": [
+        {
+            "id": "chaire-de-saint-pierre",
+            "nom": "Chaire de saint Pierre",
+            "titre": "Fête",
+            "rang": "Fête",
+            "date": "22 février",
+            "biographie": "Fête de la Chaire de saint Pierre. Au jour où les Romains avaient coutume de faire mémoire de leurs défunts, l'Église célèbre la naissance du siège de cet Apôtre, qui est glorifié par son monument au Vatican et qui est appelé à présider à la charité dans la communion et l'unité de l'Église.",
+            "type": "fête",
+            "lieu": "Rome",
+            "siecle": "Ier siècle",
+            "dates": {
+                "naissance": "Non applicable",
+                "mort": "Non applicable"
+            },
+            "attributs": []
+        },
+        {
+            "id": "maximien-de-ravenne",
+            "nom": "Saint Maximien",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "22 février",
+            "biographie": "À Ravenne en Émilie-Romagne, en 556, <b>saint Maximien</b>, qui fut fait évêque de Ravenne en 546. Il remplit fidèlement son devoir de pasteur et défendit l'unité de l'Église contre les hérétiques.",
+            "type": "évêque",
+            "lieu": "Ravenne",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "556"
+            },
+            "attributs": []
+        },
+        {
+            "id": "isabelle-de-france",
+            "nom": "Bienheureuse Isabelle de France",
+            "titre": "Vierge",
+            "rang": "Mémoire facultative",
+            "date": "22 février",
+            "biographie": "À Longchamp aux environs de Paris, en 1270, la <b>bienheureuse Isabelle de France</b>, vierge. Sœur unique du roi saint Louis, elle refusa la main de Conrad, fils de l'Empereur Frédéric II, pour se vouer à Dieu. Elle fonda avec l'aide du roi son frère un couvent de Sœurs Mineures, dont elle rédigea la règle avec les conseils de saint Bonaventure et d'autres maîtres franciscains de Paris ; elle y vécut dans l'humilité et la pauvreté jusqu'à sa mort.",
+            "type": "vierge",
+            "lieu": "Paris",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "1225",
+                "mort": "1270"
+            },
+            "attributs": []
+        },
+        {
+            "id": "marguerite-de-cortone",
+            "nom": "Sainte Marguerite de Cortone",
+            "titre": "Tertiaire franciscaine",
+            "rang": "Mémoire",
+            "date": "22 février",
+            "biographie": "En Toscane, en 1297, <b>sainte Marguerite de Cortone</b>. Fille d'une famille pauvre, mendiante, elle rencontra un jeune noble, dont elle eut un fils, et qui fut tué dans une rixe. Après sa conversion en 1274 et, reçue dans le Tiers-Ordre de Saint-François, elle fonda un hôpital et une communauté de femmes vouées au soin des malades. Favorisée de grâces mystiques exceptionnelles, elle est considérée comme la troisième personnalité religieuse franciscaine après saint François et sainte Claire.",
+            "type": "mystique",
+            "lieu": "Cortone",
+            "siecle": "XIIIe siècle",
+            "dates": {
+                "naissance": "1247",
+                "mort": "1297"
+            },
+            "attributs": []
+        }
+    ],
+    "02-23": [
+        {
+            "id": "polycarpe",
+            "nom": "Saint Polycarpe",
+            "titre": "Évêque et martyr",
+            "rang": "Mémoire",
+            "date": "23 février",
+            "biographie": "En Anatolie, <b>saint Polycarpe</b>, évêque et martyr, disciple de saint Jean et dernier témoin de l'âge apostolique, connu par saint Irénée. Vers 160, il se rendit à Rome pour rencontrer le pape Anicet pour régler la question de la date de la célébration de Pâques. À l'âge de quatre-vingt-six ans, en 167, sous les Empereurs Marc Antoine et Lucius Aurèle Commode, il fut livré aux flammes du bûcher dans l'amphithéâtre de Smyrne, devant le proconsul et tout le peuple.",
+            "type": "martyr",
+            "lieu": "Smyrne",
+            "siecle": "IIe siècle",
+            "dates": {
+                "naissance": "Vers 69",
+                "mort": "167"
+            },
+            "attributs": []
+        },
+        {
+            "id": "alexandre-l-acemete",
+            "nom": "Saint Alexandre l'Acémète",
+            "titre": "Moine",
+            "rang": "Mémoire",
+            "date": "23 février",
+            "biographie": "En 430, <b>saint Alexandre l'Acémète</b>. Originaire d'une île de la mer Égée, il commença par parcourir la Mésopotamie et se fixa à Constantinople pour mener une vie évangélique. Là il jeta les fondements d'un monastère où les moines répartis en chœurs se relayaient sans interruption pour la louange perpétuelle du Dieu vivant et vrai.",
+            "type": "moine",
+            "lieu": "Constantinople",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "430"
+            },
+            "attributs": []
+        },
+        {
+            "id": "milburge",
+            "nom": "Sainte Milburge",
+            "titre": "Abbesse",
+            "rang": "Mémoire",
+            "date": "23 février",
+            "biographie": "En Angleterre, en 722, <b>sainte Milburge</b>. Princesse royale, elle fonda, en 670, le monastère de Wenlock et en devint abbesse. Douée d'une grande finesse spirituelle, elle possédait aussi le don de guérison.",
+            "type": "abbesse",
+            "lieu": "Wenlock",
+            "siecle": "VIIe-VIIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "722"
+            },
+            "attributs": []
+        }
+    ],
+    "02-24": [
+        {
+            "id": "robert-d-abrissel",
+            "nom": "Bienheureux Robert d'Abrissel",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "24 février",
+            "biographie": "Au prieuré d'Orsan, dans le Berry, en 1116, le <b>bienheureux Robert d'Abrissel</b>, prêtre. Docteur en théologie à Paris, ce réformateur fut nommé prédicateur apostolique par le pape Urbain II, et prêcha la croisade en Anjou. Il fonda en 1099, l'abbaye de Fontevrault où les hommes comme les femmes vivaient sous la direction d'une abbesse.",
+            "type": "prêtre",
+            "lieu": "Fontevrault",
+            "siecle": "XIe-XIIe siècle",
+            "dates": {
+                "naissance": "Vers 1045",
+                "mort": "1116"
+            },
+            "attributs": []
+        },
+        {
+            "id": "constant-servoli-de-fabriano",
+            "nom": "Bienheureux Constant Servoli de Fabriano",
+            "titre": "Prêtre",
+            "rang": "Mémoire facultative",
+            "date": "24 février",
+            "biographie": "Dans notre Ordre, en 1481, le <b>bienheureux Constant Servoli de Fabriano</b>, prêtre. Originaire de la Marche d'Ancône, il eut comme maître dans l'Ordre saint Antonin et Conrad de Brescia, auprès de qui il fit de grands progrès spirituels. Il restaura le couvent d'Ascoli et y ranima la vie régulière.",
+            "type": "prêtre",
+            "lieu": "Fabriano",
+            "siecle": "XVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1481"
+            },
+            "attributs": []
+        },
+        {
+            "id": "ascension-du-coeur-de-jesus-goni",
+            "nom": "Bienheureuse Ascension du Cœur de Jésus Goni",
+            "titre": "Vierge",
+            "rang": "Mémoire facultative",
+            "date": "24 février",
+            "biographie": "De même, en 1940, la <b>bienheureuse Ascension du Cœur de Jésus Goni</b>, vierge. À l'âge de quarante-cinq ans, elle partit au Pérou comme missionnaire. Animée par une fervente dévotion au Sacré-Cœur de Jésus et à la Madone du Rosaire, elle se consacra au salut des âmes. Elle est co-fondatrice et première Supérieure générale des Missionnaires Dominicaines du Rosaire.",
+            "type": "missionnaire",
+            "lieu": "Pérou",
+            "siecle": "XIXe-XXe siècle",
+            "dates": {
+                "naissance": "1868",
+                "mort": "1940"
+            },
+            "attributs": []
+        }
+    ],
+    "02-25": [
+        {
+            "id": "nestor",
+            "nom": "Saint Nestor",
+            "titre": "Évêque et martyr",
+            "rang": "Mémoire",
+            "date": "25 février",
+            "biographie": "En Pamphylie, en 250, <b>saint Nestor</b>, évêque et martyr. Arrêté au temps de la persécution de l'Empereur Dèce, il fut condamné à la croix par le gouverneur de la province, pour qu'il subisse le même supplice que celui qu'il reconnaissait comme le Crucifié.",
+            "type": "martyr",
+            "lieu": "Pamphylie",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "250"
+            },
+            "attributs": []
+        },
+        {
+            "id": "cesaire-de-nazianze",
+            "nom": "Saint Césaire",
+            "titre": "Médecin",
+            "rang": "Mémoire",
+            "date": "25 février",
+            "biographie": "En 369, <b>saint Césaire</b>. Frère cadet de saint Grégoire de Nazianze, il fit ses études à Alexandrie et exerça la médecine à Constantinople sous Julien l'Apostat. Il échappa à la mort lors du tremblement de terre en 368 et se voua au Christ.",
+            "type": "médecin",
+            "lieu": "Constantinople",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "369"
+            },
+            "attributs": []
+        },
+        {
+            "id": "louis-versiglia-calliste-caravario",
+            "nom": "Saints Louis Versiglia et Calliste Caravario",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "25 février",
+            "biographie": "Dans la province chinoise de Guandong, en 1930, les <b>saints martyrs Louis Versiglia</b>, évêque, et <b>Calliste Caravario</b>, prêtre, tous deux salésiens. Alors qu'ils étaient sur une barque pour une visite pastorale, ils furent tués par des soldats communistes en prenant la défense des jeunes femmes.",
+            "type": "martyrs",
+            "lieu": "Guandong",
+            "siecle": "XXe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1930"
+            },
+            "attributs": []
+        }
+    ],
+    "02-26": [
+        {
+            "id": "alexandre-d-alexandrie",
+            "nom": "Saint Alexandre",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "26 février",
+            "biographie": "En 328, <b>saint Alexandre</b>, évêque d'Alexandrie. Évêque en 312, il eut à lutter contre Arius, un de ses prêtres. Il contribua, avec saint Athanase, son diacre et successeur, à faire triompher la vraie foi au concile de Nicée en 325.",
+            "type": "évêque",
+            "lieu": "Alexandrie",
+            "siecle": "IVe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "328"
+            },
+            "attributs": []
+        },
+        {
+            "id": "porphyre-de-gaza",
+            "nom": "Saint Porphyre",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "26 février",
+            "biographie": "En 420, <b>saint Porphyre</b>, moine du désert de Scété, puis en Palestine. Appelé à l'épiscopat sur le siège de Gaza, il s'appliqua à combattre l'arianisme et affermir les Chrétiens dans la vraie foi.",
+            "type": "évêque",
+            "lieu": "Gaza",
+            "siecle": "IVe-Ve siècle",
+            "dates": {
+                "naissance": "347",
+                "mort": "420"
+            },
+            "attributs": []
+        },
+        {
+            "id": "paule-de-saint-joseph-de-calasanz",
+            "nom": "Sainte Paule de Saint-Joseph de Calasanz",
+            "titre": "Fondatrice",
+            "rang": "Mémoire",
+            "date": "26 février",
+            "biographie": "À Olesa de Montserrat en Catalogne, en 1889, <b>sainte Paule de Saint-Joseph de Calasanz</b> (Paule Montal Fornès), vierge, fondatrice de l'Institut des Filles de Marie des Écoles religieuses.",
+            "type": "fondatrice",
+            "lieu": "Catalogne",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1799",
+                "mort": "1889"
+            },
+            "attributs": []
+        }
+    ],
+    "02-27": [
+        {
+            "id": "leandre-de-seville",
+            "nom": "Saint Léandre",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "27 février",
+            "biographie": "En Espagne, en 596, <b>saint Léandre</b>, évêque. Frère aîné de saint Isidore, qui lui succéda sur le siège épiscopal, il réforma la liturgie, introduisit à la messe la récitation du Credo de Nicée. Sous son épiscopat les Wisigoths renoncèrent à l'arianisme.",
+            "type": "évêque",
+            "lieu": "Séville",
+            "siecle": "VIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "596"
+            },
+            "attributs": []
+        },
+        {
+            "id": "anne-line-roger-felcock-marc-barkworth",
+            "nom": "Sainte Anne Line et ses compagnons",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "27 février",
+            "biographie": "À Londres, en 1601, <b>sainte Anne Line</b>, veuve et martyre. Née de parents calvinistes, qui la déshéritèrent et la chassèrent de chez eux quand elle devint catholique, elle épousa Roger Line, qui mourut en exil à cause de la foi catholique. Après sa mort, elle hébergea des prêtres à Londres, et pour cela, fut pendue à Tyburn, sous la reine Élisabeth Ière. Avec elle, les <b>bienheureux Marc Barkworth</b>, bénédictin, et <b>Roger Felcock</b>, de la Compagnie de Jésus, subirent le même supplice.",
+            "type": "martyrs",
+            "lieu": "Londres",
+            "siecle": "XVIe-XVIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "1601"
+            },
+            "attributs": []
+        },
+        {
+            "id": "gabriel-de-la-vierge-des-douleurs",
+            "nom": "Saint Gabriel de la Vierge des Douleurs",
+            "titre": "Acolyte",
+            "rang": "Mémoire",
+            "date": "27 février",
+            "biographie": "À Isola-del-Gran-Sasso dans les Abruzzes, en 1862, <b>saint Gabriel de la Vierge des Douleurs</b> (François Possenti), acolyte. À l'âge de dix-huit ans, il entra dans la Congrégation de la Passion, où, après cinq ans, atteint de tuberculose, il vécut sa dernière année dans une très profonde union à Dieu.",
+            "type": "religieux",
+            "lieu": "Abruzzes",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1838",
+                "mort": "1862"
+            },
+            "attributs": []
+        }
+    ],
+    "02-28": [
+        {
+            "id": "pretres-et-diacres-d-alexandrie",
+            "nom": "Saints prêtres et diacres d'Alexandrie",
+            "titre": "Martyrs",
+            "rang": "Mémoire",
+            "date": "28 février",
+            "biographie": "Commémoraison des <b>saints prêtres, diacres et d'un grand nombre d'autres</b>, qui à Alexandrie, en 262, au temps de l'Empereur Gallien, quand sévissait une terrible peste, se dévouèrent au service des malades et affrontèrent volontiers la mort. La piété des fidèles vénère comme martyrs ces victimes de la charité.",
+            "type": "martyrs",
+            "lieu": "Alexandrie",
+            "siecle": "IIIe siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "262"
+            },
+            "attributs": []
+        },
+        {
+            "id": "protere",
+            "nom": "Saint Protère",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "28 février",
+            "biographie": "À Alexandrie, en 457, <b>saint Protère</b>, évêque, qui fut sauvagement massacré le jour de la Cène du Seigneur par des Monophysites partisans de son prédécesseur Dioscore.",
+            "type": "évêque",
+            "lieu": "Alexandrie",
+            "siecle": "Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "457"
+            },
+            "attributs": []
+        },
+        {
+            "id": "romain-de-condat",
+            "nom": "Saint Romain",
+            "titre": "Abbé",
+            "rang": "Mémoire",
+            "date": "28 février",
+            "biographie": "Dans le Jura, en 461, la mise au tombeau de <b>saint Romain</b>, prêtre et abbé de Condat. Suivant l'exemple des anciens moines, il fut le premier dans ce lieu à mener la vie érémitique et devint par la suite le père d'un grand nombre de moines.",
+            "type": "abbé",
+            "lieu": "Condat",
+            "siecle": "Ve siècle",
+            "dates": {
+                "naissance": "Vers 390",
+                "mort": "461"
+            },
+            "attributs": []
+        }
+    ],
+    "02-29": [
+        {
+            "id": "hilaire",
+            "nom": "Saint Hilaire",
+            "titre": "Pape",
+            "rang": "Mémoire",
+            "date": "29 février",
+            "biographie": "À Rome sur la voie Tiburtine, près de saint Laurent, en 468, la mise au tombeau du pape <b>saint Hilaire</b>, qui succéda à saint Léon le Grand, et écrivit des lettres confirmant la foi catholique des Conciles de Nicée, Éphèse et Chalcédoine et mettant en lumière le primat du siège de Rome.",
+            "type": "pape",
+            "lieu": "Rome",
+            "siecle": "Ve siècle",
+            "dates": {
+                "naissance": "Inconnue",
+                "mort": "468"
+            },
+            "attributs": []
+        },
+        {
+            "id": "oswald-de-worcester",
+            "nom": "Saint Oswald",
+            "titre": "Évêque",
+            "rang": "Mémoire",
+            "date": "29 février",
+            "biographie": "En Angleterre, en 992, <b>saint Oswald</b>, évêque. D'abord chanoine de Winchester, puis moine à Fleury, il fut placé ensuite sur le siège de Worcester, et, quelque temps après, il eut encore à diriger l'Église d'York. Il établit la Règle de saint Benoît dans de nombreux monastères.",
+            "type": "évêque",
+            "lieu": "York",
+            "siecle": "Xe siècle",
+            "dates": {
+                "naissance": "Vers 925",
+                "mort": "992"
+            },
+            "attributs": []
+        },
+        {
+            "id": "auguste-chapdelaine",
+            "nom": "Saint Auguste Chapdelaine",
+            "titre": "Prêtre et martyr",
+            "rang": "Mémoire",
+            "date": "29 février",
+            "biographie": "Dans la province chinoise de Guangni, en 1856, <b>saint Auguste Chapdelaine</b>, prêtre de la Société des Missions étrangères de Paris et martyr. Arrêté par des soldats avec plusieurs néophytes, il fut, sur l'ordre du grand mandarin, frappé de trois cents coups, enfermé dans une cage étroite et enfin décapité.",
+            "type": "martyr",
+            "lieu": "Guangni",
+            "siecle": "XIXe siècle",
+            "dates": {
+                "naissance": "1814",
+                "mort": "1856"
+            },
+            "attributs": []
+        }
+    ]
+}
+
+}
