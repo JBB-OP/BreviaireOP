@@ -369,10 +369,7 @@ function create_office_html(office, date, zone, hymne, invitatoire, contenu_aelf
       } else {
         return create_messe_html(contenu_aelf["messes"][zone.split(";")[1]], contenu_aelf["informations"], date_obj);
       }
-      break;
-    case "deprofundis":
-      return create_deprofundis_html(contenu_dominicain, date_obj);
-      break;  
+      break; 
     default:
   }
 }
@@ -1041,40 +1038,6 @@ function create_messe_html(contenu, infos, date_obj){
   return {texte: texte_final, titre: titre, sommaire: sommaire, couleur: infos['couleur']};
 }
 
-function create_deprofundis_html(date_obj){
-
-  var titre = '<div class="office_titre" id="office_titre">';
-  // titre = titre.concat("<h1> De Profundis du " + date_obj.getDate() + " " + tab_mois[date_obj.getMonth()] + "</h1>")
-  // titre = titre.concat(infos['ligne1'] + "</div>")
-
-  var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
-  var texte_final = '<div class="office_text" id="office_text">';
-
-  texte_final = texte_final.concat("<div class="text_part" id="introduction"><h2>Introduction</h2>");
-  texte_final = texte_final.concat("<p>Aujourd'hui nous faisons mémoire de nos frères :</p></div>");
-  sommaire = sommaire.concat("<li><a href='#introduction'>Introduction</a></li>");
-
-  texte_final = texte_final.concat("<div class="text_part" id="ps_deprofundis"><h2>De Profundis</h2>");
-  texte_final = texte_final.concat("<p>Des profondeurs je crie vers toi, Seigneur :<br />Seigneur, écoute mon appel !<br /><br />Que ton oreille se fasse attentive<br />au cri de ma prière.<br /><br />Si tu retiens les fautes, Seigneur,<br />Seigneur, qui donc subsistera ?<br /><br />Mais près de toi se trouve le pardon :<br />je te crains et j’espère.<br /><br />Mon âme attend le Seigneur,<br />je suis sûr de sa parole ;<br /><br />mon âme attend plus sûrement le Seigneur<br />qu’un veilleur n’attend l’aurore.<br /><br />Que le veilleur espère l’aurore<br />et Israël, le Seigneur !<br /><br />Puisque auprès du Seigneur est la grâce,<br />l’abondance du rachat,<br /><br />c’est lui qui rachètera Israël<br />de toutes ses fautes.</p></div>");
-  sommaire = sommaire.concat("<li><a href='#ps_deprofundis'>Psaume De profundis</a></li>");
-
-  texte_final = texte_final.concat("<div class="text_part" id="oraison"><h2>Oraison</h2>");
-  texte_final = texte_final.concat("<p><i>Prions.</i>Seigneur notre Dieu,<br />tu es le créateur et le rédempteur de tous les hommes,<br /> Accorde à nos frères, <br />familiers et bienfaiteurs défunts<br />le pardon de tous leurs péchés ; <br />Que nos prières fraternelles leur obtiennent ton indulgence, <br />comme ils l’ont toujours espéré́ ! <br /> Toi qui vis et règnes pour les siècles de siècles. <br />R/ Amen</p><p>Qu’ils reposent dans la paix !<br /> R/ Amen.</p></div>");
-  sommaire = sommaire.concat("<li><a href='#oraison'>Oraison</a></li>");
-
-
-  // texte_final = texte_final.concat("<div class='text_part' id='acte_penitentiel'><h2>Acte pénitentiel</h2>");
-  // texte_final = texte_final.concat("<p><i>Bref examen de conscience à genoux.</i><br /> Je confesse à Dieu tout-puissant,<br /> à la bienheureuse Marie toujours vierge,<br /> à notre Père saint Dominique<br /> à tous les saints et à vous, mes frères,<br /> que j’ai beaucoup péché<br /> par pensée, par parole, par action et par omission.<br /> C’ est ma faute. Je vous demande de prier pour moi.<br /><br /> <i>Le prieur ou l’hebdomadier :</i><br /> Que Dieu tout-puissant nous fasse miséricorde,<br /> qu’il nous pardonne nos péchés, nous délivre de tout mal,<br /> qu’il nous garde et nous affermisse dans le bien<br /> et qu’il nous conduise à la vie éternelle.<br /> R/ Amen.</p></div>");
-  // sommaire = sommaire.concat("<li><a href='#acte_penitentiel'>Acte pénitentiel</a></li>");
-
-
-
-  sommaire = sommaire.concat("</ul></div>");
-  //console.log(texte_final);
-  //texte_final = add_symbol_span(texte_final);
-
-  return {texte: texte_final, titre: titre, sommaire: sommaire, couleur: infos['couleur']};
-}
 
 function add_symbol_span(texte){
   /*Replace some " " with to nbsp to avoid too small line returns*/
