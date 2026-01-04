@@ -258,7 +258,7 @@ var complies_base = {
 //     "titre": "De Profundis",
 //     "texte": "<p>Des profondeurs je crie vers toi, Seigneur :<br />Seigneur, écoute mon appel !<br /><br />Que ton oreille se fasse attentive<br />au cri de ma prière.<br /><br />Si tu retiens les fautes, Seigneur,<br />Seigneur, qui donc subsistera ?<br /><br />Mais près de toi se trouve le pardon :<br />je te crains et j’espère.<br /><br />Mon âme attend le Seigneur,<br />je suis sûr de sa parole ;<br /><br />mon âme attend plus sûrement le Seigneur<br />qu’un veilleur n’attend l’aurore.<br /><br />Que le veilleur espère l’aurore<br />et Israël, le Seigneur !<br /><br />Puisque auprès du Seigneur est la grâce,<br />l’abondance du rachat,<br /><br />c’est lui qui rachètera Israël<br />de toutes ses fautes.</p>"
 //   },
-//   "oraison": "<p><i>Prions.</i>Seigneur notre Dieu,<br />tu es le créateur et le rédempteur de tous les hommes, <br /> Accorde à nos frères, <br />familiers et bienfaiteurs défunts<br />le pardon de tous leurs péchés ; <br />Que nos prières fraternelles leur obtiennent ton indulgence, <br />comme ils l’ont toujours espéré́ ! <br /> Toi qui vis et règnes pour les siècles de siècles. <br />R/ Amen</p><p>Qu’ils reposent dans la paix !<br /> R/ Amen.</p>",
+//   "oraison": "<p><i>Prions.</i> Seigneur notre Dieu,<br />tu es le créateur et le rédempteur de tous les hommes, <br /> Accorde à nos frères, <br />familiers et bienfaiteurs défunts<br />le pardon de tous leurs péchés ; <br />Que nos prières fraternelles leur obtiennent ton indulgence, <br />comme ils l’ont toujours espéré́ ! <br /> Toi qui vis et règnes pour les siècles de siècles. <br />R/ Amen</p><p>V/ Qu’ils reposent dans la paix !<br /> R/ Amen.</p>",
 // };
 
 var tab_mois=new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
@@ -1327,8 +1327,8 @@ function create_deprofundis_html(infos, date_obj){
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
   var texte_final = '<div class="office_text" id="office_text">';
 
-  texte_final = texte_final.concat('<div class="text_part" id="introduction"><h2>Introduction</h2>');
-  texte_final = texte_final.concat('<p>Aujourd\'hui nous faisons mémoire de nos frères :</p>');
+  texte_final = texte_final.concat('<div class="text_part" id="introduction">');
+  texte_final = texte_final.concat('<p>Aujourd’hui nous faisons mémoire de nos frères :</p>');
   
   // Ajouter le tableau des frères défunts
   texte_final = texte_final.concat('<div class="defunts-table">');
@@ -1348,22 +1348,22 @@ function create_deprofundis_html(infos, date_obj){
         </div>`);
       });
     } else {
-      texte_final = texte_final.concat('<p><em>Aujourd\'hui aucun frère décédé</em></p>');
+      texte_final = texte_final.concat('<p><em>Aujourd’hui aucun frère décédé.</em></p>');
     }
   } else {
-    texte_final = texte_final.concat('<p><em>Aujourd\'hui aucun frère décédé</em></p>');
+    texte_final = texte_final.concat('<p><em>Aujourd’hui aucun frère décédé.</em></p>');
   }
   
   texte_final = texte_final.concat('</div>');
   texte_final = texte_final.concat('</div>');
-  sommaire = sommaire.concat('<li><a href="#introduction">Introduction</a></li>');
+  sommaire = sommaire.concat('<li><a href="#introduction">Frères défunts</a></li>');
 
-  texte_final = texte_final.concat('<div class="text_part" id="ps_deprofundis"><h2>De Profundis</h2>');
-  texte_final = texte_final.concat('<p>Des profondeurs je crie vers toi, Seigneur :<br />Seigneur, écoute mon appel !<br /><br />Que ton oreille se fasse attentive<br />au cri de ma prière.<br /><br />Si tu retiens les fautes, Seigneur,<br />Seigneur, qui donc subsistera ?<br /><br />Mais près de toi se trouve le pardon :<br />je te crains et j\'espère.<br /><br />Mon âme attend le Seigneur,<br />je suis sûr de sa parole ;<br /><br />mon âme attend plus sûrement le Seigneur<br />qu\'un veilleur n\'attend l\'aurore.<br /><br />Que le veilleur espère l\'aurore<br />et Israël, le Seigneur !<br /><br />Puisque auprès du Seigneur est la grâce,<br />l\'abondance du rachat,<br /><br />c\'est lui qui rachètera Israël<br />de toutes ses fautes.</p></div>');
+  texte_final = texte_final.concat('<div class="text_part" id="ps_deprofundis">');
+  texte_final = texte_final.concat('<p>Des profondeurs je crie vers toi, Seigneur :<br />Seigneur, écoute mon appel !<br /><br />Que ton oreille se fasse attentive<br />au cri de ma prière.<br /><br />Si tu retiens les fautes, Seigneur,<br />Seigneur, qui donc subsistera ?<br /><br />Mais près de toi se trouve le pardon :<br />je te crains et j’espère.<br /><br />Mon âme attend le Seigneur,<br />je suis sûr de sa parole ;<br /><br />mon âme attend plus sûrement le Seigneur<br />qu’un veilleur n’attend l’aurore.<br /><br />Que le veilleur espère l’aurore<br />et Israël, le Seigneur !<br /><br />Puisque auprès du Seigneur est la grâce,<br />l’abondance du rachat,<br /><br />c’est lui qui rachètera Israël<br />de toutes ses fautes.</p></div>');
   sommaire = sommaire.concat('<li><a href="#ps_deprofundis">Psaume De profundis</a></li>');
 
-  texte_final = texte_final.concat('<div class="text_part" id="oraison"><h2>Oraison</h2>');
-  texte_final = texte_final.concat('<p><i>Prions.</i>Seigneur notre Dieu,<br />tu es le créateur et le rédempteur de tous les hommes,<br /> Accorde à nos frères, <br />familiers et bienfaiteurs défunts<br />le pardon de tous leurs péchés ; <br />Que nos prières fraternelles leur obtiennent ton indulgence, <br />comme ils l\'ont toujours espéré ! <br /> Toi qui vis et règnes pour les siècles de siècles. <br />R/ Amen</p><p>Qu\'ils reposent dans la paix !<br /> R/ Amen.</p></div>');
+  texte_final = texte_final.concat('<div class="text_part" id="oraison">');
+  texte_final = texte_final.concat('<p><i>Prions.</i><br /> Seigneur notre Dieu,<br />tu es le créateur et le rédempteur de tous les hommes,<br /> Accorde à nos frères, <br />familiers et bienfaiteurs défunts<br />le pardon de tous leurs péchés ; <br />Que nos prières fraternelles leur obtiennent ton indulgence, <br />comme ils l’ont toujours espéré ! <br /> Toi qui vis et règnes pour les siècles de siècles. <br />R/ Amen</p><p>V/ Qu’ils reposent dans la paix !<br /> R/ Amen.</p></div>');
   sommaire = sommaire.concat('<li><a href="#oraison">Oraison</a></li>');
 
   // Ajouter le style CSS pour le tableau des défunts
