@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Martyrologe - Débogage</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/breviaire-v5.js"></script>
+    <script src="js/martyrologe_functions.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .log {
+            background: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .saint-entry {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .saint-biography {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Martyrologe - Débogage</h1>
+    
+    <div id="log_container"></div>
+    
+    <h2>Test de chargement des saints</h2>
+    <button onclick="testLoadSaints()">Tester le chargement des saints</button>
+    <button onclick="testTodaySaints()">Tester les saints d'aujourd'hui</button>
+    
+    <div id="test_result"></div>
+    
+    <script>
+        // Rediriger console.log vers la page
+        function logToPage(message, type = 'log') {
+            const logDiv = document.getElementById('log_container');
+            const entry = document.createElement('div');
+            entry.className = `log ${type}`;
+            entry.textContent = message;
+            logDiv.appendChild(entry);
+            console.log(message);
+        }
+        
+        // Remplacer console.log
+        console.log = function(message) {
+            logToPage(message, 'log');
+        };
+        
+        console.error = function(message) {
+            logToPage(message, 'error');
+        };
+        
+        async function testLoadSaints() {
+            document.getElementById('test_result').innerHTML = '<p>Test en cours...</p>';
+            
+            try {
+                const saintsData = await loadSaintsData();
+                document.getElementById('test_result').innerHTML = 
+                    '<h3 style="color: green;">Succès !</h3>' +
+                    '<p>Données chargées avec succès.</p>' +
+                    '<p>Nombre de jours avec saints: ' + Object.keys(saintsData.saints).length + '</p>';
+            } catch (error) {
+                document.getElementById('test_result').innerHTML = 
+                    '<h3 style="color: red;">Erreur !</h3>' +
+                    '<p>' + error.message + '</p>';
+            }
+        }
+        
+        async function testTodaySaints() {
+            document.getElementById('test_result').innerHTML = '<p>Test en cours...</p>';
+            
+            try {
+                const today = new Date();
+                const saints = await getSaintsOfTheDay(today);
+                
+                if (saints && saints.length > 0) {
+                    let html = '<h3 style="color: green;">Saints d\'aujourd\'hui (' + today.toLocaleDateString() + ')</h3>';
+                    html += '<p>Nombre de saints: ' + saints.length + '</p>';
+                    
+                    saints.forEach(saint => {
+                        html += '<div class="saint-entry">';
+                        html += '<h4>' + saint.nom + '</h4>';
+                        html += '<div class="saint-biography">' + saint.biographie + '</div>';
+                        html += '</div>';
+                    });
+                    
+                    document.getElementById('test_result').innerHTML = html;
+                } else {
+                    document.getElementById('test_result').innerHTML = 
+                        '<h3 style="color: orange;">Aucun saint trouvé</h3>' +
+                        '<p>Aucun saint n\'est répertorié pour aujourd\'hui.</p>';
+                }
+            } catch (error) {
+                document.getElementById('test_result').innerHTML = 
+                    '<h3 style="color: red;">Erreur !</h3>' +
+                    '<p>' + error.message + '</p>';
+            }
+        }
+        
+        // Tester automatiquement au chargement
+        window.onload = function() {
+            logToPage('Page chargée, prêt pour les tests', 'log');
+        };
+    </script>
+</body>
+</html>

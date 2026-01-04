@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Martyrologe</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/breviaire-v5.js"></script>
+    <style>
+        .office_titre { font-weight: bold; margin-bottom: 20px; }
+        .office_sommaire { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; }
+        .office_text { border: 1px solid #ccc; padding: 10px; }
+        .text_part { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Test Martyrologe</h1>
+    
+    <div id="test_result"></div>
+    
+    <script>
+        // Test data
+        var test_infos = {
+            "ligne1": "<h2>Martyrologe</h2>",
+            "couleur": "rouge"
+        };
+        
+        var test_date = new Date();
+        
+        // Test the function
+        try {
+            var result = create_martyrologe_html(test_infos, test_date);
+            
+            document.getElementById('test_result').innerHTML = 
+                '<h2>Test Successful!</h2>' +
+                '<h3>Titre:</h3>' + result.titre +
+                '<h3>Sommaire:</h3>' + result.sommaire +
+                '<h3>Texte:</h3>' + result.texte +
+                '<h3>Couleur:</h3>' + result.couleur;
+                
+            console.log("Test successful!");
+            console.log("Result:", result);
+        } catch (error) {
+            document.getElementById('test_result').innerHTML = 
+                '<h2 style="color: red;">Test Failed!</h2>' +
+                '<p>Error: ' + error.message + '</p>' +
+                '<pre>' + error.stack + '</pre>';
+                
+            console.error("Test failed:", error);
+        }
+    </script>
+</body>
+</html>

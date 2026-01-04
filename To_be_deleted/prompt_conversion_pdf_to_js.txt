@@ -1,0 +1,115 @@
+Je souhaite convertir un fichier PDF contenant une liste de frères défunts en un fichier JavaScript structuré pour une application web. Voici les spécifications détaillées pour la conversion :
+
+## Format d'entrée (PDF)
+Le PDF contient une liste de frères défunts avec les informations suivantes pour chaque entrée :
+- Nom et prénom du frère
+- Année de décès
+- Lieu de décès
+- Statut (coopérateur, diacre, évêque, familier, tertiaire)
+
+## Format de sortie souhaité (JavaScript)
+Je veux un fichier `defunts_data.js` avec la structure suivante :
+
+```javascript
+// Données des frères défunts pour le De Profundis
+// Structure : defunts[MM-JJ] = [{nom: "Prénom NOM", annee: "AAAA", lieu: "Lieu", statut: "c|d|e|f|t"}]
+
+var defuntsData = {
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2023-11-15",
+    "source": "Archives de l'Ordre des Prêcheurs"
+  },
+  "defunts": {
+    "MM-JJ": [
+      {
+        "nom": "NOM COMPLET",
+        "annee": "ANNEE",
+        "lieu": "LIEU",
+        "statut": "CODE_STATUT"  // c, d, e, f ou t
+      }
+    ]
+  }
+};
+
+// Fonctions utilitaires
+function getDefuntsData() {
+  return defuntsData;
+}
+
+function getDefuntsOfTheDay(date) {
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const dateKey = `${month}-${day}`;
+  return defuntsData.defunts[dateKey] || [];
+}
+
+function formatStatut(statut) {
+  const statuts = {
+    'c': ' (coopérateur)',
+    'd': ' (diacre)',
+    'e': ' (évêque)',
+    'f': ' (familier)',
+    't': ' (tertiaire)'
+  };
+  return statuts[statut] || '';
+}
+```
+
+## Règles de conversion
+
+1. **Format des dates** : Convertir les dates au format MM-JJ (ex: 15 janvier → "01-15")
+
+2. **Codes des statuts** :
+   - Coopérateur → "c"
+   - Diacre → "d"
+   - Évêque → "e"
+   - Familier → "f"
+   - Tertiaire → "t"
+
+3. **Structure** : Regrouper les frères par date de décès
+
+4. **Format des noms** : Conserver exactement le format du PDF (MAJUSCULES, accents, etc.)
+
+5. **Années** : Conserver les années telles quelles (4 chiffres)
+
+6. **Lieux** : Conserver les lieux tels quels, avec les accents
+
+## Exemple de conversion
+
+Si le PDF contient :
+```
+15 janvier 2020 - Jean-Baptiste BLANDINO, Familier, Toulouse
+15 janvier 2018 - Thomas D'AQUIN, Tertiaire, Fossanova
+```
+
+Le résultat JavaScript devrait être :
+```javascript
+"01-15": [
+  {
+    "nom": "Jean-Baptiste BLANDINO",
+    "annee": "2020",
+    "lieu": "Toulouse",
+    "statut": "f"
+  },
+  {
+    "nom": "Thomas D'AQUIN",
+    "annee": "2018",
+    "lieu": "Fossanova",
+    "statut": "t"
+  }
+]
+```
+
+## Instructions supplémentaires
+
+1. Vérifier que toutes les entrées ont bien les 4 champs requis
+2. Grouper les frères par date de décès
+3. Trier les dates par ordre chronologique (janvier à décembre)
+4. Pour chaque date, trier les frères par année de décès (du plus récent au plus ancien)
+5. Ajouter des commentaires dans le code pour expliquer la structure
+6. Valider que le JavaScript généré est syntaxiquement correct
+
+## Format de sortie final
+
+Fournis-moi le code JavaScript complet prêt à être copié dans un fichier `defunts_data.js`, avec toutes les données du PDF converties selon ces spécifications.
