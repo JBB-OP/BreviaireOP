@@ -1328,7 +1328,34 @@ function create_deprofundis_html(infos, date_obj){
   var texte_final = '<div class="office_text" id="office_text">';
 
   texte_final = texte_final.concat('<div class="text_part" id="introduction"><h2>Introduction</h2>');
-  texte_final = texte_final.concat('<p>Aujourd\'hui nous faisons mémoire de nos frères :</p></div>');
+  texte_final = texte_final.concat('<p>Aujourd\'hui nous faisons mémoire de nos frères :</p>');
+  
+  // Ajouter le tableau des frères défunts
+  texte_final = texte_final.concat('<div class="defunts-table">');
+  
+  // Vérifier si les données des défunts sont disponibles
+  if (typeof getDefuntsOfTheDay === 'function') {
+    const defunts = getDefuntsOfTheDay(date_obj);
+    
+    if (defunts && defunts.length > 0) {
+      defunts.forEach(defunt => {
+        const statutText = defunt.statut ? `<span class="defunt-statut">(${formatStatut(defunt.statut)})</span>` : '';
+        texte_final = texte_final.concat(`
+        <div class="defunt-entry">
+          <span class="defunt-nom">${defunt.prenom} <span class="defunt-nom-uppercase">${defunt.nom}</span>${statutText}</span>
+          <span class="defunt-annee">${defunt.annee}</span>
+          <span class="defunt-lieu">${defunt.lieu}</span>
+        </div>`);
+      });
+    } else {
+      texte_final = texte_final.concat('<p><em>Aujourd\'hui aucun frère décédé</em></p>');
+    }
+  } else {
+    texte_final = texte_final.concat('<p><em>Aujourd\'hui aucun frère décédé</em></p>');
+  }
+  
+  texte_final = texte_final.concat('</div>');
+  texte_final = texte_final.concat('</div>');
   sommaire = sommaire.concat('<li><a href="#introduction">Introduction</a></li>');
 
   texte_final = texte_final.concat('<div class="text_part" id="ps_deprofundis"><h2>De Profundis</h2>');
@@ -1339,7 +1366,48 @@ function create_deprofundis_html(infos, date_obj){
   texte_final = texte_final.concat('<p><i>Prions.</i>Seigneur notre Dieu,<br />tu es le créateur et le rédempteur de tous les hommes,<br /> Accorde à nos frères, <br />familiers et bienfaiteurs défunts<br />le pardon de tous leurs péchés ; <br />Que nos prières fraternelles leur obtiennent ton indulgence, <br />comme ils l\'ont toujours espéré ! <br /> Toi qui vis et règnes pour les siècles de siècles. <br />R/ Amen</p><p>Qu\'ils reposent dans la paix !<br /> R/ Amen.</p></div>');
   sommaire = sommaire.concat('<li><a href="#oraison">Oraison</a></li>');
 
+  // Ajouter le style CSS pour le tableau des défunts
+  texte_final = texte_final.concat(`
+  <style>
+    .defunts-table {
+      margin: 15px 0;
+      font-size: 0.95em;
+    }
+    .defunt-entry {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .defunt-nom {
+      flex: 2;
+      font-weight: 500;
+    }
+    .defunt-nom-uppercase {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .defunt-statut {
+      font-style: italic;
+      color: #666;
+      margin-left: 5px;
+    }
+    .defunt-annee {
+      flex: 1;
+      text-align: center;
+    }
+    .defunt-lieu {
+      flex: 1;
+      text-align: right;
+    }
+    .defunts-table em {
+      color: #666;
+      font-style: italic;
+    }
+  </style>`);
+
   sommaire = sommaire.concat('</ul></div>');
+  texte_final = texte_final.concat('</div>');
   texte_final = add_symbol_span(texte_final);
 
   return {texte: texte_final, titre: titre, sommaire: sommaire, couleur: infos['couleur']};
