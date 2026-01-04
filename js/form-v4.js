@@ -280,6 +280,13 @@ function update_office_class(office){
       $("#global").removeClass("office_complies");
       $("#global").removeClass("office_lectures");
       break;
+    case "martyrologe":
+      $("#global").addClass("office_martyrologe");
+      $("#global").removeClass("office_laudes");
+      $("#global").removeClass("office_vepres");
+      $("#global").removeClass("office_complies");
+      $("#global").removeClass("office_lectures");
+      break;
     default:
       break;
   }
@@ -334,6 +341,35 @@ function update_office(scroll=0){
     };
     
     var html_text = create_deprofundis_html(deprofundis_data["informations"], new Date(date));
+    
+    $(".office_content").each(function(){$(this).html(html_text.texte)});
+    $(".office_titre").each(function(){$(this).html(html_text.titre)});
+    $(".office_sommaire").each(function(){$(this).html(html_text.sommaire)});
+    $(".office_biographie").each(function(){$(this).html("")});
+    update_anchors();
+    update_liturgical_color(html_text.couleur);
+    update_office_class(office);
+    
+    return; // Exit early, no need for AJAX call
+  }
+
+  // If this is martyrologe, handle it specially (no API call needed)
+  if (office === 'martyrologe') {
+    console.log("Office is martyrologe, handling specially");
+    
+    // Create a minimal AELF-like structure for martyrologe
+    var martyrologe_data = {
+      "informations": {
+        "ligne1": "<h2>Martyrologe</h2>",
+        "couleur": "rouge",
+        "temps_liturgique": "default",
+        "semaine": "",
+        "degre": "",
+        "jour_liturgique_nom": "Martyrologe"
+      }
+    };
+    
+    var html_text = create_martyrologe_html(martyrologe_data["informations"], new Date(date));
     
     $(".office_content").each(function(){$(this).html(html_text.texte)});
     $(".office_titre").each(function(){$(this).html(html_text.titre)});

@@ -1362,7 +1362,8 @@ function create_martyrologe_html(infos, date_obj){
   sommaire = sommaire.concat('<li><a href="#saintsinscrits">Saints du jour</a></li>');
 
   texte_final = texte_final.concat('<div class="text_part" id="conclusion"><h2>Conclusion</h2>');
-  texte_final = texte_final.concat('<p>Ailleurs enfin, anniversaires de nombreux autres saints inscrits au livre de vie</p></div>');
+  texte_final = texte_final.concat('<p>Ailleurs enfin, anniversaires de nombreux autres saints dont le nom est inscrit au Livre de Vie.</p></div>');
+  texte_final = texte_final.concat('<p><i>Au temps pascal :</i></p><p>Le même jour enfin, anniversaires d’une nuée d’autres témoins de toute race, langue et nation, entrés dans le Paradis du Christ.</p></div>');
   sommaire = sommaire.concat('<li><a href="#conclusion">Conclusion</a></li>');
 
   sommaire = sommaire.concat('</ul></div>');
