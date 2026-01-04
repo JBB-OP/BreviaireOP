@@ -273,6 +273,13 @@ function update_office_class(office){
       $("#global").removeClass("office_vepres");
       $("#global").removeClass("office_lectures");
       break;
+    case "deprofundis":
+      $("#global").addClass("office_deprofundis");
+      $("#global").removeClass("office_laudes");
+      $("#global").removeClass("office_vepres");
+      $("#global").removeClass("office_complies");
+      $("#global").removeClass("office_lectures");
+      break;
     default:
       break;
   }
@@ -308,6 +315,35 @@ function update_office(scroll=0){
     } else {
       console.log("getCompliesPsalm function is NOT available");
     }
+  }
+
+  // If this is deprofundis, handle it specially (no API call needed)
+  if (office === 'deprofundis') {
+    console.log("Office is deprofundis, handling specially");
+    
+    // Create a minimal AELF-like structure for deprofundis
+    var deprofundis_data = {
+      "informations": {
+        "ligne1": "<h2>De Profundis</h2>",
+        "couleur": "violet",
+        "temps_liturgique": "default",
+        "semaine": "",
+        "degre": "",
+        "jour_liturgique_nom": "De Profundis"
+      }
+    };
+    
+    var html_text = create_deprofundis_html(deprofundis_data["informations"], new Date(date));
+    
+    $(".office_content").each(function(){$(this).html(html_text.texte)});
+    $(".office_titre").each(function(){$(this).html(html_text.titre)});
+    $(".office_sommaire").each(function(){$(this).html(html_text.sommaire)});
+    $(".office_biographie").each(function(){$(this).html("")});
+    update_anchors();
+    update_liturgical_color(html_text.couleur);
+    update_office_class(office);
+    
+    return; // Exit early, no need for AJAX call
   }
 
 	var urlAelf = "https://api.aelf.org/v1/" + office + "/" + date + "/" + zone.split(";")[0];
