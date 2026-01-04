@@ -357,27 +357,34 @@ function update_office(scroll=0){
   if (office === 'martyrologe') {
     console.log("Office is martyrologe, handling specially");
     
-    // Create a minimal AELF-like structure for martyrologe
-    var martyrologe_data = {
-      "informations": {
-        "ligne1": "<h2>Martyrologe</h2>",
-        "couleur": "rouge",
-        "temps_liturgique": "default",
-        "semaine": "",
-        "degre": "",
-        "jour_liturgique_nom": "Martyrologe"
-      }
-    };
-    
-    var html_text = create_martyrologe_html(martyrologe_data["informations"], new Date(date));
-    
-    $(".office_content").each(function(){$(this).html(html_text.texte)});
-    $(".office_titre").each(function(){$(this).html(html_text.titre)});
-    $(".office_sommaire").each(function(){$(this).html(html_text.sommaire)});
-    $(".office_biographie").each(function(){$(this).html("")});
-    update_anchors();
-    update_liturgical_color(html_text.couleur);
-    update_office_class(office);
+    // Use the async function to load saints data
+    if (typeof update_martyrologe_with_saints === 'function') {
+      update_martyrologe_with_saints();
+    } else {
+      console.log("update_martyrologe_with_saints function not available, using fallback");
+      
+      // Fallback to simple version
+      var martyrologe_data = {
+        "informations": {
+          "ligne1": "<h2>Martyrologe</h2>",
+          "couleur": "rouge",
+          "temps_liturgique": "default",
+          "semaine": "",
+          "degre": "",
+          "jour_liturgique_nom": "Martyrologe"
+        }
+      };
+      
+      var html_text = create_martyrologe_html(martyrologe_data["informations"], new Date(date));
+      
+      $(".office_content").each(function(){$(this).html(html_text.texte)});
+      $(".office_titre").each(function(){$(this).html(html_text.titre)});
+      $(".office_sommaire").each(function(){$(this).html(html_text.sommaire)});
+      $(".office_biographie").each(function(){$(this).html("")});
+      update_anchors();
+      update_liturgical_color(html_text.couleur);
+      update_office_class(office);
+    }
     
     return; // Exit early, no need for AJAX call
   }
