@@ -656,15 +656,15 @@ function create_laudes_html(contenu, infos, date_obj, hymne, invitatoire, select
 
   // // Ajout du psaume 151 avant l'invitatoire
   // texte_final = texte_final.concat('<div class="text_part" id="psaume_151">');
-  // texte_final = texte_final.concat("<h2>Psaume 151</h2>");
+  // texte_final = texte_final.concat("<h2>Psaume 9A</h2>");
   // if (typeof window.psaume_from_reference !== 'undefined') {
-  //   texte_final = texte_final.concat("<p>" + psaume_from_reference("Psaume 151") + "</p></div>");
+  //   texte_final = texte_final.concat("<p>" + psaume_from_reference("Psaume 9A") + "</p></div>");
   // } else if (typeof psaume_from_reference !== 'undefined') {
-  //   texte_final = texte_final.concat("<p>" + psaume_from_reference("Psaume 151") + "</p></div>");
+  //   texte_final = texte_final.concat("<p>" + psaume_from_reference("Psaume 9A") + "</p></div>");
   // } else {
   //   texte_final = texte_final.concat("<p>La fonction psaume_from_reference n'est pas définie.</p></div>");
   // }
-  // sommaire = sommaire.concat("<li><a href='#psaume_151'>Psaume 151</a></li>");
+  // sommaire = sommaire.concat("<li><a href='#psaume_151'>Psaume 9A</a></li>");
 
   if (contenu["antienne_invitatoire"]["antienne_B"] != "") {
     texte_final = texte_final.concat('<div class="text_part" id="psaume_invitatoire">' + "<h2>Invitatoire A</h2>");
@@ -1339,10 +1339,12 @@ function create_deprofundis_html(infos, date_obj){
     
     if (defunts && defunts.length > 0) {
       defunts.forEach(defunt => {
-        const statutText = defunt.statut ? `<span class="defunt-statut">(${formatStatut(defunt.statut)})</span>` : '';
+        const statutText = defunt.statut ? `<em>(${formatStatut(defunt.statut)})</em>` : '';
+        const remarqueText = defunt.remarque ? `<em>${defunt.remarque}</em>` : '';
         texte_final = texte_final.concat(`
         <div class="defunt-entry">
-          <span class="defunt-nom">${defunt.prenom} <span class="defunt-nom-uppercase">${defunt.nom}</span>${statutText}</span>
+          <span class="defunt-nom">${defunt.prenom} <span class="defunt-nom-uppercase">${defunt.nom}</span></span>
+          <span class="defunt-statut">${statutText}${remarqueText}</span>
           <span class="defunt-annee">${defunt.annee}</span>
           <span class="defunt-lieu">${defunt.lieu}</span>
         </div>`);
@@ -1359,7 +1361,7 @@ function create_deprofundis_html(infos, date_obj){
   sommaire = sommaire.concat('<li><a href="#introduction">Frères défunts</a></li>');
 
   texte_final = texte_final.concat('<div class="text_part" id="ps_deprofundis">');
-  texte_final = texte_final.concat('<p>Des profondeurs je crie vers toi, Seigneur :<br />Seigneur, écoute mon appel !<br /><br />Que ton oreille se fasse attentive<br />au cri de ma prière.<br /><br />Si tu retiens les fautes, Seigneur,<br />Seigneur, qui donc subsistera ?<br /><br />Mais près de toi se trouve le pardon :<br />je te crains et j’espère.<br /><br />Mon âme attend le Seigneur,<br />je suis sûr de sa parole ;<br /><br />mon âme attend plus sûrement le Seigneur<br />qu’un veilleur n’attend l’aurore.<br /><br />Que le veilleur espère l’aurore<br />et Israël, le Seigneur !<br /><br />Puisque auprès du Seigneur est la grâce,<br />l’abondance du rachat,<br /><br />c’est lui qui rachètera Israël<br />de toutes ses fautes.</p></div>');
+  texte_final = texte_final.concat('<p><i>Des profondeurs je crie vers toi, Seigneur :<br />Seigneur, écoute mon appel !</i><br />Que ton oreille se fasse attentive<br />au cri de ma prière.<br /><br /><i>Si tu retiens les fautes, Seigneur,<br />[Seigneur,] qui donc subsistera ?</i><br />Mais près de toi se trouve le pardon :<br />je te crains et j’espère.<br /><br /><i>Mon âme attend le Seigneur,<br />je suis sûr de sa parole ;</i><br />mon âme attend plus sûrement le Seigneur<br />qu’un veilleur n’attend l’aurore.<br /><br /><i>Puisque auprès du Seigneur est la grâce,<br />l’abondance du rachat,</i><br />c’est lui qui rachètera Israël<br />de toutes ses fautes.<br /><br /><i>Donne-leur, Seigneur, le repos éternel !</i><br />Et fais briller sur eux la lumière sans fin.</p></div>');
   sommaire = sommaire.concat('<li><a href="#ps_deprofundis">Psaume De profundis</a></li>');
 
   texte_final = texte_final.concat('<div class="text_part" id="oraison">');
@@ -1388,9 +1390,9 @@ function create_deprofundis_html(infos, date_obj){
       font-weight: 600;
     }
     .defunt-statut {
+      flex: 2;
       font-style: italic;
       color: #666;
-      margin-left: 5px;
     }
     .defunt-annee {
       flex: 1;
