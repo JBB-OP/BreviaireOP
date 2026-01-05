@@ -4908,11 +4908,11 @@ function getDefuntsOfTheDay(date) {
 
 function formatStatut(statut) {
   const statuts = {
-    'c': ' (coopérateur)',
-    'd': ' (diacre)',
-    'e': ' (évêque)',
-    'f': ' (familier)',
-    't': ' (tertiaire)'
+    'c': 'coopérateur',
+    'd': 'diacre',
+    'e': 'évêque',
+    'f': 'familier',
+    't': 'tertiaire'
   };
   return statuts[statut] || '';
 }
