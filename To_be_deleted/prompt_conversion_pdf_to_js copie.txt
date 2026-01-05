@@ -1,0 +1,146 @@
+Je souhaite convertir un fichier txt contenant une liste de frères défunts en un fichier JavaScript structuré pour une application web. Voici les spécifications détaillées pour la conversion :
+
+## Format d'entrée (txt)
+Le txt contient une liste de frères défunts avec les informations suivantes pour chaque entrée :
+- JJ/MM/AAAA de décès
+- Prénom NOM du frère
+- Statut (coopérateur, diacre, évêque, familier, tertiaire)
+- des remarques (province d'origine, date incertaine, etc.)
+- Lieu de décès
+
+
+## Format de sortie souhaité (JavaScript)
+Je veux un fichier `defunts_data.js` avec la structure suivante :
+
+```javascript
+// Données des frères défunts pour le De Profundis
+// Structure : defunts[MM-JJ] = [{prenom: "Prénom", nom: "NOM", annee: "AAAA", mois:"MM", jour:"JJ", lieu: "Lieu", statut: "c|d|e|f|t", remarque: "Remarque"}]
+
+var defuntsData = {
+  "meta": {
+    "version": "0.1",
+    "last_updated": "2025-01-01",
+    "source": "Catalogus 2025"
+  },
+  "defunts": {
+    "MM-JJ": [
+      {
+        "prenom": "Prenom",
+        "nom": "NOM",
+        "annee": "ANNEE",
+        "mois": "MOIS",
+        "jour": "JOUR",
+        "lieu": "LIEU",
+        "statut": "CODE_STATUT",  // c, d, e, f ou t
+        "remarque": "REMARQUE"
+      }
+    ]
+  }
+};
+
+// Fonctions utilitaires
+function getDefuntsData() {
+  return defuntsData;
+}
+
+function getDefuntsOfTheDay(date) {
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const dateKey = `${month}-${day}`;
+  return defuntsData.defunts[dateKey] || [];
+}
+
+function formatStatut(statut) {
+  const statuts = {
+    'c': ' (coopérateur)',
+    'd': ' (diacre)',
+    'e': ' (évêque)',
+    'f': ' (familier)',
+    't': ' (tertiaire)'
+  };
+  return statuts[statut] || '';
+}
+```
+
+## Règles de conversion
+
+1. **Format des dates** : Convertir les dates au format MM-JJ (ex: 15 janvier → "01-15")
+
+2. **Codes des statuts** :
+   - Coopérateur → "c"
+   - Diacre → "d"
+   - Évêque → "e"
+   - Familier → "f"
+   - Tertiaire → "t"
+
+3. **Structure** : Regrouper les frères par date de décès
+
+4. **Format des prénoms et noms** : Pour les prénoms conserver exactement le format du txt (MAJUSCULES, accents, etc.), pour les noms, conserver, les initiales en majuscules (conserve les accents, etc), le reste en minuscules
+
+5. **Années** : Conserver les années telles quelles (4 chiffres)
+
+6. **Mois** : Conserver les mois tels quels (2 chiffres)
+
+7. **Jours** : Conserver les jours tels quel (2 chiffres)
+
+8. **Lieux** : Conserver les lieux tels quels, avec les accents
+
+## Exemple de conversion
+
+Si le fichier txt contient :
+```
+15 janvier 2018 Thomas d'AQUIN (t) Fossanova (Italie)
+15 janvier 2020 Jean-Baptiste BLANDINO (f) (prov. de Toulouse Toulouse
+2 octobre 1912 Antonin (Paul) AUGIER Bordeaux
+```
+
+Le résultat JavaScript devrait être :
+```javascript
+"01-15": [
+ {
+    "prenom": "Thomas"
+    "nom": "d'Aquin",
+    "annee": "2018",
+    "mois": "01",
+    "jour": "15",
+    "lieu": "Fossanova (Italie)",
+    "statut": "t",
+    "remarque": ""
+  },
+  {
+    "prenom": "Jean-Baptiste",
+    "nom": "Blandino",
+    "annee": "2020",
+    "mois": "01",
+    "jour": "15",
+    "lieu": "Toulouse",
+    "statut": "f",
+    "remarque": "(prov. de Toulouse)"
+  }
+]
+"10-02": [
+ {
+    "prenom": "Antonin (Paul)"
+    "nom": "Augier",
+    "annee": "1912",
+    "mois": "10",
+    "jour": "02",
+    "lieu": "Bordeaux",
+    "statut": "",
+    "remarque": ""
+  }
+]
+```
+
+## Instructions supplémentaires
+
+1. Vérifier que toutes les entrées ont bien les 8 champs requis
+2. Grouper les frères par date de décès
+3. Trier les dates par ordre chronologique (janvier à décembre)
+4. Pour chaque date, trier les frères par année de décès (du plus ancien au plus récent)
+5. Ajouter des commentaires dans le code pour expliquer la structure
+6. Valider que le JavaScript généré est syntaxiquement correct
+
+## Format de sortie final
+
+Fournis-moi le code JavaScript complet prêt à être copié dans un fichier `defunts_data.js`, avec toutes les données d'txt converties selon ces spécifications.

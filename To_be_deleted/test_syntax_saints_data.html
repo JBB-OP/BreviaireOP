@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test de syntaxe - saints_data.js</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        pre { background: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Test de syntaxe - saints_data.js</h1>
+    
+    <div id="result"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<p>Test en cours...</p>';
+            
+            try {
+                // Essayer de charger le script
+                const script = document.createElement('script');
+                script.src = 'js/saints_data.js';
+                script.onload = function() {
+                    if (typeof integratedSaintsData !== 'undefined') {
+                        resultDiv.innerHTML = 
+                            '<p class="success">✓ Fichier saints_data.js est syntaxiquement valide !</p>' +
+                            '<p><strong>Structure vérifiée :</strong></p>' +
+                            '<pre>' + JSON.stringify({
+                                meta: integratedSaintsData.meta,
+                                saints_keys: Object.keys(integratedSaintsData.saints).slice(0, 10) + '...',
+                                total_days: Object.keys(integratedSaintsData.saints).length + ' jours avec saints'
+                            }, null, 2) + '</pre>';
+                    } else {
+                        resultDiv.innerHTML = '<p class="error">✗ La variable integratedSaintsData n\'est pas définie</p>';
+                    }
+                };
+                script.onerror = function() {
+                    resultDiv.innerHTML = '<p class="error">✗ Erreur de chargement du fichier saints_data.js</p>';
+                };
+                document.head.appendChild(script);
+                
+            } catch (error) {
+                resultDiv.innerHTML = '<p class="error">✗ Erreur inattendue: ' + error.message + '</p>';
+            }
+        });
+    </script>
+</body>
+</html>

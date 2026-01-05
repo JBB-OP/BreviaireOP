@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Martyrologe - Vérification complète</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/breviaire-v5.js"></script>
+    <script src="js/saints_data.js"></script>
+    <script src="js/martyrologe_functions.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-section h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .saint-entry {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .saint-biography {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #log {
+            background: #f8f8f8;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Martyrologe - Vérification complète</h1>
+    
+    <div id="log">
+        <strong>Logs :</strong>
+        <div id="log-content"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 1 : Chargement des données</h2>
+        <button onclick="testLoadSaintsData()">Tester le chargement</button>
+        <button onclick="testIntegratedData()">Tester les données intégrées</button>
+        <div id="test1-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2 : Saints du jour</h2>
+        <div>
+            <label for="test-date">Date à tester :</label>
+            <input type="date" id="test-date" value="2023-01-01">
+            <button onclick="testSaintsOfTheDay()">Tester</button>
+        </div>
+        <div id="test2-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3 : Affichage complet du Martyrologe</h2>
+        <button onclick="testFullMartyrologe()">Tester l'affichage complet</button>
+        <div id="test3-result"></div>
+    </div>
+    
+    <script>
+        // Rediriger console.log vers la page
+        function logToPage(message, type = 'log') {
+            const logDiv = document.getElementById('log-content');
+            const entry = document.createElement('div');
+            entry.className = type;
+            entry.textContent = message;
+            logDiv.appendChild(entry);
+            console.log(message);
+        }
+        
+        // Remplacer console.log
+        console.log = function(message) {
+            logToPage(message, 'log');
+        };
+        
+        console.error = function(message) {
+            logToPage(message, 'error');
+        };
+        
+        async function testLoadSaintsData() {
+            document.getElementById('test1-result').innerHTML = '<p>Test en cours...</p>';
+            
+            try {
+                const saintsData = await loadSaintsData();
+                
+                let html = '<h3 class="success">✓ Succès !</h3>';
+                html += '<p><strong>Données chargées avec succès.</strong></p>';
+                html += '<p>Nombre de jours avec saints: ' + Object.keys(saintsData.saints).length + '</p>';
+                html += '<p>Exemple de clés disponibles: ' + Object.keys(saintsData.saints).slice(0, 5).join(', ') + '...</p>';
+                
+                document.getElementById('test1-result').innerHTML = html;
+            } catch (error) {
+                document.getElementById('test1-result').innerHTML = 
+                    '<h3 class="error">✗ Erreur !</h3>' +
+                    '<p>' + error.message + '</p>';
+            }
+        }
+        
+        function testIntegratedData() {
+            document.getElementById('test1-result').innerHTML = '<p>Test en cours...</p>';
+            
+            try {
+                if (typeof integratedSaintsData !== 'undefined') {
+                    let html = '<h3 class="success">✓ Données intégrées disponibles</h3>';
+                    html += '<p>Nombre de jours: ' + Object.keys(integratedSaintsData.saints).length + '</p>';
+                    html += '<p>Exemple: ' + JSON.stringify(integratedSaintsData.saints['01-01'][0]) + '</p>';
+                    document.getElementById('test1-result').innerHTML = html;
+                } else {
+                    document.getElementById('test1-result').innerHTML = 
+                        '<h3 class="error">✗ Données intégrées non disponibles</h3>';
+                }
+            } catch (error) {
+                document.getElementById('test1-result').innerHTML = 
+                    '<h3 class="error">✗ Erreur !</h3>' +
+                    '<p>' + error.message + '</p>';
+            }
+        }
+        
+        async function testSaintsOfTheDay() {
+            const dateInput = document.getElementById('test-date').value;
+            const date = new Date(dateInput);
+            
+            document.getElementById('test2-result').innerHTML = '<p>Recherche des saints pour le ' + date.toLocaleDateString() + '...</p>';
+            
+            try {
+                const saints = await getSaintsOfTheDay(date);
+                
+                if (saints && saints.length > 0) {
+                    let html = '<h3 class="success">✓ Saints trouvés (' + saints.length + ')</h3>';
+                    
+                    saints.forEach(saint => {
+                        html += '<div class="saint-entry">';
+                        html += '<h4>' + saint.nom + '</h4>';
+                        html += '<div class="saint-biography">' + saint.biographie + '</div>';
+                        html += '</div>';
+                    });
+                    
+                    document.getElementById('test2-result').innerHTML = html;
+                } else {
+                    document.getElementById('test2-result').innerHTML = 
+                        '<h3 class="error">✗ Aucun saint trouvé pour cette date</h3>';
+                }
+            } catch (error) {
+                document.getElementById('test2-result').innerHTML = 
+                    '<h3 class="error">✗ Erreur !</h3>' +
+                    '<p>' + error.message + '</p>';
+            }
+        }
+        
+        async function testFullMartyrologe() {
+            const dateInput = document.getElementById('test-date').value;
+            const date = new Date(dateInput);
+            
+            document.getElementById('test3-result').innerHTML = '<p>Génération du Martyrologe complet...</p>';
+            
+            try {
+                const martyrologe_data = {
+                    "informations": {
+                        "ligne1": "<h2>Martyrologe</h2>",
+                        "couleur": "rouge"
+                    }
+                };
+                
+                const html_text = await create_martyrologe_html_with_saints(martyrologe_data["informations"], date);
+                
+                document.getElementById('test3-result').innerHTML = 
+                    '<h3 class="success">✓ Martyrologe généré avec succès</h3>' +
+                    '<div class="office_text">' + html_text.texte + '</div>';
+                    
+            } catch (error) {
+                document.getElementById('test3-result').innerHTML = 
+                    '<h3 class="error">✗ Erreur lors de la génération !</h3>' +
+                    '<p>' + error.message + '</p>';
+            }
+        }
+        
+        // Tester automatiquement au chargement
+        window.onload = function() {
+            logToPage('Page chargée, prêt pour les tests', 'log');
+        };
+    </script>
+</body>
+</html>
