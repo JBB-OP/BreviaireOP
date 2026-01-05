@@ -1421,15 +1421,15 @@ function create_martyrologe_html(infos, date_obj){
   var sommaire = '<div class="office_sommaire" id="office_sommaire"><ul>';
   var texte_final = '<div class="office_text" id="office_text">';
 
-  texte_final = texte_final.concat('<div class="text_part" id="introduction"><h2>Introduction</h2>');
-  texte_final = texte_final.concat('<p>Anniversaires inscrits au martyrologe du : ' + date_obj.getDate() + ' ' + tab_mois[date_obj.getMonth()] + '</p></div>');
+  texte_final = texte_final.concat('<div class="text_part" id="introduction">');
+  texte_final = texte_final.concat('<p>Anniversaires inscrits au martyrologe du ' + date_obj.getDate() + ' ' + tab_mois[date_obj.getMonth()] + '</p></div>');
   sommaire = sommaire.concat('<li><a href="#introduction">Introduction</a></li>');
 
-  texte_final = texte_final.concat('<div class="text_part" id="saintsinscrits"><h2>Saints du jour</h2>');
+  texte_final = texte_final.concat('<div class="text_part" id="saintsinscrits">');
   texte_final = texte_final.concat('<p>Saint Gertrude</p></div>');
   sommaire = sommaire.concat('<li><a href="#saintsinscrits">Saints du jour</a></li>');
 
-  texte_final = texte_final.concat('<div class="text_part" id="conclusion"><h2>Conclusion</h2>');
+  texte_final = texte_final.concat('<div class="text_part" id="conclusion">');
   texte_final = texte_final.concat('<p>Ailleurs enfin, anniversaires de nombreux autres saints dont le nom est inscrit au Livre de Vie.</p></div>');
   texte_final = texte_final.concat('<p><i>Au temps pascal :</i></p><p>Le même jour enfin, anniversaires d’une nuée d’autres témoins de toute race, langue et nation, entrés dans le Paradis du Christ.</p></div>');
   sommaire = sommaire.concat('<li><a href="#conclusion">Conclusion</a></li>');

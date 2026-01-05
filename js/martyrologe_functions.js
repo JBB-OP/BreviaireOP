@@ -12,9 +12,23 @@ function loadSaintsData() {
     }
     
     return new Promise((resolve, reject) => {
-        console.log('Tentative de chargement du fichier saints.json...');
+        // En environnement local (file://), utiliser directement les données intégrées
+        if (window.location.protocol === 'file:') {
+            console.log('Environnement local détecté, utilisation des données intégrées');
+            if (typeof integratedSaintsData !== 'undefined') {
+                saintsData = integratedSaintsData;
+                console.log('Données intégrées chargées avec succès:', saintsData);
+                resolve(saintsData);
+                return; // Arrêter ici, ne pas essayer de charger le JSON
+            } else {
+                console.error('Données intégrées non disponibles');
+                resolve(getFallbackSaintsData());
+                return;
+            }
+        }
         
-        // Essayer d'abord avec une requête AJAX jQuery qui peut fonctionner localement
+        // En environnement serveur, essayer de charger le fichier JSON d'abord
+        console.log('Tentative de chargement du fichier saints.json...');
         $.ajax({
             url: 'saints.json',
             dataType: 'json',
@@ -129,12 +143,12 @@ async function create_martyrologe_html_with_saints(infos, date_obj) {
     var texte_final = '<div class="office_text" id="office_text">';
 
     // Introduction
-    texte_final = texte_final.concat('<div class="text_part" id="introduction"><h2>Introduction</h2>');
-    texte_final = texte_final.concat('<p>Anniversaires inscrits au martyrologe du : ' + date_obj.getDate() + ' ' + tab_mois[date_obj.getMonth()] + '</p></div>');
+    texte_final = texte_final.concat('<div class="text_part" id="introduction">');
+    texte_final = texte_final.concat('<p>Anniversaires inscrits au martyrologe du ' + date_obj.getDate() + ' ' + tab_mois[date_obj.getMonth()] + '</p></div>');
     sommaire = sommaire.concat('<li><a href="#introduction">Introduction</a></li>');
 
     // Saints du jour
-    texte_final = texte_final.concat('<div class="text_part" id="saintsinscrits"><h2>Saints et bienheureux du jour</h2>');
+    texte_final = texte_final.concat('<div class="text_part" id="saintsinscrits">');
     
     // Ajouter chaque saint
     saints.forEach((saint, index) => {
@@ -145,8 +159,9 @@ async function create_martyrologe_html_with_saints(infos, date_obj) {
     sommaire = sommaire.concat('<li><a href="#saintsinscrits">Saints du jour</a></li>');
 
     // Conclusion
-    texte_final = texte_final.concat('<div class="text_part" id="conclusion"><h2>Conclusion</h2>');
-    texte_final = texte_final.concat('<p>Ailleurs enfin, anniversaires de nombreux autres saints et bienheureux inscrits au livre de vie, que nous célébrons collectivement dans la communion des saints.</p></div>');
+    texte_final = texte_final.concat('<div class="text_part" id="conclusion">');
+    texte_final = texte_final.concat('<p>Ailleurs enfin, anniversaires de nombreux autres saints dont le nom est inscrit au Livre de Vie.</p></div>');
+    texte_final = texte_final.concat('<p><i>Au temps pascal :</i></p><p>Le même jour enfin, anniversaires d’une nuée d’autres témoins de toute race, langue et nation, entrés dans le Paradis du Christ.</p></div>');
     sommaire = sommaire.concat('<li><a href="#conclusion">Conclusion</a></li>');
 
     sommaire = sommaire.concat('</ul></div>');
