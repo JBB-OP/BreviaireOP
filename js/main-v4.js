@@ -239,28 +239,28 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Function to determine the complies psalm based on the day of the week and solemnities
-function getCompliesPsalm(date) {
-  const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
-  const dateObj = new Date(date);
-  const dayOfWeek = days[dateObj.getDay()];
+// function getCompliesPsalm(date) {
+//   const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+//   const dateObj = new Date(date);
+//   const dayOfWeek = days[dateObj.getDay()];
   
-  // Check if today is a solemnity (you'll need to implement this function)
-  const isTodaySolemnity = isSolemnity(date);
+//   // Check if today is a solemnity (you'll need to implement this function)
+//   const isTodaySolemnity = isSolemnity(date);
   
-  // Check if tomorrow is a solemnity
-  const tomorrow = new Date(dateObj);
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const isTomorrowSolemnity = isSolemnity(tomorrow.toISOString().split('T')[0]);
+//   // Check if tomorrow is a solemnity
+//   const tomorrow = new Date(dateObj);
+//   tomorrow.setDate(tomorrow.getDate() + 1);
+//   const isTomorrowSolemnity = isSolemnity(tomorrow.toISOString().split('T')[0]);
   
-  // Determine the psalm based on the rules
-  if (dayOfWeek === 'dimanche' || dayOfWeek === 'mardi' || dayOfWeek === 'jeudi' || isTodaySolemnity) {
-    return '90'; // Psalm 90 for Sunday, Tuesday, Thursday, or solemnities
-  } else if (dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
-    return '4,133'; // Psalms 4 and 133 for Monday, Wednesday, Friday, Saturday, or if tomorrow is a solemnity
-  } else {
-    return '90'; // Default to Psalm 90
-  }
-}
+//   // Determine the psalm based on the rules
+//   if (dayOfWeek === 'dimanche' || dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi' || isTodaySolemnity) {
+//     return '90'; // Psalm 90 for Sunday, Monday, Wednesday, or solemnities
+//   } else if (dayOfWeek === 'mardi' || dayOfWeek === 'jeudi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
+//     return '4,133'; // Psalms 4 and 133 for Tuesday, Thursday, Saturday, or if tomorrow is a solemnity
+//   } else {
+//     return '90'; // Default to Psalm 90
+//   }
+// }
 
 // Placeholder function for checking if a date is a solemnity
 // You'll need to implement this based on your specific requirements
@@ -400,10 +400,10 @@ function getCompliesPsalm(date, callback) {
       if (isTodaySolemnity) {
         console.log("Returning Psaume 90 (solemnity)");
         callback('Psaume 90'); // Psalm 90 for solemnities
-      } else if (dayOfWeek === 'dimanche' || dayOfWeek === 'mardi' || dayOfWeek === 'jeudi') {
+      } else if (dayOfWeek === 'dimanche' || dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi') {
         console.log("Returning Psaume 90");
         callback('Psaume 90'); // Psalm 90 for Sunday, Tuesday, Thursday
-      } else if (dayOfWeek === 'lundi' || dayOfWeek === 'mercredi' || dayOfWeek === 'vendredi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
+      } else if (dayOfWeek === 'mardi' || dayOfWeek === 'jeudi' || dayOfWeek === 'samedi' || isTomorrowSolemnity) {
         console.log("Returning Psaumes 4,133");
         callback('Psaumes 4,133'); // Psalms 4 and 133 for Monday, Wednesday, Friday, Saturday, or if tomorrow is a solemnity
       } else {
