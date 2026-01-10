@@ -27,29 +27,29 @@ const hymnes = {
     }
 }
 
-const psaumes = {
-    "dimanche":{
-        "Psaume 90":"xxx",
-    }
-    "lundi":{
-        "Psaumes 4 et 133":"xxx",
-    }
-    "mardi":{
-        "Psaume 90":"xxx",
-    }
-    "mercredi":{
-        "Psaumes 4 et 133":"xxx",
-    }
-    "jeudi":{
-        "Psaume 90":"xxx",
-    }
-    "vendredi":{
-        "Psaumes 4 et 133":"xxx",
-    }
-    "samedi":{
-        "Psaumes 4 et 133":"xxx",
-    }
-}
+// const psaumes = {
+//     "dimanche":{
+//         "Psaume 90":"xxx",
+//     }
+//     "lundi":{
+//         "Psaume 90":"xxx",
+//     }
+//     "mardi":{
+//         "Psaumes 4 et 133":"xxx",
+//     }
+//     "mercredi":{
+//         "Psaume 90":"xxx",
+//     }
+//     "jeudi":{
+//         "Psaumes 4 et 133":"xxx",
+//     }
+//     "vendredi":{
+//         "Psaume 90":"xxx",
+//     }
+//     "samedi":{
+//         "Psaumes 4 et 133":"xxx",
+//     }
+// }
 
 function liste_psaumescomplies(periode){
   return Object.keys(psaumescomplies[periode]);
